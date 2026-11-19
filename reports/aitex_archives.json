@@ -1,0 +1,17 @@
+{
+  "Defect_images.7z": {
+    "bytes": 77676758,
+    "sha256": "2153ef691020ce0c6a0acaee2d1de76c75f0784a04b931706de7d5e1df7a1b63",
+    "url": "https://www.aitex.es/wp-content/uploads/2019/07/Defect_images.7z"
+  },
+  "Mask_images.7z": {
+    "bytes": 88311,
+    "sha256": "2d64486dbb5a2e1aa462b43c0f19e614af5aea6607c11d1a928e4ad9feb558d5",
+    "url": "https://www.aitex.es/wp-content/uploads/2019/07/Mask_images.7z"
+  },
+  "NODefect_images.7z": {
+    "bytes": 98321827,
+    "sha256": "4409ca615f069e0b92eaf1bd2058c8a37d9cb983f3aad205e7d69f30816f5664",
+    "url": "https://www.aitex.es/wp-content/uploads/2019/07/NODefect_images.7z"
+  }
+}

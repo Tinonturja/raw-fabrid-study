@@ -1,0 +1,4714 @@
+{
+  "checked_patches": 19852,
+  "grayscale_pixel_mismatches": [],
+  "mask_connectivity": 8,
+  "by_parent_and_threshold": {
+    "Rollo1A_0000001_D_07-05-2024_10-30-55.085.png": {
+      "1": {
+        "foreground_pixels": 1146,
+        "unseen_foreground_pixels": 3,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          3
+        ]
+      },
+      "128": {
+        "foreground_pixels": 1144,
+        "unseen_foreground_pixels": 2,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          2
+        ]
+      },
+      "255": {
+        "foreground_pixels": 1141,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000002_D_07-05-2024_10-30-56.352.png": {
+      "1": {
+        "foreground_pixels": 5253,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5253,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5252,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000005_D_07-05-2024_10-31-00.029.png": {
+      "1": {
+        "foreground_pixels": 19981,
+        "unseen_foreground_pixels": 32,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 19981,
+        "unseen_foreground_pixels": 32,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 19978,
+        "unseen_foreground_pixels": 32,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000018_D_07-05-2024_10-31-14.432.png": {
+      "1": {
+        "foreground_pixels": 18429,
+        "unseen_foreground_pixels": 1336,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 18427,
+        "unseen_foreground_pixels": 1336,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 18426,
+        "unseen_foreground_pixels": 1336,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000020_D_07-05-2024_10-31-16.483.png": {
+      "1": {
+        "foreground_pixels": 652,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 652,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 652,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000028_D_07-05-2024_10-31-24.702.png": {
+      "1": {
+        "foreground_pixels": 1564,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1564,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1563,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000041_D_07-05-2024_10-31-36.937.png": {
+      "1": {
+        "foreground_pixels": 4448,
+        "unseen_foreground_pixels": 330,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4447,
+        "unseen_foreground_pixels": 330,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4445,
+        "unseen_foreground_pixels": 330,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000042_D_07-05-2024_10-31-38.385.png": {
+      "1": {
+        "foreground_pixels": 23105,
+        "unseen_foreground_pixels": 3246,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 23086,
+        "unseen_foreground_pixels": 3242,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 23082,
+        "unseen_foreground_pixels": 3242,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000049_D_07-05-2024_10-31-48.962.png": {
+      "1": {
+        "foreground_pixels": 1234,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1234,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1233,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000052_D_07-05-2024_10-31-53.604.png": {
+      "1": {
+        "foreground_pixels": 1207,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1207,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000054_D_07-05-2024_10-31-56.712.png": {
+      "1": {
+        "foreground_pixels": 3696,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3694,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3693,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000062_D_07-05-2024_10-32-09.235.png": {
+      "1": {
+        "foreground_pixels": 1767,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1767,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1767,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000068_D_07-05-2024_10-32-18.704.png": {
+      "1": {
+        "foreground_pixels": 1968,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1968,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1968,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000070_D_07-05-2024_10-32-21.872.png": {
+      "1": {
+        "foreground_pixels": 27448,
+        "unseen_foreground_pixels": 3043,
+        "n_components": 11,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27409,
+        "unseen_foreground_pixels": 3039,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27404,
+        "unseen_foreground_pixels": 3038,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000072_D_07-05-2024_10-32-25.048.png": {
+      "1": {
+        "foreground_pixels": 621,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 621,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 620,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000074_D_07-05-2024_10-32-28.223.png": {
+      "1": {
+        "foreground_pixels": 544,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 544,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 544,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000077_D_07-05-2024_10-32-32.979.png": {
+      "1": {
+        "foreground_pixels": 2182,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2181,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2181,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000082_D_07-05-2024_10-32-40.961.png": {
+      "1": {
+        "foreground_pixels": 651,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 650,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 650,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000083_D_07-05-2024_10-32-42.561.png": {
+      "1": {
+        "foreground_pixels": 778,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 778,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 778,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000086_D_07-05-2024_10-32-47.373.png": {
+      "1": {
+        "foreground_pixels": 1733,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1732,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1732,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo1A_0000087_D_07-05-2024_10-32-49.008.png": {
+      "1": {
+        "foreground_pixels": 1249,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1249,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1249,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000001_D_07-05-2024_10-38-32.859.png": {
+      "1": {
+        "foreground_pixels": 2206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000002_D_07-05-2024_10-38-34.146.png": {
+      "1": {
+        "foreground_pixels": 844,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 842,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 842,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000004_D_07-05-2024_10-38-36.646.png": {
+      "1": {
+        "foreground_pixels": 37871,
+        "unseen_foreground_pixels": 4603,
+        "n_components": 9,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 37844,
+        "unseen_foreground_pixels": 4600,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 37841,
+        "unseen_foreground_pixels": 4599,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000012_D_07-05-2024_10-38-46.175.png": {
+      "1": {
+        "foreground_pixels": 1598,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1598,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1598,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000014_D_07-05-2024_10-38-48.356.png": {
+      "1": {
+        "foreground_pixels": 37878,
+        "unseen_foreground_pixels": 3058,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 37857,
+        "unseen_foreground_pixels": 3058,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 37854,
+        "unseen_foreground_pixels": 3058,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000018_D_07-05-2024_10-38-52.665.png": {
+      "1": {
+        "foreground_pixels": 3034,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3032,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3032,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000019_D_07-05-2024_10-38-53.836.png": {
+      "1": {
+        "foreground_pixels": 44107,
+        "unseen_foreground_pixels": 11111,
+        "n_components": 9,
+        "partial_components": 3,
+        "fully_missed_component_areas": [
+          715,
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 44085,
+        "unseen_foreground_pixels": 11106,
+        "n_components": 7,
+        "partial_components": 3,
+        "fully_missed_component_areas": [
+          715
+        ]
+      },
+      "255": {
+        "foreground_pixels": 44083,
+        "unseen_foreground_pixels": 11106,
+        "n_components": 7,
+        "partial_components": 3,
+        "fully_missed_component_areas": [
+          715
+        ]
+      }
+    },
+    "Rollo2A_0000022_D_07-05-2024_10-38-57.067.png": {
+      "1": {
+        "foreground_pixels": 796,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 795,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 795,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000024_D_07-05-2024_10-38-59.183.png": {
+      "1": {
+        "foreground_pixels": 2817,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2817,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2817,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000029_D_07-05-2024_10-39-04.661.png": {
+      "1": {
+        "foreground_pixels": 124448,
+        "unseen_foreground_pixels": 5055,
+        "n_components": 12,
+        "partial_components": 2,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 124399,
+        "unseen_foreground_pixels": 5051,
+        "n_components": 2,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 124396,
+        "unseen_foreground_pixels": 5050,
+        "n_components": 2,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000034_D_07-05-2024_10-39-09.710.png": {
+      "1": {
+        "foreground_pixels": 3255,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3253,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3253,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000042_D_07-05-2024_10-39-17.148.png": {
+      "1": {
+        "foreground_pixels": 27447,
+        "unseen_foreground_pixels": 3370,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 27431,
+        "unseen_foreground_pixels": 3366,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27424,
+        "unseen_foreground_pixels": 3365,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000044_D_07-05-2024_10-39-19.269.png": {
+      "1": {
+        "foreground_pixels": 2529,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2529,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2529,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000046_D_07-05-2024_10-39-21.594.png": {
+      "1": {
+        "foreground_pixels": 1001,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1001,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1001,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000048_D_07-05-2024_10-39-24.152.png": {
+      "1": {
+        "foreground_pixels": 2073,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2073,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2072,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000050_D_07-05-2024_10-39-26.845.png": {
+      "1": {
+        "foreground_pixels": 27136,
+        "unseen_foreground_pixels": 2307,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27104,
+        "unseen_foreground_pixels": 2307,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27103,
+        "unseen_foreground_pixels": 2307,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000053_D_07-05-2024_10-39-30.469.png": {
+      "1": {
+        "foreground_pixels": 1365,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1364,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1364,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000057_D_07-05-2024_10-39-34.983.png": {
+      "1": {
+        "foreground_pixels": 40076,
+        "unseen_foreground_pixels": 109,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 40040,
+        "unseen_foreground_pixels": 109,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 40038,
+        "unseen_foreground_pixels": 109,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000061_D_07-05-2024_10-39-39.503.png": {
+      "1": {
+        "foreground_pixels": 34767,
+        "unseen_foreground_pixels": 3000,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 34763,
+        "unseen_foreground_pixels": 3000,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 34763,
+        "unseen_foreground_pixels": 3000,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000066_D_07-05-2024_10-39-45.618.png": {
+      "1": {
+        "foreground_pixels": 6855,
+        "unseen_foreground_pixels": 877,
+        "n_components": 5,
+        "partial_components": 2,
+        "fully_missed_component_areas": [
+          516
+        ]
+      },
+      "128": {
+        "foreground_pixels": 6847,
+        "unseen_foreground_pixels": 876,
+        "n_components": 5,
+        "partial_components": 2,
+        "fully_missed_component_areas": [
+          516
+        ]
+      },
+      "255": {
+        "foreground_pixels": 6844,
+        "unseen_foreground_pixels": 876,
+        "n_components": 5,
+        "partial_components": 2,
+        "fully_missed_component_areas": [
+          516
+        ]
+      }
+    },
+    "Rollo2A_0000069_D_07-05-2024_10-39-50.005.png": {
+      "1": {
+        "foreground_pixels": 23682,
+        "unseen_foreground_pixels": 1194,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 23651,
+        "unseen_foreground_pixels": 1193,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 23646,
+        "unseen_foreground_pixels": 1193,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000070_D_07-05-2024_10-39-51.466.png": {
+      "1": {
+        "foreground_pixels": 648,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 648,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 648,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000072_D_07-05-2024_10-39-54.428.png": {
+      "1": {
+        "foreground_pixels": 2766,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2762,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2761,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000073_D_07-05-2024_10-39-55.894.png": {
+      "1": {
+        "foreground_pixels": 796,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 796,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 796,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000075_D_07-05-2024_10-39-58.846.png": {
+      "1": {
+        "foreground_pixels": 2958,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2958,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2958,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000079_D_07-05-2024_10-40-04.588.png": {
+      "1": {
+        "foreground_pixels": 17175,
+        "unseen_foreground_pixels": 2849,
+        "n_components": 3,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 17169,
+        "unseen_foreground_pixels": 2847,
+        "n_components": 3,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 17167,
+        "unseen_foreground_pixels": 2847,
+        "n_components": 3,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo2A_0000083_D_07-05-2024_10-40-09.734.png": {
+      "1": {
+        "foreground_pixels": 3266,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3265,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3265,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000001_D_07-05-2024_10-49-46.394.png": {
+      "1": {
+        "foreground_pixels": 1121,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1121,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1121,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000006_D_07-05-2024_10-49-52.266.png": {
+      "1": {
+        "foreground_pixels": 5291,
+        "unseen_foreground_pixels": 0,
+        "n_components": 8,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5282,
+        "unseen_foreground_pixels": 0,
+        "n_components": 7,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5281,
+        "unseen_foreground_pixels": 0,
+        "n_components": 7,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000008_D_07-05-2024_10-49-54.521.png": {
+      "1": {
+        "foreground_pixels": 33978,
+        "unseen_foreground_pixels": 3186,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          501,
+          1,
+          2,
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 33927,
+        "unseen_foreground_pixels": 3176,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          498
+        ]
+      },
+      "255": {
+        "foreground_pixels": 33920,
+        "unseen_foreground_pixels": 3175,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          498
+        ]
+      }
+    },
+    "Rollo3A_0000010_D_07-05-2024_10-49-56.747.png": {
+      "1": {
+        "foreground_pixels": 1119,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1115,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1114,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000011_D_07-05-2024_10-49-57.824.png": {
+      "1": {
+        "foreground_pixels": 28338,
+        "unseen_foreground_pixels": 15,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 28311,
+        "unseen_foreground_pixels": 15,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 28300,
+        "unseen_foreground_pixels": 15,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000013_D_07-05-2024_10-49-59.988.png": {
+      "1": {
+        "foreground_pixels": 27947,
+        "unseen_foreground_pixels": 2774,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27901,
+        "unseen_foreground_pixels": 2770,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27895,
+        "unseen_foreground_pixels": 2770,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo3A_0000021_D_07-05-2024_10-50-08.231.png": {
+      "1": {
+        "foreground_pixels": 14114,
+        "unseen_foreground_pixels": 2912,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 14095,
+        "unseen_foreground_pixels": 2910,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 14093,
+        "unseen_foreground_pixels": 2909,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000005_D_09-05-2024_10-40-51.417.png": {
+      "1": {
+        "foreground_pixels": 27659,
+        "unseen_foreground_pixels": 3809,
+        "n_components": 9,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27609,
+        "unseen_foreground_pixels": 3804,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27597,
+        "unseen_foreground_pixels": 3801,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000007_D_09-05-2024_10-40-53.229.png": {
+      "1": {
+        "foreground_pixels": 1741,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1741,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1741,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000008_D_09-05-2024_10-40-54.160.png": {
+      "1": {
+        "foreground_pixels": 2270,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2269,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2267,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000011_D_09-05-2024_10-40-56.872.png": {
+      "1": {
+        "foreground_pixels": 1470,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1470,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1470,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000012_D_09-05-2024_10-40-57.793.png": {
+      "1": {
+        "foreground_pixels": 27768,
+        "unseen_foreground_pixels": 467,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27747,
+        "unseen_foreground_pixels": 466,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27737,
+        "unseen_foreground_pixels": 466,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000017_D_09-05-2024_10-41-01.841.png": {
+      "1": {
+        "foreground_pixels": 5978,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5972,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5970,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000018_D_09-05-2024_10-41-02.662.png": {
+      "1": {
+        "foreground_pixels": 6680,
+        "unseen_foreground_pixels": 1395,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 6672,
+        "unseen_foreground_pixels": 1395,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 6671,
+        "unseen_foreground_pixels": 1395,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000020_D_09-05-2024_10-41-04.274.png": {
+      "1": {
+        "foreground_pixels": 13170,
+        "unseen_foreground_pixels": 0,
+        "n_components": 13,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 13156,
+        "unseen_foreground_pixels": 0,
+        "n_components": 6,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 13151,
+        "unseen_foreground_pixels": 0,
+        "n_components": 6,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000021_D_09-05-2024_10-41-05.036.png": {
+      "1": {
+        "foreground_pixels": 5810,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5808,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5806,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000023_D_09-05-2024_10-41-06.588.png": {
+      "1": {
+        "foreground_pixels": 552,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 552,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 552,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000026_D_09-05-2024_10-41-08.855.png": {
+      "1": {
+        "foreground_pixels": 38359,
+        "unseen_foreground_pixels": 5855,
+        "n_components": 8,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 38342,
+        "unseen_foreground_pixels": 5852,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 38329,
+        "unseen_foreground_pixels": 5852,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000028_D_09-05-2024_10-41-10.365.png": {
+      "1": {
+        "foreground_pixels": 3209,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3208,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3207,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000029_D_09-05-2024_10-41-11.082.png": {
+      "1": {
+        "foreground_pixels": 1065,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1065,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1064,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000030_D_09-05-2024_10-41-11.777.png": {
+      "1": {
+        "foreground_pixels": 2468,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2466,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2463,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000031_D_09-05-2024_10-41-12.532.png": {
+      "1": {
+        "foreground_pixels": 4044,
+        "unseen_foreground_pixels": 310,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4039,
+        "unseen_foreground_pixels": 309,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4038,
+        "unseen_foreground_pixels": 309,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000033_D_09-05-2024_10-41-13.993.png": {
+      "1": {
+        "foreground_pixels": 18613,
+        "unseen_foreground_pixels": 1941,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 18581,
+        "unseen_foreground_pixels": 1939,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 18571,
+        "unseen_foreground_pixels": 1938,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000036_D_09-05-2024_10-41-16.952.png": {
+      "1": {
+        "foreground_pixels": 8984,
+        "unseen_foreground_pixels": 797,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 8973,
+        "unseen_foreground_pixels": 797,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 8967,
+        "unseen_foreground_pixels": 796,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000038_D_09-05-2024_10-41-19.073.png": {
+      "1": {
+        "foreground_pixels": 4829,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4829,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4829,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000039_D_09-05-2024_10-41-20.163.png": {
+      "1": {
+        "foreground_pixels": 906,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 906,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 906,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000040_D_09-05-2024_10-41-21.231.png": {
+      "1": {
+        "foreground_pixels": 7244,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 7241,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 7236,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000041_D_09-05-2024_10-41-22.367.png": {
+      "1": {
+        "foreground_pixels": 12296,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 12296,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 12296,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000044_D_09-05-2024_10-41-25.764.png": {
+      "1": {
+        "foreground_pixels": 5284,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5284,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5282,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000049_D_09-05-2024_10-41-31.701.png": {
+      "1": {
+        "foreground_pixels": 2639,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2636,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2633,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000051_D_09-05-2024_10-41-34.127.png": {
+      "1": {
+        "foreground_pixels": 18181,
+        "unseen_foreground_pixels": 1502,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 18169,
+        "unseen_foreground_pixels": 1499,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 18160,
+        "unseen_foreground_pixels": 1499,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000052_D_09-05-2024_10-41-35.338.png": {
+      "1": {
+        "foreground_pixels": 7840,
+        "unseen_foreground_pixels": 1261,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 7837,
+        "unseen_foreground_pixels": 1261,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 7834,
+        "unseen_foreground_pixels": 1261,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000053_D_09-05-2024_10-41-36.553.png": {
+      "1": {
+        "foreground_pixels": 2904,
+        "unseen_foreground_pixels": 173,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2900,
+        "unseen_foreground_pixels": 173,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2897,
+        "unseen_foreground_pixels": 172,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000057_D_09-05-2024_10-41-41.426.png": {
+      "1": {
+        "foreground_pixels": 7529,
+        "unseen_foreground_pixels": 1102,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          1102
+        ]
+      },
+      "128": {
+        "foreground_pixels": 7520,
+        "unseen_foreground_pixels": 1099,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          1099
+        ]
+      },
+      "255": {
+        "foreground_pixels": 7518,
+        "unseen_foreground_pixels": 1099,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          1099
+        ]
+      }
+    },
+    "Rollo4A_0000059_D_09-05-2024_10-41-43.876.png": {
+      "1": {
+        "foreground_pixels": 849,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 848,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 848,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000060_D_09-05-2024_10-41-45.098.png": {
+      "1": {
+        "foreground_pixels": 729,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 729,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 729,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000062_D_09-05-2024_10-41-47.540.png": {
+      "1": {
+        "foreground_pixels": 951,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 950,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 948,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000067_D_09-05-2024_10-41-53.661.png": {
+      "1": {
+        "foreground_pixels": 891,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 891,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 891,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000071_D_09-05-2024_10-41-58.552.png": {
+      "1": {
+        "foreground_pixels": 18982,
+        "unseen_foreground_pixels": 1931,
+        "n_components": 9,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 18960,
+        "unseen_foreground_pixels": 1927,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 18959,
+        "unseen_foreground_pixels": 1926,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000073_D_09-05-2024_10-42-01.003.png": {
+      "1": {
+        "foreground_pixels": 27474,
+        "unseen_foreground_pixels": 30,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27442,
+        "unseen_foreground_pixels": 30,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27441,
+        "unseen_foreground_pixels": 30,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000077_D_09-05-2024_10-42-05.911.png": {
+      "1": {
+        "foreground_pixels": 20782,
+        "unseen_foreground_pixels": 527,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 20761,
+        "unseen_foreground_pixels": 525,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 20758,
+        "unseen_foreground_pixels": 525,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000079_D_09-05-2024_10-42-08.372.png": {
+      "1": {
+        "foreground_pixels": 10830,
+        "unseen_foreground_pixels": 344,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 10822,
+        "unseen_foreground_pixels": 344,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 10816,
+        "unseen_foreground_pixels": 344,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000081_D_09-05-2024_10-42-10.820.png": {
+      "1": {
+        "foreground_pixels": 6327,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 6324,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 6323,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000083_D_09-05-2024_10-42-13.292.png": {
+      "1": {
+        "foreground_pixels": 6548,
+        "unseen_foreground_pixels": 0,
+        "n_components": 8,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 6542,
+        "unseen_foreground_pixels": 0,
+        "n_components": 7,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 6533,
+        "unseen_foreground_pixels": 0,
+        "n_components": 7,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000087_D_09-05-2024_10-42-18.245.png": {
+      "1": {
+        "foreground_pixels": 1299,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1296,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1296,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000088_D_09-05-2024_10-42-19.481.png": {
+      "1": {
+        "foreground_pixels": 780,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 780,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 780,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000089_D_09-05-2024_10-42-20.725.png": {
+      "1": {
+        "foreground_pixels": 5605,
+        "unseen_foreground_pixels": 287,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5597,
+        "unseen_foreground_pixels": 287,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5595,
+        "unseen_foreground_pixels": 287,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000090_D_09-05-2024_10-42-21.962.png": {
+      "1": {
+        "foreground_pixels": 2062,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2057,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2057,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000091_D_09-05-2024_10-42-23.204.png": {
+      "1": {
+        "foreground_pixels": 17635,
+        "unseen_foreground_pixels": 3209,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 17609,
+        "unseen_foreground_pixels": 3206,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 17598,
+        "unseen_foreground_pixels": 3203,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000092_D_09-05-2024_10-42-24.450.png": {
+      "1": {
+        "foreground_pixels": 28742,
+        "unseen_foreground_pixels": 2847,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 28709,
+        "unseen_foreground_pixels": 2840,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 28689,
+        "unseen_foreground_pixels": 2839,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000093_D_09-05-2024_10-42-25.694.png": {
+      "1": {
+        "foreground_pixels": 11404,
+        "unseen_foreground_pixels": 1308,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 11398,
+        "unseen_foreground_pixels": 1307,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 11396,
+        "unseen_foreground_pixels": 1307,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000094_D_09-05-2024_10-42-26.935.png": {
+      "1": {
+        "foreground_pixels": 2061,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2059,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2059,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000097_D_09-05-2024_10-42-30.671.png": {
+      "1": {
+        "foreground_pixels": 5204,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5199,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5198,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000098_D_09-05-2024_10-42-31.922.png": {
+      "1": {
+        "foreground_pixels": 27339,
+        "unseen_foreground_pixels": 2268,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27311,
+        "unseen_foreground_pixels": 2267,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27308,
+        "unseen_foreground_pixels": 2267,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000101_D_09-05-2024_10-42-35.664.png": {
+      "1": {
+        "foreground_pixels": 5463,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5458,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5456,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000102_D_09-05-2024_10-42-36.914.png": {
+      "1": {
+        "foreground_pixels": 1586,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1585,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1585,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000104_D_09-05-2024_10-42-39.410.png": {
+      "1": {
+        "foreground_pixels": 3624,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3617,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3616,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000106_D_09-05-2024_10-42-41.907.png": {
+      "1": {
+        "foreground_pixels": 27295,
+        "unseen_foreground_pixels": 4616,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1,
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 27271,
+        "unseen_foreground_pixels": 4609,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27263,
+        "unseen_foreground_pixels": 4609,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000109_D_09-05-2024_10-42-45.654.png": {
+      "1": {
+        "foreground_pixels": 27386,
+        "unseen_foreground_pixels": 2613,
+        "n_components": 10,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27346,
+        "unseen_foreground_pixels": 2611,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27337,
+        "unseen_foreground_pixels": 2610,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000111_D_09-05-2024_10-42-48.159.png": {
+      "1": {
+        "foreground_pixels": 5584,
+        "unseen_foreground_pixels": 0,
+        "n_components": 9,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5578,
+        "unseen_foreground_pixels": 0,
+        "n_components": 8,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5577,
+        "unseen_foreground_pixels": 0,
+        "n_components": 8,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000114_D_09-05-2024_10-42-51.920.png": {
+      "1": {
+        "foreground_pixels": 669,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 667,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 667,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000116_D_09-05-2024_10-42-54.431.png": {
+      "1": {
+        "foreground_pixels": 619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000119_D_09-05-2024_10-42-58.201.png": {
+      "1": {
+        "foreground_pixels": 4320,
+        "unseen_foreground_pixels": 0,
+        "n_components": 6,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4320,
+        "unseen_foreground_pixels": 0,
+        "n_components": 6,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4320,
+        "unseen_foreground_pixels": 0,
+        "n_components": 6,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000120_D_09-05-2024_10-42-59.460.png": {
+      "1": {
+        "foreground_pixels": 1951,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1949,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1948,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000121_D_09-05-2024_10-43-00.719.png": {
+      "1": {
+        "foreground_pixels": 3937,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3935,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3934,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000122_D_09-05-2024_10-43-01.979.png": {
+      "1": {
+        "foreground_pixels": 1172,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1171,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1170,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000127_D_09-05-2024_10-43-08.295.png": {
+      "1": {
+        "foreground_pixels": 6225,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 6220,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 6219,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000128_D_09-05-2024_10-43-09.562.png": {
+      "1": {
+        "foreground_pixels": 21378,
+        "unseen_foreground_pixels": 711,
+        "n_components": 5,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 21366,
+        "unseen_foreground_pixels": 711,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 21363,
+        "unseen_foreground_pixels": 711,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000129_D_09-05-2024_10-43-10.831.png": {
+      "1": {
+        "foreground_pixels": 2152,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2152,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2149,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000130_D_09-05-2024_10-43-12.096.png": {
+      "1": {
+        "foreground_pixels": 3401,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3397,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3394,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000131_D_09-05-2024_10-43-13.367.png": {
+      "1": {
+        "foreground_pixels": 4834,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4832,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4829,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000132_D_09-05-2024_10-43-14.630.png": {
+      "1": {
+        "foreground_pixels": 511,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 511,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 511,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000135_D_09-05-2024_10-43-18.436.png": {
+      "1": {
+        "foreground_pixels": 1370,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1369,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1369,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000138_D_09-05-2024_10-43-22.255.png": {
+      "1": {
+        "foreground_pixels": 14979,
+        "unseen_foreground_pixels": 1479,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 14966,
+        "unseen_foreground_pixels": 1478,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 14961,
+        "unseen_foreground_pixels": 1477,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000143_D_09-05-2024_10-43-28.614.png": {
+      "1": {
+        "foreground_pixels": 27987,
+        "unseen_foreground_pixels": 3052,
+        "n_components": 8,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27960,
+        "unseen_foreground_pixels": 3049,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27951,
+        "unseen_foreground_pixels": 3048,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000145_D_09-05-2024_10-43-31.164.png": {
+      "1": {
+        "foreground_pixels": 2345,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2344,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2343,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000146_D_09-05-2024_10-43-32.445.png": {
+      "1": {
+        "foreground_pixels": 6954,
+        "unseen_foreground_pixels": 1575,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 6947,
+        "unseen_foreground_pixels": 1574,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 6947,
+        "unseen_foreground_pixels": 1574,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000147_D_09-05-2024_10-43-33.719.png": {
+      "1": {
+        "foreground_pixels": 1183,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1183,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1182,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000148_D_09-05-2024_10-43-34.996.png": {
+      "1": {
+        "foreground_pixels": 753,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 753,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 753,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000149_D_09-05-2024_10-43-36.272.png": {
+      "1": {
+        "foreground_pixels": 4235,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4231,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4229,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000150_D_09-05-2024_10-43-37.551.png": {
+      "1": {
+        "foreground_pixels": 13631,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 13614,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 13606,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000151_D_09-05-2024_10-43-38.830.png": {
+      "1": {
+        "foreground_pixels": 1270,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1270,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1268,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000155_D_09-05-2024_10-43-43.976.png": {
+      "1": {
+        "foreground_pixels": 2991,
+        "unseen_foreground_pixels": 173,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2991,
+        "unseen_foreground_pixels": 173,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2991,
+        "unseen_foreground_pixels": 173,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo4A_0000157_D_09-05-2024_10-43-46.562.png": {
+      "1": {
+        "foreground_pixels": 3043,
+        "unseen_foreground_pixels": 804,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          804
+        ]
+      },
+      "128": {
+        "foreground_pixels": 3036,
+        "unseen_foreground_pixels": 802,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          802
+        ]
+      },
+      "255": {
+        "foreground_pixels": 3035,
+        "unseen_foreground_pixels": 802,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": [
+          802
+        ]
+      }
+    },
+    "Rollo4A_0000162_D_09-05-2024_10-43-53.182.png": {
+      "1": {
+        "foreground_pixels": 27243,
+        "unseen_foreground_pixels": 251,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 27229,
+        "unseen_foreground_pixels": 251,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 27224,
+        "unseen_foreground_pixels": 251,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000004_D_09-05-2024_10-50-24.343.png": {
+      "1": {
+        "foreground_pixels": 11158,
+        "unseen_foreground_pixels": 1355,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 11156,
+        "unseen_foreground_pixels": 1355,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 11152,
+        "unseen_foreground_pixels": 1355,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000007_D_09-05-2024_10-50-27.833.png": {
+      "1": {
+        "foreground_pixels": 4137,
+        "unseen_foreground_pixels": 1100,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4133,
+        "unseen_foreground_pixels": 1100,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4132,
+        "unseen_foreground_pixels": 1099,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000009_D_09-05-2024_10-50-30.180.png": {
+      "1": {
+        "foreground_pixels": 1754,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1754,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1753,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000011_D_09-05-2024_10-50-32.506.png": {
+      "1": {
+        "foreground_pixels": 15027,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 15022,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 15020,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000012_D_09-05-2024_10-50-33.686.png": {
+      "1": {
+        "foreground_pixels": 10893,
+        "unseen_foreground_pixels": 1897,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 10886,
+        "unseen_foreground_pixels": 1896,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 10876,
+        "unseen_foreground_pixels": 1894,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000014_D_09-05-2024_10-50-36.018.png": {
+      "1": {
+        "foreground_pixels": 2862,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2857,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2855,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000018_D_09-05-2024_10-50-40.721.png": {
+      "1": {
+        "foreground_pixels": 911,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 911,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 911,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000019_D_09-05-2024_10-50-41.906.png": {
+      "1": {
+        "foreground_pixels": 29301,
+        "unseen_foreground_pixels": 568,
+        "n_components": 7,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 29276,
+        "unseen_foreground_pixels": 566,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 29274,
+        "unseen_foreground_pixels": 566,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000020_D_09-05-2024_10-50-43.080.png": {
+      "1": {
+        "foreground_pixels": 5901,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5900,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5899,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000025_D_09-05-2024_10-50-48.868.png": {
+      "1": {
+        "foreground_pixels": 3163,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3161,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3161,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000028_D_09-05-2024_10-50-52.257.png": {
+      "1": {
+        "foreground_pixels": 12132,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 12131,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 12127,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000029_D_09-05-2024_10-50-53.415.png": {
+      "1": {
+        "foreground_pixels": 16320,
+        "unseen_foreground_pixels": 1815,
+        "n_components": 7,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 16307,
+        "unseen_foreground_pixels": 1815,
+        "n_components": 4,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 16303,
+        "unseen_foreground_pixels": 1815,
+        "n_components": 4,
+        "partial_components": 2,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000032_D_09-05-2024_10-50-57.016.png": {
+      "1": {
+        "foreground_pixels": 4165,
+        "unseen_foreground_pixels": 120,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4160,
+        "unseen_foreground_pixels": 120,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4158,
+        "unseen_foreground_pixels": 120,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000033_D_09-05-2024_10-50-58.222.png": {
+      "1": {
+        "foreground_pixels": 3559,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3556,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3553,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo5A_0000038_D_09-05-2024_10-51-04.270.png": {
+      "1": {
+        "foreground_pixels": 11559,
+        "unseen_foreground_pixels": 542,
+        "n_components": 9,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 11551,
+        "unseen_foreground_pixels": 542,
+        "n_components": 7,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 11543,
+        "unseen_foreground_pixels": 542,
+        "n_components": 7,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000004_D_08-07-2024_11-18-26.393.png": {
+      "1": {
+        "foreground_pixels": 14319,
+        "unseen_foreground_pixels": 1056,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 14312,
+        "unseen_foreground_pixels": 1056,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 14310,
+        "unseen_foreground_pixels": 1056,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000005_D_08-07-2024_11-18-27.933.png": {
+      "1": {
+        "foreground_pixels": 21400,
+        "unseen_foreground_pixels": 2643,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 21395,
+        "unseen_foreground_pixels": 2641,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 21393,
+        "unseen_foreground_pixels": 2641,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000019_D_08-07-2024_11-18-48.054.png": {
+      "1": {
+        "foreground_pixels": 21513,
+        "unseen_foreground_pixels": 1126,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 21511,
+        "unseen_foreground_pixels": 1126,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 21511,
+        "unseen_foreground_pixels": 1126,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000022_D_08-07-2024_11-18-51.706.png": {
+      "1": {
+        "foreground_pixels": 1335,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1335,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1335,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000029_D_08-07-2024_11-19-00.225.png": {
+      "1": {
+        "foreground_pixels": 982,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 982,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 982,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000033_D_08-07-2024_11-19-04.870.png": {
+      "1": {
+        "foreground_pixels": 583,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 583,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 583,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000035_D_08-07-2024_11-19-07.320.png": {
+      "1": {
+        "foreground_pixels": 254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000039_D_08-07-2024_11-19-11.913.png": {
+      "1": {
+        "foreground_pixels": 398,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 398,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 398,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000041_D_08-07-2024_11-19-14.264.png": {
+      "1": {
+        "foreground_pixels": 836,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 835,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 835,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000045_D_08-07-2024_11-19-19.211.png": {
+      "1": {
+        "foreground_pixels": 564,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 564,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 564,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000049_D_08-07-2024_11-19-23.991.png": {
+      "1": {
+        "foreground_pixels": 5476,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 5474,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 5474,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000053_D_08-07-2024_11-19-28.629.png": {
+      "1": {
+        "foreground_pixels": 1011,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1011,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1011,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000057_D_08-07-2024_11-19-33.150.png": {
+      "1": {
+        "foreground_pixels": 522,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 522,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 522,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000060_D_08-07-2024_11-19-36.591.png": {
+      "1": {
+        "foreground_pixels": 572,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 572,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 571,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000064_D_08-07-2024_11-19-41.331.png": {
+      "1": {
+        "foreground_pixels": 765,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 765,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 765,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000070_D_08-07-2024_11-19-48.313.png": {
+      "1": {
+        "foreground_pixels": 716,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 716,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 715,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000080_D_08-07-2024_11-20-02.360.png": {
+      "1": {
+        "foreground_pixels": 1631,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1630,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1629,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000086_D_08-07-2024_11-20-12.429.png": {
+      "1": {
+        "foreground_pixels": 747,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 746,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 745,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000090_D_08-07-2024_11-20-19.117.png": {
+      "1": {
+        "foreground_pixels": 360,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 360,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 360,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000092_D_08-07-2024_11-20-22.695.png": {
+      "1": {
+        "foreground_pixels": 288,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 288,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 288,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000095_D_08-07-2024_11-20-28.181.png": {
+      "1": {
+        "foreground_pixels": 2190,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2190,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2190,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000098_D_08-07-2024_11-20-33.521.png": {
+      "1": {
+        "foreground_pixels": 10337,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 10331,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 10330,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000099_D_08-07-2024_11-20-35.012.png": {
+      "1": {
+        "foreground_pixels": 1814,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1814,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1814,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000102_D_08-07-2024_11-20-39.974.png": {
+      "1": {
+        "foreground_pixels": 304,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 304,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 304,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000112_D_08-07-2024_11-20-56.586.png": {
+      "1": {
+        "foreground_pixels": 727,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 725,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 725,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000119_D_08-07-2024_11-21-08.826.png": {
+      "1": {
+        "foreground_pixels": 981,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 980,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 980,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000135_D_08-07-2024_11-21-38.894.png": {
+      "1": {
+        "foreground_pixels": 1128,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1127,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1126,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo6A_0000141_D_08-07-2024_11-21-50.215.png": {
+      "1": {
+        "foreground_pixels": 15104,
+        "unseen_foreground_pixels": 2215,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 15096,
+        "unseen_foreground_pixels": 2215,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 15094,
+        "unseen_foreground_pixels": 2215,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000001_D_08-07-2024_11-26-19.544.png": {
+      "1": {
+        "foreground_pixels": 32453,
+        "unseen_foreground_pixels": 356,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 32451,
+        "unseen_foreground_pixels": 356,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 32451,
+        "unseen_foreground_pixels": 356,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000029_D_08-07-2024_11-27-05.406.png": {
+      "1": {
+        "foreground_pixels": 4077,
+        "unseen_foreground_pixels": 97,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4077,
+        "unseen_foreground_pixels": 97,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4077,
+        "unseen_foreground_pixels": 97,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000034_D_08-07-2024_11-27-13.731.png": {
+      "1": {
+        "foreground_pixels": 1152,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1151,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1151,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000038_D_08-07-2024_11-27-20.700.png": {
+      "1": {
+        "foreground_pixels": 3619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 3619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 3619,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000045_D_08-07-2024_11-27-33.106.png": {
+      "1": {
+        "foreground_pixels": 1058,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1058,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1058,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000051_D_08-07-2024_11-27-43.821.png": {
+      "1": {
+        "foreground_pixels": 1366,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1364,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1364,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000056_D_08-07-2024_11-27-52.812.png": {
+      "1": {
+        "foreground_pixels": 10380,
+        "unseen_foreground_pixels": 228,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 10375,
+        "unseen_foreground_pixels": 228,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 10373,
+        "unseen_foreground_pixels": 228,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000057_D_08-07-2024_11-27-54.608.png": {
+      "1": {
+        "foreground_pixels": 4207,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4206,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000069_D_08-07-2024_11-28-16.189.png": {
+      "1": {
+        "foreground_pixels": 19389,
+        "unseen_foreground_pixels": 1300,
+        "n_components": 9,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 19376,
+        "unseen_foreground_pixels": 1300,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 19375,
+        "unseen_foreground_pixels": 1300,
+        "n_components": 3,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000078_D_08-07-2024_11-28-32.459.png": {
+      "1": {
+        "foreground_pixels": 2254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2254,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000085_D_08-07-2024_11-28-45.148.png": {
+      "1": {
+        "foreground_pixels": 2968,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2968,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2967,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000092_D_08-07-2024_11-28-56.037.png": {
+      "1": {
+        "foreground_pixels": 33191,
+        "unseen_foreground_pixels": 2895,
+        "n_components": 6,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 33180,
+        "unseen_foreground_pixels": 2894,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 33179,
+        "unseen_foreground_pixels": 2894,
+        "n_components": 2,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000107_D_08-07-2024_11-29-19.321.png": {
+      "1": {
+        "foreground_pixels": 475,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 474,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 474,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000108_D_08-07-2024_11-29-20.866.png": {
+      "1": {
+        "foreground_pixels": 1627,
+        "unseen_foreground_pixels": 0,
+        "n_components": 3,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1626,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1625,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000128_D_08-07-2024_11-29-51.946.png": {
+      "1": {
+        "foreground_pixels": 4718,
+        "unseen_foreground_pixels": 0,
+        "n_components": 4,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4716,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4716,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000137_D_08-07-2024_11-30-05.947.png": {
+      "1": {
+        "foreground_pixels": 1777,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1777,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1777,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000149_D_08-07-2024_11-30-24.632.png": {
+      "1": {
+        "foreground_pixels": 4792,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 4792,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 4792,
+        "unseen_foreground_pixels": 0,
+        "n_components": 5,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000154_D_08-07-2024_11-30-32.440.png": {
+      "1": {
+        "foreground_pixels": 2399,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 2399,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 2399,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000165_D_08-07-2024_11-30-49.635.png": {
+      "1": {
+        "foreground_pixels": 45091,
+        "unseen_foreground_pixels": 6411,
+        "n_components": 12,
+        "partial_components": 1,
+        "fully_missed_component_areas": [
+          1
+        ]
+      },
+      "128": {
+        "foreground_pixels": 45059,
+        "unseen_foreground_pixels": 6407,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 45056,
+        "unseen_foreground_pixels": 6407,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000172_D_08-07-2024_11-31-00.577.png": {
+      "1": {
+        "foreground_pixels": 422,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 422,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 421,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000185_D_08-07-2024_11-31-20.937.png": {
+      "1": {
+        "foreground_pixels": 85140,
+        "unseen_foreground_pixels": 10578,
+        "n_components": 12,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 85104,
+        "unseen_foreground_pixels": 10575,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 85092,
+        "unseen_foreground_pixels": 10573,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000192_D_08-07-2024_11-31-31.878.png": {
+      "1": {
+        "foreground_pixels": 1787,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1787,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1787,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000196_D_08-07-2024_11-31-38.145.png": {
+      "1": {
+        "foreground_pixels": 785,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 785,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 785,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000200_D_08-07-2024_11-31-44.405.png": {
+      "1": {
+        "foreground_pixels": 660,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 658,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 658,
+        "unseen_foreground_pixels": 0,
+        "n_components": 2,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000212_D_08-07-2024_11-32-03.528.png": {
+      "1": {
+        "foreground_pixels": 48571,
+        "unseen_foreground_pixels": 3463,
+        "n_components": 4,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 48560,
+        "unseen_foreground_pixels": 3462,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 48560,
+        "unseen_foreground_pixels": 3462,
+        "n_components": 1,
+        "partial_components": 1,
+        "fully_missed_component_areas": []
+      }
+    },
+    "Rollo7A_0000216_D_08-07-2024_11-32-10.131.png": {
+      "1": {
+        "foreground_pixels": 1180,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "128": {
+        "foreground_pixels": 1179,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      },
+      "255": {
+        "foreground_pixels": 1178,
+        "unseen_foreground_pixels": 0,
+        "n_components": 1,
+        "partial_components": 0,
+        "fully_missed_component_areas": []
+      }
+    }
+  }
+}

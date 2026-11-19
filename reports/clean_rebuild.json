@@ -1,0 +1,13 @@
+{
+  "procedure": "Ran code/reproduce.py in an empty output directory, with only source scripts, the written protocol and the original archive. No metadata, feature cache or previous results supplied. Used the pinned local Python environment and existing ImageNet weights.",
+  "platform": "Apple M1, macOS, MPS; Python 3.13.2",
+  "elapsed_seconds": 722.0,
+  "clean_workflow_exit_code": 0,
+  "identical_decoded_results_excluding_wall_times": {
+    "crop_publication_scope.json": true,
+    "release_coverage.json": true,
+    "localization_study.json": true,
+    "localization_study_13018.json": true,
+    "localization_study_13019.json": true
+  }
+}
