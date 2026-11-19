@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the research software using the project citation below."
+title: "Crop placement in fabric anomaly detection"
+type: software
+authors:
+  - family-names: Majumder
+    given-names: Tinon Turja
+    affiliation: United International University
+repository-code: "https://github.com/Tinonturja/raw-fabrid-study"
