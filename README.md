@@ -1,12 +1,12 @@
 # Crop placement in fabric anomaly detection
 
-Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution. The manuscript is available as an [editable Word document](manuscript/manuscript.docx) and in [Markdown](manuscript/manuscript.md).
+Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution. Read the [manuscript PDF](manuscript/manuscript.pdf), edit the [Word document](manuscript/manuscript.docx), or browse the [Markdown source](manuscript/manuscript.md).
 
 This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The Markdown manuscript, source code, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
 
 **Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. The ranking for pixel localization changed when the evaluation included marked fabric outside the released windows. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
 
-The [illustrated research guide and code tutorial](output/pdf/fabric_inspection_research_guide.pdf) explains the fabrics, the two datasets and how to interpret the results. Four worked examples take you from checking the published scores to tracing a fabric tile through the detector.
+**For a first reading, open the [24-page learning guide](output/pdf/fabric_inspection_research_guide.pdf).** The [editable learning notes](reports/learning_notes.md) cover the same lessons. Read pages 3–10 for the fabric and metrics, pages 11–17 for code and practical labs, and pages 19–24 for the full methodology diagram, grouped statistics, second-look experiment and questions with answers. The [Q1 submission assessment](reports/q1_submission_assessment.docx) explains venue fit and the limits of the evidence.
 
 The [follow-up on targeted rescanning](reports/budgeted_rescan.md) tests how to spend 25% more inspection windows after the first pass. It includes the GPU and model details, paired results on both collections, and instructions to repeat the experiment.
 
