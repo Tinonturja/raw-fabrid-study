@@ -1,5 +1,7 @@
 # Crop placement in fabric anomaly detection
 
+Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution. The manuscript is available as an [editable Word document](manuscript/manuscript.docx) and in [Markdown](manuscript/manuscript.md).
+
 This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The Markdown manuscript, source code, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
 
 **Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. The ranking for pixel localization changed when the evaluation included marked fabric outside the released windows. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
