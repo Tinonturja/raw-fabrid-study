@@ -1,0 +1,11 @@
+# Spatial detector sensitivity analysis
+
+This protocol was written after examining the earlier global-feature experiments and before computing spatial detector outcomes. The study is exploratory. Seed 13017 is the first previously specified split. The other two global-feature seeds remain descriptive sensitivity analyses.
+
+Use the same 1,000 clean reference tiles, 202 defective and 101 clean test parents, 48 clean calibration parents, 53 further clean evaluation parents, and the three previously assigned donor layouts. Read source images and COCO offsets directly. Run every condition on every parent.
+
+Use a resource-bounded PatchCore variant with fixed ImageNet ResNet-18 weights, 128 × 128 inputs and layer 2 and 3 features. Form 3 × 3 neighborhoods, align on the 16 × 16 feature lattice and obtain 256-dimensional embeddings. For the coreset use a seed-13017 random 64-dimensional projection, ten initial anchors and 256 approximate greedy farthest-point selections from all reference locations. Score each location by Euclidean distance to its exact nearest retained embedding in the original feature space. The scan uses no test masks. Keep nearest-cell upsampling and maximum fusion fixed. These implementation choices differ from the paper's high-capacity benchmark settings.
+
+Evaluate the released positions, disjoint grid, three same-roll donor reassignments and 91-window overlapping grid. Use maximum local distance for frame scores. Report AUROC on the 303 matched frames and alarm counts using the higher empirical 95th percentile of 48 clean calibration scores, with strict exceedance. On the 255 separate evaluation frames, report native-pixel average precision using pooled score bins of width 0.001 distance units, and a 0.002 sensitivity check. Report both observed pixels and all pixels, with unseen locations ranked below every observed score. Count an 8-connected region at mask threshold 128 as hit if any observed pixel strictly exceeds the frame alarm threshold. Report denominators, counts on each roll, and uncertainty from the small number of rolls. Calculate the actual amount of unobserved foreground separately. Interpret results as dependent on model and resolution.
+
+No external dataset is used to choose this configuration. A separate external experiment would need a documented policy and split before evaluating it.
