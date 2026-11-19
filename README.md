@@ -4,6 +4,8 @@ This research repository compares what a detector sees when defect annotations g
 
 **Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. The ranking for pixel localization changed when the evaluation included marked fabric outside the released windows. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
 
+The [illustrated research guide and code tutorial](output/pdf/fabric_inspection_research_guide.pdf) explains the fabrics, the two datasets and how to interpret the results. Four worked examples take you from checking the published scores to tracing a fabric tile through the detector.
+
 ## Check the results without image data
 
 From the project root, run the following command with Python 3. It uses the standard library and the committed scores.
