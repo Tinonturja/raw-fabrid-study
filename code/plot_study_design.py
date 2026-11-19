@@ -28,9 +28,9 @@ def save(fig, name):
 
 
 def methodology():
-    fig, ax = plt.subplots(figsize=(7.25,6.25))
+    fig, ax = plt.subplots(figsize=(7.25,6.55))
     fig.subplots_adjust(0,0,1,1)
-    ax.set(xlim=(0,100),ylim=(-1,100)); ax.axis('off')
+    ax.set(xlim=(0,100),ylim=(-5,100)); ax.axis('off')
 
     def box(x,top,w,h,title,body,color=INK,fill='#f3f6f7'):
         ax.add_patch(FancyBboxPatch((x,top-h),w,h,boxstyle='round,pad=0.14,rounding_size=1.2',
@@ -65,7 +65,7 @@ def methodology():
     box(1,25,48,12,'Frame detection','Frame AUROC · clean-calibrated alarms\nCount defects flagged and false alarms.')
     box(51,25,48,12,'Localization','Observed-area and whole-frame pixel AP\nCount connected defect regions hit.')
     join(13,9,False)
-    box(1,9,98,9,'Sensitivity and follow-up','Paired whole-group resampling · group deletion · targeted versus preset rescans at 25% extra windows.')
+    box(1,9,98,13,'Sensitivity and follow-up','Both datasets: paired group resampling, group deletion and equal-budget rescanning.\nRAW-FABRID: leave one roll out, refit ResNet-18 and Swin-T on the other rolls, compare both pixel areas.')
     save(fig,'methodology')
 
 

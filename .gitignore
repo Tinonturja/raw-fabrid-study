@@ -23,3 +23,5 @@ __pycache__/
 !/results/rescan_coverage.json
 !/results/guided_group_histograms.json
 !/results/cluster_statistics.json
+!/results/unseen_roll/
+!/results/unseen_roll/**

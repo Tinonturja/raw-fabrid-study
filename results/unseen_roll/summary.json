@@ -1,0 +1,980 @@
+{
+  "protocol_sha256": "88b3c88ab0a4283bfe8cd7be73fb953fc4e2ebd1db9e1de03e1d54e39ae18769",
+  "roll_populations": {
+    "Rollo1A": {
+      "frames": 87,
+      "defects": 21,
+      "primary_pixel_frames": 28,
+      "primary_auc_frames": 34,
+      "foreground": 119588,
+      "unseen_foreground": 7981
+    },
+    "Rollo2A": {
+      "frames": 82,
+      "defects": 27,
+      "primary_pixel_frames": 33,
+      "primary_auc_frames": 38,
+      "foreground": 453129,
+      "unseen_foreground": 37513
+    },
+    "Rollo3A": {
+      "frames": 20,
+      "defects": 7,
+      "primary_pixel_frames": 9,
+      "primary_auc_frames": 10,
+      "foreground": 111752,
+      "unseen_foreground": 8871
+    },
+    "Rollo4A": {
+      "frames": 170,
+      "defects": 78,
+      "primary_pixel_frames": 87,
+      "primary_auc_frames": 96,
+      "foreground": 665459,
+      "unseen_foreground": 46585
+    },
+    "Rollo5A": {
+      "frames": 33,
+      "defects": 15,
+      "primary_pixel_frames": 17,
+      "primary_auc_frames": 19,
+      "foreground": 132761,
+      "unseen_foreground": 7394
+    },
+    "Rollo6A": {
+      "frames": 124,
+      "defects": 28,
+      "primary_pixel_frames": 38,
+      "primary_auc_frames": 47,
+      "foreground": 106820,
+      "unseen_foreground": 7038
+    },
+    "Rollo7A": {
+      "frames": 193,
+      "defects": 26,
+      "primary_pixel_frames": 43,
+      "primary_auc_frames": 59,
+      "foreground": 315417,
+      "unseen_foreground": 25319
+    }
+  },
+  "summary": {
+    "primary": {
+      "original_resnet18": {
+        "released": {
+          "observed_ap": 0.23058050904640948,
+          "whole_ap": 0.21471196913017462,
+          "frame_auroc": 0.9358342993681339
+        },
+        "fixed": {
+          "observed_ap": 0.21898259130478379,
+          "whole_ap": 0.21898259130478379,
+          "frame_auroc": 0.9418674614163337
+        },
+        "difference": {
+          "observed_ap": 0.011597917741625722,
+          "whole_ap": -0.004270622174609158,
+          "frame_auroc": -0.006033162048199655
+        },
+        "mean_reversal": true,
+        "individual_reversals": [
+          "Rollo1A",
+          "Rollo2A",
+          "Rollo4A",
+          "Rollo5A",
+          "Rollo6A"
+        ],
+        "delete_one_difference": {
+          "Rollo1A": {
+            "observed_ap": 0.012284307070167972,
+            "whole_ap": -0.004049693653189704,
+            "frame_auroc": -0.010091192108735991
+          },
+          "Rollo2A": {
+            "observed_ap": 0.012363980203003985,
+            "whole_ap": -0.004169702195890149,
+            "frame_auroc": -0.003110518461395669
+          },
+          "Rollo3A": {
+            "observed_ap": 0.007530222265040261,
+            "whole_ap": -0.0076643362579134205,
+            "frame_auroc": -0.007038689056232931
+          },
+          "Rollo4A": {
+            "observed_ap": 0.010833202841134607,
+            "whole_ap": -0.004683221056597538,
+            "frame_auroc": -0.003952269303146516
+          },
+          "Rollo5A": {
+            "observed_ap": 0.011254166112111075,
+            "whole_ap": -0.00468500961961726,
+            "frame_auroc": -0.007038689056232931
+          },
+          "Rollo6A": {
+            "observed_ap": 0.010437899956059782,
+            "whole_ap": -0.00497174149275649,
+            "frame_auroc": -0.006098839432172783
+          },
+          "Rollo7A": {
+            "observed_ap": 0.016481645743862374,
+            "whole_ap": 0.0003293490537004534,
+            "frame_auroc": -0.004901936919480765
+          }
+        }
+      },
+      "resnet18": {
+        "released": {
+          "observed_ap": 0.1853944986294644,
+          "whole_ap": 0.1729119729197413,
+          "frame_auroc": 0.8909726864614083
+        },
+        "fixed": {
+          "observed_ap": 0.17248598685405642,
+          "whole_ap": 0.17248598685405642,
+          "frame_auroc": 0.8909010510514269
+        },
+        "difference": {
+          "observed_ap": 0.012908511775407996,
+          "whole_ap": 0.00042598606568489475,
+          "frame_auroc": 7.163540998129341e-05
+        },
+        "mean_reversal": false,
+        "individual_reversals": [
+          "Rollo1A",
+          "Rollo2A",
+          "Rollo5A"
+        ],
+        "delete_one_difference": {
+          "Rollo1A": {
+            "observed_ap": 0.01379318413067713,
+            "whole_ap": 0.0011964912168581684,
+            "frame_auroc": -0.001137426576023041
+          },
+          "Rollo2A": {
+            "observed_ap": 0.013774270368625737,
+            "whole_ap": 0.001232557381553404,
+            "frame_auroc": 0.0023282435563137436
+          },
+          "Rollo3A": {
+            "observed_ap": 0.010999518140666095,
+            "whole_ap": -0.0012628327966806255,
+            "frame_auroc": 8.357464497817564e-05
+          },
+          "Rollo4A": {
+            "observed_ap": 0.011389178831414054,
+            "whole_ap": -0.00020888280789171988,
+            "frame_auroc": 0.0017454929735631712
+          },
+          "Rollo5A": {
+            "observed_ap": 0.013945617100329502,
+            "whole_ap": 0.0015185813904859489,
+            "frame_auroc": 8.357464497817564e-05
+          },
+          "Rollo6A": {
+            "observed_ap": 0.01109408426273537,
+            "whole_ap": -0.00049054647582252,
+            "frame_auroc": -0.0061820895154228546
+          },
+          "Rollo7A": {
+            "observed_ap": 0.01536372959340808,
+            "whole_ap": 0.0009965345512916075,
+            "frame_auroc": 0.003580078141481683
+          }
+        }
+      },
+      "swin_t": {
+        "released": {
+          "observed_ap": 0.12141713918604227,
+          "whole_ap": 0.11344187509672099,
+          "frame_auroc": 0.8444763117695449
+        },
+        "fixed": {
+          "observed_ap": 0.11298769023026826,
+          "whole_ap": 0.11298769023026826,
+          "frame_auroc": 0.854096543946168
+        },
+        "difference": {
+          "observed_ap": 0.00842944895577399,
+          "whole_ap": 0.0004541848664527189,
+          "frame_auroc": -0.009620232176623127
+        },
+        "mean_reversal": false,
+        "individual_reversals": [
+          "Rollo1A",
+          "Rollo2A",
+          "Rollo5A",
+          "Rollo6A"
+        ],
+        "delete_one_difference": {
+          "Rollo1A": {
+            "observed_ap": 0.008573023869529304,
+            "whole_ap": 0.0006397502233653802,
+            "frame_auroc": -0.0161076090900652
+          },
+          "Rollo2A": {
+            "observed_ap": 0.009277419683501958,
+            "whole_ap": 0.0008486501381958679,
+            "frame_auroc": -0.010662436978226405
+          },
+          "Rollo3A": {
+            "observed_ap": 0.005587672718314551,
+            "whole_ap": -0.0018999903340294038,
+            "frame_auroc": 0.0046494116669555385
+          },
+          "Rollo4A": {
+            "observed_ap": 0.005641317388292687,
+            "whole_ap": -0.0017945424209377537,
+            "frame_auroc": -0.012291980274436398
+          },
+          "Rollo5A": {
+            "observed_ap": 0.009554844234508433,
+            "whole_ap": 0.0020588935779588713,
+            "frame_auroc": -0.008445826428282547
+          },
+          "Rollo6A": {
+            "observed_ap": 0.009681231891309325,
+            "whole_ap": 0.001814023317022371,
+            "frame_auroc": -0.018115834782501433
+          },
+          "Rollo7A": {
+            "observed_ap": 0.010690632904961668,
+            "whole_ap": 0.0015125095635936993,
+            "frame_auroc": -0.006367349349805447
+          }
+        }
+      }
+    },
+    "all": {
+      "resnet18": {
+        "released": {
+          "observed_ap": 0.1554319704175957,
+          "whole_ap": 0.14490857769409965,
+          "frame_auroc": 0.8635670050117552
+        },
+        "fixed": {
+          "observed_ap": 0.14262690378751056,
+          "whole_ap": 0.14262690378751056,
+          "frame_auroc": 0.8631548118406893
+        },
+        "difference": {
+          "observed_ap": 0.012805066630085196,
+          "whole_ap": 0.0022816739065891025,
+          "frame_auroc": 0.00041219317106595225
+        },
+        "mean_reversal": false,
+        "individual_reversals": [
+          "Rollo1A",
+          "Rollo2A",
+          "Rollo5A"
+        ],
+        "delete_one_difference": {
+          "Rollo1A": {
+            "observed_ap": 0.01357579152397549,
+            "whole_ap": 0.0029221707919570815,
+            "frame_auroc": -0.00048110892909068265
+          },
+          "Rollo2A": {
+            "observed_ap": 0.013575528276419788,
+            "whole_ap": 0.002865473105730005,
+            "frame_auroc": 0.003286728172079756
+          },
+          "Rollo3A": {
+            "observed_ap": 0.01122635259873233,
+            "whole_ap": 0.0007952332085202175,
+            "frame_auroc": -0.001350609798591566
+          },
+          "Rollo4A": {
+            "observed_ap": 0.01117144767538694,
+            "whole_ap": 0.0015456400741746543,
+            "frame_auroc": 0.0021066817021782036
+          },
+          "Rollo5A": {
+            "observed_ap": 0.01362452237382891,
+            "whole_ap": 0.003278471575150887,
+            "frame_auroc": 0.002950027835379417
+          },
+          "Rollo6A": {
+            "observed_ap": 0.011312542693220922,
+            "whole_ap": 0.0016382927440972703,
+            "frame_auroc": -0.008137659554391294
+          },
+          "Rollo7A": {
+            "observed_ap": 0.015149281269031993,
+            "whole_ap": 0.0029264358464936003,
+            "frame_auroc": 0.0045112927698978305
+          }
+        }
+      },
+      "swin_t": {
+        "released": {
+          "observed_ap": 0.08804703366218344,
+          "whole_ap": 0.08223950785320418,
+          "frame_auroc": 0.8347710258861557
+        },
+        "fixed": {
+          "observed_ap": 0.08085171561610872,
+          "whole_ap": 0.08085171561610872,
+          "frame_auroc": 0.8418680496537592
+        },
+        "difference": {
+          "observed_ap": 0.00719531804607471,
+          "whole_ap": 0.0013877922370954532,
+          "frame_auroc": -0.0070970237676034765
+        },
+        "mean_reversal": false,
+        "individual_reversals": [
+          "Rollo2A",
+          "Rollo5A"
+        ],
+        "delete_one_difference": {
+          "Rollo1A": {
+            "observed_ap": 0.006718905091628352,
+            "whole_ap": 0.0009056440666393046,
+            "frame_auroc": -0.0156151183974614
+          },
+          "Rollo2A": {
+            "observed_ap": 0.007997407930680045,
+            "whole_ap": 0.0017424904495968046,
+            "frame_auroc": -0.010075596191272518
+          },
+          "Rollo3A": {
+            "observed_ap": 0.0054752837095009554,
+            "whole_ap": -0.00014870740410766894,
+            "frame_auroc": 0.008203655421312425
+          },
+          "Rollo4A": {
+            "observed_ap": 0.00467033809624177,
+            "whole_ap": -0.0006559676373916421,
+            "frame_auroc": -0.009603718364322186
+          },
+          "Rollo5A": {
+            "observed_ap": 0.008244507565439005,
+            "whole_ap": 0.0029000103043077263,
+            "frame_auroc": -0.004576157358500366
+          },
+          "Rollo6A": {
+            "observed_ap": 0.008590737484871075,
+            "whole_ap": 0.0030373710085575406,
+            "frame_auroc": -0.014108234078077042
+          },
+          "Rollo7A": {
+            "observed_ap": 0.008670046444161765,
+            "whole_ap": 0.0019337048720661071,
+            "frame_auroc": -0.0039039974049032513
+          }
+        }
+      }
+    }
+  },
+  "per_roll": {
+    "primary": {
+      "original_resnet18": {
+        "Rollo1A": {
+          "released": {
+            "observed_ap": 0.19825606429072481,
+            "whole_ap": 0.1851802892172267,
+            "frame_auroc": 0.9413919413919414
+          },
+          "fixed": {
+            "observed_ap": 0.1907764825203526,
+            "whole_ap": 0.1907764825203526,
+            "frame_auroc": 0.923076923076923
+          },
+          "difference": {
+            "observed_ap": 0.007479581770372223,
+            "whole_ap": -0.005596193303125885,
+            "frame_auroc": 0.01831501831501836
+          }
+        },
+        "Rollo2A": {
+          "released": {
+            "observed_ap": 0.15095645702970542,
+            "whole_ap": 0.13907877200942606,
+            "frame_auroc": 0.9326599326599326
+          },
+          "fixed": {
+            "observed_ap": 0.14395491405634928,
+            "whole_ap": 0.14395491405634928,
+            "frame_auroc": 0.9562289562289562
+          },
+          "difference": {
+            "observed_ap": 0.007001542973356145,
+            "whole_ap": -0.004876142046923215,
+            "frame_auroc": -0.023569023569023573
+          }
+        },
+        "Rollo3A": {
+          "released": {
+            "observed_ap": 0.25761253427644093,
+            "whole_ap": 0.23770010600051886,
+            "frame_auroc": 1.0
+          },
+          "fixed": {
+            "observed_ap": 0.22160844367530244,
+            "whole_ap": 0.22160844367530244,
+            "frame_auroc": 1.0
+          },
+          "difference": {
+            "observed_ap": 0.03600409060113849,
+            "whole_ap": 0.016091662325216416,
+            "frame_auroc": 0.0
+          }
+        },
+        "Rollo4A": {
+          "released": {
+            "observed_ap": 0.2610273240368056,
+            "whole_ap": 0.24304608800955432,
+            "frame_auroc": 0.9451566951566952
+          },
+          "fixed": {
+            "observed_ap": 0.2448411168922332,
+            "whole_ap": 0.2448411168922332,
+            "frame_auroc": 0.9636752136752137
+          },
+          "difference": {
+            "observed_ap": 0.016186207144572418,
+            "whole_ap": -0.0017950288826788785,
+            "frame_auroc": -0.01851851851851849
+          }
+        },
+        "Rollo5A": {
+          "released": {
+            "observed_ap": 0.281569475177551,
+            "whole_ap": 0.26612475015427683,
+            "frame_auroc": 0.9333333333333333
+          },
+          "fixed": {
+            "observed_ap": 0.2679090476588374,
+            "whole_ap": 0.2679090476588374,
+            "frame_auroc": 0.9333333333333333
+          },
+          "difference": {
+            "observed_ap": 0.013660427518713603,
+            "whole_ap": -0.0017842975045605503,
+            "frame_auroc": 0.0
+          }
+        },
+        "Rollo6A": {
+          "released": {
+            "observed_ap": 0.2841682532903716,
+            "whole_ap": 0.26554632256962507,
+            "frame_auroc": 0.9323308270676692
+          },
+          "fixed": {
+            "observed_ap": 0.26561022883535024,
+            "whole_ap": 0.26561022883535024,
+            "frame_auroc": 0.9379699248120301
+          },
+          "difference": {
+            "observed_ap": 0.01855802445502136,
+            "whole_ap": -6.390626572516656e-05,
+            "frame_auroc": -0.005639097744360888
+          }
+        },
+        "Rollo7A": {
+          "released": {
+            "observed_ap": 0.180473455223267,
+            "whole_ap": 0.16630745595059435,
+            "frame_auroc": 0.8659673659673659
+          },
+          "fixed": {
+            "observed_ap": 0.19817790549506117,
+            "whole_ap": 0.19817790549506117,
+            "frame_auroc": 0.8787878787878789
+          },
+          "difference": {
+            "observed_ap": -0.01770445027179418,
+            "whole_ap": -0.03187044954446683,
+            "frame_auroc": -0.012820512820512997
+          }
+        }
+      },
+      "resnet18": {
+        "Rollo1A": {
+          "released": {
+            "observed_ap": 0.17910261603416247,
+            "whole_ap": 0.16730509354901454,
+            "frame_auroc": 0.9487179487179487
+          },
+          "fixed": {
+            "observed_ap": 0.1715021383903693,
+            "whole_ap": 0.1715021383903693,
+            "frame_auroc": 0.9413919413919414
+          },
+          "difference": {
+            "observed_ap": 0.00760047764379318,
+            "whole_ap": -0.004197044841354747,
+            "frame_auroc": 0.0073260073260073
+          }
+        },
+        "Rollo2A": {
+          "released": {
+            "observed_ap": 0.15397285203887728,
+            "whole_ap": 0.14184544999324958,
+            "frame_auroc": 0.9158249158249159
+          },
+          "fixed": {
+            "observed_ap": 0.14625889182277574,
+            "whole_ap": 0.14625889182277574,
+            "frame_auroc": 0.9292929292929293
+          },
+          "difference": {
+            "observed_ap": 0.007713960216101545,
+            "whole_ap": -0.00441344182952616,
+            "frame_auroc": -0.013468013468013407
+          }
+        },
+        "Rollo3A": {
+          "released": {
+            "observed_ap": 0.18065653781581256,
+            "whole_ap": 0.16685296347183118,
+            "frame_auroc": 1.0
+          },
+          "fixed": {
+            "observed_ap": 0.15629406423195316,
+            "whole_ap": 0.15629406423195316,
+            "frame_auroc": 1.0
+          },
+          "difference": {
+            "observed_ap": 0.0243624735838594,
+            "whole_ap": 0.010558899239878017,
+            "frame_auroc": 0.0
+          }
+        },
+        "Rollo4A": {
+          "released": {
+            "observed_ap": 0.25828569445267047,
+            "whole_ap": 0.2404963843204434,
+            "frame_auroc": 0.9373219373219374
+          },
+          "fixed": {
+            "observed_ap": 0.23626118501329882,
+            "whole_ap": 0.23626118501329882,
+            "frame_auroc": 0.9472934472934473
+          },
+          "difference": {
+            "observed_ap": 0.022024509439371648,
+            "whole_ap": 0.004235199307144583,
+            "frame_auroc": -0.009971509971509973
+          }
+        },
+        "Rollo5A": {
+          "released": {
+            "observed_ap": 0.23436050901278266,
+            "whole_ap": 0.22154504330378227,
+            "frame_auroc": 0.9666666666666667
+          },
+          "fixed": {
+            "observed_ap": 0.2276746291869037,
+            "whole_ap": 0.2276746291869037,
+            "frame_auroc": 0.9666666666666667
+          },
+          "difference": {
+            "observed_ap": 0.006685879825878954,
+            "whole_ap": -0.00612958588312143,
+            "frame_auroc": 0.0
+          }
+        },
+        "Rollo6A": {
+          "released": {
+            "observed_ap": 0.27275415861030394,
+            "whole_ap": 0.2548842630735896,
+            "frame_auroc": 0.8796992481203009
+          },
+          "fixed": {
+            "observed_ap": 0.2489590817588602,
+            "whole_ap": 0.2489590817588602,
+            "frame_auroc": 0.8421052631578947
+          },
+          "difference": {
+            "observed_ap": 0.023795076851443747,
+            "whole_ap": 0.005925181314729383,
+            "frame_auroc": 0.03759398496240618
+          }
+        },
+        "Rollo7A": {
+          "released": {
+            "observed_ap": 0.018629122441641315,
+            "whole_ap": 0.01745461272627845,
+            "frame_auroc": 0.5885780885780886
+          },
+          "fixed": {
+            "observed_ap": 0.02045191757423383,
+            "whole_ap": 0.02045191757423383,
+            "frame_auroc": 0.6095571095571096
+          },
+          "difference": {
+            "observed_ap": -0.0018227951325925154,
+            "whole_ap": -0.0029973048479553822,
+            "frame_auroc": -0.020979020979021046
+          }
+        }
+      },
+      "swin_t": {
+        "Rollo1A": {
+          "released": {
+            "observed_ap": 0.1256046936757723,
+            "whole_ap": 0.11737748692750694,
+            "frame_auroc": 0.8461538461538461
+          },
+          "fixed": {
+            "observed_ap": 0.11803669420253018,
+            "whole_ap": 0.11803669420253018,
+            "frame_auroc": 0.8168498168498168
+          },
+          "difference": {
+            "observed_ap": 0.007567999473242104,
+            "whole_ap": -0.0006592072750232492,
+            "frame_auroc": 0.02930402930402931
+          }
+        },
+        "Rollo2A": {
+          "released": {
+            "observed_ap": 0.0709500875947422,
+            "whole_ap": 0.06569585624132984,
+            "frame_auroc": 0.7946127946127945
+          },
+          "fixed": {
+            "observed_ap": 0.06760846300533602,
+            "whole_ap": 0.06760846300533602,
+            "frame_auroc": 0.797979797979798
+          },
+          "difference": {
+            "observed_ap": 0.003341624589406178,
+            "whole_ap": -0.001912606764006175,
+            "frame_auroc": -0.0033670033670034627
+          }
+        },
+        "Rollo3A": {
+          "released": {
+            "observed_ap": 0.14408986201003596,
+            "whole_ap": 0.1331889916988508,
+            "frame_auroc": 0.9047619047619049
+          },
+          "fixed": {
+            "observed_ap": 0.11860975562950533,
+            "whole_ap": 0.11860975562950533,
+            "frame_auroc": 1.0
+          },
+          "difference": {
+            "observed_ap": 0.025480106380530623,
+            "whole_ap": 0.014579236069345455,
+            "frame_auroc": -0.09523809523809512
+          }
+        },
+        "Rollo4A": {
+          "released": {
+            "observed_ap": 0.1643254783162258,
+            "whole_ap": 0.15311378854635954,
+            "frame_auroc": 0.9024216524216525
+          },
+          "fixed": {
+            "observed_ap": 0.139167239955564,
+            "whole_ap": 0.139167239955564,
+            "frame_auroc": 0.896011396011396
+          },
+          "difference": {
+            "observed_ap": 0.025158238360661805,
+            "whole_ap": 0.013946548590795554,
+            "frame_auroc": 0.0064102564102564985
+          }
+        },
+        "Rollo5A": {
+          "released": {
+            "observed_ap": 0.19909066544489123,
+            "whole_ap": 0.1882395207589397,
+            "frame_auroc": 0.9833333333333334
+          },
+          "fixed": {
+            "observed_ap": 0.1974135881615239,
+            "whole_ap": 0.1974135881615239,
+            "frame_auroc": 1.0
+          },
+          "difference": {
+            "observed_ap": 0.0016770772833673286,
+            "whole_ap": -0.009174067402584196,
+            "frame_auroc": -0.016666666666666607
+          }
+        },
+        "Rollo6A": {
+          "released": {
+            "observed_ap": 0.13241747339934348,
+            "whole_ap": 0.12379387621981632,
+            "frame_auroc": 0.8063909774436091
+          },
+          "fixed": {
+            "observed_ap": 0.1314987220567815,
+            "whole_ap": 0.1314987220567815,
+            "frame_auroc": 0.7650375939849624
+          },
+          "difference": {
+            "observed_ap": 0.0009187513425619742,
+            "whole_ap": -0.007704845836965193,
+            "frame_auroc": 0.0413533834586467
+          }
+        },
+        "Rollo7A": {
+          "released": {
+            "observed_ap": 0.013441713861284926,
+            "whole_ap": 0.012683605284243851,
+            "frame_auroc": 0.6736596736596736
+          },
+          "fixed": {
+            "observed_ap": 0.018579368600637015,
+            "whole_ap": 0.018579368600637015,
+            "frame_auroc": 0.7027972027972028
+          },
+          "difference": {
+            "observed_ap": -0.005137654739352088,
+            "whole_ap": -0.0058957633163931635,
+            "frame_auroc": -0.029137529137529206
+          }
+        }
+      }
+    },
+    "all": {
+      "resnet18": {
+        "Rollo1A": {
+          "released": {
+            "observed_ap": 0.14672443103566252,
+            "whole_ap": 0.1369824063633003,
+            "frame_auroc": 0.9256854256854257
+          },
+          "fixed": {
+            "observed_ap": 0.13854371376891908,
+            "whole_ap": 0.13854371376891908,
+            "frame_auroc": 0.9199134199134199
+          },
+          "difference": {
+            "observed_ap": 0.008180717266743437,
+            "whole_ap": -0.0015613074056187726,
+            "frame_auroc": 0.005772005772005762
+          }
+        },
+        "Rollo2A": {
+          "released": {
+            "observed_ap": 0.1165976721901659,
+            "whole_ap": 0.10719425414983194,
+            "frame_auroc": 0.9144781144781144
+          },
+          "fixed": {
+            "observed_ap": 0.10841537543808825,
+            "whole_ap": 0.10841537543808825,
+            "frame_auroc": 0.9313131313131313
+          },
+          "difference": {
+            "observed_ap": 0.008182296752077642,
+            "whole_ap": -0.0012211212882563133,
+            "frame_auroc": -0.01683501683501687
+          }
+        },
+        "Rollo3A": {
+          "released": {
+            "observed_ap": 0.142587392512344,
+            "whole_ap": 0.13151035978914402,
+            "frame_auroc": 0.9450549450549451
+          },
+          "fixed": {
+            "observed_ap": 0.12031004169414161,
+            "whole_ap": 0.12031004169414161,
+            "frame_auroc": 0.9340659340659341
+          },
+          "difference": {
+            "observed_ap": 0.022277350818202396,
+            "whole_ap": 0.01120031809500241,
+            "frame_auroc": 0.010989010989011061
+          }
+        },
+        "Rollo4A": {
+          "released": {
+            "observed_ap": 0.22938926175054505,
+            "whole_ap": 0.2134803582933461,
+            "frame_auroc": 0.9282329988851729
+          },
+          "fixed": {
+            "observed_ap": 0.20678248139227032,
+            "whole_ap": 0.20678248139227032,
+            "frame_auroc": 0.9379877369007804
+          },
+          "difference": {
+            "observed_ap": 0.022606780358274736,
+            "whole_ap": 0.006697876901075789,
+            "frame_auroc": -0.009754738015607556
+          }
+        },
+        "Rollo5A": {
+          "released": {
+            "observed_ap": 0.2102476671077353,
+            "whole_ap": 0.19866022283533077,
+            "frame_auroc": 0.9111111111111111
+          },
+          "fixed": {
+            "observed_ap": 0.20235933494011238,
+            "whole_ap": 0.20235933494011238,
+            "frame_auroc": 0.9259259259259259
+          },
+          "difference": {
+            "observed_ap": 0.007888332167622913,
+            "whole_ap": -0.0036991121047816045,
+            "frame_auroc": -0.014814814814814836
+          }
+        },
+        "Rollo6A": {
+          "released": {
+            "observed_ap": 0.23751710912674415,
+            "whole_ap": 0.2218988597570134,
+            "frame_auroc": 0.869047619047619
+          },
+          "fixed": {
+            "observed_ap": 0.2157568988754733,
+            "whole_ap": 0.2157568988754733,
+            "frame_auroc": 0.8173363095238095
+          },
+          "difference": {
+            "observed_ap": 0.02176021025127084,
+            "whole_ap": 0.006141960881540093,
+            "frame_auroc": 0.05171130952380942
+          }
+        },
+        "Rollo7A": {
+          "released": {
+            "observed_ap": 0.004960259199973206,
+            "whole_ap": 0.0046335826707309125,
+            "frame_auroc": 0.5513588208198987
+          },
+          "fixed": {
+            "observed_ap": 0.006220480403568799,
+            "whole_ap": 0.006220480403568799,
+            "frame_auroc": 0.575541225241824
+          },
+          "difference": {
+            "observed_ap": -0.0012602212035955924,
+            "whole_ap": -0.0015868977328378862,
+            "frame_auroc": -0.02418240442192532
+          }
+        }
+      },
+      "swin_t": {
+        "Rollo1A": {
+          "released": {
+            "observed_ap": 0.08725393508937537,
+            "whole_ap": 0.08148082057645487,
+            "frame_auroc": 0.8362193362193362
+          },
+          "fixed": {
+            "observed_ap": 0.07720013931662252,
+            "whole_ap": 0.07720013931662252,
+            "frame_auroc": 0.7922077922077921
+          },
+          "difference": {
+            "observed_ap": 0.010053795772752852,
+            "whole_ap": 0.004280681259832345,
+            "frame_auroc": 0.04401154401154406
+          }
+        },
+        "Rollo2A": {
+          "released": {
+            "observed_ap": 0.04073703996042266,
+            "whole_ap": 0.03761386418406731,
+            "frame_auroc": 0.7818181818181817
+          },
+          "fixed": {
+            "observed_ap": 0.03835426122197996,
+            "whole_ap": 0.03835426122197996,
+            "frame_auroc": 0.771043771043771
+          },
+          "difference": {
+            "observed_ap": 0.002382778738442698,
+            "whole_ap": -0.0007403970379126559,
+            "frame_auroc": 0.01077441077441077
+          }
+        },
+        "Rollo3A": {
+          "released": {
+            "observed_ap": 0.09007744763401657,
+            "whole_ap": 0.08316871365281352,
+            "frame_auroc": 0.8571428571428572
+          },
+          "fixed": {
+            "observed_ap": 0.07256192356849933,
+            "whole_ap": 0.07256192356849933,
+            "frame_auroc": 0.9560439560439561
+          },
+          "difference": {
+            "observed_ap": 0.017515524065517235,
+            "whole_ap": 0.010606790084314185,
+            "frame_auroc": -0.09890109890109888
+          }
+        },
+        "Rollo4A": {
+          "released": {
+            "observed_ap": 0.12633765098121544,
+            "whole_ap": 0.11764280472016111,
+            "frame_auroc": 0.8922798216276476
+          },
+          "fixed": {
+            "observed_ap": 0.10399245323614309,
+            "whole_ap": 0.10399245323614309,
+            "frame_auroc": 0.8843366778149389
+          },
+          "difference": {
+            "observed_ap": 0.022345197745072348,
+            "whole_ap": 0.013650351484018025,
+            "frame_auroc": 0.007943143812708775
+          }
+        },
+        "Rollo5A": {
+          "released": {
+            "observed_ap": 0.15635059422732736,
+            "whole_ap": 0.14776489713126023,
+            "frame_auroc": 0.9037037037037038
+          },
+          "fixed": {
+            "observed_ap": 0.15545041329743842,
+            "whole_ap": 0.15545041329743842,
+            "frame_auroc": 0.9259259259259259
+          },
+          "difference": {
+            "observed_ap": 0.000900180929888944,
+            "whole_ap": -0.007685516166178186,
+            "frame_auroc": -0.022222222222222143
+          }
+        },
+        "Rollo6A": {
+          "released": {
+            "observed_ap": 0.11175898305863426,
+            "whole_ap": 0.10442650125366067,
+            "frame_auroc": 0.8601190476190476
+          },
+          "fixed": {
+            "observed_ap": 0.11293618164533774,
+            "whole_ap": 0.11293618164533774,
+            "frame_auroc": 0.8251488095238096
+          },
+          "difference": {
+            "observed_ap": -0.0011771985867034818,
+            "whole_ap": -0.008509680391677071,
+            "frame_auroc": 0.034970238095237915
+          }
+        },
+        "Rollo7A": {
+          "released": {
+            "observed_ap": 0.00381358468429237,
+            "whole_ap": 0.0035789534540115243,
+            "frame_auroc": 0.7121142330723168
+          },
+          "fixed": {
+            "observed_ap": 0.005466637026739995,
+            "whole_ap": 0.005466637026739995,
+            "frame_auroc": 0.7383694150161216
+          },
+          "difference": {
+            "observed_ap": -0.0016530523424476249,
+            "whole_ap": -0.0018876835727284704,
+            "frame_auroc": -0.02625518194380483
+          }
+        }
+      }
+    }
+  }
+}
