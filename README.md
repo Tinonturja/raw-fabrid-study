@@ -6,6 +6,8 @@ This research repository compares what a detector sees when defect annotations g
 
 The [illustrated research guide and code tutorial](output/pdf/fabric_inspection_research_guide.pdf) explains the fabrics, the two datasets and how to interpret the results. Four worked examples take you from checking the published scores to tracing a fabric tile through the detector.
 
+The [follow-up on targeted rescanning](reports/budgeted_rescan.md) tests how to spend 25% more inspection windows after the first pass. It includes the GPU and model details, paired results on both collections, and instructions to repeat the experiment.
+
 ## Check the results without image data
 
 From the project root, run the following command with Python 3. It uses the standard library and the committed scores.

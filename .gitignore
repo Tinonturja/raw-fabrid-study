@@ -18,3 +18,6 @@ __pycache__/
 !/results/localization_study_13018.json
 !/results/localization_study_13019.json
 !/results/aitex_external.json
+!/results/budgeted_rescan_raw.json
+!/results/budgeted_rescan_aitex.json
+!/results/rescan_coverage.json

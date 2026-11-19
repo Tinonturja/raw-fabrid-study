@@ -111,6 +111,11 @@ def pixel_histogram(counts, fg_counts, bins, totals):
 def score_parent(image, mask, policies, backbone, bank, device, accumulate, histograms):
     coords = list(dict.fromkeys(pos for positions in policies.values() for pos in positions))
     fields = tile_scores(image, coords, backbone, bank, device)
+    return summarize_fields(coords, fields, mask, policies, accumulate, histograms)
+
+
+def summarize_fields(coords, fields, mask, policies, accumulate, histograms):
+    """Fuse already scored tiles in native coordinates and measure mask coverage."""
     values, ranks = np.unique(fields, return_inverse=True)
     if len(values) >= 65535 or not np.isfinite(values).all():
         raise ValueError('Unexpected score scale or number of ranks')
