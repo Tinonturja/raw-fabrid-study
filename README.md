@@ -4,9 +4,9 @@ Tinon Turja Majumder, United International University, Bangladesh, maintains thi
 
 This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The Markdown manuscript, source code, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
 
-**Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. The ranking for pixel localization changed when the evaluation included marked fabric outside the released windows. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
+**Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. In the original within-roll splits, the pixel-localization ranking changed when the evaluation included marked fabric outside the released windows. With entire rolls held out, both ResNet-18 and Swin-T retained an observed-area gain, while the mean whole-frame differences were each below 0.0005 on the matched cohort. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
 
-**For a first reading, open the [24-page learning guide](output/pdf/fabric_inspection_research_guide.pdf).** The [editable learning notes](reports/learning_notes.md) cover the same lessons. Read pages 3–10 for the fabric and metrics, pages 11–17 for code and practical labs, and pages 19–24 for the full methodology diagram, grouped statistics, second-look experiment and questions with answers. The [Q1 submission assessment](reports/q1_submission_assessment.docx) explains venue fit and the limits of the evidence.
+**For a first reading, open the [25-page learning guide](output/pdf/fabric_inspection_research_guide.pdf).** The [editable learning notes](reports/learning_notes.md) cover the same lessons. Read pages 3–10 for the fabric and metrics, pages 11–17 for code and practical labs, and pages 19–24 for the full methodology diagram, grouped statistics, second-look experiment and questions with answers. Page 25 explains the unseen-roll test and how to reproduce it. The [Q1 submission assessment](reports/q1_submission_assessment.docx) explains venue fit and the limits of the evidence.
 
 The [follow-up on targeted rescanning](reports/budgeted_rescan.md) tests how to spend 25% more inspection windows after the first pass. It includes the GPU and model details, paired results on both collections, and instructions to repeat the experiment.
 
@@ -69,3 +69,22 @@ The primary-split analysis resamples entire rolls or fabrics with paired predict
 ```
 
 To rebuild the guided counts from the original archives, run `.venv/bin/python code/rebuild_group_histograms.py` first. The program checks every pooled pixel-score bin against the original saved run. The GPU reconstruction and the grouped analysis use primary seed 13017.
+
+## Spatial detectors on unseen rolls
+
+The [holdout protocol](reports/unseen_roll_protocol.md) fixes the two models, training references, crop policies and sign rule. The [results and interpretation](reports/unseen_roll_results.md) include both cohorts and all seven rolls. The original article and overview can be read without downloading the image data.
+
+Using the pinned environment, recompute both AP denominators and frame AUROC from the [committed per-roll scores and counts](results/unseen_roll), then redraw the figure.
+
+```bash
+.venv/bin/python code/analyze_unseen_roll.py
+.venv/bin/python code/plot_unseen_roll.py
+```
+
+To rebuild both detectors on all seven rolls from the publisher archive, run the first command below. The next two commands demonstrate a separate rebuild of the smallest roll, including comparison of all scores and count bins. The first run requires the torchvision ImageNet-1K V1 checkpoints for ResNet-18 and Swin-T. PyTorch uses the Apple GPU, a CUDA GPU or the CPU according to availability. Different hardware or library versions can change floating-point scores.
+
+```bash
+.venv/bin/python code/unseen_roll.py
+.venv/bin/python code/unseen_roll.py --roll Rollo3A --output-dir data/unseen_roll_repeat
+.venv/bin/python code/check_unseen_roll.py --repeat-dir data/unseen_roll_repeat
+```

@@ -1,0 +1,26 @@
+{
+  "roll": "Rollo3A",
+  "selection": "Smallest fold (20 frames) for a separate end-to-end replay on the same Apple M1.",
+  "models": {
+    "resnet18": {
+      "frames": 20,
+      "record_sha256_excluding_times": "94790e8eb50a022213a5d38b6a962e1104c36daff514c4c427e765671eed322c",
+      "exact_match": true
+    },
+    "swin_t": {
+      "frames": 20,
+      "record_sha256_excluding_times": "1c51b15b65cce78f5c4e35c153e168e7b887d4969b6103a725aea7cc9365f017",
+      "exact_match": true
+    }
+  },
+  "excluded_fields": [
+    "fit_seconds",
+    "total_seconds"
+  ],
+  "canonicalization": "UTF-8 json.dumps(sort_keys=True, separators=(\",\", \":\")) after removing elapsed times",
+  "additional_checks": [
+    "cpu: matched direct Mahalanobis solves",
+    "mps: matched direct Mahalanobis solves",
+    "Both native maps, including overlap and unseen pixels, matched direct accumulation."
+  ]
+}
