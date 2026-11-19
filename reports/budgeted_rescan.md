@@ -48,6 +48,8 @@ Both deep detectors use an ImageNet-pretrained **ResNet-18** with frozen weights
 
 The refits selected exactly the same clean reference indices as the original spatial runs in both datasets. All reconstructed fixed- and dense-grid frame scores, whole-frame APs, frame AUROCs, region-hit counts and false-alarm counts matched the original controls. The standard-library verifier independently recomputes metrics from the saved predictions, checks the window counts, and recalculates the group deletions.
 
+For a clean rerun we cloned code commit `2d142ce` into a temporary folder, removed all three follow-up result files from that copy, and supplied the same source archives, installed environment and pretrained weights. Both GPU runs and the mask audit regenerated all three JSON files byte for byte. A separate calculation intersected individual foreground pixel coordinates with each window and matched every saved revisit count across all 305 defective images.
+
 From the project root, verify the stored evidence without downloading images:
 
 ```bash
