@@ -21,3 +21,5 @@ __pycache__/
 !/results/budgeted_rescan_raw.json
 !/results/budgeted_rescan_aitex.json
 !/results/rescan_coverage.json
+!/results/guided_group_histograms.json
+!/results/cluster_statistics.json

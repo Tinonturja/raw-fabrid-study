@@ -118,7 +118,7 @@ def compare(study, original, groups, frames, bank, selected, model, fixed, dense
                              for g, h in by_group.items()}}
 
 
-def run_raw(model, device):
+def run_raw(model, device, evaluate=compare):
     original = read_json(raw.RESULTS/'localization_study.json')
     archive_path = raw.DATA/'RAW_FABRID.zip'
     if sha256(archive_path) != PUBLISHER_SHA256:
@@ -139,10 +139,10 @@ def run_raw(model, device):
                         else np.zeros((image.height, image.width), dtype=bool))
                 yield p, image, mask
 
-        return compare('raw', original, groups, frames(), bank, selected, model, raw.FIXED, raw.OVERLAP, device)
+        return evaluate('raw', original, groups, frames(), bank, selected, model, raw.FIXED, raw.OVERLAP, device)
 
 
-def run_aitex(model, device):
+def run_aitex(model, device, evaluate=compare):
     original = read_json(raw.RESULTS/'aitex_external.json')
     with tempfile.TemporaryDirectory(prefix='rescan-aitex-') as temp:
         samples, _ = aitex.audit_sources(aitex.prepare_archives(False, Path(temp)))
@@ -162,7 +162,7 @@ def run_aitex(model, device):
         groups = {p: samples[p]['fabric'] for p in names}
         frames = ((p, Image.fromarray(aitex.gray(samples[p]['path'])).convert('RGB'),
                    aitex.source_mask(samples[p])) for p in names)
-        return compare('aitex', original, groups, frames, bank, selected, model, aitex.FIXED, aitex.OVERLAP, device)
+        return evaluate('aitex', original, groups, frames, bank, selected, model, aitex.FIXED, aitex.OVERLAP, device)
 
 
 @torch.inference_mode()

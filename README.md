@@ -58,3 +58,14 @@ python3 code/verify_results.py --external
 ```
 
 Alternatively, place the three original publisher archives in `data/aitex/` and omit the download flag. The analysis reads temporary extracted copies. The public repository contains derived measurements. Original AITEX files remain available from the [publisher](https://www.aitex.es/afid/).
+
+## Grouped statistics and publication figures
+
+The primary-split analysis resamples entire rolls or fabrics with paired predictions and a fixed reference bank. The [estimates, percentile intervals and group deletions](results/cluster_statistics.json) and [new figures in PNG and vector PDF](manuscript/figures) accompany the manuscript. From the project root, reproduce them from the committed counts and scores with the pinned environment.
+
+```bash
+.venv/bin/python code/cluster_statistics.py
+.venv/bin/python code/plot_study_design.py
+```
+
+To rebuild the guided counts from the original archives, run `.venv/bin/python code/rebuild_group_histograms.py` first. The program checks every pooled pixel-score bin against the original saved run. The GPU reconstruction and the grouped analysis use primary seed 13017.
