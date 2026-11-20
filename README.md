@@ -87,3 +87,7 @@ To rebuild both detectors on all seven rolls from the publisher archive, run the
 .venv/bin/python code/unseen_roll.py --roll Rollo3A --output-dir data/unseen_roll_repeat
 .venv/bin/python code/check_unseen_roll.py --repeat-dir data/unseen_roll_repeat
 ```
+
+## Replay Swin-T on Kaggle
+
+The [Kaggle notebook](notebooks/kaggle_swin_replay.ipynb) replays the existing frozen transformer detector, starting with roll 3A. Attach the project files and the original publisher ZIP as Kaggle inputs, enable a GPU, and update the two paths in the first code cell. Its output is a hardware reproduction check. The project stays private unless you choose to publish a Kaggle input or notebook.
