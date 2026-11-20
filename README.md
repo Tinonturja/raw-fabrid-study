@@ -1,10 +1,10 @@
 # Crop placement in fabric anomaly detection
 
-Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution. Read the [manuscript PDF](manuscript/manuscript.pdf), edit the [Word document](manuscript/manuscript.docx), or browse the [Markdown source](manuscript/manuscript.md).
+Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution.
 
-This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The Markdown manuscript, source code, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
+This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The source code, protocols, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
 
-**Start with the [draft manuscript](manuscript/manuscript.md).** On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. In the original within-roll splits, the pixel-localization ranking changed when the evaluation included marked fabric outside the released windows. With entire rolls held out, both ResNet-18 and Swin-T retained an observed-area gain, while the mean whole-frame differences were each below 0.0005 on the matched cohort. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
+On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. In the original within-roll splits, the pixel-localization ranking changed when the evaluation included marked fabric outside the released windows. With entire rolls held out, both ResNet-18 and Swin-T retained an observed-area gain, while the mean whole-frame differences were each below 0.0005 on the matched cohort. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
 
 **For a first reading, open the [25-page learning guide](output/pdf/fabric_inspection_research_guide.pdf).** The [editable learning notes](reports/learning_notes.md) cover the same lessons. Read pages 3–10 for the fabric and metrics, pages 11–17 for code and practical labs, and pages 19–24 for the full methodology diagram, grouped statistics, second-look experiment and questions with answers. Page 25 explains the unseen-roll test and how to reproduce it. The [Q1 submission assessment](reports/q1_submission_assessment.docx) explains venue fit and the limits of the evidence.
 
@@ -36,7 +36,6 @@ If the archive is already at `data/RAW_FABRID.zip`, omit `--download`. For a man
 
 | File | Purpose |
 |---|---|
-| [Manuscript](manuscript/manuscript.md) | Research question, methods, results, limitations and references |
 | [Full RAW-FABRID workflow](code/reproduce.py) | Original archive to audited metrics |
 | [Pixel coverage check](code/check_release_coverage.py) | Pixel equality of all 19,852 patches, native mask coverage and component losses |
 | [Crop reassignment experiment](code/check_crop_publication_scope.py) | Released, fixed, same-roll donor and overlapping controls |
@@ -72,7 +71,7 @@ To rebuild the guided counts from the original archives, run `.venv/bin/python c
 
 ## Spatial detectors on unseen rolls
 
-The [holdout protocol](reports/unseen_roll_protocol.md) fixes the two models, training references, crop policies and sign rule. The [results and interpretation](reports/unseen_roll_results.md) include both cohorts and all seven rolls. The original article and overview can be read without downloading the image data.
+The [holdout protocol](reports/unseen_roll_protocol.md) fixes the two models, training references, crop policies and sign rule. The [results and interpretation](reports/unseen_roll_results.md) include both cohorts and all seven rolls. The overview and saved results can be read without downloading the image data.
 
 Using the pinned environment, recompute both AP denominators and frame AUROC from the [committed per-roll scores and counts](results/unseen_roll), then redraw the figure.
 

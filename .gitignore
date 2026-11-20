@@ -25,3 +25,7 @@ __pycache__/
 !/results/cluster_statistics.json
 !/results/unseen_roll/
 !/results/unseen_roll/**
+
+/manuscript/manuscript.md
+/manuscript/manuscript.docx
+/manuscript/manuscript.pdf
