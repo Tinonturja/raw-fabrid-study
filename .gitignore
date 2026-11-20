@@ -29,3 +29,7 @@ __pycache__/
 /manuscript/manuscript.md
 /manuscript/manuscript.docx
 /manuscript/manuscript.pdf
+!/results/region_followup/
+/results/region_followup/*.npz
+!/results/region_followup/*.json
+!/results/fabrid_external.json

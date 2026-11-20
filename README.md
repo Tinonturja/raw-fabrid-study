@@ -91,3 +91,7 @@ To rebuild both detectors on all seven rolls from the publisher archive, run the
 ## Replay Swin-T on Kaggle
 
 The [Kaggle notebook](notebooks/kaggle_swin_replay.ipynb) replays the existing frozen transformer detector, starting with roll 3A. Attach the project files and the original publisher ZIP as Kaggle inputs, enable a GPU, and update the two paths in the first code cell. Its output is a hardware reproduction check. The project stays private unless you choose to publish a Kaggle input or notebook.
+
+## Additional region and external analyses
+
+The [low-false-positive region analysis](reports/region_followup_results.md) replays both spatial models on the seven held-out RAW-FABRID rolls. The [FabriD v3 exploratory comparison](reports/fabrid_external_results.md) evaluates the same reference fits on a separate public collection, with a constructed mask-guided control. The protocols describe their scope and the results include the negative direct-transfer frame rankings.
