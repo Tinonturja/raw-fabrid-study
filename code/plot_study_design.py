@@ -28,45 +28,65 @@ def save(fig, name):
 
 
 def methodology():
-    fig, ax = plt.subplots(figsize=(7.25,6.55))
-    fig.subplots_adjust(0,0,1,1)
-    ax.set(xlim=(0,100),ylim=(-5,100)); ax.axis('off')
+    """Draw a monochrome swimlane flowchart of the research sequence."""
+    from matplotlib.patches import Rectangle
 
-    def box(x,top,w,h,title,body,color=INK,fill='#f3f6f7'):
-        ax.add_patch(FancyBboxPatch((x,top-h),w,h,boxstyle='round,pad=0.14,rounding_size=1.2',
-                                    facecolor=fill,edgecolor=color,linewidth=1))
-        ax.text(x+2,top-2.05,title,va='top',color=color,fontsize=10.2,fontweight='bold')
-        ax.text(x+2,top-5.6,body,va='top',fontsize=8.45,linespacing=1.23)
+    fig, ax = plt.subplots(figsize=(7.3, 6.1))
+    fig.subplots_adjust(0, 0, 1, 1)
+    ax.set(xlim=(0, 100), ylim=(0, 100))
+    ax.axis('off')
+    ink = '#17212a'
+    ax.add_patch(Rectangle((.5, .5), 99, 99, fill=False, edgecolor=ink, linewidth=1))
+    ax.text(2, 97.4, 'Fabric anomaly inspection  |  Research methodology', fontsize=10,
+            fontweight='bold', va='center', color=ink)
+    ax.plot([.5, 99.5], [94.5, 94.5], color=ink, lw=.8)
 
-    def arrow(x,y,to):
-        ax.annotate('',(x,to),(x,y),arrowprops={'arrowstyle':'-|>','lw':.95,
-                                                'color':LINE,'shrinkA':0,'shrinkB':.9})
+    lanes = [(77, 94.5, 'Source data'), (59, 77, 'Preparation'),
+             (41, 59, 'Scoring'), (23, 41, 'Evaluation'),
+             (.5, 23, 'Follow-up')]
+    for bottom, top, label in lanes:
+        ax.plot([.5, 99.5], [bottom, bottom], color=ink, lw=.6)
+        ax.text(5.5, (bottom+top)/2, label, rotation=90, va='center',
+                ha='center', fontsize=8, fontweight='bold', color=ink)
+    ax.plot([10.5, 10.5], [.5, 94.5], color=ink, lw=.8)
 
-    def join(top,bottom,branch):
-        mid=(top+bottom)/2
-        if branch:
-            ax.plot([50,50],[top,mid],color=LINE,lw=.95)
-            for x in (25,75): arrow(x,mid,bottom)
-        else:
-            for x in (25,75):ax.plot([x,x],[top,mid],color=LINE,lw=.95)
-            arrow(50,mid,bottom)
-        ax.plot([25,75],[mid,mid],color=LINE,lw=.95)
+    def box(x, y, width, height, title, body):
+        ax.add_patch(Rectangle((x, y), width, height, facecolor='white',
+                               edgecolor=ink, linewidth=.8))
+        ax.text(x+width/2, y+height-2, title, ha='center', va='top',
+                fontsize=8.4, fontweight='bold', color=ink)
+        ax.text(x+width/2, y+height-5.3, body, ha='center', va='top',
+                fontsize=7.1, linespacing=1.18, color=ink)
 
-    box(1,99,48,14,'A   RAW-FABRID','709 original frames · 7 rolls\n19,852 released crops verified pixel by pixel',BLUE,'#ecf4f8')
-    box(51,99,48,14,'B   AITEX','103 defective and 121 clean eligible strips\n6 fabrics · constructed guided positions',ORANGE,'#faf1eb')
-    join(85,80,False)
-    box(1,80,98,12,'Run independently within each dataset','Split clean frames into reference, calibration and evaluation sets. Hold out defects for scoring.')
-    join(68,63,True)
-    box(1,63,48,16,'Clean reference tiles','Frozen ImageNet ResNet-18\n1,000 RAW tiles or 960 AITEX tiles\nFit each detector on clean examples.')
-    box(51,63,48,16,'Windows on the same test frame','Guided · fixed · donor · dense overlap\nOnly guided and donor layouts derive from\ndefect-informed positions.')
-    join(47,42,False)
-    box(1,42,98,12,'Score each window','Global nearest-neighbor distance or spatial PatchCore variant. Fuse spatial scores at native coordinates.')
-    join(30,25,True)
-    box(1,25,48,12,'Frame detection','Frame AUROC · clean-calibrated alarms\nCount defects flagged and false alarms.')
-    box(51,25,48,12,'Localization','Observed-area and whole-frame pixel AP\nCount connected defect regions hit.')
-    join(13,9,False)
-    box(1,9,98,13,'Sensitivity and follow-up','Both datasets: paired group resampling, group deletion and equal-budget rescanning.\nRAW-FABRID: leave one roll out, refit ResNet-18 and Swin-T on the other rolls, compare both pixel areas.')
-    save(fig,'methodology')
+    def arrow(x, y1, y2):
+        ax.annotate('', xy=(x, y2), xytext=(x, y1),
+                    arrowprops=dict(arrowstyle='-|>', lw=.75, color=ink,
+                                    shrinkA=0, shrinkB=0, mutation_scale=8))
+
+    box(13, 81, 39, 10, 'RAW-FABRID',
+        '709 original frames · seven rolls\nPublisher-provided crop coordinates')
+    box(58, 81, 39, 10, 'AITEX',
+        'Six eligible fabrics\nConstructed mask-guided coordinates')
+    box(13, 63, 39, 10, 'Prepare RAW-FABRID',
+        'Clean reference, calibration and test frames\nReleased, fixed, donor and dense windows')
+    box(58, 63, 39, 10, 'Prepare AITEX',
+        'Independent clean reference and test sets\nGuided, fixed, donor and dense windows')
+    box(13, 45, 84, 10, 'Score paired windows',
+        'Frozen ResNet-18 global features and spatial PatchCore variant\nFuse spatial scores at native image coordinates')
+    box(13, 27, 39, 10, 'Frame detection',
+        'Frame AUROC and calibrated alarms\nDefective frames and clean false alarms')
+    box(58, 27, 39, 10, 'Defect localization',
+        'Pixel AP on observed and whole areas\nMarked-region coverage and detection')
+    box(13, 5, 39, 14, 'Both datasets',
+        'Paired group resampling and deletion\nEqual-budget targeted and preset rescans')
+    box(58, 5, 39, 14, 'RAW-FABRID follow-up',
+        'Hold out each roll in turn\nRefit spatial ResNet-18 and Swin-T')
+    for x in (32.5, 77.5):
+        arrow(x, 81, 73)
+        arrow(x, 63, 55)
+        arrow(x, 45, 37)
+        arrow(x, 27, 19)
+    save(fig, 'methodology')
 
 
 def legend(fig,labels,colors,markers):
