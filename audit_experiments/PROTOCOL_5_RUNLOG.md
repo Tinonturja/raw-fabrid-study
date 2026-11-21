@@ -24,3 +24,10 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
   - **Scheduling:** `run_p5_mvtec.sh` runs MVTec AD 2 Fabric after RAW-FABRID.
   - **The panel rule is unchanged** (Amendment 1, A7). The TSFabrics cluster gate alone decides whether TSFabrics or MVTec AD 2 Fabric is the fourth primary dataset, and the gate depends only on data counts. If TSFabrics passes, the MVTec results are reported as secondary. Running MVTec early does not change this.
   - **MVTec resampling unit, decided now:** the test images are lighting and shift variants of the same physical samples, so the bootstrap resamples whole samples (object IDs), not single images. This follows the same reasoning as the TSFabrics cluster rule in A5.
+- **About 04:35, TSFabrics gate (Amendment 1, A7), run on Kaggle in the author's account. No detector was run.**
+  - **First version invalid.** The first run counted any non-empty mask as usable. The annotation folders are split into `cutline` (normal production marks) and `defect`, so that run could have counted cutline masks. Its result is not used.
+  - **Corrected run.** `code/p5_tsfabrics_gate.py` (SHA-256 `59ae7b8c238c35a0c74646f4f2411b4e846c980240cea44484dffbdebad7cff2`) counts only non-cutline masks. Full log: `results_p5/tsfabrics/gate_v2_log.txt`.
+  - **Result:** 7 independent positive clusters have non-empty defect masks (C1, C2, C4, C5, C6, C7 on texture T1; C9 on T2). Every frame is 800 x 640 grayscale.
+  - **The gate passes**, and each positive cluster has normal clusters of the same texture for a leave-cluster-out bank.
+  - **Primary panel, frozen now, before any TSFabrics or MVTec AD 2 detector output:** RAW-FABRID, AITEX, TSFabrics, VisA. MVTec AD 2 Fabric is reported as secondary.
+  - **Open decoder question, to settle before TSFabrics scoring:** most masks are 0/255, but the C4 defect masks (T1_S174_I108_1) and some cutline masks contain intermediate values. The decoder threshold must be fixed from the mask files alone before any score exists.

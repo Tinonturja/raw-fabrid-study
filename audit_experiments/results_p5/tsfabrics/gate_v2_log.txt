@@ -1,0 +1,31 @@
+Kaggle notebook tinonturjamajumder/notebook441cee4749, version "P5 TSFabrics gate v2 defect masks only", run 22 Nov 2026 ~04:30 Asia/Dhaka.
+Script: code/p5_tsfabrics_gate.py (SHA-256 recorded in PROTOCOL_5_RUNLOG.md). Dataset: tinonturjamajumder/fabric-defect-dataset v1 (9.22 GB).
+Per scenario: cluster, frames, frame-label counts, image size (w, h), masks {type: (files, nonempty in sample of <=30, sampled values)}.
+
+T1_S148_I108_1 C1 frames 3262 labels {1: 2370, 2: 145, 4: 706, 5: 41} size [800, 640] masks {'cutline': (145, 30, [0, 255]), 'defect': (747, 30, [0, 255])}
+T1_S148_I108_2 C1 frames 4804 labels {1: 4428, 2: 209, 3: 167} size [800, 640] masks {'cutline': (209, 30, [0, 255]), 'defect': (167, 30, [0, 255])}
+T1_S164_I192_1 C2 frames 1020 labels {1: 967, 2: 43, 7: 10} size [800, 640] masks {'cutline': (43, 30, [0, 255]), 'defect': (20, 20, [0, 255])}
+T1_S164_I193_1 C2 frames 1037 labels {1: 987, 2: 40, 8: 10} size [800, 640] masks {'cutline': (40, 30, [0, 255]), 'defect': (10, 10, [0, 255])}
+T1_S164_I199_1 C2 frames 1212 labels {1: 1161, 2: 51} size [800, 640] masks {'cutline': (51, 30, [0, 255])}
+T1_S164_I36_1 C3 frames 1807 labels {1: 1733, 2: 74} size [800, 640] masks {'cutline': (74, 30, [0, 10, 11, 34, 38, 39, 40, 41, 47, 48, 52, 53, 56, 91, 93, 158, 162, 198, 199, 202])}
+T1_S179_I35_1 C3 frames 1807 labels {1: 1732, 2: 75} size [800, 640] masks {'cutline': (75, 30, [0, 10, 11, 33, 34, 38, 39, 40, 41, 43, 47, 48, 49, 51, 52, 53, 56, 90, 91, 93])}
+T1_S174_I108_1 C4 frames 617 labels {1: 390, 2: 74, 3: 60, 4: 65, 9: 28} size [800, 640] masks {'cutline': (74, 30, [0, 255]), 'defect': (153, 30, [0, 5, 6, 7, 8, 10, 11, 12, 24, 27, 32, 33, 34, 35, 37, 38, 39, 40, 41, 42])}
+T1_S174_I111_1 C5 frames 18630 labels {1: 17838, 2: 786, 6: 6} size [800, 640] masks {'cutline': (786, 30, [0, 255]), 'defect': (6, 6, [0, 255])}
+T1_S177_I108_1 C5 frames 16431 labels {1: 15749, 2: 682} size [800, 640] masks {'cutline': (682, 30, [0, 255])}
+T1_S478_I118_1 C6 frames 3247 labels {1: 2895, 2: 104, 4: 245, 5: 3} size [800, 640] masks {'cutline': (104, 30, [0, 255]), 'defect': (248, 30, [0, 255])}
+T1_S478_I118_2 C6 frames 3204 labels {1: 2961, 2: 126, 3: 117} size [800, 640] masks {'cutline': (126, 30, [0, 255]), 'defect': (117, 30, [0, 255])}
+T1_S555_I117_1 C7 frames 18465 labels {1: 15938, 2: 765, 4: 1762} size [800, 640] masks {'cutline': (765, 30, [0, 255]), 'defect': (1762, 30, [0, 255])}
+T2_S262_I45_1 C8 frames 1526 labels {1: 1461, 2: 65} size [800, 640] masks {'cutline': (65, 30, [0, 255])}
+T2_S262_I52_1 C8 frames 1622 labels {1: 1549, 2: 73} size [800, 640] masks {'cutline': (73, 30, [0, 255])}
+T2_S303_I44_1 C8 frames 1808 labels {1: 1725, 2: 83} size [800, 640] masks {'cutline': (83, 30, [0, 255])}
+T2_S287_I184_1 C9 frames 1807 labels {1: 1729, 2: 78} size [800, 640] masks {'cutline': (78, 30, [0, 255])}
+T2_S287_I185_1 C9 frames 1178 labels {1: 1051, 2: 51, 6: 61, 7: 15} size [800, 640] masks {'cutline': (51, 30, [0, 255]), 'defect': (75, 30, [0, 255])}
+T2_S466_I39_1 C10 frames 4290 labels {1: 4099, 2: 191} size [800, 640] masks {'cutline': (191, 30, [0, 48, 52, 199, 203, 255])}
+T3_S165_I175_1 C11 frames 1807 labels {1: 1731, 2: 76} size [800, 640] masks {'cutline': (76, 30, [0, 255])}
+T3_S165_I178_1 C11 frames 1808 labels {1: 1727, 2: 81} size [800, 640] masks {'cutline': (81, 30, [0, 255])}
+T3_S165_I178_2 C11 frames 1807 labels {1: 1733, 2: 74} size [800, 640] masks {'cutline': (74, 30, [0, 255])}
+
+positive_clusters_with_usable_defect_masks: C1, C2, C4, C5, C6, C7, C9 (7)
+normal_only_clusters: C3, C8, C10, C11
+gate: >= 5 eligible independent positive test clusters -> 7 -> PASSES
+positive clusters by texture: T1 C1 C2 C4 C5 C6 C7; T2 C9; T3 none

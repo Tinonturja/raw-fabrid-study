@@ -1,0 +1,1 @@
+Primary panel (frozen 22 Nov 2026 ~04:35 Asia/Dhaka, after the TSFabrics gate, before any TSFabrics/MVTec detector output): RAW-FABRID, AITEX, TSFabrics, VisA. Secondary: MVTec AD 2 Fabric.
