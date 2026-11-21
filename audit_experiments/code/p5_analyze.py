@@ -139,8 +139,8 @@ def main(a):
         dist = np.nanmean(np.stack([unit_diffs[u][k][0] for u in units]), 0)
         point = float(np.mean([unit_diffs[u][k][1] for u in units]))
         report['dataset_level'][k] = summarise(dist, point)
-    if a.dataset == 'rawfabrid':
-        # Amendment 1, A5: primary interval = paired bootstrap of the 7 roll differences (equal weights),
+    if a.dataset in ('rawfabrid', 'tsfabrics'):
+        # rolls (RAW-FABRID) or recording clusters (TSFabrics) carry separately fitted banks. Amendment 1, A5: primary interval = paired bootstrap of the 7 roll differences (equal weights),
         # reported with the exact sign-flip test; the image bootstrap above is secondary (conditional).
         report['roll_level'] = {}
         for k in sorted(names):
