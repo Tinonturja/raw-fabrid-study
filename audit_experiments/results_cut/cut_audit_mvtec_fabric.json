@@ -1,0 +1,50 @@
+{
+ "B_grid_full": {
+  "frames": 90,
+  "marked_pixels": 5647380,
+  "unseen_pct": 0.0,
+  "regions": 192,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 28.1,
+  "positive_patches": 336,
+  "sliver_patches_pct": 44.6,
+  "median_defect_fraction_of_positive_patch_pct": 1.66
+ },
+ "A_defect_aware_on_full_grid": {
+  "frames": 90,
+  "marked_pixels": 5647380,
+  "unseen_pct": 0.0,
+  "regions": 192,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 6.2,
+  "positive_patches": 336,
+  "sliver_patches_pct": 33.9,
+  "median_defect_fraction_of_positive_patch_pct": 7.32
+ },
+ "B_exact_grid_no_edge_tiles": {
+  "frames": 90,
+  "marked_pixels": 5647380,
+  "unseen_pct": 0.0,
+  "regions": 192,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 28.1,
+  "positive_patches": 330,
+  "sliver_patches_pct": 43.6,
+  "median_defect_fraction_of_positive_patch_pct": 1.79
+ },
+ "A_defect_aware_on_exact_grid": {
+  "frames": 90,
+  "marked_pixels": 5647380,
+  "unseen_pct": 0.0,
+  "regions": 192,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 6.2,
+  "positive_patches": 330,
+  "sliver_patches_pct": 34.5,
+  "median_defect_fraction_of_positive_patch_pct": 7.32
+ },
+ "image_size_hw": [
+  2048,
+  2448
+ ]
+}

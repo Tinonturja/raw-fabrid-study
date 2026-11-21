@@ -1,0 +1,40 @@
+18:33:29 Rollo1A fit {'coreset': 256, 'bank_sha256': 'b2b13353e2892f39423229f7c5816b8c78319f0bfe767347e99a0b56393886c1'} 6s
+18:33:36 Rollo1A 10/34 frames 13s
+18:33:43 Rollo1A 20/34 frames 20s
+18:33:51 Rollo1A 30/34 frames 28s
+18:33:54 Rollo1A done 31s
+18:33:58 Rollo2A fit {'coreset': 256, 'bank_sha256': '61f949a3cdaf6511fe946a560080c87f36c7b18bce6d3ff13cba258e6fd9dd29'} 5s
+18:34:05 Rollo2A 10/38 frames 12s
+18:34:14 Rollo2A 20/38 frames 20s
+18:34:21 Rollo2A 30/38 frames 28s
+18:34:28 Rollo2A done 34s
+18:34:33 Rollo3A fit {'coreset': 256, 'bank_sha256': 'd27506b7062d1af1fb74f152d57f06151d99978b46b892561fda06b0de9c475f'} 5s
+18:34:41 Rollo3A 10/10 frames 13s
+18:34:41 Rollo3A done 13s
+18:34:46 Rollo4A fit {'coreset': 256, 'bank_sha256': 'bb029b19a84697b38c8cf2a7b207110025b8d222b7ac47691e76f45e1ba168b0'} 6s
+18:34:54 Rollo4A 10/96 frames 14s
+18:35:03 Rollo4A 20/96 frames 22s
+18:35:12 Rollo4A 30/96 frames 31s
+18:35:19 Rollo4A 40/96 frames 39s
+18:35:28 Rollo4A 50/96 frames 48s
+18:35:35 Rollo4A 60/96 frames 55s
+18:35:43 Rollo4A 70/96 frames 63s
+18:35:52 Rollo4A 80/96 frames 71s
+18:35:59 Rollo4A 90/96 frames 79s
+18:36:05 Rollo4A done 84s
+18:36:09 Rollo5A fit {'coreset': 256, 'bank_sha256': '65ee1ec241d987a23fec04ec59410eca5955c0fab9d016a8f93ffaa44df7c5ad'} 5s
+18:36:17 Rollo5A 10/19 frames 12s
+18:36:25 Rollo5A done 20s
+18:36:29 Rollo6A fit {'coreset': 256, 'bank_sha256': 'c881a5b7f62fbb6b2c60159f47cee102ac3516629776c1baafb1bdec3518f18f'} 5s
+18:36:36 Rollo6A 10/47 frames 11s
+18:36:43 Rollo6A 20/47 frames 18s
+18:36:50 Rollo6A 30/47 frames 25s
+18:36:58 Rollo6A 40/47 frames 33s
+18:37:02 Rollo6A done 38s
+18:37:07 Rollo7A fit {'coreset': 256, 'bank_sha256': '78ece95975e33a490c56f076683a63822831165630e79b37a0892abfeffb7cc7'} 4s
+18:37:13 Rollo7A 10/59 frames 10s
+18:37:19 Rollo7A 20/59 frames 16s
+18:37:25 Rollo7A 30/59 frames 22s
+18:37:31 Rollo7A 40/59 frames 28s
+18:37:37 Rollo7A 50/59 frames 35s
+18:37:44 Rollo7A done 42s

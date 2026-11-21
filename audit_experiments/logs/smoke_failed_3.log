@@ -1,0 +1,29 @@
+18:21:54 fit features 0 / 1000
+18:21:55 fit features 160 / 1000
+18:21:57 fit features 320 / 1000
+18:21:59 fit features 480 / 1000
+18:22:01 fit features 640 / 1000
+18:22:02 fit features 800 / 1000
+18:22:04 fit features 960 / 1000
+18:22:04 coreset 0 / 10240
+18:22:54 coreset 2000 / 10240
+18:23:45 coreset 4000 / 10240
+18:24:41 coreset 6000 / 10240
+18:25:30 coreset 8000 / 10240
+18:26:21 coreset 10000 / 10240
+Traceback (most recent call last):
+  File "<study>/code/strong_patchcore.py", line 296, in <module>
+    main()
+    ~~~~^^
+  File "<data_root>/.venv/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+  File "<study>/code/strong_patchcore.py", line 286, in main
+    run_fold(archive, roll, det, refs, frames, released, cohorts, out_path)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<study>/code/strong_patchcore.py", line 191, in run_fold
+    fit = det.fit(archive, refs)
+  File "<study>/code/strong_patchcore.py", line 133, in fit
+    return {'candidates': len(X), 'coreset': k, 'dim': int(X.shape[1]),
+                              ^
+UnboundLocalError: cannot access local variable 'X' where it is not associated with a value
+FAILED

@@ -1,0 +1,362 @@
+{
+ "candle": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 405291,
+   "unseen_pct": 0.0,
+   "regions": 714,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 8.8,
+   "positive_patches": 277,
+   "sliver_patches_pct": 47.7,
+   "median_defect_fraction_of_positive_patch_pct": 1.06
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 405291,
+   "unseen_pct": 0.0,
+   "regions": 714,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 0.8,
+   "positive_patches": 277,
+   "sliver_patches_pct": 26.4,
+   "median_defect_fraction_of_positive_patch_pct": 3.52
+  },
+  "image_size": [
+   1168,
+   1284
+  ]
+ },
+ "capsules": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 816344,
+   "unseen_pct": 0.0,
+   "regions": 156,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 40.4,
+   "positive_patches": 196,
+   "sliver_patches_pct": 30.6,
+   "median_defect_fraction_of_positive_patch_pct": 2.52
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 816344,
+   "unseen_pct": 0.0,
+   "regions": 156,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 10.3,
+   "positive_patches": 196,
+   "sliver_patches_pct": 14.8,
+   "median_defect_fraction_of_positive_patch_pct": 11.15
+  },
+  "image_size": [
+   1000,
+   1500
+  ]
+ },
+ "cashew": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 2530212,
+   "unseen_pct": 0.0,
+   "regions": 152,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 29.6,
+   "positive_patches": 246,
+   "sliver_patches_pct": 29.7,
+   "median_defect_fraction_of_positive_patch_pct": 3.08
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 2530212,
+   "unseen_pct": 0.0,
+   "regions": 152,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 7.2,
+   "positive_patches": 246,
+   "sliver_patches_pct": 16.7,
+   "median_defect_fraction_of_positive_patch_pct": 5.04
+  },
+  "image_size": [
+   1176,
+   1274
+  ]
+ },
+ "chewinggum": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 1271411,
+   "unseen_pct": 0.0,
+   "regions": 217,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 48.4,
+   "positive_patches": 315,
+   "sliver_patches_pct": 37.8,
+   "median_defect_fraction_of_positive_patch_pct": 1.7
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 1271411,
+   "unseen_pct": 0.0,
+   "regions": 217,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 17.5,
+   "positive_patches": 315,
+   "sliver_patches_pct": 10.8,
+   "median_defect_fraction_of_positive_patch_pct": 6.85
+  },
+  "image_size": [
+   1118,
+   1342
+  ]
+ },
+ "fryum": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 5186101,
+   "unseen_pct": 0.0,
+   "regions": 550,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 14.5,
+   "positive_patches": 428,
+   "sliver_patches_pct": 31.1,
+   "median_defect_fraction_of_positive_patch_pct": 5.25
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 5186101,
+   "unseen_pct": 0.0,
+   "regions": 550,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 4.7,
+   "positive_patches": 428,
+   "sliver_patches_pct": 16.6,
+   "median_defect_fraction_of_positive_patch_pct": 37.57
+  },
+  "image_size": [
+   1000,
+   1500
+  ]
+ },
+ "macaroni1": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 108714,
+   "unseen_pct": 0.0,
+   "regions": 404,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 11.9,
+   "positive_patches": 171,
+   "sliver_patches_pct": 67.3,
+   "median_defect_fraction_of_positive_patch_pct": 0.56
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 108714,
+   "unseen_pct": 0.0,
+   "regions": 404,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 0.2,
+   "positive_patches": 171,
+   "sliver_patches_pct": 46.8,
+   "median_defect_fraction_of_positive_patch_pct": 1.07
+  },
+  "image_size": [
+   1000,
+   1500
+  ]
+ },
+ "macaroni2": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 87352,
+   "unseen_pct": 0.0,
+   "regions": 378,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 11.1,
+   "positive_patches": 158,
+   "sliver_patches_pct": 65.8,
+   "median_defect_fraction_of_positive_patch_pct": 0.68
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 87352,
+   "unseen_pct": 0.0,
+   "regions": 378,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 0.8,
+   "positive_patches": 158,
+   "sliver_patches_pct": 43.0,
+   "median_defect_fraction_of_positive_patch_pct": 1.08
+  },
+  "image_size": [
+   1000,
+   1500
+  ]
+ },
+ "pcb1": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 1398914,
+   "unseen_pct": 0.0,
+   "regions": 304,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 29.6,
+   "positive_patches": 286,
+   "sliver_patches_pct": 25.2,
+   "median_defect_fraction_of_positive_patch_pct": 2.67
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 1398914,
+   "unseen_pct": 0.0,
+   "regions": 304,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 6.6,
+   "positive_patches": 286,
+   "sliver_patches_pct": 4.2,
+   "median_defect_fraction_of_positive_patch_pct": 4.78
+  },
+  "image_size": [
+   1070,
+   1404
+  ]
+ },
+ "pcb2": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 620516,
+   "unseen_pct": 0.0,
+   "regions": 324,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 38.9,
+   "positive_patches": 246,
+   "sliver_patches_pct": 26.4,
+   "median_defect_fraction_of_positive_patch_pct": 2.71
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 620516,
+   "unseen_pct": 0.0,
+   "regions": 324,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 8.0,
+   "positive_patches": 246,
+   "sliver_patches_pct": 6.5,
+   "median_defect_fraction_of_positive_patch_pct": 5.71
+  },
+  "image_size": [
+   1070,
+   1404
+  ]
+ },
+ "pcb3": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 759972,
+   "unseen_pct": 0.0,
+   "regions": 280,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 31.1,
+   "positive_patches": 235,
+   "sliver_patches_pct": 26.4,
+   "median_defect_fraction_of_positive_patch_pct": 2.71
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 759972,
+   "unseen_pct": 0.0,
+   "regions": 280,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 6.8,
+   "positive_patches": 235,
+   "sliver_patches_pct": 8.1,
+   "median_defect_fraction_of_positive_patch_pct": 5.15
+  },
+  "image_size": [
+   960,
+   1562
+  ]
+ },
+ "pcb4": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 1983265,
+   "unseen_pct": 0.0,
+   "regions": 503,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 30.8,
+   "positive_patches": 325,
+   "sliver_patches_pct": 14.8,
+   "median_defect_fraction_of_positive_patch_pct": 6.49
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 1983265,
+   "unseen_pct": 0.0,
+   "regions": 503,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 11.1,
+   "positive_patches": 325,
+   "sliver_patches_pct": 4.0,
+   "median_defect_fraction_of_positive_patch_pct": 10.23
+  },
+  "image_size": [
+   1104,
+   1358
+  ]
+ },
+ "pipe_fryum": {
+  "B_grid": {
+   "frames": 100,
+   "marked_pixels": 2810275,
+   "unseen_pct": 0.0,
+   "regions": 289,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 26.6,
+   "positive_patches": 280,
+   "sliver_patches_pct": 33.2,
+   "median_defect_fraction_of_positive_patch_pct": 2.27
+  },
+  "A_defect_aware": {
+   "frames": 100,
+   "marked_pixels": 2810275,
+   "unseen_pct": 0.0,
+   "regions": 289,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 8.7,
+   "positive_patches": 280,
+   "sliver_patches_pct": 12.1,
+   "median_defect_fraction_of_positive_patch_pct": 5.82
+  },
+  "image_size": [
+   1154,
+   1300
+  ]
+ },
+ "ALL": {
+  "B_grid": {
+   "frames": 1200,
+   "marked_pixels": 17978367,
+   "unseen_pct": 0.0,
+   "regions": 4271,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 23.0,
+   "positive_patches": 3163,
+   "sliver_patches_pct": 34.0,
+   "median_defect_fraction_of_positive_patch_pct": 2.27
+  },
+  "A_defect_aware": {
+   "frames": 1200,
+   "marked_pixels": 17978367,
+   "unseen_pct": 0.0,
+   "regions": 4271,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 5.8,
+   "positive_patches": 3163,
+   "sliver_patches_pct": 15.5,
+   "median_defect_fraction_of_positive_patch_pct": 5.45
+  }
+ }
+}

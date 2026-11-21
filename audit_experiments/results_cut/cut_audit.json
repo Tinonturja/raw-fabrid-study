@@ -1,0 +1,50 @@
+{
+ "RAW-FABRID": {
+  "A_released_defect_aware": {
+   "frames": 202,
+   "marked_pixels": 1904926,
+   "unseen_pct": 7.386,
+   "regions": 371,
+   "regions_fully_unseen": 6,
+   "regions_split_no_whole_view_pct": 19.4,
+   "positive_patches": 711,
+   "sliver_patches_pct": 22.1,
+   "median_defect_fraction_of_positive_patch_pct": 4.02
+  },
+  "B_blind_grid_28": {
+   "frames": 202,
+   "marked_pixels": 1904926,
+   "unseen_pct": 0.0,
+   "regions": 371,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 41.0,
+   "positive_patches": 711,
+   "sliver_patches_pct": 24.6,
+   "median_defect_fraction_of_positive_patch_pct": 3.5
+  }
+ },
+ "AITEX": {
+  "A_constructed_defect_aware": {
+   "frames": 103,
+   "marked_pixels": 489335,
+   "unseen_pct": 0.0,
+   "regions": 119,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 10.9,
+   "positive_patches": 184,
+   "sliver_patches_pct": 48.4,
+   "median_defect_fraction_of_positive_patch_pct": 1.04
+  },
+  "B_blind_grid_16": {
+   "frames": 103,
+   "marked_pixels": 489335,
+   "unseen_pct": 0.0,
+   "regions": 119,
+   "regions_fully_unseen": 0,
+   "regions_split_no_whole_view_pct": 18.5,
+   "positive_patches": 184,
+   "sliver_patches_pct": 52.2,
+   "median_defect_fraction_of_positive_patch_pct": 0.84
+  }
+ }
+}

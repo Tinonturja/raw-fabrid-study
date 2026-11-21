@@ -1,0 +1,14 @@
+18:28:54 fit features 0 / 1000
+18:28:55 fit features 160 / 1000
+18:28:57 fit features 320 / 1000
+18:28:58 fit features 480 / 1000
+18:28:59 fit features 640 / 1000
+18:29:01 fit features 800 / 1000
+18:29:03 fit features 960 / 1000
+18:29:57 coreset 2000 / 10240
+18:30:47 coreset 4000 / 10240
+18:31:32 coreset 6000 / 10240
+18:32:16 coreset 8000 / 10240
+18:33:00 coreset 10000 / 10240
+18:33:06 Rollo3A fit {'candidates': 128000, 'coreset': 10240, 'dim': 384, 'bank_sha256': 'dd12b6e97bfc890f2a632ce1dfe3e4b3f675171c4bd3843a2ed530c97e711643'} 254s
+18:33:17 Rollo3A done 265s

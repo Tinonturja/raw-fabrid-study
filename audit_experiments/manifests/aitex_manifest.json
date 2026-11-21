@@ -1,0 +1,2226 @@
+{
+ "protocol": "Protocol 5, Amendment 1 (A7), AITEX cohort",
+ "source_record": {
+  "file": "aitex_external.json",
+  "protocol_sha256": "0fbf95b721e2ee1bdae75618723330bb6dfcdfac9c5bfe6ef8cea7f9a556ed93",
+  "seed": 13017
+ },
+ "decoder": "mask value >= 128, logical OR over _mask1/_mask2; converted to grayscale (L) first",
+ "layout_rule_practice_A": "original guided_layout: left = clip(x + (first+last)//2 - 128, 0, 3840) per fixed 256 column",
+ "exclusions": [
+  [
+   "0094_027_05.png",
+   "unsupported native dimensions",
+   [
+    256,
+    3796
+   ]
+  ],
+  [
+   "0100_025_08.png",
+   "missing or misaligned source mask"
+  ],
+  [
+   "0106_010_03.png",
+   "empty defect mask"
+  ]
+ ],
+ "fabrics_omitted": [
+  "05"
+ ],
+ "counts": {
+  "bank_train_clean": 60,
+  "calibration_clean": 30,
+  "evaluation_clean": 31,
+  "evaluation_defective": 103
+ },
+ "fabrics_in_cohort": [
+  "00",
+  "01",
+  "02",
+  "03",
+  "04",
+  "06"
+ ],
+ "defect_pixels_total": 485027,
+ "unseen_defect_pixels_original_layout": 150,
+ "pixel_hash_mismatches_vs_saved": [],
+ "images": {
+  "0001_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0001_000_03.png",
+   "sha256": "546db4fa6ecd12a74fc8353929df99f923879d3f2bdf0e7cd3b72d38cecf3192"
+  },
+  "0001_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0001_000_04.png",
+   "sha256": "e0087cf3c786aabc2a3604c192e78b076f6935a8dc1e919289974774c9a6926c"
+  },
+  "0002_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0002_000_01.png",
+   "sha256": "45fdf27139d1c06434ae12a0b798844127da6a826de466e30f1e604f16bacbfb"
+  },
+  "0002_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0002_000_04.png",
+   "sha256": "55a4911d85734de6ef9459e3471358635a6c3ce5158ece61c891a7a9ee82f79e"
+  },
+  "0002_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0002_000_06.png",
+   "sha256": "d0ac7ad3e14507c743496968bfa43e429366edcc9c80cd745e8f0f1cc352bd1a"
+  },
+  "0003_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0003_000_00.png",
+   "sha256": "44c5d88db737bd49d4b62eef623227691fb3da475ad316725c87878e8ffb14e9"
+  },
+  "0003_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0003_000_02.png",
+   "sha256": "4873b6ac321f6322ad6c7634fb94ebec448939b1e573b3382ff60062bd7e91f8"
+  },
+  "0004_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0004_000_02.png",
+   "sha256": "dd8d07f2e7bb10bf81b13fac013cde9e4087bd7517fa1a1c231e8fa6b8aeac1d"
+  },
+  "0004_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0004_000_03.png",
+   "sha256": "fdd8e2524a7ec8ca72a714a865ca1a6d11439dd29be9adb1e79fd00d324b3643"
+  },
+  "0005_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0005_000_00.png",
+   "sha256": "8819f916f491de4c3d144160dfd82d1e12a813562741506afe91dea653149431"
+  },
+  "0005_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0005_000_02.png",
+   "sha256": "6be6ec7fcfbb9aad3a7f7d3d029156c7d88bc72d18ce033a6c4efcc4bd4cd67a"
+  },
+  "0005_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0005_000_03.png",
+   "sha256": "af795e41f97428e1f58ceef9f44bb71413f4eace41a024a0fdd28e053ee915c3"
+  },
+  "0005_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0005_000_04.png",
+   "sha256": "f6dae5b5d8359d64348073e540825480ffb3af9ac827bc792590cb2f8419ee27"
+  },
+  "0005_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0005_000_06.png",
+   "sha256": "e532c68c32f350196dbff79af06565201b28311314cc045761618b0d4f9b9f44"
+  },
+  "0006_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0006_000_00.png",
+   "sha256": "7d88af033f04a33701901fa936af7ed0a56fcce812d5d8ab4ca755773bd81daf"
+  },
+  "0006_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0006_000_01.png",
+   "sha256": "b4c2b9e5090e4bd97df84e3a33c803e5edd5b99db08e54eb3610dc76942ded82"
+  },
+  "0006_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0006_000_03.png",
+   "sha256": "38cea2038e3df6b45018b0242ecf0beb8712b36e79d5981dc23f610bbc41bf5e"
+  },
+  "0006_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0006_000_04.png",
+   "sha256": "a1c1640a36831b0b0bd4645cbe68dddfc8f4d21830fbc0a70c731f244d03f9da"
+  },
+  "0006_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0006_000_06.png",
+   "sha256": "d999b5f1f2c64af67f02f4277934ca95d249df6fb02f3c4789de92686a790149"
+  },
+  "0007_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0007_000_01.png",
+   "sha256": "6d559fb4176296a7aa41108ce22abc8d754ca28b2153ffc085148815e28d4aac"
+  },
+  "0007_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0007_000_06.png",
+   "sha256": "f5822af6eca688524aa9efea0392342494857033ad4dcfa881cea74a22f48ebe"
+  },
+  "0008_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0008_000_01.png",
+   "sha256": "480b2f3d8d47817fffbad728d192553957ea475d95601b12c693ec9fa72f7c4f"
+  },
+  "0008_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0008_000_02.png",
+   "sha256": "3c6553bd3139f00919386edb2b02cb7bab6e1e2ad8020e02bfe0d1d42e4a3a6d"
+  },
+  "0008_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0008_000_03.png",
+   "sha256": "857dba388da79ec21ce4d5d28b7816d3de4ddee418a85327aa9aa6ace9621b54"
+  },
+  "0008_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0008_000_06.png",
+   "sha256": "7904d4b684d977f614e8befb53ff484b6e47be73db9b129e9cc784a92c404f39"
+  },
+  "0009_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0009_000_00.png",
+   "sha256": "30b29c746041eb7ce52d856181bd65da915d281be4ca216e2c7501980b330888"
+  },
+  "0009_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0009_000_02.png",
+   "sha256": "1b3d42a5aa19ec4cb14c383229b32d05d358a793c735cc6eb003fb9196229f62"
+  },
+  "0009_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0009_000_03.png",
+   "sha256": "493f8e99f30c05d7296d812734ae77791691c6fec67e55d4da88feb41b0e02c2"
+  },
+  "0010_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0010_000_01.png",
+   "sha256": "6af929aacea3ed4b5157d2e8e15110d78b00f8aa570ad22f3b6a397168c35eed"
+  },
+  "0010_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0010_000_02.png",
+   "sha256": "dabd942333243f8c5f770b9385867748f5037f767d01ce2b5aec632853bf19f5"
+  },
+  "0010_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0010_000_06.png",
+   "sha256": "6fac27c26fa4bce38dd73dd3faeaf58c7e5160986377c44686d8e5e00822c34a"
+  },
+  "0011_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0011_000_00.png",
+   "sha256": "c181e35335843976a9e0523e6e72841d6340e8097cd77be8751bd0e1212272d4"
+  },
+  "0011_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0011_000_01.png",
+   "sha256": "4fa3e16c846998bf4e527a55b2f9ac224a078d73886bb38fd253a2499f68f3ec"
+  },
+  "0011_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0011_000_04.png",
+   "sha256": "5e195744993f5eb676e4b2508eb4b9f7987fb185c38e0012d4e65fe5dbe93659"
+  },
+  "0012_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0012_000_03.png",
+   "sha256": "33f530d08ed034a4b98461bc5e43c2d3289259d05609cb5494c24d30c752d6da"
+  },
+  "0013_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0013_000_01.png",
+   "sha256": "64097d453e7bbebed2e6da026698a61edcbf8ed2a374fcee767a2d89487b94a5"
+  },
+  "0013_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0013_000_02.png",
+   "sha256": "14471d55c6912097fab93824e63590454dad6b20546d187b6fb6a5bc8c41532f"
+  },
+  "0013_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0013_000_03.png",
+   "sha256": "96797f00238e9bb0df23bc90ac9a4d01104a998cca7a903280ec07d13835223d"
+  },
+  "0013_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0013_000_04.png",
+   "sha256": "fd250e9371dfb21bea8b6ed3f2f8b6c182731429c0aa4666dd32c20de2cabb51"
+  },
+  "0014_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0014_000_00.png",
+   "sha256": "5e9fbd7fb19be63772d23a7a667a882a381eab442477c6c83cb76df2246ce2a0"
+  },
+  "0014_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0014_000_03.png",
+   "sha256": "152aafecd9fdb9a5dfe3f6f457ebf8019526c025dc892dfc07b97d5c71bd0e0f"
+  },
+  "0015_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0015_000_02.png",
+   "sha256": "0d3f4204ae7a1dfcfc658d3005d78cd342f7d137bede127bb48de54762de7925"
+  },
+  "0015_000_03.png": {
+   "role": "bank_train_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0015_000_03.png",
+   "sha256": "5df7fbf9aa3925c5ae2c8ab495f4075a1539407508ae35a7ce3c9d631bd4dafa"
+  },
+  "0015_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0015_000_04.png",
+   "sha256": "fc5998283be0d47337ea1e5b7344923cb1a502b11ec826451305aeed2eb6a260"
+  },
+  "0016_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0016_000_00.png",
+   "sha256": "f5095c86f97e78da6634b25be4a31456118938ac80766f13554bbde0d77ddac2"
+  },
+  "0016_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0016_000_04.png",
+   "sha256": "843efd134940e248df6cdbf49c058240e30fff7cd325252c397034430454cf1c"
+  },
+  "0016_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0016_000_06.png",
+   "sha256": "104f1a344a378c1efcae2bbfdb20619a98c9488f26e051a4578ad942810fd730"
+  },
+  "0017_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0017_000_00.png",
+   "sha256": "aedd996c00e5525492bc298c48e36061ffaf46f071840f6be68137e7b1e14a9e"
+  },
+  "0017_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0017_000_01.png",
+   "sha256": "ef17b305cfa5c4cad10c47977efc52248573494706fe5494982755c35e9b03c4"
+  },
+  "0017_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0017_000_06.png",
+   "sha256": "bf200981431ff9c0e06c1d6ac1035186ea333d50f293de8a3d11d1730a68eef4"
+  },
+  "0018_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0018_000_04.png",
+   "sha256": "7b77c30e3bc00ff116c2830de88fde50060238e1a50cbf724749eec277ed729a"
+  },
+  "0018_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0018_000_06.png",
+   "sha256": "21389c6cb569cef74cabbdf076a4f4b033ee04b3bd3fa3696f1389bcc1fd8332"
+  },
+  "0018_00_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0018_00_01.png",
+   "sha256": "121c99034cc8528ee9008b0c1d5fceb9971a814a19da76e80ac58d75e499fcf9"
+  },
+  "0019_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0019_000_00.png",
+   "sha256": "78e65d3ed157ef392fe3f86bd8256908ef4a77bcb0249bed704d1ae35d79141d"
+  },
+  "0019_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0019_000_02.png",
+   "sha256": "81d001a09fe3d80b1de05ec3cd57bd50dc112b7fc2200c5771076b4dfe7a9db8"
+  },
+  "0020_000_00.png": {
+   "role": "bank_train_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0020_000_00.png",
+   "sha256": "4733f0446baff501e92b512faaf26f86a203785105ba8402c21d0f46a9835039"
+  },
+  "0020_000_01.png": {
+   "role": "bank_train_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0020_000_01.png",
+   "sha256": "6b7415a64b6e3f094628b640ba9b76aeed703675ceb57d7944932ca7c1349868"
+  },
+  "0020_000_02.png": {
+   "role": "bank_train_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0020_000_02.png",
+   "sha256": "c026b11d75f34ddd8ec7c584335aaac0af56bfa074659b0b990a6a949a78d19b"
+  },
+  "0020_000_04.png": {
+   "role": "bank_train_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0020_000_04.png",
+   "sha256": "b2b9ae52e1d708f32c7adacf67122b3d3ef7c4b0e46d619bce379d263dd960cb"
+  },
+  "0020_000_06.png": {
+   "role": "bank_train_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0020_000_06.png",
+   "sha256": "6ba724af288caaadf7ae2efe640117cba93000c9694913b10376c44854a5d850"
+  },
+  "0001_000_01.png": {
+   "role": "calibration_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0001_000_01.png",
+   "sha256": "bf3d1118916d21209339a85ff1470118ce3d40d431b577fb6d3bf1bfa8651a51"
+  },
+  "0002_000_00.png": {
+   "role": "calibration_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0002_000_00.png",
+   "sha256": "b13688249c696f0e6aa17478b05eb3496e5e41a3c89e141140a9fca5b3ff7fb5"
+  },
+  "0002_000_03.png": {
+   "role": "calibration_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0002_000_03.png",
+   "sha256": "95331a704a1a921490018853c4db970b64c2d7da6c8ecb71d739da86a3555d6d"
+  },
+  "0004_000_04.png": {
+   "role": "calibration_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0004_000_04.png",
+   "sha256": "0c4a07275b91c56978852ff22375000e9ab3152beb20886f3f174e42eeb4410b"
+  },
+  "0004_000_06.png": {
+   "role": "calibration_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0004_000_06.png",
+   "sha256": "aef7369b14896c5a72864a9e270059ed923534a0a204633249e8592b620c37b4"
+  },
+  "0007_000_00.png": {
+   "role": "calibration_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0007_000_00.png",
+   "sha256": "a73fdecbcabdf56ea2481d7b9474e33b6e45d457702aebe2032b2117dbe83e5d"
+  },
+  "0009_000_01.png": {
+   "role": "calibration_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0009_000_01.png",
+   "sha256": "5ee8b2da4901781d104807d9b1f74ca053d58779f76f23e232754b004e4102cc"
+  },
+  "0009_000_04.png": {
+   "role": "calibration_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0009_000_04.png",
+   "sha256": "510add28918445aec31ea2991404d3596d9a10b798f37185c23263838f4c2bee"
+  },
+  "0010_000_00.png": {
+   "role": "calibration_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0010_000_00.png",
+   "sha256": "e99c1c1dc0ccf8c1902f4dd4de78354e268a236fe83f158e50faa9e5f6918f1a"
+  },
+  "0011_000_02.png": {
+   "role": "calibration_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0011_000_02.png",
+   "sha256": "89a052dd83e9932bf0239a77c5fc245dab78e1386e84f8c779d424a4fed1fda3"
+  },
+  "0011_000_03.png": {
+   "role": "calibration_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0011_000_03.png",
+   "sha256": "629b070140e6487771dcb0eec4cb63ceb749be5da9cbc68904f3caa985d56b35"
+  },
+  "0011_000_06.png": {
+   "role": "calibration_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0011_000_06.png",
+   "sha256": "15c260cea0e85843aafefc6c19c8977b3fc0d7caf9b126d3223093a02f063db6"
+  },
+  "0012_000_01.png": {
+   "role": "calibration_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0012_000_01.png",
+   "sha256": "5a562c141b642f42a13f5da2ebfaa6a662017734b3d1308960f678ddaeff54ea"
+  },
+  "0012_000_04.png": {
+   "role": "calibration_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0012_000_04.png",
+   "sha256": "0d5d333d61580adde5900c69f90962729913e43f84ad11af1a65e814e4b3ddaa"
+  },
+  "0012_000_06.png": {
+   "role": "calibration_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0012_000_06.png",
+   "sha256": "836c37b8d203f4ed40989d7c362d889fb8fdba090585faa05e760d763b64aa83"
+  },
+  "0013_000_00.png": {
+   "role": "calibration_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0013_000_00.png",
+   "sha256": "f94a537e75c974b939853b29bb3cd3f7655fd64eac836c8276ba8ebad0bb62fd"
+  },
+  "0013_000_06.png": {
+   "role": "calibration_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0013_000_06.png",
+   "sha256": "7d29058a9a59c0be0079ce29b8df8043f6a9680aec0aac31b6ac078d4321c144"
+  },
+  "0014_000_01.png": {
+   "role": "calibration_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0014_000_01.png",
+   "sha256": "985b7297b5b71fd84125885ae188117c28a03c1a420ca7332fcf1a18f3a04628"
+  },
+  "0014_000_02.png": {
+   "role": "calibration_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0014_000_02.png",
+   "sha256": "403ec66a6a0c1eade5e10385e1d633069c37fb621e214cae3a2059c099132924"
+  },
+  "0014_000_04.png": {
+   "role": "calibration_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0014_000_04.png",
+   "sha256": "c5934c0bc71dc5a66cb3405f2de68c21503b2d0c20aebce763526ca24e09bd09"
+  },
+  "0015_000_01.png": {
+   "role": "calibration_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0015_000_01.png",
+   "sha256": "1283d8fc688dcc6792699899e84c434ded18c5382c603bc6be3cb4279b8f8c10"
+  },
+  "0015_000_06.png": {
+   "role": "calibration_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0015_000_06.png",
+   "sha256": "ae86c0ee5e98ef68030a7ecd69aa239adf3f7ed0db70d3da5f518b97fbe2eba1"
+  },
+  "0016_000_02.png": {
+   "role": "calibration_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0016_000_02.png",
+   "sha256": "05e3e91b07e6789238af6feebf700138ba0e29a664d387c9fb0cea9f977ee339"
+  },
+  "0017_000_02.png": {
+   "role": "calibration_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0017_000_02.png",
+   "sha256": "7b47cfe2213e2032939e58e8c155e6192103ae9c92a8ab26757444e77af106de"
+  },
+  "0017_000_04.png": {
+   "role": "calibration_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0017_000_04.png",
+   "sha256": "380758cdf3023f89966b8956247c01b66aca2d0cef7b1c7ee043ec3abf1cc277"
+  },
+  "0018_000_00.png": {
+   "role": "calibration_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0018_000_00.png",
+   "sha256": "e77c407a20007821833a2da883d752129290677c328054715915f8860a27c672"
+  },
+  "0018_000_02.png": {
+   "role": "calibration_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0018_000_02.png",
+   "sha256": "3c0734b58a5ace6a91454239e4917ae81c9be49fbc85cb1ec1923e0d7516e101"
+  },
+  "0018_000_03.png": {
+   "role": "calibration_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0018_000_03.png",
+   "sha256": "d1d592089321f95c73ae2da2c58d022ba6f8c387f71cc26e6b3ac24cab1b4eec"
+  },
+  "0019_000_03.png": {
+   "role": "calibration_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0019_000_03.png",
+   "sha256": "16beacf4d412d61539cf1f3ddf3ee6a924b34d1971588bbab38984a6ba29170b"
+  },
+  "0020_000_03.png": {
+   "role": "calibration_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0020_000_03.png",
+   "sha256": "95bd7a050fde358f62bd34aff4777115b64871c19aafa2746c2de80d5b8d6f01"
+  },
+  "0001_000_00.png": {
+   "role": "evaluation_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0001_000_00.png",
+   "sha256": "056815f2201dae773e8a66ac75acb734c289271f093dd4cd6a89ec1a27e32a34"
+  },
+  "0001_000_02.png": {
+   "role": "evaluation_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0001_000_02.png",
+   "sha256": "d7fb1cdebcfa1dbd0a6e52069e4d8bcb7c0959171f971f54ccb6e00cff8d566c"
+  },
+  "0001_000_06.png": {
+   "role": "evaluation_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0001_000_06.png",
+   "sha256": "4f172a460589ffee1bdd62e9b57d1b9b4a0f63244424187c8c56f99c253b4afa"
+  },
+  "0002_000_02.png": {
+   "role": "evaluation_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0002_000_02.png",
+   "sha256": "8400a4ec9f9ded6698bfebbd31dca6cb6bbb09adea1135f9a3bbe4106e4071df"
+  },
+  "0003_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0003_000_01.png",
+   "sha256": "b8c7db29418e99f7f5b3a2dd4f4623123a12cbb75f421532d10fd6580111551b"
+  },
+  "0003_000_03.png": {
+   "role": "evaluation_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0003_000_03.png",
+   "sha256": "86a5b5599cce2626b613df672b93c3f69355215ddf045e1a2bac02ed02a25e81"
+  },
+  "0003_000_04.png": {
+   "role": "evaluation_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0003_000_04.png",
+   "sha256": "22cd7b0c09d396d1c9525b2f35d0661fdceeb8c0ef523901098ea6707ce19ce5"
+  },
+  "0003_000_06.png": {
+   "role": "evaluation_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0003_000_06.png",
+   "sha256": "54dc868d44be9180f42a244465266306df891c1f34d4bc6769165f2083bb8850"
+  },
+  "0004_000_00.png": {
+   "role": "evaluation_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0004_000_00.png",
+   "sha256": "520a10566fbcba2bb0e92e676cbc78287c1de5abc41209f26233f5798d76c20b"
+  },
+  "0004_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0004_000_01.png",
+   "sha256": "22b9cebc80675264c1c9506480c7794ff96f164d6a7f94988912de5dc97034a8"
+  },
+  "0005_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0005_000_01.png",
+   "sha256": "00dd56d63bb88c18455e9a49e559c415c5973ab1e6c2223e3f9d328587be8e1d"
+  },
+  "0006_000_02.png": {
+   "role": "evaluation_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0006_000_02.png",
+   "sha256": "276615225956da03f9b73c63dbd882da94b6d80e5a305ea90548bbd00764f1db"
+  },
+  "0007_000_02.png": {
+   "role": "evaluation_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0007_000_02.png",
+   "sha256": "cc3e3e0555972b3062820d656d679d2a1baa233a7349406f15200cb0e3156cdc"
+  },
+  "0007_000_03.png": {
+   "role": "evaluation_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0007_000_03.png",
+   "sha256": "008d9e8e5f7674f109d2a096f21453f423e5928aac9151f88b95cc6c11713062"
+  },
+  "0007_000_04.png": {
+   "role": "evaluation_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0007_000_04.png",
+   "sha256": "55e6c4a92a4ab278a6fba2960f1ac9f8fa4fef6c871d9a10bbfa227da16d6297"
+  },
+  "0008_000_00.png": {
+   "role": "evaluation_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0008_000_00.png",
+   "sha256": "48ec24b3f61e903078c49b78ccd30b849f9bfb1e56769188f11141f9e83fba0a"
+  },
+  "0008_000_04.png": {
+   "role": "evaluation_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0008_000_04.png",
+   "sha256": "9766953e80319df81f10085518d36618ccf96d6ca2d8a5bea336931e154fec73"
+  },
+  "0009_000_06.png": {
+   "role": "evaluation_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0009_000_06.png",
+   "sha256": "176ec82d44cb86188efdbe7bb4c0612c6dc9ae1f6bcbc734c0d65205d764d4f4"
+  },
+  "0010_000_03.png": {
+   "role": "evaluation_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0010_000_03.png",
+   "sha256": "9932ce50208b1fa6568a62e43ec631f0fb8107426e6c122a7067222a207ba36a"
+  },
+  "0010_000_04.png": {
+   "role": "evaluation_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0010_000_04.png",
+   "sha256": "7b4406ae36e2e4db1abfc2127488315faff4ae53d90e2e0dc6f84fe4a5a82de6"
+  },
+  "0012_000_00.png": {
+   "role": "evaluation_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0012_000_00.png",
+   "sha256": "5e0fc42d84038125f615e234f9aea564fcde007edef0f20208b50523e6dc7530"
+  },
+  "0012_000_02.png": {
+   "role": "evaluation_clean",
+   "fabric": "02",
+   "path": "NODefect_images/2306894-210033u/0012_000_02.png",
+   "sha256": "b351e2ef0335d35382fba58353a6f4c55382c6bb31dc2eaeb702a6a4d78ceeac"
+  },
+  "0014_000_06.png": {
+   "role": "evaluation_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0014_000_06.png",
+   "sha256": "3fdc32a3dcec2df29206cfc47ddddb1ccc924587c45df716bdb80c2cb7c5ed80"
+  },
+  "0015_000_00.png": {
+   "role": "evaluation_clean",
+   "fabric": "00",
+   "path": "NODefect_images/2311694-2040n7u/0015_000_00.png",
+   "sha256": "26519bc0be7c6a2ba1470327d75c154113a887ba16afc613dad31805016a5fcd"
+  },
+  "0016_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0016_000_01.png",
+   "sha256": "4a8e46d0dc928591fc8a1fb39c992d6bb2ba9f2c91de7e0274a9b185669179ec"
+  },
+  "0016_000_03.png": {
+   "role": "evaluation_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0016_000_03.png",
+   "sha256": "d0bd20caee8a3cb4f491b539526afe0e136b5d29dedf04d76457a27edc70d255"
+  },
+  "0017_000_03.png": {
+   "role": "evaluation_clean",
+   "fabric": "03",
+   "path": "NODefect_images/2311694-1930c7u/0017_000_03.png",
+   "sha256": "5c559854e0e40e61b273b7a45b34c80e8e7655b21fe6c5c9c2dc1812524bdfb0"
+  },
+  "0018_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0018_000_01.png",
+   "sha256": "ebb0054bb3817333845885ba3060890c08bd6817051e86791720c0bbd378d1f2"
+  },
+  "0019_000_01.png": {
+   "role": "evaluation_clean",
+   "fabric": "01",
+   "path": "NODefect_images/2608691-202020u/0019_000_01.png",
+   "sha256": "e2540c14123825e2ab121c34c4b7bda2ba65abdac03226c05ae6f6e2cbe96289"
+  },
+  "0019_000_04.png": {
+   "role": "evaluation_clean",
+   "fabric": "04",
+   "path": "NODefect_images/2311517-195063u/0019_000_04.png",
+   "sha256": "a2d5910fbe32184ecd78ecf37ec91e81b5ab04eee45619e8f6dfdb8cece0715e"
+  },
+  "0019_000_06.png": {
+   "role": "evaluation_clean",
+   "fabric": "06",
+   "path": "NODefect_images/2311980-185026u/0019_000_06.png",
+   "sha256": "96a5854724b334ee78ecb6f598b84647cb430da31b828aa5d43a645eedd6de8b"
+  },
+  "0001_002_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0001_002_00.png",
+   "sha256": "4b0f602ef14d22e292d18a6eb6bea3ebff5f2198c5d7a48a75575de0bdb50fb6",
+   "masks": [
+    {
+     "path": "Mask_images/0001_002_00_mask.png",
+     "sha256": "adad4133214759ff14f8dcb86c8ea1681ec76e72c8aac1be6092f7cdb11b9901"
+    }
+   ],
+   "defect_pixels": 1315,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0002_002_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0002_002_00.png",
+   "sha256": "5585916f7ea04930697eb46f6cb26b82d3e68ab22cbc9fd7dfbca3fa423c773b",
+   "masks": [
+    {
+     "path": "Mask_images/0002_002_00_mask.png",
+     "sha256": "004472d63b1a03ebd7bf9c42257610d8b5f72eaeffcd5da0a498c38d89c79c34"
+    }
+   ],
+   "defect_pixels": 1172,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0003_002_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0003_002_00.png",
+   "sha256": "e8985299f9787d5e868abac0914e2a84fe181af639be6e31f33ca3486604352d",
+   "masks": [
+    {
+     "path": "Mask_images/0003_002_00_mask.png",
+     "sha256": "08a2db7b253b2452c0937982e1c1a97a36a78c10e6ebc0a2bccfc59ce1590544"
+    }
+   ],
+   "defect_pixels": 438,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0004_002_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0004_002_01.png",
+   "sha256": "0831e16ddd824e6551947b6cf0d68696ffcda00dedd2216d1586f1d5adebd74c",
+   "masks": [
+    {
+     "path": "Mask_images/0004_002_01_mask.png",
+     "sha256": "1b08cc33855c5b4292178a1051cd68edaf9a0e102278faf274ed776b9b92cf51"
+    }
+   ],
+   "defect_pixels": 2017,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0005_002_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0005_002_01.png",
+   "sha256": "d65cd2ce9ee2a67419fadf5a57e1f55a7b4505a012c5bc45026c068e5c6fd42b",
+   "masks": [
+    {
+     "path": "Mask_images/0005_002_01_mask.png",
+     "sha256": "cde4c42559665ddd8880001c43cd02446d5ecb05f50225f8d58fb189db31c59c"
+    }
+   ],
+   "defect_pixels": 2514,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0006_002_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0006_002_01.png",
+   "sha256": "d9bab4a2c8d61b4a367f5dff53381cd87ca4fa83caf2b0d0c1d92e399aa2a899",
+   "masks": [
+    {
+     "path": "Mask_images/0006_002_01_mask.png",
+     "sha256": "35d2cc8ae53740a2a22b4173d4f6df16696be44455735a88ba037ad5d258f05d"
+    }
+   ],
+   "defect_pixels": 317,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0010_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0010_006_02.png",
+   "sha256": "2627ae7df6b8531985010ad6aa650674ea146d388d60a8e433cbb5e0688e8d5c",
+   "masks": [
+    {
+     "path": "Mask_images/0010_006_02_mask.png",
+     "sha256": "0a72885454f720cfa694c0b6abfbc2ee5c02fde55b78f099a935a6520ba35785"
+    }
+   ],
+   "defect_pixels": 1880,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0011_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0011_006_02.png",
+   "sha256": "f6663fc88862ed282d5da3eec25e3743e06e2c7afabcc84b3dea3a3ba0db2911",
+   "masks": [
+    {
+     "path": "Mask_images/0011_006_02_mask.png",
+     "sha256": "acb6a07859e6c85843df0334d8d22876d6e89c08e99ec776fc5e5dd0db6f72fe"
+    }
+   ],
+   "defect_pixels": 1889,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0012_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0012_006_02.png",
+   "sha256": "44672a3e0bb6d7f8e397e6a10e675667d282aa03e5c24207f932af326564e5a9",
+   "masks": [
+    {
+     "path": "Mask_images/0012_006_02_mask.png",
+     "sha256": "04e6fcf6a87282573840b22f6915c7ce1fe51b974091b6db49491434c4c5cbcd"
+    }
+   ],
+   "defect_pixels": 1102,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0013_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0013_006_02.png",
+   "sha256": "b3c835073111bbc1ed08beee6fa06688c0086268bd662a34d49b936f19d50109",
+   "masks": [
+    {
+     "path": "Mask_images/0013_006_02_mask.png",
+     "sha256": "57df434c65db9718f4a90755b5edeed4542e78c844c009c358deb4389ab7fe19"
+    }
+   ],
+   "defect_pixels": 918,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0014_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0014_006_02.png",
+   "sha256": "85a660bc1f79a5e7272c56acebfe56a6b5f405d5b01a4e72e2b23f7d11892c6e",
+   "masks": [
+    {
+     "path": "Mask_images/0014_006_02_mask.png",
+     "sha256": "9a8eb0023b5f84b2e6a5a582b00a58e8f51113ff68dff46c3be486074e434e50"
+    }
+   ],
+   "defect_pixels": 1260,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0015_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0015_006_02.png",
+   "sha256": "d9a4384d162e0a2da79781be5e70e7122ca136a2d244095417a63fdadb44df74",
+   "masks": [
+    {
+     "path": "Mask_images/0015_006_02_mask.png",
+     "sha256": "8a6165e1019c15d8874fdbdec2dec78310d1d4c07afbe3ee62cf083d25537260"
+    }
+   ],
+   "defect_pixels": 792,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0016_006_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0016_006_02.png",
+   "sha256": "6f3b4c75abf1d19ff92f843b5cd4d568886ee0355dda13c05091d2a2f33b70da",
+   "masks": [
+    {
+     "path": "Mask_images/0016_006_02_mask.png",
+     "sha256": "ea79e32cbc1983099f525c2e6be2c788452f0d86f75356a33363de6f32d395a3"
+    }
+   ],
+   "defect_pixels": 2111,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0017_002_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0017_002_02.png",
+   "sha256": "85729ccd2415c59429bb0de81640d3fec80a8dfa71fd8fd101a3712b87912d46",
+   "masks": [
+    {
+     "path": "Mask_images/0017_002_02_mask.png",
+     "sha256": "0772de9a702c2f7953cebda423d7e4f321a1c246ae1163bbe188690248014b54"
+    }
+   ],
+   "defect_pixels": 151,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0018_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0018_010_03.png",
+   "sha256": "e1432d005ed7386b5f94f5d9e67ca8d56e8545328d2cf2d3450c61e0b759d609",
+   "masks": [
+    {
+     "path": "Mask_images/0018_010_03_mask.png",
+     "sha256": "7d7688bd37b8ac127fddf5de2ad8d8da54d8f5e840d5afaf8a6a1ba54602d1f2"
+    }
+   ],
+   "defect_pixels": 1751,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0019_016_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0019_016_03.png",
+   "sha256": "2f3c1d5af6ebb7bd6a2c22dd73a98a1a4755e5520eb18e6bf3f99aaba57e5273",
+   "masks": [
+    {
+     "path": "Mask_images/0019_016_03_mask.png",
+     "sha256": "1b6684458dd09c7a61835e2c916c3ff9d4160aa940b09acd9f0d5e5e7d9cccf2"
+    }
+   ],
+   "defect_pixels": 414,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0020_016_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0020_016_03.png",
+   "sha256": "ff8162e13abda4bb1ffb44cf18fe29fe36aac561bb14ba80c5a53a2a1eb4232a",
+   "masks": [
+    {
+     "path": "Mask_images/0020_016_03_mask.png",
+     "sha256": "cf1b2d5c1e36c9aaa5946278de809b296e20868238283e77bbccb0d1051461a7"
+    }
+   ],
+   "defect_pixels": 662,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0021_016_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0021_016_03.png",
+   "sha256": "1485fdb9583b05ea2cf3c5fe2e5d1eb027de315f498abfad0c15ed52692dcd94",
+   "masks": [
+    {
+     "path": "Mask_images/0021_016_03_mask.png",
+     "sha256": "0dbe6926a6f0436cfb29ae3b6795d089c06b540fa0e265f6f7459dce8e680a26"
+    }
+   ],
+   "defect_pixels": 1190,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0022_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0022_019_02.png",
+   "sha256": "b64f1c9d84c26f9dfad9e2cfd1b102bd21355dfc9ebd1bf268a3a594a701ac1f",
+   "masks": [
+    {
+     "path": "Mask_images/0022_019_02_mask.png",
+     "sha256": "015ab3577f96aa832d16b7dcfc2320f86aa352a409eb1c6259024ba0b9a210ce"
+    }
+   ],
+   "defect_pixels": 29,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0023_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0023_019_02.png",
+   "sha256": "a8dc5a0938e2062b3eb40d4ef13e45b35bccad8580e0fa9f6cc375186fb096dc",
+   "masks": [
+    {
+     "path": "Mask_images/0023_019_02_mask.png",
+     "sha256": "f05af67f694924d3b76365f142b0fe196e00171cf7f5155db5f237801c846114"
+    }
+   ],
+   "defect_pixels": 54,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0024_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0024_019_02.png",
+   "sha256": "ed7f1b9d79320795b369b2b635dd4d2ee51c00680b72a7b1981ffd1e68efcc52",
+   "masks": [
+    {
+     "path": "Mask_images/0024_019_02_mask.png",
+     "sha256": "f4dda9cc3e2c540ed8507545bf203f5f11b6e84548a475cfb72a286a9c577e51"
+    }
+   ],
+   "defect_pixels": 53,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0025_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0025_019_02.png",
+   "sha256": "e68106d883c14427eaa6fb67d547c7ff6f33db3eca5da388456b278d40260a78",
+   "masks": [
+    {
+     "path": "Mask_images/0025_019_02_mask.png",
+     "sha256": "3fbaef90973995f4c694bae1629acb22fae9a11c0ccac49885bcfafd529adf08"
+    }
+   ],
+   "defect_pixels": 8,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0026_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0026_019_02.png",
+   "sha256": "4e290e1bde67e1bfe0d5b45962cb103c6ce69434ffb4b7ee0b76aaaf6e375a53",
+   "masks": [
+    {
+     "path": "Mask_images/0026_019_02_mask.png",
+     "sha256": "54cc001993c17bc153f8279ff99d1fa2cd6325ae53539326343e3b9f33c2db9e"
+    }
+   ],
+   "defect_pixels": 19,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0027_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0027_019_02.png",
+   "sha256": "d380c319a68e2f6b3f99358a06402704817d9bce8ca0a2b0aec8af39133a7161",
+   "masks": [
+    {
+     "path": "Mask_images/0027_019_02_mask.png",
+     "sha256": "702a4f670f180a11e30b89890da8185e128a2beee106c440d3bfc05c9a8841b7"
+    }
+   ],
+   "defect_pixels": 15,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0028_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0028_019_02.png",
+   "sha256": "044334f4ed1e28a1cb9d79b17b089811ccca57f60a627aead864103105f14941",
+   "masks": [
+    {
+     "path": "Mask_images/0028_019_02_mask.png",
+     "sha256": "e9bc0726226d23ef1b74eac50e309f42c35cb9acd721d22afc4a4f0f27ee9b15"
+    }
+   ],
+   "defect_pixels": 16,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0029_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0029_019_02.png",
+   "sha256": "209b5fd1f52aa363baecfc0c7272a2f9501e1efa1b355f3e356171127c6cd196",
+   "masks": [
+    {
+     "path": "Mask_images/0029_019_02_mask.png",
+     "sha256": "8136176927af340393ea35c4321b6fa0dab826f5f5bc571613e59383e338cb6a"
+    }
+   ],
+   "defect_pixels": 19,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0030_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0030_019_02.png",
+   "sha256": "649f10d34e4225527f55e0566fe4743f3d8f35d236d29debf0d8b74f7efa03ec",
+   "masks": [
+    {
+     "path": "Mask_images/0030_019_02_mask.png",
+     "sha256": "1b7a84a7876de00924cdf57f3079d57d3d950cfa50605f74c28df3c14c8ae56d"
+    }
+   ],
+   "defect_pixels": 8,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0031_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0031_019_02.png",
+   "sha256": "3c2ed8516bb0f9dff43c7d10337149b3ef5f1a26a9a186086819b3ff78910960",
+   "masks": [
+    {
+     "path": "Mask_images/0031_019_02_mask.png",
+     "sha256": "957c3d820cfd402185957f1c7669ba8b2802615077e98c836de6c4c891c4ded7"
+    }
+   ],
+   "defect_pixels": 10,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0032_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0032_019_02.png",
+   "sha256": "838a6f7058d28bd8c2f0e6dcff76da576feed7cf5cb42b28ba1483053ca08fb8",
+   "masks": [
+    {
+     "path": "Mask_images/0032_019_02_mask.png",
+     "sha256": "11ccfc7f3e62f0f5bc9b49e9437a01d5ed6102d40e0a8f394051a95ef0167d3f"
+    }
+   ],
+   "defect_pixels": 10,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0033_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0033_019_02.png",
+   "sha256": "878fff19cb8f8bf2fb5c719e79bb3e7796d5eb55bb8e26c532268448e7722c69",
+   "masks": [
+    {
+     "path": "Mask_images/0033_019_02_mask.png",
+     "sha256": "74dc7b8533855a06d57c09899ae77d309c63527825afaa3b3a304297fd1e0702"
+    }
+   ],
+   "defect_pixels": 12,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0034_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0034_019_02.png",
+   "sha256": "5c10a688ecf5c0c0ff8d6f4981d92b937b269c7a41e214cc00cce058c48cb056",
+   "masks": [
+    {
+     "path": "Mask_images/0034_019_02_mask.png",
+     "sha256": "36e84603099a0be382fcbbcd32e3bfb4f18546baa03c44d741de41661e4bd9e1"
+    }
+   ],
+   "defect_pixels": 8,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0035_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0035_019_02.png",
+   "sha256": "ff869957b74ffa72ca69022b6f13c5202e7c3ae7143732c718b271c00042c26a",
+   "masks": [
+    {
+     "path": "Mask_images/0035_019_02_mask.png",
+     "sha256": "6126d981e8e2a5c0d462e2cb0d5a4c8d714dca495de60adcc1422932d09ddd2f"
+    }
+   ],
+   "defect_pixels": 15,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0036_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0036_019_02.png",
+   "sha256": "099982704dcd859b445509a085a6389b54f7fab145b528aa503b2423e29fddc4",
+   "masks": [
+    {
+     "path": "Mask_images/0036_019_02_mask.png",
+     "sha256": "7434aec4502f42de4e3a744543c77c69ee13fc1041ece8fd4fde757c1034ba91"
+    }
+   ],
+   "defect_pixels": 17,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0037_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0037_019_02.png",
+   "sha256": "71b3bc45d3f5780d9ac44a595008f7087143ec2fda22ef82cc1e5eac5a84b48e",
+   "masks": [
+    {
+     "path": "Mask_images/0037_019_02_mask.png",
+     "sha256": "3cfd9b4e42b30a89c46010685f9d73dbc1acab6b705267b71b69f29ae78a1862"
+    }
+   ],
+   "defect_pixels": 14,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0038_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0038_019_02.png",
+   "sha256": "63d50b4dc62ff9f0c98adf5144c39054b140bdd11416f82add4cebcfe157b1fd",
+   "masks": [
+    {
+     "path": "Mask_images/0038_019_02_mask.png",
+     "sha256": "e853af05346baec82e354b10b4e6a7f91705722b88aa177af1410f1981990349"
+    }
+   ],
+   "defect_pixels": 23,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0039_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0039_019_02.png",
+   "sha256": "9752462b31fa319beb8453ebdf71df53c06b8598161ad054e17dac0a52a4f137",
+   "masks": [
+    {
+     "path": "Mask_images/0039_019_02_mask.png",
+     "sha256": "c6b3efb56c94a0b61770c711de31cf0d7c4303c9edf6ba9091a0b2cae609f394"
+    }
+   ],
+   "defect_pixels": 32,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0040_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0040_019_02.png",
+   "sha256": "b5c398faf63d82ec475530b72c7185993dba6563a1eed84d0c6f408e05373fe5",
+   "masks": [
+    {
+     "path": "Mask_images/0040_019_02_mask.png",
+     "sha256": "b108ba74d295cba4ce01a1df94e438b7a0d2006ae4c99d7ca914f86b7875318a"
+    }
+   ],
+   "defect_pixels": 21,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0041_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0041_019_02.png",
+   "sha256": "e0004889bda35a3c89fb9abcd0bc5f37429644032cf3b7067907f7343e17c04f",
+   "masks": [
+    {
+     "path": "Mask_images/0041_019_02_mask.png",
+     "sha256": "23f4fd8acf579466d780643a227c3bdd4864606305af386cce991e63b0be4869"
+    }
+   ],
+   "defect_pixels": 28,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0042_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0042_019_02.png",
+   "sha256": "e61787bddf445470cbaf8353f658bbff30b96a79e78502836abdee8699b40d06",
+   "masks": [
+    {
+     "path": "Mask_images/0042_019_02_mask.png",
+     "sha256": "df8e697a3e3e4dd731287f994eb22ef12198eea0d111b836b32ef8613e44f110"
+    }
+   ],
+   "defect_pixels": 12,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0043_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0043_019_04.png",
+   "sha256": "81e5167e4ac4391de70a032920f6323f540a655d54ab7f5734d07aee94470515",
+   "masks": [
+    {
+     "path": "Mask_images/0043_019_04_mask.png",
+     "sha256": "c66603a87142a0ef8bdfcc74c67064edf4e396e91de0bf5820f65a8f57bbb24c"
+    }
+   ],
+   "defect_pixels": 46,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0044_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0044_019_04.png",
+   "sha256": "1d657ce19ec17b66fb004f02610ed618b8860f0dad3ed862a9f0a7d786c5ea14",
+   "masks": [
+    {
+     "path": "Mask_images/0044_019_04_mask1.png",
+     "sha256": "c1850347454fe4b593c31babe70a6aa2a7295a3746781b65ee021995448ed7b2"
+    },
+    {
+     "path": "Mask_images/0044_019_04_mask2.png",
+     "sha256": "06462978ef99f13f35393e1498834b3ced8926a481601ce1171b8687bbc4c607"
+    }
+   ],
+   "defect_pixels": 82,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0045_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0045_019_04.png",
+   "sha256": "1f063be2f1b2d0de2f6127bb7419a8607725824cd244e39add31d92fdcf6b8fa",
+   "masks": [
+    {
+     "path": "Mask_images/0045_019_04_mask.png",
+     "sha256": "341e793f3d0ba430d6396dec0dd9828dcc06d07b1a43d8cefa1da519bba74658"
+    }
+   ],
+   "defect_pixels": 45,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0046_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0046_019_04.png",
+   "sha256": "e9b97c83a444e22fa728077ec40b239c6112ece3e6bb5da1eaf845f0f44a37ec",
+   "masks": [
+    {
+     "path": "Mask_images/0046_019_04_mask.png",
+     "sha256": "acc64adcb93e494b08f7e9d01f712bbc2f6fc5c23e4068ee126c224e5cacd8ec"
+    }
+   ],
+   "defect_pixels": 29,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0047_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0047_019_04.png",
+   "sha256": "e6114b859fd146f42c538168527619149499362449d94b95d4d6c5c47193f5f5",
+   "masks": [
+    {
+     "path": "Mask_images/0047_019_04_mask.png",
+     "sha256": "f4ba6a8afd9819e079577241d4807ea36174ce6152b2643ea3415eb8f33ff50a"
+    }
+   ],
+   "defect_pixels": 18,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0048_019_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0048_019_04.png",
+   "sha256": "db5a4a2fa6b3371f245c8d46c5ca934a81e9ea0ae122829867ea42354fded934",
+   "masks": [
+    {
+     "path": "Mask_images/0048_019_04_mask.png",
+     "sha256": "bbde26939b24d477e53d9e00d277e09d2c3ce3caaa2dddff1c3576c444e99f5b"
+    }
+   ],
+   "defect_pixels": 73,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0049_030_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0049_030_03.png",
+   "sha256": "1d108e017f6c1f1a01fbaa11562fa864dbb9d308565fcda6484f6a2b30abbed8",
+   "masks": [
+    {
+     "path": "Mask_images/0049_030_03_mask.png",
+     "sha256": "e4654f5802ddb743518295517ff7fe450be49c6acb97614e46a4fac6956b0b3c"
+    }
+   ],
+   "defect_pixels": 57,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0050_019_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0050_019_03.png",
+   "sha256": "5188019d418aa0f65e7aab74c9943788fac44ddda109ad4b5eff67bfe3a78c7a",
+   "masks": [
+    {
+     "path": "Mask_images/0050_019_03_mask.png",
+     "sha256": "cc96c7dfda9d3aa97d8dcdfabaf258349ca26f9192d3d229d578463e8aefbbc7"
+    }
+   ],
+   "defect_pixels": 37,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0051_019_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0051_019_03.png",
+   "sha256": "0479baa6d3df87bd56c0cab64736132c9dbf675612ddc283cae97c1ce05e772c",
+   "masks": [
+    {
+     "path": "Mask_images/0051_019_03_mask.png",
+     "sha256": "286308f0a9b3bd178cf8b0ce3069e805dba071d6dcf9095ec94d93ec5267fe1a"
+    }
+   ],
+   "defect_pixels": 37,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0052_019_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0052_019_03.png",
+   "sha256": "be190818397f1ca933cba090ce7b9758bcec46966f7e5cb219b1cb145d157e62",
+   "masks": [
+    {
+     "path": "Mask_images/0052_019_03_mask.png",
+     "sha256": "302137e0c3ce9bd46749e8fff2f1a36f8f423c2ac63a7487774b4b74f810f159"
+    }
+   ],
+   "defect_pixels": 32,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0053_019_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0053_019_03.png",
+   "sha256": "8e23087112794380d6df27d5d81627c27f3f24e061721445c7be236e210cb768",
+   "masks": [
+    {
+     "path": "Mask_images/0053_019_03_mask.png",
+     "sha256": "2040bd213cbbd848a569ddfd0a6e3960691fd983436ed5dbe29b23dd1a2f7055"
+    }
+   ],
+   "defect_pixels": 16,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0054_019_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0054_019_03.png",
+   "sha256": "a73caa5b7cd3fc3e561b34fbd87794161eecbcb8142ca404c7068832bc174b51",
+   "masks": [
+    {
+     "path": "Mask_images/0054_019_03_mask.png",
+     "sha256": "d14f777e2945b008093879621757185afcb898fa7a74f93e39efcd28a57e51fe"
+    }
+   ],
+   "defect_pixels": 38,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0055_019_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0055_019_06.png",
+   "sha256": "cbdd763eb2697a07426209affe7ee2fe60a075e9c81cf648325944662ca6df10",
+   "masks": [
+    {
+     "path": "Mask_images/0055_019_06_mask.png",
+     "sha256": "a262e6b744fdd68bbefa7e431b793545dd9ab40f467dc5232987431ef22e9e1b"
+    }
+   ],
+   "defect_pixels": 22,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0056_019_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0056_019_06.png",
+   "sha256": "6092f3efd128a5d5755c578aa58b31d2d9010f112da07e846dc6fac3ab455348",
+   "masks": [
+    {
+     "path": "Mask_images/0056_019_06_mask.png",
+     "sha256": "d089347a778cf577d5824092f31e7ad042d43874c5aecc1e1a8b97a820387686"
+    }
+   ],
+   "defect_pixels": 50,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0057_019_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0057_019_06.png",
+   "sha256": "47a1c02bde4c89551571d03e5673c364a952c328c5ec990679f614cf774c8c2e",
+   "masks": [
+    {
+     "path": "Mask_images/0057_019_06_mask.png",
+     "sha256": "9b7261988eed9272ed81c5ab65cf59e4c8cd554fb04ad3a8ebf0ae9a48ad2498"
+    }
+   ],
+   "defect_pixels": 33,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0058_019_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0058_019_06.png",
+   "sha256": "cadf3d64cb809514cc7388b3933ab20ad2bef0d7b052967f1423f16896120ba1",
+   "masks": [
+    {
+     "path": "Mask_images/0058_019_06_mask.png",
+     "sha256": "b765391e7c809d9523707257e2932468bbb6aedf0b99b7e3519ba4ed6de1d5d5"
+    }
+   ],
+   "defect_pixels": 28,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0059_019_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0059_019_01.png",
+   "sha256": "44562ae453a0f16e737b234a4d5da19cc374cdec00b7ac9e5d3bd02067f14c0f",
+   "masks": [
+    {
+     "path": "Mask_images/0059_019_01_mask.png",
+     "sha256": "06bc5512bfe38f5c9c670b1c5444db5ef0bad073d41813f92b44fe2728f3253f"
+    }
+   ],
+   "defect_pixels": 28,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0060_022_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0060_022_06.png",
+   "sha256": "abbde36e18f65f862d0c7786f7fdbe2192cf0ac6ec470b196771434bd5e6c75b",
+   "masks": [
+    {
+     "path": "Mask_images/0060_022_06_mask.png",
+     "sha256": "1379459418149f0e4736bf45cca8af7758d06b45560718f7fff269a96869ac3a"
+    }
+   ],
+   "defect_pixels": 326,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0061_022_06.png": {
+   "role": "evaluation_defective",
+   "fabric": "06",
+   "path": "Defect_images/0061_022_06.png",
+   "sha256": "7eeba9ee5502fb76867fe06b356bf04163a540524bbff5d1839bd309d88d28c5",
+   "masks": [
+    {
+     "path": "Mask_images/0061_022_06_mask.png",
+     "sha256": "778b28786d8c53b78660c1a341ff91b6684983fd52ed11c43c983e7e6ccaaefd"
+    }
+   ],
+   "defect_pixels": 231,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0062_022_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0062_022_00.png",
+   "sha256": "9790fafb2c9e3ad9230cb2b1c230a9b3c311d78a8b1df8bb7af9ce1811b54dc3",
+   "masks": [
+    {
+     "path": "Mask_images/0062_022_00_mask.png",
+     "sha256": "4dc4654e3252ece5064995e1ab86b91a0e82100ae47a345fdcaab5744c773c97"
+    }
+   ],
+   "defect_pixels": 151,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0063_022_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0063_022_00.png",
+   "sha256": "d1d9c54f0e5ded227cf8f0e8f00f570cfbef24ebc1151047a2573ae71437c977",
+   "masks": [
+    {
+     "path": "Mask_images/0063_022_00_mask.png",
+     "sha256": "2f8b6bc96c8fc1c1718e9e91e6d8bd7e40b501f6a291e71fb2242baab0d666e4"
+    }
+   ],
+   "defect_pixels": 423,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0064_022_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0064_022_00.png",
+   "sha256": "8a4d7aecabe59747fc1ea213d2ab42f9f9f434a422abb738ce9178e5ad747f23",
+   "masks": [
+    {
+     "path": "Mask_images/0064_022_00_mask.png",
+     "sha256": "f71510c9659f203ef97038765b80e51ae50dafbdc12fb6228961027da48b623d"
+    }
+   ],
+   "defect_pixels": 420,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0065_022_00.png": {
+   "role": "evaluation_defective",
+   "fabric": "00",
+   "path": "Defect_images/0065_022_00.png",
+   "sha256": "940b410337fabbb17a53d3a6597d3e877b05384e14ce590a56f6a9e2bdbeba45",
+   "masks": [
+    {
+     "path": "Mask_images/0065_022_00_mask.png",
+     "sha256": "8ffa2cee5edfe3253a5ca180c209ea486dafb6d65cb37ef95abd5dbe066876f8"
+    }
+   ],
+   "defect_pixels": 473,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0066_023_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0066_023_01.png",
+   "sha256": "b756326cfbbce7594ab8ba2ff0acd1b61f7588b589cca293463cf706b1d4fcb1",
+   "masks": [
+    {
+     "path": "Mask_images/0066_023_01_mask.png",
+     "sha256": "f12b328b2cb3a833761d63d4b5efa37429a276461784cdcae3dd69e78f2e1957"
+    }
+   ],
+   "defect_pixels": 469,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0067_023_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0067_023_01.png",
+   "sha256": "192e26f2e78dc41290659db77682578aedac1db336ce78b8075697422adc5e94",
+   "masks": [
+    {
+     "path": "Mask_images/0067_023_01_mask.png",
+     "sha256": "3d713dd8fc1906cb1601ddcfbf1bc27528395f38ff3bd1ea2438e63fbb9b1281"
+    }
+   ],
+   "defect_pixels": 577,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0068_023_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0068_023_02.png",
+   "sha256": "aaf7f84dc259058c5c0ab3d7ec212df85f7d574000e21793122fcad7a0ec7423",
+   "masks": [
+    {
+     "path": "Mask_images/0068_023_02_mask.png",
+     "sha256": "171a77c8c64cbe20df55ec056e81c904a5dec48e07be36abd451a090d85d2fd4"
+    }
+   ],
+   "defect_pixels": 1484,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0069_023_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0069_023_02.png",
+   "sha256": "fbefab1e8f71955c4b4d60cedf9b3bbd32c553afa383f65a32f286f2421a959e",
+   "masks": [
+    {
+     "path": "Mask_images/0069_023_02_mask.png",
+     "sha256": "6c99eaae961a9d22a7747c2d359218b8b803c542f090b5e66fe1aa0f6496d6ef"
+    }
+   ],
+   "defect_pixels": 778,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0070_023_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0070_023_02.png",
+   "sha256": "789a4dc8d208bed89ab38c117b402eea70652d3c50751a18d6f469ec0da2bc3d",
+   "masks": [
+    {
+     "path": "Mask_images/0070_023_02_mask.png",
+     "sha256": "ce6eb41102a4f834cbe8827dc7e40e3bbb7056a13cde93830557d3e9fe6da458"
+    }
+   ],
+   "defect_pixels": 583,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0071_030_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0071_030_03.png",
+   "sha256": "e005c577339252020f66459c0c28edeaab8f93322e92f5bf8058a1477e0adb0b",
+   "masks": [
+    {
+     "path": "Mask_images/0071_030_03_mask.png",
+     "sha256": "2650a839894217746954310f0ad092697369ef6d6cf1beb92b18ce96f39e0db4"
+    }
+   ],
+   "defect_pixels": 38,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0072_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0072_010_03.png",
+   "sha256": "4fa38a72cae416226bc8b070cfdf8b8a91d9b513bd9ddad3542d4da5e15196f1",
+   "masks": [
+    {
+     "path": "Mask_images/0072_010_03_mask.png",
+     "sha256": "2f960024d0a85fa289beac512ea34412f531824ea631cd69559fc3ffdf57c9de"
+    }
+   ],
+   "defect_pixels": 2534,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0073_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0073_010_03.png",
+   "sha256": "49bd97b575d2c1a77ee23d558899ebbc90dd8ef518cf2472b30b7a1eae1f6957",
+   "masks": [
+    {
+     "path": "Mask_images/0073_010_03_mask.png",
+     "sha256": "1c259916adbe9f148a48893122ec0cd3ada8736686dba30237f11de04f201e02"
+    }
+   ],
+   "defect_pixels": 4796,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0074_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0074_010_03.png",
+   "sha256": "4a3a80dd38002ec761a3a094adb999307b1f194da9d7be8a6aa6b4b21754fb23",
+   "masks": [
+    {
+     "path": "Mask_images/0074_010_03_mask.png",
+     "sha256": "b5408d8771a683d7a14fdb77622f5229723405eba5b66a9dfd85ef5e0ebddcdb"
+    }
+   ],
+   "defect_pixels": 2873,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0075_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0075_010_03.png",
+   "sha256": "c9447290add12419b79df09ba8323b6dab1a8632a76992b067b5cc1b626c596d",
+   "masks": [
+    {
+     "path": "Mask_images/0075_010_03_mask.png",
+     "sha256": "e2de06bf3a7d44774d57fe964bc887b1e01c4692f818d49394ee7ec94294c7be"
+    }
+   ],
+   "defect_pixels": 15609,
+   "unseen_defect_pixels_original_layout": 6
+  },
+  "0076_030_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0076_030_03.png",
+   "sha256": "cddbff047f2395e1ba62b3ef20939dc1317e4222dc6b0477a6fd25184cb23ca0",
+   "masks": [
+    {
+     "path": "Mask_images/0076_030_03_mask.png",
+     "sha256": "de6a240def6394fd9f7b996489ce2dfc9d17d21e8bbf354f0ccdfc8f874ce232"
+    }
+   ],
+   "defect_pixels": 222,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0077_022_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0077_022_03.png",
+   "sha256": "410112280d153cc8261f2eb24fdc279608e487cc42baf062ccabcb6d95cb797a",
+   "masks": [
+    {
+     "path": "Mask_images/0077_022_03_mask.png",
+     "sha256": "daf23eec345bb852c1a64e63fa6ce8379d0900cbb32847bc3b767884824471fb"
+    }
+   ],
+   "defect_pixels": 87,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0078_025_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0078_025_03.png",
+   "sha256": "f7613f11005dd36ee5e4d7f90d17dd56bb4e12b6f6974dc9367ac06f81cabf20",
+   "masks": [
+    {
+     "path": "Mask_images/0078_025_03_mask.png",
+     "sha256": "718a421b873b480455fe44f57ba03869f2e7c127dd920288ae4d2fa4f93bde04"
+    }
+   ],
+   "defect_pixels": 20,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0079_025_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0079_025_03.png",
+   "sha256": "087caaf66dd561da1f3cafb268f15cfbc4c89d6d36720dce1c4dfdb5484812e7",
+   "masks": [
+    {
+     "path": "Mask_images/0079_025_03_mask.png",
+     "sha256": "ed4b7822c5fab063b0cfcddcbe2872638488595467399f8dadf101e6c0eb0525"
+    }
+   ],
+   "defect_pixels": 21,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0080_036_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0080_036_01.png",
+   "sha256": "12ce44e24acf09565794b26bfaaba3c93cd3ec1b20be6579acedce4383357931",
+   "masks": [
+    {
+     "path": "Mask_images/0080_036_01_mask.png",
+     "sha256": "234def56ec434e7e28d2b5d370d227d032f662416257cfffd3219e804627a051"
+    }
+   ],
+   "defect_pixels": 233253,
+   "unseen_defect_pixels_original_layout": 68
+  },
+  "0081_006_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0081_006_04.png",
+   "sha256": "16dc14e07afe2841c079e8e582fcc1c5f7f0486b83376f013a57341947c58e2d",
+   "masks": [
+    {
+     "path": "Mask_images/0081_006_04_mask.png",
+     "sha256": "90f7fa52cae5aae53f4993106a3cf31e06f2f14a73aca365f50c1db7fb6a681d"
+    }
+   ],
+   "defect_pixels": 4078,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0082_030_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0082_030_04.png",
+   "sha256": "f12ce8ddd7f583ad340bd428c2440f3c4f0379f3c41dad97fae2eebfb0be9a19",
+   "masks": [
+    {
+     "path": "Mask_images/0082_030_04_mask.png",
+     "sha256": "408d8ed56c02a44cdb136a9eb204f763fbf14e655c34957848231047fc37f726"
+    }
+   ],
+   "defect_pixels": 136,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0083_029_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0083_029_04.png",
+   "sha256": "3f970a54ee8ea55fa923fc50da7881ebf4e450b6e3487eebda94a55ea5bb9a62",
+   "masks": [
+    {
+     "path": "Mask_images/0083_029_04_mask.png",
+     "sha256": "01ae88f14a39ceb93a3f1b19a801a5ec4aff7f0195e28395ca688b83da97c341"
+    }
+   ],
+   "defect_pixels": 301,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0084_030_04.png": {
+   "role": "evaluation_defective",
+   "fabric": "04",
+   "path": "Defect_images/0084_030_04.png",
+   "sha256": "e9f976781dc7b1e73d19a4be1ae73ab96a2fba45a51338c8f71d19c538b1e489",
+   "masks": [
+    {
+     "path": "Mask_images/0084_030_04_mask.png",
+     "sha256": "921593d65cb4844df552a627bd0c0db4a9d317ff75345b65a17ff7717a9350b3"
+    }
+   ],
+   "defect_pixels": 20,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0085_030_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0085_030_02.png",
+   "sha256": "a05dfd8e57c4e944e81e4a076204a20d82f655879d3e07e7131b432219ffecc7",
+   "masks": [
+    {
+     "path": "Mask_images/0085_030_02_mask.png",
+     "sha256": "4f499f50ec754a010d1cbfb0c8ebca07f8dc8d4047ad5f0364ba5bfedd5bedc9"
+    }
+   ],
+   "defect_pixels": 37,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0086_030_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0086_030_02.png",
+   "sha256": "2d6a37aa4dcbb9f42154c0e408ff50e9a36abe8832cf2e3335374f361b3a3600",
+   "masks": [
+    {
+     "path": "Mask_images/0086_030_02_mask.png",
+     "sha256": "df456b4c848d73e00c561ad5340525d45c7cfceddc540ecd38a763ac096fa127"
+    }
+   ],
+   "defect_pixels": 102,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0087_030_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0087_030_02.png",
+   "sha256": "b8678689527b997a48c5bf0cde7e89c796e5d7eb78500cef5cbe06344d78b145",
+   "masks": [
+    {
+     "path": "Mask_images/0087_030_02_mask.png",
+     "sha256": "ae5a2232e29fc5114a3ea92028b59f7ac051f62c649692e771e905bbcb692eba"
+    }
+   ],
+   "defect_pixels": 34,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0088_030_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0088_030_02.png",
+   "sha256": "311ffe4b13e96c760224cfe168675e510014b17d9ee43b17f21717284743eec5",
+   "masks": [
+    {
+     "path": "Mask_images/0088_030_02_mask.png",
+     "sha256": "c63e7b3d6f581bbfb056f903c9aeac7423ba59f0e8a42c83347596eb26c9b7e4"
+    }
+   ],
+   "defect_pixels": 484,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0089_002_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0089_002_01.png",
+   "sha256": "631604bb97f014f4cd875029be53dc774f76e7a93278e6d6001611d53fbf44e2",
+   "masks": [
+    {
+     "path": "Mask_images/0089_002_01_mask.png",
+     "sha256": "76cb1760297435afe4695a144a72b5b4fafe80b008f5a2b29e135d1543fa2da8"
+    }
+   ],
+   "defect_pixels": 708,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0090_002_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0090_002_01.png",
+   "sha256": "26138474948ec1b6c2dbb97c7690e24859b7dfcfa9b04549e0c8e5ee3c98f639",
+   "masks": [
+    {
+     "path": "Mask_images/0090_002_01_mask.png",
+     "sha256": "62117e4a502faeb3a0eaa32b29d54e3560dc84f3563eb473a4a73c63c2c9af46"
+    }
+   ],
+   "defect_pixels": 558,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0091_030_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0091_030_01.png",
+   "sha256": "a346ec6ed07c057b39af4a454a6c1b9bdcd8428ad2b78dba4928ec6c274f81f1",
+   "masks": [
+    {
+     "path": "Mask_images/0091_030_01_mask.png",
+     "sha256": "ede74603909fbc8b2e1658039a9dc3042f3045801b5f3457d8e10041fd49f3df"
+    }
+   ],
+   "defect_pixels": 287,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0092_030_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0092_030_01.png",
+   "sha256": "ee7f6819439bbce14876e0b789fe808768002dee4eeb0b56c751ecbe6c956eb0",
+   "masks": [
+    {
+     "path": "Mask_images/0092_030_01_mask.png",
+     "sha256": "f472cec8e32a851b5798ebe8ea2156de8122dd602d222afe90a6c57607777eb1"
+    }
+   ],
+   "defect_pixels": 287,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0093_030_01.png": {
+   "role": "evaluation_defective",
+   "fabric": "01",
+   "path": "Defect_images/0093_030_01.png",
+   "sha256": "7b41d13529b45cb7ad498efddb0c75b2be28d8507a4a4dfa09f4cf705d4b43d2",
+   "masks": [
+    {
+     "path": "Mask_images/0093_030_01_mask.png",
+     "sha256": "565ff8aca37e8b0d21e880f7376f6a588a5be05a07ce0618e4ba900c45d7211a"
+    }
+   ],
+   "defect_pixels": 95,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0095_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0095_010_03.png",
+   "sha256": "26555acddd5fc70fecadfe1d5ac927c0cab5bf7225836ee7fac90f58d884ed6f",
+   "masks": [
+    {
+     "path": "Mask_images/0095_010_03_mask.png",
+     "sha256": "57248bc3cd77b2ebfcaa7e08d870261be84553b9a6cf8af83b9ed3a2ba838479"
+    }
+   ],
+   "defect_pixels": 9481,
+   "unseen_defect_pixels_original_layout": 3
+  },
+  "0096_030_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0096_030_03.png",
+   "sha256": "6c5049c04d9cce5257a2dbe5d586c0fb4609f2175800d3a31ecf1120524c09d5",
+   "masks": [
+    {
+     "path": "Mask_images/0096_030_03_mask.png",
+     "sha256": "282f2ebba861880ec001563c75ead9fd14cc741b7c96a61e01a00a186903b438"
+    }
+   ],
+   "defect_pixels": 135,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0097_030_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0097_030_03.png",
+   "sha256": "7715b2cac1d50aba2688975e9ed3b07b56723d752bd311659966ce59e0db3651",
+   "masks": [
+    {
+     "path": "Mask_images/0097_030_03_mask1.png",
+     "sha256": "d634677930f6c28c46cd50e8fbf2a88dcc4c923beb0166da70c5d194052154e9"
+    },
+    {
+     "path": "Mask_images/0097_030_03_mask2.png",
+     "sha256": "9e06728a567663e4af842f1743d651a8fdbd2c911a8ad8b05e19764874ca2607"
+    }
+   ],
+   "defect_pixels": 81,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0098_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0098_019_02.png",
+   "sha256": "ca5ec0f84fbd3303bc6c1fee797c61b80f36b9331718c53c78e7bfb5ff3b37df",
+   "masks": [
+    {
+     "path": "Mask_images/0098_019_02_mask.png",
+     "sha256": "f0906ca18ed15b46bc8bc79adb70b873fc5a8bd8ab61dc26891aaebf5e3adc0d"
+    }
+   ],
+   "defect_pixels": 12,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0099_019_02.png": {
+   "role": "evaluation_defective",
+   "fabric": "02",
+   "path": "Defect_images/0099_019_02.png",
+   "sha256": "d29e1d54e658cc6d3431c2cead38fc817d44df56b6ddfc1400bce10aca885df6",
+   "masks": [
+    {
+     "path": "Mask_images/0099_019_02_mask.png",
+     "sha256": "82f60415a8078ae93148786d0dead6765d524a2eaee6ba875a74bc054e7c0d51"
+    }
+   ],
+   "defect_pixels": 15,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0101_022_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0101_022_03.png",
+   "sha256": "47f065b43ffeaf699933761dc48be7342eb3bc3f4c9810bfba49419fc21f8232",
+   "masks": [
+    {
+     "path": "Mask_images/0101_022_03_mask.png",
+     "sha256": "434a62c0a05c7562bb53905cc9921e2c565bbdc577dab8e615e99d5f8f650e0a"
+    }
+   ],
+   "defect_pixels": 260,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0102_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0102_010_03.png",
+   "sha256": "a0e23cb769b2cf0032217cc3d5c5d3afab6925801bad2be49b9e9b453f344d4a",
+   "masks": [
+    {
+     "path": "Mask_images/0102_010_03_mask.png",
+     "sha256": "9f5f3b464ca2fa9d2c65c4e8700eb29bce57db10eb2ee74fb1559701f0bc6525"
+    }
+   ],
+   "defect_pixels": 30545,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0103_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0103_010_03.png",
+   "sha256": "eeb08e9e56560fa850194b0356b9238a8bcdb11affcdf15e5a9e2c49f3794cc4",
+   "masks": [
+    {
+     "path": "Mask_images/0103_010_03_mask.png",
+     "sha256": "d416582c019417e5956aff57d85a59e97250abe5a276f99e7fc9421b48ee1254"
+    }
+   ],
+   "defect_pixels": 143220,
+   "unseen_defect_pixels_original_layout": 73
+  },
+  "0104_022_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0104_022_03.png",
+   "sha256": "4b0115a917032bf3f7802157fbe02abb962050d66bda62b2b5fb3957034a56df",
+   "masks": [
+    {
+     "path": "Mask_images/0104_022_03_mask.png",
+     "sha256": "e40074295c53bfd90774399a1049e74eb531282b3f9af27b443873a1bc06f4f3"
+    }
+   ],
+   "defect_pixels": 258,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0105_010_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0105_010_03.png",
+   "sha256": "27d33f7617a4b9e162eacaab7dfc952d5c1578a21a94346c248a6e4b26cb5448",
+   "masks": [
+    {
+     "path": "Mask_images/0105_010_03_mask.png",
+     "sha256": "cf6781adac9d2b1b6f776d71ea534f0554d6e04070596c117a7a8372b3c2f882"
+    }
+   ],
+   "defect_pixels": 5488,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0107_025_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0107_025_03.png",
+   "sha256": "69fc2536c3d54de812fefd42dbc69b39dae450ff32fa9a055e7edbd428e297e5",
+   "masks": [
+    {
+     "path": "Mask_images/0107_025_03_mask.png",
+     "sha256": "6ef15ed391b98cf2de8102cedb938d1862aae3a6cafe8ce388e893443051f291"
+    }
+   ],
+   "defect_pixels": 24,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0108_025_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0108_025_03.png",
+   "sha256": "8df4bc840445d6978758e02c6e3c323c62c13ef8a068f315526c068cb9b12bec",
+   "masks": [
+    {
+     "path": "Mask_images/0108_025_03_mask.png",
+     "sha256": "a2fef7e5a769ff6d6e86ad03d854774c8f30a9a1bec1f4e3ae316868e036a8b9"
+    }
+   ],
+   "defect_pixels": 15,
+   "unseen_defect_pixels_original_layout": 0
+  },
+  "0109_025_03.png": {
+   "role": "evaluation_defective",
+   "fabric": "03",
+   "path": "Defect_images/0109_025_03.png",
+   "sha256": "352215255d8cbd990a8ba22cc88549ce806f40b218ae3b84a93e520fd2f2ae79",
+   "masks": [
+    {
+     "path": "Mask_images/0109_025_03_mask.png",
+     "sha256": "eacf258c5ca6886c50559ab305b1c0b4ee34b9b11b76c5c13b5e4994b1106213"
+    }
+   ],
+   "defect_pixels": 11,
+   "unseen_defect_pixels_original_layout": 0
+  }
+ }
+}

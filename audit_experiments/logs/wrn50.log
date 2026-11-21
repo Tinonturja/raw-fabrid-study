@@ -1,0 +1,124 @@
+19:19:05 fit features 0 / 1000
+19:19:11 fit features 160 / 1000
+19:19:17 fit features 320 / 1000
+19:19:22 fit features 480 / 1000
+19:19:28 fit features 640 / 1000
+19:19:34 fit features 800 / 1000
+19:19:42 fit features 960 / 1000
+19:20:29 coreset 2000 / 10240
+19:21:13 coreset 4000 / 10240
+19:22:00 coreset 6000 / 10240
+19:22:44 coreset 8000 / 10240
+19:23:28 coreset 10000 / 10240
+19:23:34 Rollo1A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '6f5cc7955adc787daed2938e74ccf6d459673590bf17eee814e941c950bbbc8c'} 271s
+19:24:49 Rollo1A 10/34 frames 346s
+19:26:05 Rollo1A 20/34 frames 422s
+19:27:33 Rollo1A 30/34 frames 510s
+19:28:05 Rollo1A done 542s
+19:28:06 fit features 0 / 1000
+19:28:13 fit features 160 / 1000
+19:28:19 fit features 320 / 1000
+19:28:25 fit features 480 / 1000
+19:28:32 fit features 640 / 1000
+19:28:38 fit features 800 / 1000
+19:28:44 fit features 960 / 1000
+19:29:31 coreset 2000 / 10240
+19:30:16 coreset 4000 / 10240
+19:31:01 coreset 6000 / 10240
+19:31:45 coreset 8000 / 10240
+19:32:29 coreset 10000 / 10240
+19:32:34 Rollo2A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '8f7be29218b0fbf7695dccee6df68a9aa0a27762d747e496372a33281609eef1'} 269s
+19:33:51 Rollo2A 10/38 frames 346s
+19:35:11 Rollo2A 20/38 frames 425s
+19:36:30 Rollo2A 30/38 frames 505s
+19:37:39 Rollo2A done 574s
+19:37:40 fit features 0 / 1000
+19:37:46 fit features 160 / 1000
+19:37:53 fit features 320 / 1000
+19:37:58 fit features 480 / 1000
+19:38:04 fit features 640 / 1000
+19:38:10 fit features 800 / 1000
+19:38:16 fit features 960 / 1000
+19:39:02 coreset 2000 / 10240
+19:39:47 coreset 4000 / 10240
+19:40:32 coreset 6000 / 10240
+19:41:16 coreset 8000 / 10240
+19:42:00 coreset 10000 / 10240
+19:42:05 Rollo3A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '711da440761075e6f4e8ccb42f2a2d51f0ade15f2c818a450cd3750f6ff925c1'} 266s
+19:43:22 Rollo3A 10/10 frames 343s
+19:43:22 Rollo3A done 343s
+19:43:23 fit features 0 / 1000
+19:43:29 fit features 160 / 1000
+19:43:35 fit features 320 / 1000
+19:43:41 fit features 480 / 1000
+19:43:47 fit features 640 / 1000
+19:43:53 fit features 800 / 1000
+19:43:58 fit features 960 / 1000
+19:44:44 coreset 2000 / 10240
+19:45:28 coreset 4000 / 10240
+19:46:12 coreset 6000 / 10240
+19:46:57 coreset 8000 / 10240
+19:47:46 coreset 10000 / 10240
+19:47:52 Rollo4A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '5b307b950e51e4fa77529fefc9d438e63e435a6bdc1492409b05571091082f21'} 270s
+19:49:12 Rollo4A 10/96 frames 349s
+19:50:34 Rollo4A 20/96 frames 431s
+19:51:54 Rollo4A 30/96 frames 511s
+19:53:12 Rollo4A 40/96 frames 590s
+19:54:32 Rollo4A 50/96 frames 670s
+19:55:49 Rollo4A 60/96 frames 747s
+19:57:07 Rollo4A 70/96 frames 825s
+19:58:26 Rollo4A 80/96 frames 904s
+19:59:42 Rollo4A 90/96 frames 980s
+20:00:31 Rollo4A done 1028s
+20:00:31 fit features 0 / 1000
+20:00:37 fit features 160 / 1000
+20:00:43 fit features 320 / 1000
+20:00:49 fit features 480 / 1000
+20:00:56 fit features 640 / 1000
+20:01:01 fit features 800 / 1000
+20:01:07 fit features 960 / 1000
+20:01:53 coreset 2000 / 10240
+20:02:37 coreset 4000 / 10240
+20:03:21 coreset 6000 / 10240
+20:04:05 coreset 8000 / 10240
+20:04:49 coreset 10000 / 10240
+20:04:55 Rollo5A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '6597e24f651d97d3106d205f05e05d23c9b2de3bf0aecf0d9996dd910fd15ff2'} 264s
+20:06:13 Rollo5A 10/19 frames 342s
+20:07:22 Rollo5A done 412s
+20:07:23 fit features 0 / 1000
+20:07:29 fit features 160 / 1000
+20:07:35 fit features 320 / 1000
+20:07:41 fit features 480 / 1000
+20:07:47 fit features 640 / 1000
+20:07:53 fit features 800 / 1000
+20:07:59 fit features 960 / 1000
+20:08:44 coreset 2000 / 10240
+20:09:28 coreset 4000 / 10240
+20:10:13 coreset 6000 / 10240
+20:10:57 coreset 8000 / 10240
+20:11:41 coreset 10000 / 10240
+20:11:47 Rollo6A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': 'ddebafe4f45699d64fcc846cc0303340c0434a5c0cfa74091df1985f198d07c0'} 264s
+20:13:01 Rollo6A 10/47 frames 339s
+20:14:15 Rollo6A 20/47 frames 413s
+20:15:32 Rollo6A 30/47 frames 490s
+20:16:48 Rollo6A 40/47 frames 566s
+20:17:39 Rollo6A done 617s
+20:17:40 fit features 0 / 1000
+20:17:46 fit features 160 / 1000
+20:17:52 fit features 320 / 1000
+20:17:58 fit features 480 / 1000
+20:18:03 fit features 640 / 1000
+20:18:09 fit features 800 / 1000
+20:18:15 fit features 960 / 1000
+20:19:03 coreset 2000 / 10240
+20:19:51 coreset 4000 / 10240
+20:20:37 coreset 6000 / 10240
+20:21:21 coreset 8000 / 10240
+20:22:05 coreset 10000 / 10240
+20:22:10 Rollo7A fit {'candidates': 128000, 'coreset': 10240, 'dim': 1024, 'bank_sha256': '03ca827d9230b1e47ffcba330caa6069fe9e2a43a80c10311fca0fc642ee5147'} 271s
+20:23:24 Rollo7A 10/59 frames 345s
+20:24:36 Rollo7A 20/59 frames 417s
+20:25:48 Rollo7A 30/59 frames 489s
+20:26:59 Rollo7A 40/59 frames 560s
+20:28:12 Rollo7A 50/59 frames 633s
+20:29:21 Rollo7A done 701s
