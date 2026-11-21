@@ -124,7 +124,10 @@ def main(a):
     unit_diffs = {}
     for u in units:
         meta, hists = merge([load_unit(p.with_suffix('.npz'), p) for p in groups[u]])
-        W = C.bootstrap_counts(len(meta['images']), reps=REPS, seed=C.SEED)   # shared by every comparison
+        if a.dataset == 'mvtec_fabric':   # variants of one physical sample are resampled together
+            W = C.cluster_counts([r['group'] for r in meta['images']], reps=REPS, seed=C.SEED)
+        else:
+            W = C.bootstrap_counts(len(meta['images']), reps=REPS, seed=C.SEED)   # shared by every comparison
         tab, diffs = unit_tables(meta, hists, W)
         tab['differences'] = {k: summarise(v[0], v[1]) for k, v in diffs.items()}
         report['units'][u] = tab

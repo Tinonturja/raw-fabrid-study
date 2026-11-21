@@ -166,6 +166,18 @@ def bootstrap_counts(n, reps=2000, seed=SEED, strata=None):
     return C
 
 
+def cluster_counts(groups, reps=2000, seed=SEED):
+    """Cluster bootstrap weights (reps, n_images): resample whole clusters; each image gets its cluster's count."""
+    rng = np.random.default_rng(seed)
+    labels = sorted(set(groups))
+    idx = np.array([labels.index(g) for g in groups])
+    draws = rng.integers(0, len(labels), size=(reps, len(labels)))
+    cc = np.zeros((reps, len(labels)))
+    for r in range(reps):
+        np.add.at(cc[r], draws[r], 1)
+    return cc[:, idx]
+
+
 def boot_ap_diff(Ta, Pa, Tb, Pb, C, chunk=250):
     """Bootstrap distribution of AP(a) - AP(b) under shared weights C (reps, n_images)."""
     out = []

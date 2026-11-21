@@ -18,3 +18,9 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
   - **Analysis:** `code/p5_analyze.py` gained the roll-level primary interval (paired bootstrap of the seven roll differences, plus the sign-flip test).
   - **Scheduling:** `run_p5_rawfabrid.sh` waits for the AITEX and VisA run to finish, then runs a smoke test (roll 3A, 2 + 2 frames), the full run and the analysis.
   - **Compatibility:** these code changes do not alter the AITEX or VisA paths. Output file names and the practice A rule for AITEX are unchanged.
+- **About 00:45:** the TSFabrics gate could not run overnight: the gate script (`code/p5_tsfabrics_gate.py`) is ready, but Kaggle was not signed in in the browser used for the overnight run, and the author is asleep. The gate waits for the author.
+- **About 00:50, before any MVTec AD 2 output:** the fallback dataset was prepared, so the four-dataset panel is not delayed whichever way the gate goes:
+  - **Manifest:** `manifests/mvtec_fabric_manifest.json` (SHA-256 `42ba0ab4...a5d8b`), public test split only: 387 training, 90 anomalous and 66 normal test images from 26 physical samples.
+  - **Scheduling:** `run_p5_mvtec.sh` runs MVTec AD 2 Fabric after RAW-FABRID.
+  - **The panel rule is unchanged** (Amendment 1, A7). The TSFabrics cluster gate alone decides whether TSFabrics or MVTec AD 2 Fabric is the fourth primary dataset, and the gate depends only on data counts. If TSFabrics passes, the MVTec results are reported as secondary. Running MVTec early does not change this.
+  - **MVTec resampling unit, decided now:** the test images are lighting and shift variants of the same physical samples, so the bootstrap resamples whole samples (object IDs), not single images. This follows the same reasoning as the TSFabrics cluster rule in A5.

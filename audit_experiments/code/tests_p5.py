@@ -83,6 +83,9 @@ def numpy_tests():
     check('bootstrap weights sum to n per draw', np.all(W.sum(1) == 20))
     Ws = C.bootstrap_counts(10, reps=50, strata=[0] * 4 + [1] * 6)
     check('stratified bootstrap keeps stratum sizes', np.all(Ws[:, :4].sum(1) == 4) and np.all(Ws[:, 4:].sum(1) == 6))
+    Wc = C.cluster_counts(['a', 'a', 'b', 'c', 'c', 'c'], reps=50)
+    check('cluster bootstrap gives one weight per cluster', np.all(Wc[:, 0] == Wc[:, 1]) and np.all(Wc[:, 3] == Wc[:, 5])
+          and np.all(Wc[:, [0, 2, 3]].sum(1) == 3))
     rb = C.roll_bootstrap([.01] * 7, reps=100)
     check('roll bootstrap of constant diffs is constant', np.allclose(rb, .01))
 

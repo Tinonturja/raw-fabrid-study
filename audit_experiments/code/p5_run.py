@@ -123,6 +123,27 @@ def rawfabrid_units(zpath, man, rolls, limit):
         yield roll, tiles, items, preset
 
 
+def mvtec_units(data, man, limit):
+    imgs = man['images']
+    for k, r in imgs.items():
+        if fsha(data / k) != r['sha256'] or ('mask' in r and fsha(data / r['mask']) != r['mask_sha256']):
+            sys.exit(f'manifest mismatch {k}')
+    train = sorted(k for k, r in imgs.items() if r['split'] == 'train')
+    test = sorted(k for k, r in imgs.items() if r['split'] == 'test')
+    tiles = []
+    for k in train:
+        with Image.open(data / k) as im:
+            w, h = im.size
+        tiles += [(lambda p=data / k, y=y, x=x: rgb(p).crop((x, y, x + 256, y + 256))) for y, x in C.grid_layout(h, w)]
+    if limit:
+        test = [k for k in test if imgs[k]['label'] == 'anomaly'][:limit] + [k for k in test if imgs[k]['label'] == 'normal'][:limit]
+    items = [{'id': k, 'group': imgs[k]['object'], 'defect': imgs[k]['label'] == 'anomaly',
+              'image': (lambda p=data / k: rgb(p)),
+              'mask': (lambda p=data / imgs[k]['mask']: C._gray(p) >= 128) if imgs[k]['label'] == 'anomaly' else None,
+              'A': False} for k in test]
+    yield 'fabric', tiles, items
+
+
 # ---------- banks ----------
 
 def build_scorers(fams, tiles, bank_dir, unit, device, preset=None):
@@ -282,6 +303,8 @@ def main(a):
         units = ((u, t, i, None) for u, t, i in aitex_units(Path(a.data), man, a.limit))
     elif a.dataset == 'visa':
         units = ((u, t, i, None) for u, t, i in visa_units(Path(a.data), man, a.categories, a.limit))
+    elif a.dataset == 'mvtec_fabric':
+        units = ((u, t, i, None) for u, t, i in mvtec_units(Path(a.data), man, a.limit))
     else:
         units = rawfabrid_units(Path(a.data), man, a.categories, a.limit)
     tag = '+'.join(sorted(a.families))
@@ -312,7 +335,7 @@ def main(a):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--dataset', choices=('aitex', 'visa', 'rawfabrid'), required=True)
+    ap.add_argument('--dataset', choices=('aitex', 'visa', 'rawfabrid', 'mvtec_fabric'), required=True)
     ap.add_argument('--data', required=True)
     ap.add_argument('--families', nargs='+', default=['wrn', 'dino'], choices=('wrn', 'dino'))
     ap.add_argument('--categories', nargs='*', help='VisA categories or RAW-FABRID rolls')
