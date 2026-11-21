@@ -1,0 +1,35 @@
+PASS grid 256x4096 covers all pixels  [16 windows, max mult 1]
+PASS grid 256x4096 overlap only if needed
+PASS grid 1024x1792 covers all pixels  [28 windows, max mult 1]
+PASS grid 1024x1792 overlap only if needed
+PASS grid 640x800 covers all pixels  [12 windows, max mult 4]
+PASS grid 640x800 overlap only if needed
+PASS grid 800x640 covers all pixels  [12 windows, max mult 4]
+PASS grid 800x640 overlap only if needed
+PASS grid 1000x1500 covers all pixels  [24 windows, max mult 4]
+PASS grid 1000x1500 overlap only if needed
+PASS grid 256x300 covers all pixels  [2 windows, max mult 2]
+PASS grid 256x300 overlap only if needed
+PASS grid 300x256 covers all pixels  [2 windows, max mult 2]
+PASS grid 300x256 overlap only if needed
+PASS RAW-FABRID grid = 28 fixed windows
+PASS AITEX grid = 16 windows
+PASS stitched AP == concatenated-tile AP (no overlap)
+PASS unique-pixel AP 0.8333 vs duplicated 0.75  [0.833333, 0.750000]
+PASS binned AP == exact AP without ties
+PASS unseen defect pixel ranked last
+PASS AUROC 3 of 4 defective-clean pairs = 0.75
+PASS AUROC example
+PASS sign-flip p, 7 of 7 positive = 2/128
+PASS bootstrap AP(a) - AP(a) is exactly 0
+PASS bootstrap weights sum to n per draw
+PASS stratified bootstrap keeps stratum sizes
+PASS roll bootstrap of constant diffs is constant
+PASS VisA decoder: IDs > 0 are defects
+PASS VisA decoder rejects 0/255 masks
+PASS practice A moves a window and can leave unseen pixels
+PASS practice A keeps 16 windows of 256
+PASS AITEX real masks: 485,027 defect pixels  [485027]
+PASS AITEX real masks: 150 unseen under practice A  [150]
+
+33 passed, 0 failed
