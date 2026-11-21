@@ -107,7 +107,7 @@ def build_scorers(fams, tiles, bank_dir, unit, device):
         else:
             t0 = time.time()
             X, X_info = M.sample_candidates(fam, tiles, log=lambda *a: log(unit, *a))
-            bank = M.greedy_coreset(X, 10240, device, log=lambda *a: log(unit, fam.name, *a))
+            bank = M.greedy_coreset(X, 10240, 'cpu', log=lambda *a: log(unit, fam.name, *a))  # CPU: same formula, about 3.5x faster than MPS
             mu, prec = M.SharedGauss.fit(X) if fam.name == 'wrn50' else (None, None)
             del X
             torch.save({'info': X_info, 'bank': bank, 'mu': mu, 'prec': prec}, path)
@@ -236,8 +236,9 @@ def main(a):
     fams = [M.WRN(device) if f == 'wrn' else M.DINO(device) for f in a.families]
     units = aitex_units(Path(a.data), man, a.limit) if a.dataset == 'aitex' else \
         visa_units(Path(a.data), man, a.categories, a.limit)
+    tag = '+'.join(sorted(a.families))
     for unit, tiles, items in units:
-        out_json = out_dir / f'{unit}.json'
+        out_json = out_dir / f'{unit}__{tag}.json'
         if out_json.exists() and not a.overwrite:
             log(unit, 'done earlier, skipped')
             continue
@@ -249,7 +250,7 @@ def main(a):
             recs.append(r); hists.append(h)
             if n % 10 == 0 or n == len(items):
                 log(unit, f'{n}/{len(items)} images', f'{time.time() - t0:.0f}s')
-        pack(hists, out_dir / f'{unit}.npz')
+        pack(hists, out_dir / f'{unit}__{tag}.npz')
         out = {'unit': unit, 'dataset': a.dataset, 'device': device, 'torch': torch.__version__,
                'families': a.families, 'banks': bank_info, 'bins_per_log1p': C.BPL,
                'images': recs, 'r1_failures': failures, 'seconds': time.time() - t0,

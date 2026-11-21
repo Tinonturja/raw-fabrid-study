@@ -94,15 +94,36 @@ def unit_tables(meta, hists, W):
     return out, diffs
 
 
+def merge(parts):
+    """Combine output files of one unit written by different feature-family runs."""
+    meta, hists = parts[0]
+    ids = [r['id'] for r in meta['images']]
+    for m2, h2 in parts[1:]:
+        assert [r['id'] for r in m2['images']] == ids, 'family runs cover different images'
+        for r, r2 in zip(meta['images'], m2['images']):
+            r['frame_max'].update(r2['frame_max'])
+            for t, t2 in zip(r['tiles'], r2['tiles']):
+                assert (t['y'], t['x']) == (t2['y'], t2['x'])
+                t.update({k: v for k, v in t2.items() if k not in ('y', 'x', 'defect_px')})
+        meta['r1_failures'] = meta.get('r1_failures', []) + m2.get('r1_failures', [])
+        meta['banks'] = {**meta.get('banks', {}), **m2.get('banks', {})}
+        hists.update(h2)
+    return meta, hists
+
+
 def main(a):
     d = HERE / 'results_p5' / a.dataset / a.stage
-    units = sorted(p.stem for p in d.glob('*.json') if p.stem != 'analysis')
+    files = sorted(p for p in d.glob('*.json') if p.stem != 'analysis')
+    groups = {}
+    for p in files:
+        groups.setdefault(p.stem.split('__')[0], []).append(p)
+    units = sorted(groups)
     if not units:
         sys.exit(f'no results in {d}')
     report = {'dataset': a.dataset, 'stage': a.stage, 'units': {}, 'reps': REPS, 'seed': C.SEED}
     unit_diffs = {}
     for u in units:
-        meta, hists = load_unit(d / f'{u}.npz', d / f'{u}.json')
+        meta, hists = merge([load_unit(p.with_suffix('.npz'), p) for p in groups[u]])
         W = C.bootstrap_counts(len(meta['images']), reps=REPS, seed=C.SEED)   # shared by every comparison
         tab, diffs = unit_tables(meta, hists, W)
         tab['differences'] = {k: summarise(v[0], v[1]) for k, v in diffs.items()}
