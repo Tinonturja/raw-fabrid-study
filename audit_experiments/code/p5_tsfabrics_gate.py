@@ -70,24 +70,33 @@ def main():
             with Image.open(imgs[0]) as im:
                 rec['image_size_wh'] = list(im.size)
                 rec['image_mode'] = im.mode
-        # 2. masks: look for per-frame mask files for this scenario in any candidate folder
-        masks = []
+        # 2. masks: ANNOTATION/<scenario>/<type>/<frame>.png; 'cutline' masks mark normal production marks, never defects
+        types = {}
         for d in mask_dirs:
-            masks += glob.glob(os.path.join(root, d, '**', s, '**', '*.*'), recursive=True)
-            masks += glob.glob(os.path.join(root, d, '**', s + '*'), recursive=True)
-        masks = sorted(set(m for m in masks if os.path.isfile(m)))
-        rec['mask_files'] = len(masks)
-        if masks:
-            vals, sizes, nonempty = Counter(), Counter(), 0
-            for m in masks[:: max(1, len(masks) // 40)][:40]:
-                a = np.asarray(Image.open(m))
-                vals.update(np.unique(a).tolist())
-                sizes[str(a.shape)] += 1
-                nonempty += int((a > 0).any())
-            rec['mask_value_sample'] = sorted(vals)[:40]
-            rec['mask_shapes_sample'] = dict(sizes)
-            rec['mask_nonempty_in_sample'] = nonempty
-            rec['mask_example'] = os.path.relpath(masks[0], root)
+            sdir = os.path.join(root, d, s)
+            if not os.path.isdir(sdir):
+                continue
+            for t in sorted(os.listdir(sdir)):
+                tdir = os.path.join(sdir, t)
+                if not os.path.isdir(tdir):
+                    continue
+                files = sorted(f for f in glob.glob(os.path.join(tdir, '**', '*.*'), recursive=True) if os.path.isfile(f))
+                info = {'files': len(files)}
+                if files:
+                    vals, sizes, nonempty = Counter(), Counter(), 0
+                    smp = files[:: max(1, len(files) // 30)][:30]
+                    for m in smp:
+                        arr = np.asarray(Image.open(m))
+                        vals.update(np.unique(arr).tolist())
+                        sizes[str(arr.shape)] += 1
+                        nonempty += int((arr > 0).any())
+                    info.update(values_sample=sorted(vals)[:20], shapes_sample=dict(sizes), nonempty_in_sample=nonempty,
+                                sampled=len(smp), example=os.path.relpath(files[0], root))
+                types[t] = info
+        rec['mask_types'] = types
+        rec['defect_mask_files'] = sum(v['files'] for t, v in types.items() if t.lower() != 'cutline')
+        rec['defect_masks_nonempty_in_sample'] = sum(v.get('nonempty_in_sample', 0) for t, v in types.items()
+                                                     if t.lower() != 'cutline')
         report['scenarios'][s] = rec
     # 3. cluster gate
     pos, neg = defaultdict(list), defaultdict(list)
@@ -97,7 +106,7 @@ def main():
         lab = rec.get('label_counts', {})
         has_defect = any(k >= 3 for k in lab)          # pilot convention: labels 3-9 are defects, 2 = cutline
         (pos if has_defect else neg)[rec['cluster']].append(s)
-    usable = {c for c, ss in pos.items() if any(report['scenarios'][s].get('mask_nonempty_in_sample', 0) > 0 for s in ss)}
+    usable = {c for c, ss in pos.items() if any(report['scenarios'][s].get('defect_masks_nonempty_in_sample', 0) > 0 for s in ss)}
     report['positive_clusters_by_labels'] = sorted(pos)
     report['positive_clusters_with_usable_masks'] = sorted(usable)
     report['normal_only_clusters'] = sorted(set(neg) - set(pos))
@@ -112,6 +121,9 @@ def main():
     out = '/kaggle/working/tsfabrics_gate.json' if os.path.isdir('/kaggle/working') else 'tsfabrics_gate.json'
     with open(out, 'w') as f:
         json.dump(report, f, indent=1)
+    for s_, r_ in report['scenarios'].items():
+        print(s_, r_.get('cluster'), 'frames', r_.get('frames'), 'labels', r_.get('label_counts'), 'size', r_.get('image_size_wh'),
+              'masks', {t: (v['files'], v.get('nonempty_in_sample'), v.get('values_sample')) for t, v in r_.get('mask_types', {}).items()})
     print(json.dumps({k: report[k] for k in ('top_level', 'candidate_mask_dirs', 'positive_clusters_by_labels',
                                              'positive_clusters_with_usable_masks', 'normal_only_clusters', 'gate',
                                              'positive_clusters_by_texture')}, indent=1))
