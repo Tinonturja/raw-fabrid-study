@@ -1,0 +1,2606 @@
+{
+ "dataset": "visa",
+ "stage": "full",
+ "units": {
+  "candle": {
+   "n_images": 200,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.3455649897383441,
+    "patchcore|R2": 0.3194895069063826,
+    "patchcore|R2occ": 0.3124910442096732,
+    "patchcore|C4": 0.014020479187713472,
+    "gauss|R1": 0.07446636595766916,
+    "gauss|R2": 0.05531094233874929,
+    "gauss|R2occ": 0.053788621616304474,
+    "gauss|C4": 0.024925429594480138,
+    "dino|R1": 0.12311730654018932,
+    "dino|R2": 0.38030426893159985,
+    "dino|R2occ": 0.3761146638607576,
+    "dino|C4": 0.13071095916370712
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9403351225121761,
+     "patch_ap_1px": 0.6487785985050702,
+     "patch_auroc_1pct": 0.9596618604903384,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 277,
+     "parent_auroc_R1": 0.9285,
+     "parent_auroc_R2": 0.9201,
+     "parent_auroc_C4": 0.6799
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.7931312690385429,
+     "patch_ap_1px": 0.1876510419379974,
+     "patch_auroc_1pct": 0.829546837624347,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 277,
+     "parent_auroc_R1": 0.7096,
+     "parent_auroc_R2": 0.7134,
+     "parent_auroc_C4": 0.6232
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9171945995353475,
+     "patch_ap_1px": 0.5558253542267382,
+     "patch_auroc_1pct": 0.955156145498804,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 277,
+     "parent_auroc_R1": 0.644,
+     "parent_auroc_R2": 0.882,
+     "parent_auroc_C4": 0.6708
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.026075482831961483,
+     "ci95": [
+      -0.043744534161739415,
+      -0.008404632115692524
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0069984626967093955,
+     "ci95": [
+      -0.022913031486689082,
+      0.009095613856734502
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.3315445105506306,
+     "ci95": [
+      -0.3811708833947765,
+      -0.28149277147719076
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.01915542361891987,
+     "ci95": [
+      -0.025442199386792604,
+      -0.013408386382295863
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.001522320722444813,
+     "ci95": [
+      -0.006306129465096541,
+      0.0029198367634077466
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.04954093636318902,
+     "ci95": [
+      -0.07139774840690272,
+      -0.024194272269080202
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.25718696239141053,
+     "ci95": [
+      0.18640060934961922,
+      0.3309560178716825
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.004189605070842262,
+     "ci95": [
+      -0.03526894555682921,
+      0.03552797487652966
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.007593652623517799,
+     "ci95": [
+      -0.05082105553058063,
+      0.0653502397972767
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.27109862378067495,
+     "ci95": [
+      0.23595387659989045,
+      0.3088299716354388
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.22244768319815478,
+     "ci95": [
+      0.15846559550989697,
+      0.28686919231234037
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.04865094058252016,
+     "ci95": [
+      -0.10842400291134996,
+      0.0033036816497791282
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.26417856456763333,
+     "ci95": [
+      0.22766031512930007,
+      0.30172097064609027
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.06081476202521724,
+     "ci95": [
+      -0.14108586031054907,
+      0.022510420026815924
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.3249933265928506,
+     "ci95": [
+      -0.4046888166071161,
+      -0.24374614419384064
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "capsules": {
+   "n_images": 160,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.695968280679995,
+    "patchcore|R2": 0.6309286409833194,
+    "patchcore|R2occ": 0.6254750281247303,
+    "patchcore|C4": 0.005764364664669547,
+    "gauss|R1": 0.1677309108103243,
+    "gauss|R2": 0.12456759422336014,
+    "gauss|R2occ": 0.12226718189279151,
+    "gauss|C4": 0.006168930182837587,
+    "dino|R1": 0.15238712555012238,
+    "dino|R2": 0.2032941795761498,
+    "dino|R2occ": 0.20169602377786733,
+    "dino|C4": 0.11043307213207666
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9371177669750667,
+     "patch_ap_1px": 0.7950828050569214,
+     "patch_auroc_1pct": 0.9669379963840641,
+     "n_tiles": 3840,
+     "n_positive_tiles_1px": 196,
+     "parent_auroc_R1": 0.9795,
+     "parent_auroc_R2": 0.9745,
+     "parent_auroc_C4": 0.6023333333333334
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8087504760411299,
+     "patch_ap_1px": 0.3583160724203168,
+     "patch_auroc_1pct": 0.8577819300058114,
+     "n_tiles": 3840,
+     "n_positive_tiles_1px": 196,
+     "parent_auroc_R1": 0.8965,
+     "parent_auroc_R2": 0.9,
+     "parent_auroc_C4": 0.5798333333333333
+    },
+    "dino": {
+     "patch_auroc_1px": 0.856389592060754,
+     "patch_ap_1px": 0.41817161185925467,
+     "patch_auroc_1pct": 0.8830006618454187,
+     "n_tiles": 3840,
+     "n_positive_tiles_1px": 196,
+     "parent_auroc_R1": 0.7686666666666667,
+     "parent_auroc_R2": 0.8786666666666667,
+     "parent_auroc_C4": 0.6821666666666667
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.0650396396966757,
+     "ci95": [
+      -0.07949517484052772,
+      -0.05150364179975002
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.00545361285858903,
+     "ci95": [
+      -0.009732120631674114,
+      -0.0022499165177463434
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.6902039160153255,
+     "ci95": [
+      -0.7438379301736086,
+      -0.6317443986512394
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.04316331658696415,
+     "ci95": [
+      -0.05756336868742473,
+      -0.0310828652089583
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0023004123305686297,
+     "ci95": [
+      -0.0035947423534859004,
+      -0.001321160030650976
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.1615619806274867,
+     "ci95": [
+      -0.19398676219790348,
+      -0.13041560967934657
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.05090705402602744,
+     "ci95": [
+      -0.004207658052002931,
+      0.11154499718774444
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0015981557982824857,
+     "ci95": [
+      -0.004049897123630285,
+      -7.041264660546323e-06
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.041954053418045714,
+     "ci95": [
+      -0.07300577344867545,
+      -0.009243897672988803
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.5282373698696707,
+     "ci95": [
+      0.4807889693950814,
+      0.5743036382294592
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.5435811551298727,
+     "ci95": [
+      0.46912398814309286,
+      0.6197008580299876
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.015343785260201914,
+     "ci95": [
+      -0.044385287503290065,
+      0.06470466455796244
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.5063610467599592,
+     "ci95": [
+      0.45840168109647933,
+      0.5510548065963939
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.42763446140716954,
+     "ci95": [
+      0.352875699635388,
+      0.4969674785150873
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.07872658535278967,
+     "ci95": [
+      -0.14315698225402748,
+      -0.022565883114734776
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "cashew": {
+   "n_images": 150,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.13945879321435017,
+    "patchcore|R2": 0.11565363276834834,
+    "patchcore|R2occ": 0.11452934419549766,
+    "patchcore|C4": 0.14558001526565373,
+    "gauss|R1": 0.0861766507586121,
+    "gauss|R2": 0.07215907070531842,
+    "gauss|R2occ": 0.07193619246884164,
+    "gauss|C4": 0.04051171591932889,
+    "dino|R1": 0.11051464074921695,
+    "dino|R2": 0.4418700942551221,
+    "dino|R2occ": 0.44080767980747165,
+    "dino|C4": 0.17291151884752048
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9135471192040687,
+     "patch_ap_1px": 0.6579787467326702,
+     "patch_auroc_1pct": 0.9291627075250086,
+     "n_tiles": 3750,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.953,
+     "parent_auroc_R2": 0.9468,
+     "parent_auroc_C4": 0.7374
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.9061421093662991,
+     "patch_ap_1px": 0.47667560485158456,
+     "patch_auroc_1pct": 0.9077651965053977,
+     "n_tiles": 3750,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.8916,
+     "parent_auroc_R2": 0.8418,
+     "parent_auroc_C4": 0.6016
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9387819263466607,
+     "patch_ap_1px": 0.6499020788670178,
+     "patch_auroc_1pct": 0.9667316625755537,
+     "n_tiles": 3750,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.5422,
+     "parent_auroc_R2": 0.84,
+     "parent_auroc_C4": 0.6594
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.02380516044600184,
+     "ci95": [
+      -0.0375748373004581,
+      -0.015430533444905453
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0011242885728506707,
+     "ci95": [
+      -0.0022976008094036065,
+      0.0005566761820690866
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.006121222051303554,
+     "ci95": [
+      -0.08902298989755121,
+      0.06075977836893698
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.014017580053293677,
+     "ci95": [
+      -0.019349226099611094,
+      -0.010573642513371194
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0002228782364767784,
+     "ci95": [
+      -0.0010128999388016391,
+      0.0008561508801951493
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.04566493483928321,
+     "ci95": [
+      -0.06782715496582861,
+      -0.03591719009889579
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.3313554535059051,
+     "ci95": [
+      0.2521261867997598,
+      0.4185394525956851
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0010624144476504283,
+     "ci95": [
+      -0.002405320272478171,
+      -2.6485127571239506e-05
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.062396878098303535,
+     "ci95": [
+      0.010168922635371065,
+      0.10950518747102714
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.05328214245573808,
+     "ci95": [
+      0.025841914811603015,
+      0.10149528772683764
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.028944152465133224,
+     "ci95": [
+      -0.030510556232045894,
+      0.12650169811655546
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.024337989990604852,
+     "ci95": [
+      -0.0794191947510649,
+      0.04261112517102131
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.043494562063029915,
+     "ci95": [
+      0.02072120591299861,
+      0.08583880682744227
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.32621646148677375,
+     "ci95": [
+      -0.44296838175713915,
+      -0.17697193884492168
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.3697110235498037,
+     "ci95": [
+      -0.4767639740865745,
+      -0.250089861450908
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "chewinggum": {
+   "n_images": 150,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.499999049659428,
+    "patchcore|R2": 0.4515463906488563,
+    "patchcore|R2occ": 0.4094043256002281,
+    "patchcore|C4": 0.29597040793745055,
+    "gauss|R1": 0.1293948111853734,
+    "gauss|R2": 0.12625832855151833,
+    "gauss|R2occ": 0.11644872746516663,
+    "gauss|C4": 0.026482499770564886,
+    "dino|R1": 0.392012585444749,
+    "dino|R2": 0.662596393070212,
+    "dino|R2occ": 0.655832597352451,
+    "dino|C4": 0.4256371909644306
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9153264683013786,
+     "patch_ap_1px": 0.6432083087216078,
+     "patch_auroc_1pct": 0.9697425206641797,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 315,
+     "parent_auroc_R1": 0.9884,
+     "parent_auroc_R2": 0.9886,
+     "parent_auroc_C4": 0.7594
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8230581631298477,
+     "patch_ap_1px": 0.2079590323177847,
+     "patch_auroc_1pct": 0.86194743130227,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 315,
+     "parent_auroc_R1": 0.4942,
+     "parent_auroc_R2": 0.5518,
+     "parent_auroc_C4": 0.3584
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9422131194174205,
+     "patch_ap_1px": 0.7374015659069688,
+     "patch_auroc_1pct": 0.9764391778216663,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 315,
+     "parent_auroc_R1": 0.8114,
+     "parent_auroc_R2": 0.9556,
+     "parent_auroc_C4": 0.8418
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.048452659010571664,
+     "ci95": [
+      -0.06148555976297323,
+      -0.03579708359176657
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.04214206504862822,
+     "ci95": [
+      -0.058711493949916406,
+      -0.014996011394760719
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.20402864172197743,
+     "ci95": [
+      -0.24162018203740668,
+      -0.1537454408663532
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.0031364826338550755,
+     "ci95": [
+      -0.009475607387077159,
+      0.002941052973416392
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.009809601086351705,
+     "ci95": [
+      -0.012225449446839615,
+      -0.007346923487289164
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.10291231141480853,
+     "ci95": [
+      -0.12137982737146999,
+      -0.08565477808966321
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.270583807625463,
+     "ci95": [
+      0.2161378495297348,
+      0.3276011895814885
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.006763795717760979,
+     "ci95": [
+      -0.010996243379346491,
+      -0.0033939115053990845
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.033624605519681605,
+     "ci95": [
+      -0.05162158363069051,
+      0.10876420992710742
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.37060423847405455,
+     "ci95": [
+      0.2969182695447547,
+      0.4504599899096686
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.107986464214679,
+     "ci95": [
+      0.0292555663510169,
+      0.1934466619908933
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.2626177742593756,
+     "ci95": [
+      -0.31983840166359745,
+      -0.20892880260758068
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.32528806209733796,
+     "ci95": [
+      0.25285389361293986,
+      0.4064772592472868
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.2110500024213557,
+     "ci95": [
+      -0.29550491182834293,
+      -0.12563873994228017
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.5363380645186937,
+     "ci95": [
+      -0.5914313727080919,
+      -0.48082360022970677
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "fryum": {
+   "n_images": 150,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.29138725217047184,
+    "patchcore|R2": 0.29406363355480575,
+    "patchcore|R2occ": 0.291923508528589,
+    "patchcore|C4": 0.07251324079785977,
+    "gauss|R1": 0.16901079913349504,
+    "gauss|R2": 0.16336136257790987,
+    "gauss|R2occ": 0.1624441264379364,
+    "gauss|C4": 0.05159324374152253,
+    "dino|R1": 0.06931791370446792,
+    "dino|R2": 0.35184857669198966,
+    "dino|R2occ": 0.3515913850121805,
+    "dino|C4": 0.04904333023551781
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9214726402753062,
+     "patch_ap_1px": 0.7292478572390949,
+     "patch_auroc_1pct": 0.9271004766281232,
+     "n_tiles": 3600,
+     "n_positive_tiles_1px": 428,
+     "parent_auroc_R1": 0.9754,
+     "parent_auroc_R2": 0.961,
+     "parent_auroc_C4": 0.3344
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8870571649126116,
+     "patch_ap_1px": 0.48212220071962264,
+     "patch_auroc_1pct": 0.892594096650779,
+     "n_tiles": 3600,
+     "n_positive_tiles_1px": 428,
+     "parent_auroc_R1": 0.7412,
+     "parent_auroc_R2": 0.682,
+     "parent_auroc_C4": 0.336
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9111759142496847,
+     "patch_ap_1px": 0.6601595718272073,
+     "patch_auroc_1pct": 0.9185126210272084,
+     "n_tiles": 3600,
+     "n_positive_tiles_1px": 428,
+     "parent_auroc_R1": 0.7042,
+     "parent_auroc_R2": 0.9146,
+     "parent_auroc_C4": 0.7068
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": 0.0026763813843339035,
+     "ci95": [
+      -0.004756027467779403,
+      0.009714734332297175
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0021401250262167437,
+     "ci95": [
+      -0.0033821912133052893,
+      -0.0009706720594828814
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.2188740113726121,
+     "ci95": [
+      -0.271132785685503,
+      -0.16620926601257668
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.005649436555585169,
+     "ci95": [
+      -0.0091150299946202,
+      -0.0027827151701496004
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0009172361399734652,
+     "ci95": [
+      -0.001449176059080817,
+      -0.0004389436486915685
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.11741755539197252,
+     "ci95": [
+      -0.15023261998431317,
+      -0.08567500603140674
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.2825306629875217,
+     "ci95": [
+      0.2030769814432747,
+      0.3525473813527525
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.00025719167980914337,
+     "ci95": [
+      -0.002133215075571142,
+      0.001709888023860842
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.020274583468950114,
+     "ci95": [
+      -0.036175675783422664,
+      -0.005402406487344833
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.1223764530369768,
+     "ci95": [
+      0.09348422815407825,
+      0.14952597240538487
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.2220693384660039,
+     "ci95": [
+      0.17024367494477546,
+      0.2708366889872936
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.09969288542902711,
+     "ci95": [
+      0.06421540582847217,
+      0.13674145127832266
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.13070227097689588,
+     "ci95": [
+      0.10157854116678462,
+      0.15875332633209194
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.05778494313718391,
+     "ci95": [
+      -0.09972364718742498,
+      -0.011913852796731234
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.1884872141140798,
+     "ci95": [
+      -0.2457629661321208,
+      -0.12866913439869287
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "macaroni1": {
+   "n_images": 200,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.49000744762716003,
+    "patchcore|R2": 0.47012339671940034,
+    "patchcore|R2occ": 0.4680694177871458,
+    "patchcore|C4": 0.0011754407495735116,
+    "gauss|R1": 0.22132407267207263,
+    "gauss|R2": 0.16981854528097812,
+    "gauss|R2occ": 0.1669915017399358,
+    "gauss|C4": 0.0010119142547078848,
+    "dino|R1": 0.007626473539610581,
+    "dino|R2": 0.19759670347583724,
+    "dino|R2occ": 0.20335036175571816,
+    "dino|C4": 0.0003577506544892538
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9745944395806251,
+     "patch_ap_1px": 0.8243449343814024,
+     "patch_auroc_1pct": 0.9991513131500169,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 171,
+     "parent_auroc_R1": 0.9859,
+     "parent_auroc_R2": 0.9863,
+     "parent_auroc_C4": 0.4604
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8534411206239838,
+     "patch_ap_1px": 0.36162148862297566,
+     "patch_auroc_1pct": 0.920898527914082,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 171,
+     "parent_auroc_R1": 0.7778,
+     "parent_auroc_R2": 0.7086,
+     "parent_auroc_C4": 0.4158
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9107179629061132,
+     "patch_ap_1px": 0.4712044639793751,
+     "patch_auroc_1pct": 0.923595037496528,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 171,
+     "parent_auroc_R1": 0.4305,
+     "parent_auroc_R2": 0.8348,
+     "parent_auroc_C4": 0.3942
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.019884050907759687,
+     "ci95": [
+      -0.038087155305892725,
+      -0.00491826731429683
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.002053978932254563,
+     "ci95": [
+      -0.007865008589919927,
+      0.003562084621836473
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.48883200687758654,
+     "ci95": [
+      -0.5415393312887754,
+      -0.43506740510044317
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.05150552739109451,
+     "ci95": [
+      -0.07114246155294812,
+      -0.03428811878423966
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0028270435410423234,
+     "ci95": [
+      -0.006452138564347157,
+      -0.0004931590156197866
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.22031215841736473,
+     "ci95": [
+      -0.2769259843754023,
+      -0.1682134594685978
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.18997022993622667,
+     "ci95": [
+      0.130000174652558,
+      0.2571846997561135
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": 0.005753658279880919,
+     "ci95": [
+      -0.0014853866580106807,
+      0.013892151720724
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.007268722885121327,
+     "ci95": [
+      -0.022545761207000737,
+      -0.00033120016897266954
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.26868337495508743,
+     "ci95": [
+      0.2213814607115607,
+      0.317907523588365
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.48238097408754943,
+     "ci95": [
+      0.42697161550775686,
+      0.5339881700170899
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.21369759913246206,
+     "ci95": [
+      0.16007169863435727,
+      0.26982789514723576
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.3003048514384222,
+     "ci95": [
+      0.25533607623105603,
+      0.34772445344529396
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.2725266932435631,
+     "ci95": [
+      0.20220482415114877,
+      0.34477500299423386
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.027778158194859126,
+     "ci95": [
+      -0.08675502760091663,
+      0.024320844749315465
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    }
+   }
+  },
+  "macaroni2": {
+   "n_images": 200,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.47124370763332496,
+    "patchcore|R2": 0.4175291975038852,
+    "patchcore|R2occ": 0.4073393505654249,
+    "patchcore|C4": 0.0013578194867592882,
+    "gauss|R1": 0.09855211988564878,
+    "gauss|R2": 0.06672113940675499,
+    "gauss|R2occ": 0.06295792333373458,
+    "gauss|C4": 0.00121254530728355,
+    "dino|R1": 0.017148935702702355,
+    "dino|R2": 0.06347342341755152,
+    "dino|R2occ": 0.06544848554407738,
+    "dino|C4": 0.0011392580433867128
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9588743939484836,
+     "patch_ap_1px": 0.7068742305116152,
+     "patch_auroc_1pct": 0.9968244849761437,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 158,
+     "parent_auroc_R1": 0.9604,
+     "parent_auroc_R2": 0.9424,
+     "parent_auroc_C4": 0.4387
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8193666523050409,
+     "patch_ap_1px": 0.22201559291037073,
+     "patch_auroc_1pct": 0.8354277370865049,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 158,
+     "parent_auroc_R1": 0.6736,
+     "parent_auroc_R2": 0.6944,
+     "parent_auroc_C4": 0.3695
+    },
+    "dino": {
+     "patch_auroc_1px": 0.8857814451431345,
+     "patch_ap_1px": 0.26829609463501713,
+     "patch_auroc_1pct": 0.8726083903809022,
+     "n_tiles": 4800,
+     "n_positive_tiles_1px": 158,
+     "parent_auroc_R1": 0.6473,
+     "parent_auroc_R2": 0.7115,
+     "parent_auroc_C4": 0.5867
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.053714510129439785,
+     "ci95": [
+      -0.0738818105850854,
+      -0.03678310114201645
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.010189846938460256,
+     "ci95": [
+      -0.019360528688664433,
+      -0.001045158515049691
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.4698858881465657,
+     "ci95": [
+      -0.5301845995711241,
+      -0.4108597653242867
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.031830980478893794,
+     "ci95": [
+      -0.05660771229139014,
+      -0.013924270747145837
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.003763216073020409,
+     "ci95": [
+      -0.00693218796315983,
+      -0.0015384725446547667
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.09733957457836523,
+     "ci95": [
+      -0.14961195795769794,
+      -0.05715089669111036
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.046324487714849163,
+     "ci95": [
+      0.018465958596807164,
+      0.08521475916767102
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": 0.001975062126525859,
+     "ci95": [
+      -0.001802003177933,
+      0.007274938339865903
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.016009677659315644,
+     "ci95": [
+      -0.042198964850396814,
+      -0.0007461651240962321
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.3726915877476762,
+     "ci95": [
+      0.31724976674597977,
+      0.42924980386958494
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.4540947719306226,
+     "ci95": [
+      0.39364489404601727,
+      0.5115299852353198
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.08140318418294643,
+     "ci95": [
+      0.036542862013426915,
+      0.13186337468057244
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.35080805809713017,
+     "ci95": [
+      0.29549022935055896,
+      0.4096998393635006
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.35405577408633365,
+     "ci95": [
+      0.2913298138597033,
+      0.41438251296231854
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": 0.0032477159892034674,
+     "ci95": [
+      -0.04238906574479801,
+      0.042523333986049905
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    }
+   }
+  },
+  "pcb1": {
+   "n_images": 200,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.7568323711204715,
+    "patchcore|R2": 0.7154939003261652,
+    "patchcore|R2occ": 0.7051370919921596,
+    "patchcore|C4": 0.016095611067138072,
+    "gauss|R1": 0.30684709477415856,
+    "gauss|R2": 0.28802075525640175,
+    "gauss|R2occ": 0.2797701529906433,
+    "gauss|C4": 0.01281678329513698,
+    "dino|R1": 0.42413899597211996,
+    "dino|R2": 0.708727143409075,
+    "dino|R2occ": 0.6859304520355524,
+    "dino|C4": 0.185876614525193
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9560324170054657,
+     "patch_ap_1px": 0.8175444436072569,
+     "patch_auroc_1pct": 0.9673706816181931,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 286,
+     "parent_auroc_R1": 0.9869,
+     "parent_auroc_R2": 0.9824,
+     "parent_auroc_C4": 0.2695
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8029774740485276,
+     "patch_ap_1px": 0.21230320922412022,
+     "patch_auroc_1pct": 0.8203011786103324,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 286,
+     "parent_auroc_R1": 0.6778,
+     "parent_auroc_R2": 0.6347,
+     "parent_auroc_C4": 0.2777
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9324784421039234,
+     "patch_ap_1px": 0.6037099257908016,
+     "patch_auroc_1pct": 0.9571907333684441,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 286,
+     "parent_auroc_R1": 0.7594,
+     "parent_auroc_R2": 0.8426,
+     "parent_auroc_C4": 0.7449
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.0413384707943063,
+     "ci95": [
+      -0.04769616464327115,
+      -0.028311059374823686
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.010356808334005652,
+     "ci95": [
+      -0.016944534401488336,
+      -0.004455020153386822
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.7407367600533334,
+     "ci95": [
+      -0.8181124623180731,
+      -0.5965645413491669
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.018826339517756807,
+     "ci95": [
+      -0.02724033591146409,
+      -0.007016734649388515
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.008250602265758467,
+     "ci95": [
+      -0.01702248827973329,
+      -0.0014014350189311398
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.2940303114790216,
+     "ci95": [
+      -0.47390866494664297,
+      -0.08703899184806828
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.2845881474369551,
+     "ci95": [
+      0.1699680797345567,
+      0.4116960499079387
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.022796691373522693,
+     "ci95": [
+      -0.03391196868662424,
+      -0.009705172788397776
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.23826238144692696,
+     "ci95": [
+      -0.32858073758178796,
+      -0.09920345276859384
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.44998527634631297,
+     "ci95": [
+      0.32504159779783975,
+      0.5708256907793638
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.33269337514835157,
+     "ci95": [
+      0.2146848633608468,
+      0.45938430004033337
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.1172919011979614,
+     "ci95": [
+      -0.24446267662225765,
+      -0.004695108654213957
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.42747314506976347,
+     "ci95": [
+      0.3100023207398759,
+      0.542379315818398
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.0067667569170901665,
+     "ci95": [
+      -0.05426816361691542,
+      0.09590971885739652
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.4207063881526733,
+     "ci95": [
+      -0.5638138281573326,
+      -0.27023916002414977
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "pcb2": {
+   "n_images": 200,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.5020942316138921,
+    "patchcore|R2": 0.45648717217759305,
+    "patchcore|R2occ": 0.45293608981335537,
+    "patchcore|C4": 0.00767523706656433,
+    "gauss|R1": 0.07785990001050597,
+    "gauss|R2": 0.061827699253293206,
+    "gauss|R2occ": 0.061098675069170064,
+    "gauss|C4": 0.0068041572529627834,
+    "dino|R1": 0.004545322434901738,
+    "dino|R2": 0.16520967283907897,
+    "dino|R2occ": 0.15099435300046907,
+    "dino|C4": 0.002097284191403509
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.963562286822034,
+     "patch_ap_1px": 0.7621155429906002,
+     "patch_auroc_1pct": 0.9803557265951911,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.9826,
+     "parent_auroc_R2": 0.9805,
+     "parent_auroc_C4": 0.7247
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8446103947483687,
+     "patch_ap_1px": 0.26734109210591966,
+     "patch_auroc_1pct": 0.8698824934659914,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.667,
+     "parent_auroc_R2": 0.6606,
+     "parent_auroc_C4": 0.68
+    },
+    "dino": {
+     "patch_auroc_1px": 0.893184945926623,
+     "patch_ap_1px": 0.3385073231513462,
+     "patch_auroc_1pct": 0.926932405417706,
+     "n_tiles": 6000,
+     "n_positive_tiles_1px": 246,
+     "parent_auroc_R1": 0.6388,
+     "parent_auroc_R2": 0.7583,
+     "parent_auroc_C4": 0.7002
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.04560705943629906,
+     "ci95": [
+      -0.05889324024855128,
+      -0.03109931249916013
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0035510823642376788,
+     "ci95": [
+      -0.005531011047688107,
+      -0.0014618035203601322
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.4944189945473278,
+     "ci95": [
+      -0.5630052552100068,
+      -0.43651259688375194
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.01603220075721276,
+     "ci95": [
+      -0.024443204881916526,
+      -0.009337252307388081
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0007290241841231421,
+     "ci95": [
+      -0.0012018489943908521,
+      -0.00042020006399494294
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.07105574275754319,
+     "ci95": [
+      -0.10569774422543159,
+      -0.04360763836719219
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.16066435040417723,
+     "ci95": [
+      0.12084044135418752,
+      0.20722048423875064
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.014215319838609908,
+     "ci95": [
+      -0.0194323368750111,
+      -0.008467715470517516
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.002448038243498229,
+     "ci95": [
+      -0.004448755152207826,
+      -0.0014745002920797195
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.42423433160338614,
+     "ci95": [
+      0.3626382502699884,
+      0.49586834363836957
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.49754890917899036,
+     "ci95": [
+      0.44003010823771405,
+      0.5653924806958454
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.07331457757560422,
+     "ci95": [
+      0.04530647609501211,
+      0.10902184317973769
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.3946594729242998,
+     "ci95": [
+      0.3423600497914038,
+      0.462224422172911
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.2912774993385141,
+     "ci95": [
+      0.2351715911227539,
+      0.3518109739252044
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.10338197358578577,
+     "ci95": [
+      -0.15003895556918936,
+      -0.0612238101056133
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "pcb3": {
+   "n_images": 201,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.4899950040100384,
+    "patchcore|R2": 0.4667583928955374,
+    "patchcore|R2occ": 0.46450546270857973,
+    "patchcore|C4": 0.010750156581234026,
+    "gauss|R1": 0.045408147472660206,
+    "gauss|R2": 0.04887084796757256,
+    "gauss|R2occ": 0.04878734651203781,
+    "gauss|C4": 0.010606595681989022,
+    "dino|R1": 0.051802570677944526,
+    "dino|R2": 0.2814934843560342,
+    "dino|R2occ": 0.2734436088679403,
+    "dino|C4": 0.012667388417937828
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9513048830043673,
+     "patch_ap_1px": 0.7700796265386999,
+     "patch_auroc_1pct": 0.9770158061884974,
+     "n_tiles": 5628,
+     "n_positive_tiles_1px": 235,
+     "parent_auroc_R1": 0.979009900990099,
+     "parent_auroc_R2": 0.9847524752475247,
+     "parent_auroc_C4": 0.4067326732673267
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8645612318568988,
+     "patch_ap_1px": 0.20028831302512629,
+     "patch_auroc_1pct": 0.8827612115469743,
+     "n_tiles": 5628,
+     "n_positive_tiles_1px": 235,
+     "parent_auroc_R1": 0.5247524752475248,
+     "parent_auroc_R2": 0.5522772277227723,
+     "parent_auroc_C4": 0.4178217821782178
+    },
+    "dino": {
+     "patch_auroc_1px": 0.921618646709091,
+     "patch_ap_1px": 0.47705219251763575,
+     "patch_auroc_1pct": 0.955942674565295,
+     "n_tiles": 5628,
+     "n_positive_tiles_1px": 235,
+     "parent_auroc_R1": 0.5876237623762376,
+     "parent_auroc_R2": 0.8715841584158416,
+     "parent_auroc_C4": 0.4520792079207921
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.023236611114501038,
+     "ci95": [
+      -0.03317950979300053,
+      -0.012667289358273548
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.002252930186957658,
+     "ci95": [
+      -0.0047333343495119294,
+      -0.0005739170356192773
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.4792448474288044,
+     "ci95": [
+      -0.5812017863026573,
+      -0.37957197496533873
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": 0.0034627004949123533,
+     "ci95": [
+      -0.0006786099478666128,
+      0.00862932836597711
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -8.350145553474853e-05,
+     "ci95": [
+      -0.00038793257363914005,
+      0.0004471175638145106
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.03480155179067118,
+     "ci95": [
+      -0.057535752182655366,
+      -0.017263319825766607
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.2296909136780897,
+     "ci95": [
+      0.15460026623419645,
+      0.32435636893550696
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.008049875488093938,
+     "ci95": [
+      -0.015884201350044994,
+      -0.003148115013850849
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.0391351822600067,
+     "ci95": [
+      -0.07343007715449576,
+      -0.011817173853819687
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.4445868565373782,
+     "ci95": [
+      0.35417443377119956,
+      0.5436730024057879
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.4381924333320939,
+     "ci95": [
+      0.35048589288948384,
+      0.5345978132100669
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.0063944232052843206,
+     "ci95": [
+      -0.045596845041752196,
+      0.027024144808521076
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.4178875449279648,
+     "ci95": [
+      0.32947471736803763,
+      0.5150452154418617
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.18526490853950317,
+     "ci95": [
+      0.12168477045791228,
+      0.24943379922874157
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.23262263638846165,
+     "ci95": [
+      -0.33971411947362834,
+      -0.15068058891231037
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "pcb4": {
+   "n_images": 201,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.28395192274631276,
+    "patchcore|R2": 0.277519039841936,
+    "patchcore|R2occ": 0.27722529163028153,
+    "patchcore|C4": 0.013941617394587224,
+    "gauss|R1": 0.030817540877077953,
+    "gauss|R2": 0.02986191280185323,
+    "gauss|R2occ": 0.029815154838697597,
+    "gauss|C4": 0.01240987118456379,
+    "dino|R1": 0.010207391326987848,
+    "dino|R2": 0.18998591936591674,
+    "dino|R2occ": 0.18785664410384909,
+    "dino|C4": 0.006403437296840826
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9531487898604463,
+     "patch_ap_1px": 0.7176904416398759,
+     "patch_auroc_1pct": 0.9619847052905014,
+     "n_tiles": 6030,
+     "n_positive_tiles_1px": 325,
+     "parent_auroc_R1": 0.9707920792079208,
+     "parent_auroc_R2": 0.9813861386138614,
+     "parent_auroc_C4": 0.3921782178217822
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.8504766399244927,
+     "patch_ap_1px": 0.19921183273747042,
+     "patch_auroc_1pct": 0.8613167877946066,
+     "n_tiles": 6030,
+     "n_positive_tiles_1px": 325,
+     "parent_auroc_R1": 0.18306930693069307,
+     "parent_auroc_R2": 0.2103960396039604,
+     "parent_auroc_C4": 0.44356435643564357
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9137846693184116,
+     "patch_ap_1px": 0.37825712989985627,
+     "patch_auroc_1pct": 0.9209440069354579,
+     "n_tiles": 6030,
+     "n_positive_tiles_1px": 325,
+     "parent_auroc_R1": 0.5828712871287128,
+     "parent_auroc_R2": 0.8656435643564356,
+     "parent_auroc_C4": 0.5047524752475248
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.006432882904376769,
+     "ci95": [
+      -0.0161509763291503,
+      0.0026843595054766964
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0002937482116544543,
+     "ci95": [
+      -0.0006766033175530983,
+      -9.932535905747282e-05
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.27001030535172554,
+     "ci95": [
+      -0.30285230020368153,
+      -0.23562641859155536
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.0009556280752247223,
+     "ci95": [
+      -0.003725905575877203,
+      0.0008770260096139284
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -4.6757963155633075e-05,
+     "ci95": [
+      -6.926926355321165e-05,
+      -2.7140648941367813e-05
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.018407669692514162,
+     "ci95": [
+      -0.02562679085752278,
+      -0.01193707888790556
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.1797785280389289,
+     "ci95": [
+      0.14660495027723605,
+      0.21948087303475636
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.002129275262067659,
+     "ci95": [
+      -0.004620600501730244,
+      -0.0003011111114351775
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.003803954030147022,
+     "ci95": [
+      -0.00928886074932766,
+      -0.0006748243742559409
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.2531343818692348,
+     "ci95": [
+      0.22067858437943638,
+      0.2845289342370046
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.2737445314193249,
+     "ci95": [
+      0.23990576744438147,
+      0.30620303718171393
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.020610149550090107,
+     "ci95": [
+      0.013047330736536791,
+      0.02878229349577794
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.24765712704008275,
+     "ci95": [
+      0.21732011110411426,
+      0.2778957594595381
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": 0.08753312047601924,
+     "ci95": [
+      0.05304840650553188,
+      0.12134747925006865
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.1601240065640635,
+     "ci95": [
+      -0.19936932138365274,
+      -0.12672227583443027
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  },
+  "pipe_fryum": {
+   "n_images": 150,
+   "n_defective": 100,
+   "ap": {
+    "patchcore|R1": 0.34528919567287825,
+    "patchcore|R2": 0.3746054456471407,
+    "patchcore|R2occ": 0.37211578118448035,
+    "patchcore|C4": 0.49417136041076243,
+    "gauss|R1": 0.18057832921158695,
+    "gauss|R2": 0.16275889234214078,
+    "gauss|R2occ": 0.16302925653247066,
+    "gauss|C4": 0.295762723980159,
+    "dino|R1": 0.33864176806692425,
+    "dino|R2": 0.5069722373748852,
+    "dino|R2occ": 0.5031894034849175,
+    "dino|C4": 0.4176422195070574
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.9862948544346649,
+     "patch_ap_1px": 0.8725940546456886,
+     "patch_auroc_1pct": 0.9914831335377753,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 280,
+     "parent_auroc_R1": 0.9944,
+     "parent_auroc_R2": 0.9834,
+     "parent_auroc_C4": 0.8692
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.9466046039268788,
+     "patch_ap_1px": 0.5418510741630527,
+     "patch_auroc_1pct": 0.9484185315660085,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 280,
+     "parent_auroc_R1": 0.6736,
+     "parent_auroc_R2": 0.6632,
+     "parent_auroc_C4": 0.5204
+    },
+    "dino": {
+     "patch_auroc_1px": 0.9878292146242383,
+     "patch_ap_1px": 0.8607446335025895,
+     "patch_auroc_1pct": 0.9942570393086144,
+     "n_tiles": 4500,
+     "n_positive_tiles_1px": 280,
+     "parent_auroc_R1": 0.879,
+     "parent_auroc_R2": 0.967,
+     "parent_auroc_C4": 0.7676
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": 0.029316249974262465,
+     "ci95": [
+      0.008709779818343366,
+      0.046099288094956156
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.002489664462660357,
+     "ci95": [
+      -0.004738525481936295,
+      -0.0008314602192636885
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.14888216473788418,
+     "ci95": [
+      0.06821256964923603,
+      0.19438354570035685
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.017819436869446176,
+     "ci95": [
+      -0.023012294726661935,
+      -0.011726630726681087
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": 0.0002703641903298859,
+     "ci95": [
+      -0.0004568656347721029,
+      0.0014713901215928245
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.11518439476857206,
+     "ci95": [
+      0.024858404240259552,
+      0.18630559839301034
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.16833046930796092,
+     "ci95": [
+      0.06117562869626528,
+      0.2525380438937263
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.003782833889967696,
+     "ci95": [
+      -0.009814202244815658,
+      -0.00013160729550502518
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.07900045144013312,
+     "ci95": [
+      0.014517798685247581,
+      0.14664415038106043
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": 0.1647108664612913,
+     "ci95": [
+      0.12323892216028845,
+      0.21581676222332175
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.006647427605953993,
+     "ci95": [
+      -0.05436411499049085,
+      0.06677384127404375
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": -0.1580634388553373,
+     "ci95": [
+      -0.2375487253771012,
+      -0.08860461081424968
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": 0.21184655330499993,
+     "ci95": [
+      0.1696250827070146,
+      0.2527080561123754
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.13236679172774446,
+     "ci95": [
+      -0.1929921449997192,
+      -0.04861969069875083
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.34421334503274437,
+     "ci95": [
+      -0.42006057230496463,
+      -0.23569220371218327
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    }
+   }
+  }
+ },
+ "reps": 2000,
+ "seed": 13017,
+ "dataset_level": {
+  "dino: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.01554508381086464,
+   "ci95": [
+    -0.029791891982619043,
+    0.0005920863458104152
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "dino: R2 - R1": {
+   "estimate": 0.20432592225445959,
+   "ci95": [
+    0.1831123853002031,
+    0.22528325191127588
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "dino: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.004759703180016701,
+   "ci95": [
+    -0.0074722371284066,
+    -0.0014836231736023015
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "gauss: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.09148836104863733,
+   "ci95": [
+    -0.11219321039488461,
+    -0.0705446474560704
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "gauss: R2 - R1": {
+   "estimate": -0.018219137670277864,
+   "ci95": [
+    -0.02169499072499824,
+    -0.015161914221762315
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "gauss: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.002516852484010019,
+   "ci95": [
+    -0.0034707203404150257,
+    -0.0016843121623651134
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "patchcore: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.35273137460639176,
+   "ci95": [
+    -0.37477798166086285,
+    -0.3317744982420221
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "patchcore: R2 - R1": {
+   "estimate": -0.02679949132610808,
+   "ci95": [
+    -0.031052684454046582,
+    -0.02295677209617917
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "patchcore: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.007420551136102057,
+   "ci95": [
+    -0.009620128782375515,
+    -0.004503043340513444
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R1: gauss - dino": {
+   "estimate": -0.009441190580062658,
+   "ci95": [
+    -0.028277618542594925,
+    0.009621302435925655
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R1: patchcore - dino": {
+   "estimate": 0.3008609346813942,
+   "ci95": [
+    0.27971459819061295,
+    0.3234649059796908
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "ranking R1: patchcore - gauss": {
+   "estimate": 0.31030212526145684,
+   "ci95": [
+    0.29178569559737866,
+    0.33044641461090646
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "ranking R2: gauss - dino": {
+   "estimate": -0.23198625050480018,
+   "ci95": [
+    -0.2563741030459417,
+    -0.2067237236038174
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "ranking R2: patchcore - dino": {
+   "estimate": 0.0697355211008265,
+   "ci95": [
+    0.049127777029777976,
+    0.09420572101516103
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "ranking R2: patchcore - gauss": {
+   "estimate": 0.30172177160562663,
+   "ci95": [
+    0.2849909806985016,
+    0.3206062734457384
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  }
+ },
+ "primary": {
+  "estimate": -0.02679949132610808,
+  "ci95": [
+   -0.031052684454046582,
+   -0.02295677209617917
+  ],
+  "excludes_zero": true,
+  "meets_min_point_estimate": true,
+  "whole_interval_beyond_0.01": true
+ }
+}

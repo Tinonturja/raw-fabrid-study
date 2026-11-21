@@ -1,0 +1,29 @@
+visa (full), 12 unit(s)
+  dino: C4 - R1 (downscaled vs native)                    -0.0155  [-0.0298, +0.0006]
+  dino: R2 - R1                                           +0.2043  [+0.1831, +0.2253]
+  dino: R2occ - R2 (occurrence vs unique)                 -0.0048  [-0.0075, -0.0015]
+  gauss: C4 - R1 (downscaled vs native)                   -0.0915  [-0.1122, -0.0705]
+  gauss: R2 - R1                                          -0.0182  [-0.0217, -0.0152]
+  gauss: R2occ - R2 (occurrence vs unique)                -0.0025  [-0.0035, -0.0017]
+  patchcore: C4 - R1 (downscaled vs native)               -0.3527  [-0.3748, -0.3318]
+  patchcore: R2 - R1                                      -0.0268  [-0.0311, -0.0230]
+  patchcore: R2occ - R2 (occurrence vs unique)            -0.0074  [-0.0096, -0.0045]
+  ranking R1: gauss - dino                                -0.0094  [-0.0283, +0.0096]
+  ranking R1: patchcore - dino                            +0.3009  [+0.2797, +0.3235]
+  ranking R1: patchcore - gauss                           +0.3103  [+0.2918, +0.3304]
+  ranking R2: gauss - dino                                -0.2320  [-0.2564, -0.2067]
+  ranking R2: patchcore - dino                            +0.0697  [+0.0491, +0.0942]
+  ranking R2: patchcore - gauss                           +0.3017  [+0.2850, +0.3206]
+  candle: AP {'patchcore|R1': 0.3456, 'patchcore|R2': 0.3195, 'patchcore|R2occ': 0.3125, 'patchcore|C4': 0.014, 'gauss|R1': 0.0745, 'gauss|R2': 0.0553, 'gauss|R2occ': 0.0538, 'gauss|C4': 0.0249, 'dino|R1': 0.1231, 'dino|R2': 0.3803, 'dino|R2occ': 0.3761, 'dino|C4': 0.1307}
+  capsules: AP {'patchcore|R1': 0.696, 'patchcore|R2': 0.6309, 'patchcore|R2occ': 0.6255, 'patchcore|C4': 0.0058, 'gauss|R1': 0.1677, 'gauss|R2': 0.1246, 'gauss|R2occ': 0.1223, 'gauss|C4': 0.0062, 'dino|R1': 0.1524, 'dino|R2': 0.2033, 'dino|R2occ': 0.2017, 'dino|C4': 0.1104}
+  cashew: AP {'patchcore|R1': 0.1395, 'patchcore|R2': 0.1157, 'patchcore|R2occ': 0.1145, 'patchcore|C4': 0.1456, 'gauss|R1': 0.0862, 'gauss|R2': 0.0722, 'gauss|R2occ': 0.0719, 'gauss|C4': 0.0405, 'dino|R1': 0.1105, 'dino|R2': 0.4419, 'dino|R2occ': 0.4408, 'dino|C4': 0.1729}
+  chewinggum: AP {'patchcore|R1': 0.5, 'patchcore|R2': 0.4515, 'patchcore|R2occ': 0.4094, 'patchcore|C4': 0.296, 'gauss|R1': 0.1294, 'gauss|R2': 0.1263, 'gauss|R2occ': 0.1164, 'gauss|C4': 0.0265, 'dino|R1': 0.392, 'dino|R2': 0.6626, 'dino|R2occ': 0.6558, 'dino|C4': 0.4256}
+  fryum: AP {'patchcore|R1': 0.2914, 'patchcore|R2': 0.2941, 'patchcore|R2occ': 0.2919, 'patchcore|C4': 0.0725, 'gauss|R1': 0.169, 'gauss|R2': 0.1634, 'gauss|R2occ': 0.1624, 'gauss|C4': 0.0516, 'dino|R1': 0.0693, 'dino|R2': 0.3518, 'dino|R2occ': 0.3516, 'dino|C4': 0.049}
+  macaroni1: AP {'patchcore|R1': 0.49, 'patchcore|R2': 0.4701, 'patchcore|R2occ': 0.4681, 'patchcore|C4': 0.0012, 'gauss|R1': 0.2213, 'gauss|R2': 0.1698, 'gauss|R2occ': 0.167, 'gauss|C4': 0.001, 'dino|R1': 0.0076, 'dino|R2': 0.1976, 'dino|R2occ': 0.2034, 'dino|C4': 0.0004}
+  macaroni2: AP {'patchcore|R1': 0.4712, 'patchcore|R2': 0.4175, 'patchcore|R2occ': 0.4073, 'patchcore|C4': 0.0014, 'gauss|R1': 0.0986, 'gauss|R2': 0.0667, 'gauss|R2occ': 0.063, 'gauss|C4': 0.0012, 'dino|R1': 0.0171, 'dino|R2': 0.0635, 'dino|R2occ': 0.0654, 'dino|C4': 0.0011}
+  pcb1: AP {'patchcore|R1': 0.7568, 'patchcore|R2': 0.7155, 'patchcore|R2occ': 0.7051, 'patchcore|C4': 0.0161, 'gauss|R1': 0.3068, 'gauss|R2': 0.288, 'gauss|R2occ': 0.2798, 'gauss|C4': 0.0128, 'dino|R1': 0.4241, 'dino|R2': 0.7087, 'dino|R2occ': 0.6859, 'dino|C4': 0.1859}
+  pcb2: AP {'patchcore|R1': 0.5021, 'patchcore|R2': 0.4565, 'patchcore|R2occ': 0.4529, 'patchcore|C4': 0.0077, 'gauss|R1': 0.0779, 'gauss|R2': 0.0618, 'gauss|R2occ': 0.0611, 'gauss|C4': 0.0068, 'dino|R1': 0.0045, 'dino|R2': 0.1652, 'dino|R2occ': 0.151, 'dino|C4': 0.0021}
+  pcb3: AP {'patchcore|R1': 0.49, 'patchcore|R2': 0.4668, 'patchcore|R2occ': 0.4645, 'patchcore|C4': 0.0108, 'gauss|R1': 0.0454, 'gauss|R2': 0.0489, 'gauss|R2occ': 0.0488, 'gauss|C4': 0.0106, 'dino|R1': 0.0518, 'dino|R2': 0.2815, 'dino|R2occ': 0.2734, 'dino|C4': 0.0127}
+  pcb4: AP {'patchcore|R1': 0.284, 'patchcore|R2': 0.2775, 'patchcore|R2occ': 0.2772, 'patchcore|C4': 0.0139, 'gauss|R1': 0.0308, 'gauss|R2': 0.0299, 'gauss|R2occ': 0.0298, 'gauss|C4': 0.0124, 'dino|R1': 0.0102, 'dino|R2': 0.19, 'dino|R2occ': 0.1879, 'dino|C4': 0.0064}
+  pipe_fryum: AP {'patchcore|R1': 0.3453, 'patchcore|R2': 0.3746, 'patchcore|R2occ': 0.3721, 'patchcore|C4': 0.4942, 'gauss|R1': 0.1806, 'gauss|R2': 0.1628, 'gauss|R2occ': 0.163, 'gauss|C4': 0.2958, 'dino|R1': 0.3386, 'dino|R2': 0.507, 'dino|R2occ': 0.5032, 'dino|C4': 0.4176}
+wrote <study>/results_p5/visa/full/analysis.json

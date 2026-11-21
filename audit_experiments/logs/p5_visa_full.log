@@ -1,0 +1,691 @@
+00:34:49 candle wrn50 bank loaded from cache
+00:35:24 candle 10/200 images 34s
+00:35:59 candle 20/200 images 70s
+00:36:35 candle 30/200 images 106s
+00:37:12 candle 40/200 images 142s
+00:37:47 candle 50/200 images 178s
+00:38:23 candle 60/200 images 213s
+00:38:58 candle 70/200 images 249s
+00:39:32 candle 80/200 images 283s
+00:40:08 candle 90/200 images 318s
+00:40:42 candle 100/200 images 352s
+00:41:22 candle 110/200 images 393s
+00:41:57 candle 120/200 images 427s
+00:42:31 candle 130/200 images 461s
+00:43:01 candle 140/200 images 491s
+00:43:30 candle 150/200 images 521s
+00:43:59 candle 160/200 images 550s
+00:44:28 candle 170/200 images 579s
+00:44:57 candle 180/200 images 608s
+00:45:26 candle 190/200 images 637s
+00:45:55 candle 200/200 images 666s
+00:45:58 candle unit done 668s R1 failures: 0
+00:45:59 capsules wrn50 candidates 0/1000 tiles
+00:46:09 capsules wrn50 candidates 320/1000 tiles
+00:46:18 capsules wrn50 candidates 640/1000 tiles
+00:46:28 capsules wrn50 candidates 960/1000 tiles
+00:46:42 capsules wrn50 coreset 2000/10240
+00:46:55 capsules wrn50 coreset 4000/10240
+00:47:07 capsules wrn50 coreset 6000/10240
+00:47:19 capsules wrn50 coreset 8000/10240
+00:47:32 capsules wrn50 coreset 10000/10240
+00:47:36 capsules wrn50 bank built 98s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+00:48:12 capsules 10/160 images 133s
+00:48:38 capsules 20/160 images 159s
+00:49:03 capsules 30/160 images 185s
+00:49:30 capsules 40/160 images 211s
+00:49:56 capsules 50/160 images 237s
+00:50:23 capsules 60/160 images 264s
+00:50:50 capsules 70/160 images 291s
+00:51:21 capsules 80/160 images 322s
+00:51:52 capsules 90/160 images 354s
+00:52:24 capsules 100/160 images 386s
+00:52:57 capsules 110/160 images 419s
+00:53:24 capsules 120/160 images 446s
+00:53:51 capsules 130/160 images 473s
+00:54:18 capsules 140/160 images 500s
+00:54:45 capsules 150/160 images 527s
+00:55:12 capsules 160/160 images 553s
+00:55:13 capsules unit done 555s R1 failures: 0
+00:55:14 cashew wrn50 candidates 0/1000 tiles
+00:55:24 cashew wrn50 candidates 320/1000 tiles
+00:55:34 cashew wrn50 candidates 640/1000 tiles
+00:55:44 cashew wrn50 candidates 960/1000 tiles
+00:55:59 cashew wrn50 coreset 2000/10240
+00:56:12 cashew wrn50 coreset 4000/10240
+00:56:25 cashew wrn50 coreset 6000/10240
+00:56:38 cashew wrn50 coreset 8000/10240
+00:56:51 cashew wrn50 coreset 10000/10240
+00:56:55 cashew wrn50 bank built 102s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+00:57:37 cashew 10/150 images 143s
+00:58:04 cashew 20/150 images 171s
+00:58:32 cashew 30/150 images 199s
+00:59:00 cashew 40/150 images 226s
+00:59:28 cashew 50/150 images 254s
+00:59:56 cashew 60/150 images 282s
+01:00:24 cashew 70/150 images 311s
+01:00:52 cashew 80/150 images 339s
+01:01:20 cashew 90/150 images 366s
+01:01:48 cashew 100/150 images 394s
+01:02:16 cashew 110/150 images 422s
+01:02:44 cashew 120/150 images 450s
+01:03:13 cashew 130/150 images 479s
+01:03:43 cashew 140/150 images 509s
+01:04:12 cashew 150/150 images 538s
+01:04:13 cashew unit done 540s R1 failures: 0
+01:04:15 chewinggum wrn50 candidates 0/1000 tiles
+01:04:24 chewinggum wrn50 candidates 320/1000 tiles
+01:04:34 chewinggum wrn50 candidates 640/1000 tiles
+01:04:44 chewinggum wrn50 candidates 960/1000 tiles
+01:04:58 chewinggum wrn50 coreset 2000/10240
+01:05:11 chewinggum wrn50 coreset 4000/10240
+01:05:23 chewinggum wrn50 coreset 6000/10240
+01:05:36 chewinggum wrn50 coreset 8000/10240
+01:05:49 chewinggum wrn50 coreset 10000/10240
+01:05:53 chewinggum wrn50 bank built 99s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+01:06:39 chewinggum 10/150 images 145s
+01:07:11 chewinggum 20/150 images 176s
+01:07:47 chewinggum 30/150 images 212s
+01:08:18 chewinggum 40/150 images 243s
+01:08:55 chewinggum 50/150 images 281s
+01:09:32 chewinggum 60/150 images 317s
+01:10:06 chewinggum 70/150 images 351s
+01:10:40 chewinggum 80/150 images 386s
+01:11:15 chewinggum 90/150 images 421s
+01:11:50 chewinggum 100/150 images 456s
+01:12:26 chewinggum 110/150 images 492s
+01:13:07 chewinggum 120/150 images 533s
+01:14:06 chewinggum 130/150 images 592s
+01:15:16 chewinggum 140/150 images 662s
+01:16:09 chewinggum 150/150 images 715s
+01:16:11 chewinggum unit done 717s R1 failures: 0
+01:16:13 fryum wrn50 candidates 0/1000 tiles
+01:16:29 fryum wrn50 candidates 320/1000 tiles
+01:16:42 fryum wrn50 candidates 640/1000 tiles
+01:16:53 fryum wrn50 candidates 960/1000 tiles
+01:17:10 fryum wrn50 coreset 2000/10240
+01:17:28 fryum wrn50 coreset 4000/10240
+01:17:49 fryum wrn50 coreset 6000/10240
+01:18:10 fryum wrn50 coreset 8000/10240
+01:18:29 fryum wrn50 coreset 10000/10240
+01:18:37 fryum wrn50 bank built 145s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+01:19:56 fryum 10/150 images 224s
+01:20:49 fryum 20/150 images 277s
+01:21:43 fryum 30/150 images 331s
+01:22:32 fryum 40/150 images 380s
+01:23:22 fryum 50/150 images 430s
+01:24:23 fryum 60/150 images 491s
+01:25:36 fryum 70/150 images 564s
+01:26:24 fryum 80/150 images 612s
+01:27:27 fryum 90/150 images 675s
+01:28:34 fryum 100/150 images 742s
+01:29:17 fryum 110/150 images 785s
+01:30:05 fryum 120/150 images 833s
+01:30:48 fryum 130/150 images 876s
+01:32:03 fryum 140/150 images 951s
+01:32:57 fryum 150/150 images 1005s
+01:33:00 fryum unit done 1008s R1 failures: 0
+01:33:03 macaroni1 wrn50 candidates 0/1000 tiles
+01:33:31 macaroni1 wrn50 candidates 320/1000 tiles
+01:33:51 macaroni1 wrn50 candidates 640/1000 tiles
+01:34:14 macaroni1 wrn50 candidates 960/1000 tiles
+01:34:42 macaroni1 wrn50 coreset 2000/10240
+01:35:10 macaroni1 wrn50 coreset 4000/10240
+01:35:44 macaroni1 wrn50 coreset 6000/10240
+01:36:05 macaroni1 wrn50 coreset 8000/10240
+01:36:21 macaroni1 wrn50 coreset 10000/10240
+01:36:28 macaroni1 wrn50 bank built 207s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+01:37:49 macaroni1 10/200 images 287s
+01:38:17 macaroni1 20/200 images 315s
+01:38:45 macaroni1 30/200 images 343s
+01:39:18 macaroni1 40/200 images 376s
+01:39:49 macaroni1 50/200 images 407s
+01:40:19 macaroni1 60/200 images 437s
+01:40:47 macaroni1 70/200 images 465s
+01:41:13 macaroni1 80/200 images 492s
+01:41:40 macaroni1 90/200 images 518s
+01:42:06 macaroni1 100/200 images 544s
+01:42:32 macaroni1 110/200 images 570s
+01:42:58 macaroni1 120/200 images 597s
+01:43:27 macaroni1 130/200 images 626s
+01:43:54 macaroni1 140/200 images 652s
+01:44:22 macaroni1 150/200 images 680s
+01:44:48 macaroni1 160/200 images 706s
+01:45:13 macaroni1 170/200 images 732s
+01:45:42 macaroni1 180/200 images 760s
+01:46:09 macaroni1 190/200 images 788s
+01:46:39 macaroni1 200/200 images 817s
+01:46:41 macaroni1 unit done 819s R1 failures: 0
+01:46:43 macaroni2 wrn50 candidates 0/1000 tiles
+01:46:53 macaroni2 wrn50 candidates 320/1000 tiles
+01:47:05 macaroni2 wrn50 candidates 640/1000 tiles
+01:47:19 macaroni2 wrn50 candidates 960/1000 tiles
+01:47:37 macaroni2 wrn50 coreset 2000/10240
+01:47:54 macaroni2 wrn50 coreset 4000/10240
+01:48:11 macaroni2 wrn50 coreset 6000/10240
+01:48:27 macaroni2 wrn50 coreset 8000/10240
+01:48:43 macaroni2 wrn50 coreset 10000/10240
+01:48:49 macaroni2 wrn50 bank built 127s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+01:49:38 macaroni2 10/200 images 177s
+01:50:10 macaroni2 20/200 images 208s
+01:50:42 macaroni2 30/200 images 240s
+01:51:13 macaroni2 40/200 images 271s
+01:51:41 macaroni2 50/200 images 299s
+01:52:16 macaroni2 60/200 images 334s
+01:52:51 macaroni2 70/200 images 369s
+01:53:19 macaroni2 80/200 images 398s
+01:53:48 macaroni2 90/200 images 427s
+01:54:17 macaroni2 100/200 images 455s
+01:54:46 macaroni2 110/200 images 484s
+01:55:14 macaroni2 120/200 images 513s
+01:55:49 macaroni2 130/200 images 548s
+01:56:23 macaroni2 140/200 images 582s
+01:56:55 macaroni2 150/200 images 614s
+01:57:29 macaroni2 160/200 images 647s
+01:58:02 macaroni2 170/200 images 680s
+01:59:02 macaroni2 180/200 images 740s
+01:59:37 macaroni2 190/200 images 776s
+02:00:13 macaroni2 200/200 images 811s
+02:00:17 macaroni2 unit done 815s R1 failures: 0
+02:00:21 pcb1 wrn50 candidates 0/1000 tiles
+02:00:31 pcb1 wrn50 candidates 320/1000 tiles
+02:00:41 pcb1 wrn50 candidates 640/1000 tiles
+02:00:52 pcb1 wrn50 candidates 960/1000 tiles
+02:01:07 pcb1 wrn50 coreset 2000/10240
+02:01:21 pcb1 wrn50 coreset 4000/10240
+02:01:37 pcb1 wrn50 coreset 6000/10240
+02:01:54 pcb1 wrn50 coreset 8000/10240
+02:02:11 pcb1 wrn50 coreset 10000/10240
+02:02:18 pcb1 wrn50 bank built 118s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+02:03:10 pcb1 10/200 images 171s
+02:03:48 pcb1 20/200 images 209s
+02:04:28 pcb1 30/200 images 248s
+02:05:14 pcb1 40/200 images 294s
+02:05:59 pcb1 50/200 images 339s
+02:06:31 pcb1 60/200 images 371s
+02:07:02 pcb1 70/200 images 402s
+02:07:32 pcb1 80/200 images 432s
+02:08:04 pcb1 90/200 images 464s
+02:08:35 pcb1 100/200 images 496s
+02:09:08 pcb1 110/200 images 528s
+02:09:42 pcb1 120/200 images 562s
+02:10:14 pcb1 130/200 images 594s
+02:10:44 pcb1 140/200 images 624s
+02:11:13 pcb1 150/200 images 653s
+02:11:43 pcb1 160/200 images 684s
+02:12:13 pcb1 170/200 images 713s
+02:12:49 pcb1 180/200 images 749s
+02:13:25 pcb1 190/200 images 786s
+02:13:58 pcb1 200/200 images 819s
+02:14:01 pcb1 unit done 821s R1 failures: 0
+02:14:03 pcb2 wrn50 candidates 0/1000 tiles
+02:14:14 pcb2 wrn50 candidates 320/1000 tiles
+02:14:25 pcb2 wrn50 candidates 640/1000 tiles
+02:14:37 pcb2 wrn50 candidates 960/1000 tiles
+02:14:54 pcb2 wrn50 coreset 2000/10240
+02:15:10 pcb2 wrn50 coreset 4000/10240
+02:15:24 pcb2 wrn50 coreset 6000/10240
+02:15:40 pcb2 wrn50 coreset 8000/10240
+02:15:54 pcb2 wrn50 coreset 10000/10240
+02:16:00 pcb2 wrn50 bank built 118s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+02:16:51 pcb2 10/200 images 169s
+02:17:25 pcb2 20/200 images 203s
+02:17:59 pcb2 30/200 images 237s
+02:18:33 pcb2 40/200 images 271s
+02:19:07 pcb2 50/200 images 305s
+02:19:43 pcb2 60/200 images 341s
+02:20:19 pcb2 70/200 images 377s
+02:20:54 pcb2 80/200 images 412s
+02:21:30 pcb2 90/200 images 448s
+02:22:06 pcb2 100/200 images 484s
+02:22:53 pcb2 110/200 images 531s
+02:23:23 pcb2 120/200 images 561s
+02:23:52 pcb2 130/200 images 590s
+02:24:21 pcb2 140/200 images 619s
+02:24:50 pcb2 150/200 images 648s
+02:25:19 pcb2 160/200 images 677s
+02:25:47 pcb2 170/200 images 706s
+02:26:16 pcb2 180/200 images 734s
+02:26:45 pcb2 190/200 images 763s
+02:27:13 pcb2 200/200 images 791s
+02:27:15 pcb2 unit done 793s R1 failures: 0
+02:27:18 pcb3 wrn50 candidates 0/1000 tiles
+02:27:27 pcb3 wrn50 candidates 320/1000 tiles
+02:27:37 pcb3 wrn50 candidates 640/1000 tiles
+02:27:47 pcb3 wrn50 candidates 960/1000 tiles
+02:28:00 pcb3 wrn50 coreset 2000/10240
+02:28:12 pcb3 wrn50 coreset 4000/10240
+02:28:24 pcb3 wrn50 coreset 6000/10240
+02:28:37 pcb3 wrn50 coreset 8000/10240
+02:28:49 pcb3 wrn50 coreset 10000/10240
+02:28:54 pcb3 wrn50 bank built 97s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+02:29:38 pcb3 10/201 images 141s
+02:30:05 pcb3 20/201 images 168s
+02:30:32 pcb3 30/201 images 195s
+02:30:59 pcb3 40/201 images 222s
+02:31:26 pcb3 50/201 images 249s
+02:31:53 pcb3 60/201 images 276s
+02:32:20 pcb3 70/201 images 303s
+02:32:47 pcb3 80/201 images 330s
+02:33:14 pcb3 90/201 images 357s
+02:33:41 pcb3 100/201 images 384s
+02:34:08 pcb3 110/201 images 411s
+02:34:35 pcb3 120/201 images 438s
+02:35:02 pcb3 130/201 images 465s
+02:35:29 pcb3 140/201 images 492s
+02:35:56 pcb3 150/201 images 519s
+02:36:23 pcb3 160/201 images 546s
+02:36:50 pcb3 170/201 images 573s
+02:37:17 pcb3 180/201 images 600s
+02:37:44 pcb3 190/201 images 627s
+02:38:11 pcb3 200/201 images 654s
+02:38:14 pcb3 201/201 images 657s
+02:38:17 pcb3 unit done 660s R1 failures: 0
+02:38:18 pcb4 wrn50 candidates 0/1000 tiles
+02:38:28 pcb4 wrn50 candidates 320/1000 tiles
+02:38:38 pcb4 wrn50 candidates 640/1000 tiles
+02:38:48 pcb4 wrn50 candidates 960/1000 tiles
+02:39:01 pcb4 wrn50 coreset 2000/10240
+02:39:13 pcb4 wrn50 coreset 4000/10240
+02:39:26 pcb4 wrn50 coreset 6000/10240
+02:39:38 pcb4 wrn50 coreset 8000/10240
+02:39:50 pcb4 wrn50 coreset 10000/10240
+02:39:55 pcb4 wrn50 bank built 98s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+02:40:37 pcb4 10/201 images 140s
+02:41:06 pcb4 20/201 images 168s
+02:41:34 pcb4 30/201 images 197s
+02:42:02 pcb4 40/201 images 225s
+02:42:31 pcb4 50/201 images 253s
+02:42:59 pcb4 60/201 images 281s
+02:43:27 pcb4 70/201 images 310s
+02:43:55 pcb4 80/201 images 338s
+02:44:23 pcb4 90/201 images 366s
+02:44:52 pcb4 100/201 images 394s
+02:45:20 pcb4 110/201 images 423s
+02:45:49 pcb4 120/201 images 452s
+02:46:17 pcb4 130/201 images 480s
+02:46:46 pcb4 140/201 images 508s
+02:47:14 pcb4 150/201 images 537s
+02:47:42 pcb4 160/201 images 565s
+02:48:10 pcb4 170/201 images 593s
+02:48:39 pcb4 180/201 images 621s
+02:49:07 pcb4 190/201 images 649s
+02:49:35 pcb4 200/201 images 678s
+02:49:38 pcb4 201/201 images 681s
+02:49:40 pcb4 unit done 683s R1 failures: 0
+02:49:41 pipe_fryum wrn50 candidates 0/1000 tiles
+02:49:51 pipe_fryum wrn50 candidates 320/1000 tiles
+02:50:00 pipe_fryum wrn50 candidates 640/1000 tiles
+02:50:10 pipe_fryum wrn50 candidates 960/1000 tiles
+02:50:23 pipe_fryum wrn50 coreset 2000/10240
+02:50:35 pipe_fryum wrn50 coreset 4000/10240
+02:50:47 pipe_fryum wrn50 coreset 6000/10240
+02:51:00 pipe_fryum wrn50 coreset 8000/10240
+02:51:12 pipe_fryum wrn50 coreset 10000/10240
+02:51:17 pipe_fryum wrn50 bank built 96s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+02:52:01 pipe_fryum 10/150 images 140s
+02:52:29 pipe_fryum 20/150 images 169s
+02:52:58 pipe_fryum 30/150 images 197s
+02:53:26 pipe_fryum 40/150 images 225s
+02:53:54 pipe_fryum 50/150 images 253s
+02:54:22 pipe_fryum 60/150 images 282s
+02:54:51 pipe_fryum 70/150 images 310s
+02:55:19 pipe_fryum 80/150 images 339s
+02:55:49 pipe_fryum 90/150 images 368s
+02:56:18 pipe_fryum 100/150 images 397s
+02:56:46 pipe_fryum 110/150 images 426s
+02:57:15 pipe_fryum 120/150 images 454s
+02:57:43 pipe_fryum 130/150 images 482s
+02:58:11 pipe_fryum 140/150 images 511s
+02:58:39 pipe_fryum 150/150 images 539s
+02:58:41 pipe_fryum unit done 541s R1 failures: 0
+02:58:41 ALL UNITS DONE
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+03:00:10 candle dino bank loaded from cache
+03:00:38 candle 10/200 images 28s
+03:01:05 candle 20/200 images 55s
+03:01:31 candle 30/200 images 81s
+03:01:58 candle 40/200 images 108s
+03:02:25 candle 50/200 images 135s
+03:02:51 candle 60/200 images 161s
+03:03:18 candle 70/200 images 188s
+03:03:44 candle 80/200 images 214s
+03:04:11 candle 90/200 images 241s
+03:04:37 candle 100/200 images 267s
+03:05:04 candle 110/200 images 294s
+03:05:31 candle 120/200 images 320s
+03:05:57 candle 130/200 images 347s
+03:06:24 candle 140/200 images 373s
+03:06:50 candle 150/200 images 400s
+03:07:17 candle 160/200 images 427s
+03:07:43 candle 170/200 images 453s
+03:08:10 candle 180/200 images 480s
+03:08:36 candle 190/200 images 506s
+03:09:03 candle 200/200 images 533s
+03:09:04 candle unit done 533s R1 failures: 0
+03:09:05 capsules dino candidates 0/1000 tiles
+03:09:16 capsules dino candidates 320/1000 tiles
+03:09:27 capsules dino candidates 640/1000 tiles
+03:09:38 capsules dino candidates 960/1000 tiles
+03:09:51 capsules dino coreset 2000/10240
+03:10:03 capsules dino coreset 4000/10240
+03:10:16 capsules dino coreset 6000/10240
+03:10:28 capsules dino coreset 8000/10240
+03:10:40 capsules dino coreset 10000/10240
+03:10:42 capsules dino bank built 98s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:11:07 capsules 10/160 images 123s
+03:11:32 capsules 20/160 images 148s
+03:11:57 capsules 30/160 images 173s
+03:12:22 capsules 40/160 images 198s
+03:12:47 capsules 50/160 images 223s
+03:13:12 capsules 60/160 images 249s
+03:13:38 capsules 70/160 images 274s
+03:14:03 capsules 80/160 images 299s
+03:14:28 capsules 90/160 images 324s
+03:14:53 capsules 100/160 images 349s
+03:15:18 capsules 110/160 images 374s
+03:15:43 capsules 120/160 images 399s
+03:16:08 capsules 130/160 images 424s
+03:16:33 capsules 140/160 images 449s
+03:16:58 capsules 150/160 images 474s
+03:17:23 capsules 160/160 images 499s
+03:17:23 capsules unit done 499s R1 failures: 0
+03:17:24 cashew dino candidates 0/1000 tiles
+03:17:35 cashew dino candidates 320/1000 tiles
+03:17:46 cashew dino candidates 640/1000 tiles
+03:17:58 cashew dino candidates 960/1000 tiles
+03:18:11 cashew dino coreset 2000/10240
+03:18:23 cashew dino coreset 4000/10240
+03:18:35 cashew dino coreset 6000/10240
+03:18:47 cashew dino coreset 8000/10240
+03:18:59 cashew dino coreset 10000/10240
+03:19:01 cashew dino bank built 97s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:19:26 cashew 10/150 images 123s
+03:19:51 cashew 20/150 images 147s
+03:20:16 cashew 30/150 images 172s
+03:20:40 cashew 40/150 images 197s
+03:21:05 cashew 50/150 images 222s
+03:21:30 cashew 60/150 images 246s
+03:21:55 cashew 70/150 images 271s
+03:22:19 cashew 80/150 images 296s
+03:22:44 cashew 90/150 images 320s
+03:23:09 cashew 100/150 images 345s
+03:23:33 cashew 110/150 images 370s
+03:23:58 cashew 120/150 images 395s
+03:24:23 cashew 130/150 images 420s
+03:24:48 cashew 140/150 images 444s
+03:25:13 cashew 150/150 images 469s
+03:25:13 cashew unit done 470s R1 failures: 0
+03:25:14 chewinggum dino candidates 0/1000 tiles
+03:25:25 chewinggum dino candidates 320/1000 tiles
+03:25:36 chewinggum dino candidates 640/1000 tiles
+03:25:46 chewinggum dino candidates 960/1000 tiles
+03:25:59 chewinggum dino coreset 2000/10240
+03:26:11 chewinggum dino coreset 4000/10240
+03:26:23 chewinggum dino coreset 6000/10240
+03:26:35 chewinggum dino coreset 8000/10240
+03:26:47 chewinggum dino coreset 10000/10240
+03:26:49 chewinggum dino bank built 95s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:27:16 chewinggum 10/150 images 122s
+03:27:42 chewinggum 20/150 images 149s
+03:28:09 chewinggum 30/150 images 175s
+03:28:35 chewinggum 40/150 images 202s
+03:29:02 chewinggum 50/150 images 228s
+03:29:28 chewinggum 60/150 images 254s
+03:29:54 chewinggum 70/150 images 281s
+03:30:21 chewinggum 80/150 images 307s
+03:30:47 chewinggum 90/150 images 334s
+03:31:14 chewinggum 100/150 images 360s
+03:31:40 chewinggum 110/150 images 386s
+03:32:06 chewinggum 120/150 images 413s
+03:32:33 chewinggum 130/150 images 439s
+03:32:59 chewinggum 140/150 images 465s
+03:33:25 chewinggum 150/150 images 492s
+03:33:26 chewinggum unit done 492s R1 failures: 0
+03:33:27 fryum dino candidates 0/1000 tiles
+03:33:37 fryum dino candidates 320/1000 tiles
+03:33:48 fryum dino candidates 640/1000 tiles
+03:33:59 fryum dino candidates 960/1000 tiles
+03:34:12 fryum dino coreset 2000/10240
+03:34:24 fryum dino coreset 4000/10240
+03:34:36 fryum dino coreset 6000/10240
+03:34:48 fryum dino coreset 8000/10240
+03:35:01 fryum dino coreset 10000/10240
+03:35:02 fryum dino bank built 96s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:35:28 fryum 10/150 images 122s
+03:35:53 fryum 20/150 images 147s
+03:36:18 fryum 30/150 images 172s
+03:36:43 fryum 40/150 images 197s
+03:37:08 fryum 50/150 images 222s
+03:37:33 fryum 60/150 images 247s
+03:37:58 fryum 70/150 images 272s
+03:38:23 fryum 80/150 images 297s
+03:38:48 fryum 90/150 images 322s
+03:39:13 fryum 100/150 images 347s
+03:39:38 fryum 110/150 images 372s
+03:40:03 fryum 120/150 images 397s
+03:40:29 fryum 130/150 images 423s
+03:40:54 fryum 140/150 images 448s
+03:41:19 fryum 150/150 images 473s
+03:41:19 fryum unit done 473s R1 failures: 0
+03:41:20 macaroni1 dino candidates 0/1000 tiles
+03:41:31 macaroni1 dino candidates 320/1000 tiles
+03:41:41 macaroni1 dino candidates 640/1000 tiles
+03:41:52 macaroni1 dino candidates 960/1000 tiles
+03:42:05 macaroni1 dino coreset 2000/10240
+03:42:17 macaroni1 dino coreset 4000/10240
+03:42:29 macaroni1 dino coreset 6000/10240
+03:42:42 macaroni1 dino coreset 8000/10240
+03:42:54 macaroni1 dino coreset 10000/10240
+03:42:55 macaroni1 dino bank built 96s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:43:21 macaroni1 10/200 images 121s
+03:43:46 macaroni1 20/200 images 146s
+03:44:11 macaroni1 30/200 images 171s
+03:44:36 macaroni1 40/200 images 196s
+03:45:01 macaroni1 50/200 images 221s
+03:45:26 macaroni1 60/200 images 246s
+03:45:51 macaroni1 70/200 images 271s
+03:46:16 macaroni1 80/200 images 296s
+03:46:41 macaroni1 90/200 images 321s
+03:47:06 macaroni1 100/200 images 346s
+03:47:30 macaroni1 110/200 images 371s
+03:47:55 macaroni1 120/200 images 396s
+03:48:20 macaroni1 130/200 images 421s
+03:48:45 macaroni1 140/200 images 446s
+03:49:10 macaroni1 150/200 images 471s
+03:49:36 macaroni1 160/200 images 496s
+03:50:01 macaroni1 170/200 images 521s
+03:50:26 macaroni1 180/200 images 546s
+03:50:51 macaroni1 190/200 images 571s
+03:51:16 macaroni1 200/200 images 596s
+03:51:16 macaroni1 unit done 597s R1 failures: 0
+03:51:17 macaroni2 dino candidates 0/1000 tiles
+03:51:28 macaroni2 dino candidates 320/1000 tiles
+03:51:38 macaroni2 dino candidates 640/1000 tiles
+03:51:49 macaroni2 dino candidates 960/1000 tiles
+03:52:02 macaroni2 dino coreset 2000/10240
+03:52:14 macaroni2 dino coreset 4000/10240
+03:52:26 macaroni2 dino coreset 6000/10240
+03:52:38 macaroni2 dino coreset 8000/10240
+03:52:50 macaroni2 dino coreset 10000/10240
+03:52:52 macaroni2 dino bank built 95s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+03:53:17 macaroni2 10/200 images 121s
+03:53:42 macaroni2 20/200 images 146s
+03:54:07 macaroni2 30/200 images 171s
+03:54:32 macaroni2 40/200 images 196s
+03:54:57 macaroni2 50/200 images 221s
+03:55:22 macaroni2 60/200 images 246s
+03:55:47 macaroni2 70/200 images 271s
+03:56:12 macaroni2 80/200 images 296s
+03:56:37 macaroni2 90/200 images 321s
+03:57:02 macaroni2 100/200 images 346s
+03:57:27 macaroni2 110/200 images 371s
+03:57:52 macaroni2 120/200 images 396s
+03:58:17 macaroni2 130/200 images 421s
+03:58:42 macaroni2 140/200 images 446s
+03:59:07 macaroni2 150/200 images 471s
+03:59:32 macaroni2 160/200 images 496s
+03:59:57 macaroni2 170/200 images 521s
+04:00:23 macaroni2 180/200 images 546s
+04:00:48 macaroni2 190/200 images 572s
+04:01:13 macaroni2 200/200 images 597s
+04:01:14 macaroni2 unit done 597s R1 failures: 0
+04:01:15 pcb1 dino candidates 0/1000 tiles
+04:01:27 pcb1 dino candidates 320/1000 tiles
+04:01:38 pcb1 dino candidates 640/1000 tiles
+04:01:49 pcb1 dino candidates 960/1000 tiles
+04:02:02 pcb1 dino coreset 2000/10240
+04:02:14 pcb1 dino coreset 4000/10240
+04:02:26 pcb1 dino coreset 6000/10240
+04:02:39 pcb1 dino coreset 8000/10240
+04:02:51 pcb1 dino coreset 10000/10240
+04:02:53 pcb1 dino bank built 98s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+04:03:20 pcb1 10/200 images 125s
+04:03:47 pcb1 20/200 images 153s
+04:04:14 pcb1 30/200 images 180s
+04:04:41 pcb1 40/200 images 207s
+04:05:09 pcb1 50/200 images 234s
+04:05:36 pcb1 60/200 images 261s
+04:06:03 pcb1 70/200 images 288s
+04:06:30 pcb1 80/200 images 315s
+04:06:57 pcb1 90/200 images 342s
+04:07:24 pcb1 100/200 images 369s
+04:07:50 pcb1 110/200 images 396s
+04:08:17 pcb1 120/200 images 423s
+04:08:44 pcb1 130/200 images 449s
+04:09:11 pcb1 140/200 images 476s
+04:09:38 pcb1 150/200 images 503s
+04:10:05 pcb1 160/200 images 530s
+04:10:32 pcb1 170/200 images 557s
+04:10:58 pcb1 180/200 images 584s
+04:11:25 pcb1 190/200 images 611s
+04:11:52 pcb1 200/200 images 638s
+04:11:53 pcb1 unit done 638s R1 failures: 0
+04:11:54 pcb2 dino candidates 0/1000 tiles
+04:12:06 pcb2 dino candidates 320/1000 tiles
+04:12:17 pcb2 dino candidates 640/1000 tiles
+04:12:28 pcb2 dino candidates 960/1000 tiles
+04:12:41 pcb2 dino coreset 2000/10240
+04:12:53 pcb2 dino coreset 4000/10240
+04:13:05 pcb2 dino coreset 6000/10240
+04:13:17 pcb2 dino coreset 8000/10240
+04:13:29 pcb2 dino coreset 10000/10240
+04:13:31 pcb2 dino bank built 97s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+04:13:58 pcb2 10/200 images 125s
+04:14:25 pcb2 20/200 images 151s
+04:14:52 pcb2 30/200 images 178s
+04:15:19 pcb2 40/200 images 205s
+04:15:46 pcb2 50/200 images 232s
+04:16:13 pcb2 60/200 images 259s
+04:16:40 pcb2 70/200 images 286s
+04:17:07 pcb2 80/200 images 313s
+04:17:34 pcb2 90/200 images 340s
+04:18:01 pcb2 100/200 images 368s
+04:18:28 pcb2 110/200 images 395s
+04:18:55 pcb2 120/200 images 422s
+04:19:22 pcb2 130/200 images 449s
+04:19:49 pcb2 140/200 images 476s
+04:20:16 pcb2 150/200 images 503s
+04:20:43 pcb2 160/200 images 529s
+04:21:11 pcb2 170/200 images 557s
+04:21:40 pcb2 180/200 images 586s
+04:22:08 pcb2 190/200 images 614s
+04:22:35 pcb2 200/200 images 641s
+04:22:35 pcb2 unit done 642s R1 failures: 0
+04:22:37 pcb3 dino candidates 0/1000 tiles
+04:22:48 pcb3 dino candidates 320/1000 tiles
+04:22:59 pcb3 dino candidates 640/1000 tiles
+04:23:11 pcb3 dino candidates 960/1000 tiles
+04:23:26 pcb3 dino coreset 2000/10240
+04:23:39 pcb3 dino coreset 4000/10240
+04:23:52 pcb3 dino coreset 6000/10240
+04:24:04 pcb3 dino coreset 8000/10240
+04:24:17 pcb3 dino coreset 10000/10240
+04:24:18 pcb3 dino bank built 102s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+04:24:45 pcb3 10/201 images 129s
+04:25:11 pcb3 20/201 images 155s
+04:25:38 pcb3 30/201 images 181s
+04:26:04 pcb3 40/201 images 208s
+04:26:31 pcb3 50/201 images 235s
+04:26:58 pcb3 60/201 images 262s
+04:27:24 pcb3 70/201 images 288s
+04:27:50 pcb3 80/201 images 314s
+04:28:17 pcb3 90/201 images 341s
+04:28:46 pcb3 100/201 images 369s
+04:29:14 pcb3 110/201 images 398s
+04:29:41 pcb3 120/201 images 425s
+04:30:07 pcb3 130/201 images 451s
+04:30:34 pcb3 140/201 images 478s
+04:31:00 pcb3 150/201 images 504s
+04:31:27 pcb3 160/201 images 531s
+04:31:53 pcb3 170/201 images 557s
+04:32:19 pcb3 180/201 images 583s
+04:32:46 pcb3 190/201 images 610s
+04:33:14 pcb3 200/201 images 638s
+04:33:17 pcb3 201/201 images 640s
+04:33:17 pcb3 unit done 641s R1 failures: 0
+04:33:18 pcb4 dino candidates 0/1000 tiles
+04:33:29 pcb4 dino candidates 320/1000 tiles
+04:33:41 pcb4 dino candidates 640/1000 tiles
+04:33:52 pcb4 dino candidates 960/1000 tiles
+04:34:06 pcb4 dino coreset 2000/10240
+04:34:19 pcb4 dino coreset 4000/10240
+04:34:32 pcb4 dino coreset 6000/10240
+04:34:45 pcb4 dino coreset 8000/10240
+04:34:58 pcb4 dino coreset 10000/10240
+04:34:59 pcb4 dino bank built 101s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+04:35:27 pcb4 10/201 images 130s
+04:35:55 pcb4 20/201 images 158s
+04:36:24 pcb4 30/201 images 186s
+04:36:52 pcb4 40/201 images 215s
+04:37:19 pcb4 50/201 images 242s
+04:37:46 pcb4 60/201 images 268s
+04:38:13 pcb4 70/201 images 295s
+04:38:40 pcb4 80/201 images 322s
+04:39:09 pcb4 90/201 images 351s
+04:39:37 pcb4 100/201 images 379s
+04:40:03 pcb4 110/201 images 406s
+04:40:30 pcb4 120/201 images 432s
+04:40:57 pcb4 130/201 images 459s
+04:41:23 pcb4 140/201 images 486s
+04:41:50 pcb4 150/201 images 512s
+04:42:17 pcb4 160/201 images 539s
+04:42:43 pcb4 170/201 images 566s
+04:43:10 pcb4 180/201 images 592s
+04:43:39 pcb4 190/201 images 621s
+04:44:08 pcb4 200/201 images 650s
+04:44:11 pcb4 201/201 images 653s
+04:44:11 pcb4 unit done 654s R1 failures: 0
+04:44:12 pipe_fryum dino candidates 0/1000 tiles
+04:44:23 pipe_fryum dino candidates 320/1000 tiles
+04:44:35 pipe_fryum dino candidates 640/1000 tiles
+04:44:46 pipe_fryum dino candidates 960/1000 tiles
+04:45:02 pipe_fryum dino coreset 2000/10240
+04:45:16 pipe_fryum dino coreset 4000/10240
+04:45:29 pipe_fryum dino coreset 6000/10240
+04:45:41 pipe_fryum dino coreset 8000/10240
+04:45:54 pipe_fryum dino coreset 10000/10240
+04:45:55 pipe_fryum dino bank built 104s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+04:46:23 pipe_fryum 10/150 images 131s
+04:46:49 pipe_fryum 20/150 images 158s
+04:47:16 pipe_fryum 30/150 images 184s
+04:47:43 pipe_fryum 40/150 images 211s
+04:48:10 pipe_fryum 50/150 images 238s
+04:48:36 pipe_fryum 60/150 images 265s
+04:49:03 pipe_fryum 70/150 images 292s
+04:49:30 pipe_fryum 80/150 images 318s
+04:49:57 pipe_fryum 90/150 images 345s
+04:50:26 pipe_fryum 100/150 images 374s
+04:50:55 pipe_fryum 110/150 images 404s
+04:51:23 pipe_fryum 120/150 images 431s
+04:51:50 pipe_fryum 130/150 images 458s
+04:52:17 pipe_fryum 140/150 images 485s
+04:52:43 pipe_fryum 150/150 images 512s
+04:52:44 pipe_fryum unit done 512s R1 failures: 0
+04:52:44 ALL UNITS DONE
