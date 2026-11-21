@@ -1,0 +1,26 @@
+{
+ "cohort": "Protocol 5 AITEX manifest, 103 defective strips",
+ "decoder": ">=128, masks merged",
+ "A_original_floor_rule": {
+  "frames": 103,
+  "marked_pixels": 485027,
+  "unseen_pct": 0.031,
+  "regions": 175,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 7.4,
+  "positive_patches": 183,
+  "sliver_patches_pct": 49.2,
+  "median_defect_fraction_of_positive_patch_pct": 1.03
+ },
+ "B_blind_16_grid": {
+  "frames": 103,
+  "marked_pixels": 485027,
+  "unseen_pct": 0.0,
+  "regions": 175,
+  "regions_fully_unseen": 0,
+  "regions_split_no_whole_view_pct": 12.0,
+  "positive_patches": 183,
+  "sliver_patches_pct": 53.0,
+  "median_defect_fraction_of_positive_patch_pct": 0.8
+ }
+}

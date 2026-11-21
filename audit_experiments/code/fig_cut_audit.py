@@ -1,4 +1,4 @@
-"""Figure: label-only audit of blind-grid patch relabelling (practice B) across datasets. Values from RESULTS_CUT_AUDIT.md."""
+"""Figure: label-only audit of blind-grid patch relabelling (practice B) across datasets. Values from RESULTS_CUT_AUDIT.md; AITEX from results_cut/cut_audit_aitex_p5.json (frozen cohort, >=128, original floor rule)."""
 from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
@@ -8,7 +8,7 @@ HERE = Path(__file__).resolve().parents[1]
 INK, MUTED, GRID, BLUE, ORANGE = '#1f1f1e', '#6b6a63', '#e4e3dc', '#2a78d6', '#eb6834'
 data = [  # dataset, regions cut with no whole view (B, A), defect patches < 1% defect (B, A)
     ('RAW-FABRID', 41.0, 19.4, 24.6, 22.1),
-    ('AITEX', 18.5, 10.9, 52.2, 48.4),
+    ('AITEX', 12.0, 7.4, 53.0, 49.2),
     ('VisA', 23.0, 5.8, 34.0, 15.5),
     ('MVTec AD 2 Fabric', 28.1, 6.2, 44.6, 33.9),
 ]
