@@ -50,7 +50,12 @@ def find_root():
 def index_scenario(root, s):
     with open(root / 'CSV' / f'{s}.csv', newline='', encoding='utf-8-sig') as f:
         rows = [{k.strip(): v for k, v in r.items()} for r in csv.DictReader(f)]
-    labels = {int(re.search(r'(\d+)', r['FileName']).group(1)): int(r['Label']) for r in rows}
+    keys = list(rows[0].keys())
+    lab = next(k for k in keys if k.lower() == 'label')
+    cand = [k for k in keys if k != lab and any(t in k.lower() for t in ('file', 'name', 'image', 'frame', 'id'))]
+    fcol = cand[0] if cand else next(k for k in keys if k != lab)
+    print(f'{s} csv columns {keys} -> file column {fcol!r}', flush=True)
+    labels = {int(re.search(r'(\d+)', r[fcol]).group(1)): int(r[lab]) for r in rows}
     imgs = {}
     for p in glob.glob(str(root / 'IMAGE' / s / '**' / '*.*'), recursive=True):
         m = re.fullmatch(r'(\d+)', Path(p).stem)
