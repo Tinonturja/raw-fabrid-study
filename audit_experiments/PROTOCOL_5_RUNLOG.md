@@ -39,3 +39,10 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
   - **Layouts:** R1, R2 (edge-aligned grid, 12 overlapping windows on 800 x 640), R2occ and C4. Practice A does not apply.
   - **Statistics:** each cluster has its own bank, so AP is computed within each cluster and averaged with equal cluster weights. The primary interval is a bootstrap over the 7 cluster differences, with the sign-flip test, the same treatment as RAW-FABRID rolls.
   - **Deviation from A5:** A5 described positive and negative clusters resampled as separate strata. Here the normal frames sit inside each positive test cluster, and the normal-only clusters supply banks rather than test units. T3 has no positive cluster and no second cluster for a texture-matched bank.
+
+## 2026-11-22 05:05 TSFabrics runner input fixes (no change to scoring or statistics)
+- First Kaggle submission failed before any frame was scored: `KeyError: 'FileName'` while reading the per-scenario CSV.
+- Fix 1 (commit 4306933): read the CSV with `utf-8-sig` and strip header whitespace.
+- Fix 2 (commit 80e05ea): the filename column is no longer assumed. The runner selects the `Label` column and the first column whose name contains file/name/image/frame/id, and prints the detected columns to the log. The gate script never read the filename column, so this name was an unverified assumption.
+- From this run on, the Kaggle cell downloads `audit_experiments/code` at a pinned commit from the public GitHub repository instead of an embedded archive, so each Kaggle version maps to one commit.
+- Neither fix touches tiling, scoring, decoding, AP computation or resampling. No TSFabrics score had been computed before these fixes.
