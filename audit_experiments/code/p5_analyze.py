@@ -136,7 +136,20 @@ def main(a):
         dist = np.nanmean(np.stack([unit_diffs[u][k][0] for u in units]), 0)
         point = float(np.mean([unit_diffs[u][k][1] for u in units]))
         report['dataset_level'][k] = summarise(dist, point)
-    prim = report['dataset_level'].get('patchcore: R2 - R1')
+    if a.dataset == 'rawfabrid':
+        # Amendment 1, A5: primary interval = paired bootstrap of the 7 roll differences (equal weights),
+        # reported with the exact sign-flip test; the image bootstrap above is secondary (conditional).
+        report['roll_level'] = {}
+        for k in sorted(names):
+            rd = np.array([unit_diffs[u][k][1] for u in units])
+            rb = C.roll_bootstrap(rd, reps=REPS, seed=C.SEED)
+            rec = summarise(rb, float(rd.mean()))
+            rec.update(per_roll=dict(zip(units, rd.tolist())), rolls_positive=int((rd > 0).sum()),
+                       signflip_p=C.signflip_p(rd))
+            report['roll_level'][k] = rec
+        prim = report['roll_level'].get('patchcore: R2 - R1')
+    else:
+        prim = report['dataset_level'].get('patchcore: R2 - R1')
     report['primary'] = prim
     out = d / 'analysis.json'
     out.write_text(json.dumps(report, indent=1))

@@ -93,13 +93,54 @@ def visa_units(data, man, cats, limit):
         yield cat, tiles, items
 
 
+def rawfabrid_units(zpath, man, rolls, limit):
+    import io, zipfile
+    z = zipfile.ZipFile(zpath)
+
+    def member(name, want):
+        b = z.read('RAW_FABRID/' + name)
+        if hashlib.sha256(b).hexdigest() != want:
+            sys.exit(f'manifest mismatch {name}')
+        return b
+
+    def img(name, want, mode='RGB'):
+        with Image.open(io.BytesIO(member(name, want))) as im:
+            return im.convert(mode)
+    for roll, r in sorted(man['rolls'].items()):
+        if rolls and roll not in rolls:
+            continue
+        tiles = [(lambda t=t: img('MVTec/train/good/' + t['patch_name'], t['sha256'])) for t in r['refs']]
+        frames = sorted(r['frames'])
+        if limit:
+            frames = [f for f in frames if r['frames'][f]['defect']][:limit] + \
+                     [f for f in frames if not r['frames'][f]['defect']][:limit]
+        items = [{'id': f, 'group': roll, 'defect': r['frames'][f]['defect'],
+                  'image': (lambda f=f: img('images/' + f, r['frames'][f]['image_sha256'])),
+                  'mask': (lambda f=f: np.asarray(img('masks/' + f, r['frames'][f]['mask_sha256'], 'L')) >= 128)
+                  if r['frames'][f]['defect'] else None,
+                  'A': [tuple(c) for c in r['frames'][f]['released']]} for f in frames]
+        preset = {'wrn50': (HERE / 'results' / 'wrn50' / 'banks' / f'{roll}.pt', r['protocol1_wrn50_bank_sha256'])}
+        yield roll, tiles, items, preset
+
+
 # ---------- banks ----------
 
-def build_scorers(fams, tiles, bank_dir, unit, device):
+def build_scorers(fams, tiles, bank_dir, unit, device, preset=None):
     bank_dir.mkdir(parents=True, exist_ok=True)
     scorers, info = {}, {}
     for fam in fams:
         path = bank_dir / f'{unit}_{fam.name}.pt'
+        if preset and fam.name in preset and not path.exists():
+            ppath, want = preset[fam.name]
+            pbank = torch.load(ppath).float()
+            if M.digest(pbank) != want:
+                sys.exit(f'Protocol 1 bank {ppath} does not match its recorded hash')
+            X, X_info = M.sample_candidates(fam, tiles, log=lambda *a: log(unit, *a))
+            mu, prec = M.SharedGauss.fit(X)
+            del X
+            X_info['bank_from'] = f'Protocol 1 cache {ppath.name}, sha256 {want}'
+            torch.save({'info': X_info, 'bank': pbank, 'mu': mu, 'prec': prec}, path)
+            log(unit, fam.name, 'Protocol 1 bank reused; Gaussian fitted on re-sampled candidates')
         if path.exists():
             d = torch.load(path)
             X_info, bank, mu, prec = d['info'], d['bank'], d.get('mu'), d.get('prec')
@@ -154,7 +195,10 @@ def process(item, fams, scorers, failures):
     mask = item['mask']() if item['defect'] else np.zeros((h, w), bool)
     assert mask.shape == (h, w), (item['id'], mask.shape, (h, w))
     grid = C.grid_layout(h, w)
-    a_coords = C.aitex_original_layout(mask) if item['A'] else []
+    if isinstance(item['A'], list):
+        a_coords = item['A']                          # released offsets (RAW-FABRID)
+    else:
+        a_coords = C.aitex_original_layout(mask) if item['A'] else []
     coords = list(dict.fromkeys(grid + a_coords))
     idx = {c: i for i, c in enumerate(coords)}
     hists, tiles_rec, frame = {}, [], {}
@@ -234,16 +278,20 @@ def main(a):
     out_dir = HERE / 'results_p5' / a.dataset / ('smoke' if a.limit else 'full')
     out_dir.mkdir(parents=True, exist_ok=True)
     fams = [M.WRN(device) if f == 'wrn' else M.DINO(device) for f in a.families]
-    units = aitex_units(Path(a.data), man, a.limit) if a.dataset == 'aitex' else \
-        visa_units(Path(a.data), man, a.categories, a.limit)
+    if a.dataset == 'aitex':
+        units = ((u, t, i, None) for u, t, i in aitex_units(Path(a.data), man, a.limit))
+    elif a.dataset == 'visa':
+        units = ((u, t, i, None) for u, t, i in visa_units(Path(a.data), man, a.categories, a.limit))
+    else:
+        units = rawfabrid_units(Path(a.data), man, a.categories, a.limit)
     tag = '+'.join(sorted(a.families))
-    for unit, tiles, items in units:
+    for unit, tiles, items, preset in units:
         out_json = out_dir / f'{unit}__{tag}.json'
         if out_json.exists() and not a.overwrite:
             log(unit, 'done earlier, skipped')
             continue
         t0 = time.time()
-        scorers, bank_info = build_scorers(fams, tiles, HERE / 'results_p5' / a.dataset / 'banks', unit, device)
+        scorers, bank_info = build_scorers(fams, tiles, HERE / 'results_p5' / a.dataset / 'banks', unit, device, preset)
         recs, hists, failures = [], [], []
         for n, it in enumerate(items, 1):
             r, h = process(it, fams, scorers, failures)
@@ -264,10 +312,10 @@ def main(a):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--dataset', choices=('aitex', 'visa'), required=True)
+    ap.add_argument('--dataset', choices=('aitex', 'visa', 'rawfabrid'), required=True)
     ap.add_argument('--data', required=True)
     ap.add_argument('--families', nargs='+', default=['wrn', 'dino'], choices=('wrn', 'dino'))
-    ap.add_argument('--categories', nargs='*')
+    ap.add_argument('--categories', nargs='*', help='VisA categories or RAW-FABRID rolls')
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--overwrite', action='store_true')
     main(ap.parse_args())
