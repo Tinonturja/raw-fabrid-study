@@ -1,0 +1,141 @@
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+04:58:42 Rollo1A wrn50 candidates 0/1000 tiles
+04:58:51 Rollo1A wrn50 candidates 320/1000 tiles
+04:58:59 Rollo1A wrn50 candidates 640/1000 tiles
+04:59:08 Rollo1A wrn50 candidates 960/1000 tiles
+04:59:16 Rollo1A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+04:59:17 Rollo1A wrn50 bank loaded from cache
+04:59:20 Rollo1A dino candidates 0/1000 tiles
+04:59:32 Rollo1A dino candidates 320/1000 tiles
+04:59:44 Rollo1A dino candidates 640/1000 tiles
+04:59:54 Rollo1A dino candidates 960/1000 tiles
+05:00:09 Rollo1A dino coreset 2000/10240
+05:00:21 Rollo1A dino coreset 4000/10240
+05:00:35 Rollo1A dino coreset 6000/10240
+05:00:47 Rollo1A dino coreset 8000/10240
+05:01:01 Rollo1A dino coreset 10000/10240
+05:01:03 Rollo1A dino bank built 105s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:02:15 Rollo1A 10/28 images 214s
+05:03:22 Rollo1A 20/28 images 281s
+05:04:20 Rollo1A 28/28 images 340s
+05:04:21 Rollo1A unit done 341s R1 failures: 0
+05:04:22 Rollo2A wrn50 candidates 0/1000 tiles
+05:04:31 Rollo2A wrn50 candidates 320/1000 tiles
+05:04:39 Rollo2A wrn50 candidates 640/1000 tiles
+05:04:48 Rollo2A wrn50 candidates 960/1000 tiles
+05:04:54 Rollo2A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+05:04:55 Rollo2A wrn50 bank loaded from cache
+05:05:11 Rollo2A dino candidates 0/1000 tiles
+05:05:21 Rollo2A dino candidates 320/1000 tiles
+05:05:30 Rollo2A dino candidates 640/1000 tiles
+05:05:41 Rollo2A dino candidates 960/1000 tiles
+05:05:54 Rollo2A dino coreset 2000/10240
+05:06:06 Rollo2A dino coreset 4000/10240
+05:06:18 Rollo2A dino coreset 6000/10240
+05:06:31 Rollo2A dino coreset 8000/10240
+05:06:43 Rollo2A dino coreset 10000/10240
+05:06:45 Rollo2A dino bank built 95s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:07:52 Rollo2A 10/33 images 211s
+05:08:58 Rollo2A 20/33 images 277s
+05:10:05 Rollo2A 30/33 images 344s
+05:10:25 Rollo2A 33/33 images 363s
+05:10:25 Rollo2A unit done 364s R1 failures: 0
+05:10:25 Rollo3A wrn50 bank loaded from cache
+05:10:26 Rollo3A dino bank loaded from cache
+05:11:26 Rollo3A 9/9 images 61s
+05:11:27 Rollo3A unit done 61s R1 failures: 0
+05:11:27 Rollo4A wrn50 candidates 0/1000 tiles
+05:11:36 Rollo4A wrn50 candidates 320/1000 tiles
+05:11:44 Rollo4A wrn50 candidates 640/1000 tiles
+05:11:53 Rollo4A wrn50 candidates 960/1000 tiles
+05:11:59 Rollo4A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+05:11:59 Rollo4A wrn50 bank loaded from cache
+05:12:24 Rollo4A dino candidates 0/1000 tiles
+05:12:33 Rollo4A dino candidates 320/1000 tiles
+05:12:43 Rollo4A dino candidates 640/1000 tiles
+05:12:53 Rollo4A dino candidates 960/1000 tiles
+05:13:06 Rollo4A dino coreset 2000/10240
+05:13:18 Rollo4A dino coreset 4000/10240
+05:13:30 Rollo4A dino coreset 6000/10240
+05:13:42 Rollo4A dino coreset 8000/10240
+05:13:55 Rollo4A dino coreset 10000/10240
+05:13:56 Rollo4A dino bank built 100s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:15:04 Rollo4A 10/87 images 217s
+05:16:10 Rollo4A 20/87 images 283s
+05:17:15 Rollo4A 30/87 images 348s
+05:18:20 Rollo4A 40/87 images 413s
+05:19:26 Rollo4A 50/87 images 480s
+05:20:34 Rollo4A 60/87 images 547s
+05:21:41 Rollo4A 70/87 images 614s
+05:22:47 Rollo4A 80/87 images 681s
+05:23:34 Rollo4A 87/87 images 727s
+05:23:36 Rollo4A unit done 729s R1 failures: 0
+05:23:37 Rollo5A wrn50 candidates 0/1000 tiles
+05:23:45 Rollo5A wrn50 candidates 320/1000 tiles
+05:23:53 Rollo5A wrn50 candidates 640/1000 tiles
+05:24:02 Rollo5A wrn50 candidates 960/1000 tiles
+05:24:07 Rollo5A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+05:24:07 Rollo5A wrn50 bank loaded from cache
+05:24:17 Rollo5A dino candidates 0/1000 tiles
+05:24:27 Rollo5A dino candidates 320/1000 tiles
+05:24:36 Rollo5A dino candidates 640/1000 tiles
+05:24:46 Rollo5A dino candidates 960/1000 tiles
+05:24:59 Rollo5A dino coreset 2000/10240
+05:25:12 Rollo5A dino coreset 4000/10240
+05:25:24 Rollo5A dino coreset 6000/10240
+05:25:36 Rollo5A dino coreset 8000/10240
+05:25:49 Rollo5A dino coreset 10000/10240
+05:25:51 Rollo5A dino bank built 103s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:26:57 Rollo5A 10/17 images 201s
+05:27:43 Rollo5A 17/17 images 247s
+05:27:43 Rollo5A unit done 248s R1 failures: 0
+05:27:44 Rollo6A wrn50 candidates 0/1000 tiles
+05:27:52 Rollo6A wrn50 candidates 320/1000 tiles
+05:28:00 Rollo6A wrn50 candidates 640/1000 tiles
+05:28:08 Rollo6A wrn50 candidates 960/1000 tiles
+05:28:14 Rollo6A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+05:28:14 Rollo6A wrn50 bank loaded from cache
+05:28:23 Rollo6A dino candidates 0/1000 tiles
+05:28:33 Rollo6A dino candidates 320/1000 tiles
+05:28:43 Rollo6A dino candidates 640/1000 tiles
+05:28:52 Rollo6A dino candidates 960/1000 tiles
+05:29:05 Rollo6A dino coreset 2000/10240
+05:29:18 Rollo6A dino coreset 4000/10240
+05:29:31 Rollo6A dino coreset 6000/10240
+05:29:43 Rollo6A dino coreset 8000/10240
+05:29:56 Rollo6A dino coreset 10000/10240
+05:29:57 Rollo6A dino bank built 102s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:31:03 Rollo6A 10/38 images 200s
+05:32:08 Rollo6A 20/38 images 265s
+05:33:12 Rollo6A 30/38 images 329s
+05:34:11 Rollo6A 38/38 images 388s
+05:34:12 Rollo6A unit done 388s R1 failures: 0
+05:34:12 Rollo7A wrn50 candidates 0/1000 tiles
+05:34:21 Rollo7A wrn50 candidates 320/1000 tiles
+05:34:30 Rollo7A wrn50 candidates 640/1000 tiles
+05:34:40 Rollo7A wrn50 candidates 960/1000 tiles
+05:34:47 Rollo7A wrn50 Protocol 1 bank reused; Gaussian fitted on re-sampled candidates
+05:34:48 Rollo7A wrn50 bank loaded from cache
+05:35:01 Rollo7A dino candidates 0/1000 tiles
+05:35:11 Rollo7A dino candidates 320/1000 tiles
+05:35:21 Rollo7A dino candidates 640/1000 tiles
+05:35:30 Rollo7A dino candidates 960/1000 tiles
+05:35:44 Rollo7A dino coreset 2000/10240
+05:35:56 Rollo7A dino coreset 4000/10240
+05:36:08 Rollo7A dino coreset 6000/10240
+05:36:21 Rollo7A dino coreset 8000/10240
+05:36:34 Rollo7A dino coreset 10000/10240
+05:36:36 Rollo7A dino bank built 101s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:37:43 Rollo7A 10/43 images 212s
+05:38:50 Rollo7A 20/43 images 278s
+05:39:55 Rollo7A 30/43 images 344s
+05:41:02 Rollo7A 40/43 images 411s
+05:41:22 Rollo7A 43/43 images 431s
+05:41:23 Rollo7A unit done 431s R1 failures: 0
+05:41:23 ALL UNITS DONE
