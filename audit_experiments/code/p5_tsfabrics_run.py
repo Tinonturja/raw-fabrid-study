@@ -48,8 +48,8 @@ def find_root():
 
 
 def index_scenario(root, s):
-    with open(root / 'CSV' / f'{s}.csv', newline='') as f:
-        rows = list(csv.DictReader(f))
+    with open(root / 'CSV' / f'{s}.csv', newline='', encoding='utf-8-sig') as f:
+        rows = [{k.strip(): v for k, v in r.items()} for r in csv.DictReader(f)]
     labels = {int(re.search(r'(\d+)', r['FileName']).group(1)): int(r['Label']) for r in rows}
     imgs = {}
     for p in glob.glob(str(root / 'IMAGE' / s / '**' / '*.*'), recursive=True):
