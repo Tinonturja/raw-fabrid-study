@@ -62,8 +62,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.016237093761566734,
      "ci95": [
-      -0.03523162886194117,
-      -0.006795363780317337
+      -0.03441027705943785,
+      -0.0070679763747047136
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -82,8 +82,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.018008891848320274,
      "ci95": [
-      0.0024643194865854924,
-      0.028216560391377276
+      0.0025766234994067058,
+      0.028255470086477632
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -92,8 +92,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.011061778216323703,
      "ci95": [
-      -0.022724733138563883,
-      0.01787845568904885
+      -0.022570183999233242,
+      0.01765687392991453
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -102,8 +102,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.23905185347113417,
      "ci95": [
-      -0.40244395775042724,
-      -0.16132509590297361
+      -0.406539884724984,
+      -0.15967964803343734
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -112,8 +112,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.004098065402110912,
      "ci95": [
-      -0.02071501314399566,
-      0.0038193577288681323
+      -0.02006403337853764,
+      0.0032108149592968136
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -132,8 +132,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.014122208277400267,
      "ci95": [
-      0.002183701939550271,
-      0.023585185190113937
+      0.0021953072612575287,
+      0.023483516993964518
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -142,8 +142,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.007747815696832999,
      "ci95": [
-      -0.02295542333937118,
-      0.017303614014507283
+      -0.022741211954552226,
+      0.01587118281856593
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -152,8 +152,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.16291894485734332,
      "ci95": [
-      -0.33311978087630884,
-      -0.0796842311007088
+      -0.33555077261274413,
+      -0.0784751645103243
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -162,8 +162,8 @@
     "dino: R2 - R1": {
      "estimate": 0.16307919095825357,
      "ci95": [
-      0.056758817009531885,
-      0.34197815104414014
+      0.053783641807521744,
+      0.3451983901402477
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -182,8 +182,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.02680666708453555,
      "ci95": [
-      0.0031273975838380704,
-      0.04263688015226292
+      0.0030865891797918293,
+      0.04335249980513875
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -192,8 +192,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.03661482555214601,
      "ci95": [
-      -0.09831418741356933,
-      0.0035410962483477244
+      -0.0996138131297705,
+      0.002255347055336894
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -202,8 +202,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.047597675525902966,
      "ci95": [
-      -0.20315564606567071,
-      0.09903619887573631
+      -0.20394416948867022,
+      0.09255444688296595
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -212,8 +212,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.06980471288116061,
      "ci95": [
-      0.04062127896119852,
-      0.10089998348987944
+      0.04138732646481256,
+      0.09910613911937946
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -222,8 +222,8 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.030734381252150833,
      "ci95": [
-      -0.15705396173240013,
-      0.26432411498828196
+      -0.15730997760097795,
+      0.2522000502587918
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -232,8 +232,8 @@
     "ranking R1: gauss - dino": {
      "estimate": -0.039070331629009775,
      "ci95": [
-      -0.2318309873013742,
-      0.21279977327307978
+      -0.22983452375490557,
+      0.19531992706909584
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -242,8 +242,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.057665684521704785,
      "ci95": [
-      0.034249751983167376,
-      0.07907138373650904
+      0.03555701199059481,
+      0.07771856166981843
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -252,8 +252,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": -0.14858190346766947,
      "ci95": [
-      -0.3252132535045878,
-      -0.04566819014173872
+      -0.3405773306064839,
+      -0.04459733671418858
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -262,8 +262,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.20624758798937426,
      "ci95": [
-      -0.38930084947435595,
-      -0.09027320272124048
+      -0.40525594322501607,
+      -0.08829226323394751
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -331,8 +331,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.01639329842017123,
      "ci95": [
-      -0.029488571636846046,
-      -0.00504545530077693
+      -0.028529552355911654,
+      -0.003943650759353188
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -351,8 +351,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.026909667111722768,
      "ci95": [
-      0.014471539451665717,
-      0.05081305287518199
+      0.014545097156866983,
+      0.04811873951309377
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -361,8 +361,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.03209371456887883,
      "ci95": [
-      -0.06306951726753075,
-      -0.007320116374332665
+      -0.060805376514680064,
+      -0.006754884298582541
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -371,8 +371,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.33909515792815986,
      "ci95": [
-      -0.43884037242145,
-      -0.24345365485317033
+      -0.4379574158823513,
+      -0.2397382367214092
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -381,10 +381,10 @@
     "gauss: R2 - R1": {
      "estimate": -0.012722372986480157,
      "ci95": [
-      -0.02779060853596014,
-      -0.0005688949456560702
+      -0.02719541000976373,
+      0.0007763178837231792
      ],
-     "excludes_zero": true,
+     "excludes_zero": false,
      "meets_min_point_estimate": true,
      "whole_interval_beyond_0.01": false
     },
@@ -401,8 +401,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.02279547138206811,
      "ci95": [
-      0.012041347215593176,
-      0.04460651678159149
+      0.011948327565061178,
+      0.04202127783819577
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -411,8 +411,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.02395061989936731,
      "ci95": [
-      -0.05339839916775901,
-      0.002215869049913134
+      -0.05041736411143719,
+      0.0017693843791690231
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -421,8 +421,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2795023123120536,
      "ci95": [
-      -0.3801722848638388,
-      -0.19119917772926792
+      -0.37737608018859625,
+      -0.18994671796304125
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -431,8 +431,8 @@
     "dino: R2 - R1": {
      "estimate": 0.08604655823466151,
      "ci95": [
-      -0.0682266109926192,
-      0.26010888672045945
+      -0.06674203459106916,
+      0.24821029963494484
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -451,8 +451,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.022777644829777455,
      "ci95": [
-      0.011564917202130926,
-      0.0449351177115949
+      0.011936836221090829,
+      0.04447557302215744
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -461,8 +461,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.03243081972147349,
      "ci95": [
-      -0.07176764991640093,
-      -0.005775506247110469
+      -0.07067570374029929,
+      -0.004797681756087436
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -471,8 +471,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.15620738761882766,
      "ci95": [
-      -0.3006836381998576,
-      -0.019961582022231143
+      -0.3003093816259231,
+      -0.025147509155774194
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -481,8 +481,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.057396233532576946,
      "ci95": [
-      0.04154757021625275,
-      0.07707895241628082
+      0.04115066918070315,
+      0.07767975861284698
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -491,8 +491,8 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.14788246980610503,
      "ci95": [
-      0.012543038605702835,
-      0.31692148093430456
+      0.012759129123211801,
+      0.3046742011425581
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -501,8 +501,8 @@
     "ranking R1: gauss - dino": {
      "estimate": 0.09048623627352809,
      "ci95": [
-      -0.04680405385846732,
-      0.26573978321891306
+      -0.04720245086936263,
+      0.25389737515602306
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -511,8 +511,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.05372530809888587,
      "ci95": [
-      0.025746792022610036,
-      0.08179398406409427
+      0.025378222771491026,
+      0.08278702851424248
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -521,8 +521,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": 0.04544261315127229,
      "ci95": [
-      -0.11675639138283063,
-      0.16415030924443516
+      -0.10764060259550721,
+      0.15596154231225987
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -531,8 +531,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.008282694947613578,
      "ci95": [
-      -0.16775329605696185,
-      0.11328653539464523
+      -0.16452924491972545,
+      0.10530568494872923
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -600,8 +600,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.03245832612620475,
      "ci95": [
-      -0.07061065371256547,
-      -0.014405935657706748
+      -0.07273869345791967,
+      -0.013016706715451182
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -620,8 +620,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.025216049166167098,
      "ci95": [
-      0.00017286591269253396,
-      0.04772020998470014
+      0.005807231934189356,
+      0.04873198791864482
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -630,8 +630,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": 0.012085495732298668,
      "ci95": [
-      -0.012846475906393696,
-      0.04422648479129126
+      -0.012796949646080321,
+      0.04252375963481611
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -640,8 +640,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2712082229701898,
      "ci95": [
-      -0.401143214959148,
-      -0.14219003018185392
+      -0.393821168738429,
+      -0.13274958931988579
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -650,8 +650,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.012524708455206174,
      "ci95": [
-      -0.03730195652543062,
-      -0.0007335718334300079
+      -0.036588781793856544,
+      -0.000814532791708211
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -670,8 +670,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.01978463610022335,
      "ci95": [
-      0.00011945780011527328,
-      0.04216791466809902
+      0.0038334361220716223,
+      0.04230172098282242
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -680,8 +680,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": 0.013046748751982695,
      "ci95": [
-      -0.011444485389008082,
-      0.043692211004285074
+      -0.011710603152942973,
+      0.042152120770010224
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -690,8 +690,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.1894049527144187,
      "ci95": [
-      -0.2945854888405614,
-      -0.1023969085995981
+      -0.2889581535594538,
+      -0.09673900403167328
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -700,8 +700,8 @@
     "dino: R2 - R1": {
      "estimate": 0.01250814550084256,
      "ci95": [
-      -0.13861118725173474,
-      0.10689442820589916
+      -0.1477989429026118,
+      0.1131063501371199
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -720,8 +720,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.030352050219192406,
      "ci95": [
-      0.0002734765746433196,
-      0.060056219353605986
+      0.00712479744008729,
+      0.061683680388761666
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -730,8 +730,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.0491183351465278,
      "ci95": [
-      -0.09110621518196899,
-      0.011668384835369958
+      -0.08786690944719379,
+      0.010493246669840419
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -740,8 +740,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2773541948242242,
      "ci95": [
-      -0.4681126826647111,
-      -0.06220431577876834
+      -0.4770349600356003,
+      -0.04871098261594044
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -750,18 +750,18 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.08388542504051447,
      "ci95": [
-      0.014645368064901076,
-      0.14021849372289485
+      0.009344731098966533,
+      0.13874491645354256
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
-     "whole_interval_beyond_0.01": true
+     "whole_interval_beyond_0.01": false
     },
     "ranking R1: patchcore - dino": {
      "estimate": -0.07580188685140632,
      "ci95": [
-      -0.2901911934993362,
-      0.08330963183408588
+      -0.2840598394851381,
+      0.0890229652076706
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -770,8 +770,8 @@
     "ranking R1: gauss - dino": {
      "estimate": -0.15968731189192079,
      "ci95": [
-      -0.4095255989832129,
-      0.04766580355665725
+      -0.407622925466805,
+      0.0756306952217068
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -780,8 +780,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.06395180736951589,
      "ci95": [
-      0.007496170293925516,
-      0.11131012118441753
+      0.006742855315766057,
+      0.10976753522299211
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -790,8 +790,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": -0.12076835847845363,
      "ci95": [
-      -0.2424950712259098,
-      -0.008193010430496464
+      -0.24547556912024962,
+      -0.009751255994794846
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -800,8 +800,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.18472016584796952,
      "ci95": [
-      -0.3403841232348242,
-      -0.04238939107309485
+      -0.34566280447980524,
+      -0.04009557372882631
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -869,8 +869,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.022264958789071032,
      "ci95": [
-      -0.03215490894617664,
-      -0.012484480255456723
+      -0.03142194143235574,
+      -0.012217724675764579
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -889,8 +889,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.022947527259197187,
      "ci95": [
-      0.01481377392300795,
-      0.03377900064068259
+      0.015211506213998015,
+      0.03318049657523304
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -899,8 +899,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.011857385661463604,
      "ci95": [
-      -0.02729759190898565,
-      0.00152207197566703
+      -0.02782117339588546,
+      0.0008968525695220686
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -909,8 +909,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.27081553806392905,
      "ci95": [
-      -0.335926684983562,
-      -0.21978199002604287
+      -0.33559723671611785,
+      -0.219224551129863
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -919,8 +919,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.017726774169869064,
      "ci95": [
-      -0.028553335213756643,
-      -0.0083480299296683
+      -0.02843066558218063,
+      -0.007952481832619346
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -939,8 +939,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.019563659114205656,
      "ci95": [
-      0.012570243904097235,
-      0.02923168442776602
+      0.012979775930324225,
+      0.028771289898213072
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -949,8 +949,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.004609253163464222,
      "ci95": [
-      -0.017825538898599013,
-      0.007733048451366163
+      -0.018038328143758022,
+      0.0067856134792840216
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -959,8 +959,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.21010229622051346,
      "ci95": [
-      -0.2750866855496676,
-      -0.16281419742462458
+      -0.2745122084754012,
+      -0.16406302406933215
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -969,8 +969,8 @@
     "dino: R2 - R1": {
      "estimate": 0.22620345872903896,
      "ci95": [
-      0.12427566663064041,
-      0.3063356103605832
+      0.12091087252187552,
+      0.3117116052220333
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -989,8 +989,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.029913967505151573,
      "ci95": [
-      0.020104028176231324,
-      0.04127946159515282
+      0.020764926396782363,
+      0.04084368973040456
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -999,8 +999,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.029460483264401593,
      "ci95": [
-      -0.05941625329518361,
-      -0.0005028934968532894
+      -0.05825880859454334,
+      -0.0011610395697200777
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1009,8 +1009,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.0322378177423783,
      "ci95": [
-      -0.12804270285754535,
-      0.027415721974100613
+      -0.1334929786081824,
+      0.02646393573240108
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1019,8 +1019,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.056740444290401426,
      "ci95": [
-      0.041841391245261074,
-      0.07340275810271314
+      0.04169000910500551,
+      0.07316296664328427
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1029,8 +1029,8 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.13831731646395995,
      "ci95": [
-      0.02436592233962289,
-      0.23115900707465076
+      0.014515039952635872,
+      0.2339858597050069
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1039,8 +1039,8 @@
     "ranking R1: gauss - dino": {
      "estimate": 0.08157687217355852,
      "ci95": [
-      -0.0370400937367375,
-      0.18071785324662487
+      -0.04504324103816473,
+      0.18244608560359538
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1049,8 +1049,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.05220225967119946,
      "ci95": [
-      0.03616301597204816,
-      0.06955275139140557
+      0.03665032262382875,
+      0.07004036412183569
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1059,8 +1059,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": -0.11015110105415005,
      "ci95": [
-      -0.16637063708489414,
-      -0.054638629112321056
+      -0.1654473840045464,
+      -0.0543024029099504
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1069,8 +1069,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.1623533607253495,
      "ci95": [
-      -0.2222783431169665,
-      -0.10434603407981168
+      -0.22115889742200098,
+      -0.10506361402949647
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1138,8 +1138,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.019596255131871354,
      "ci95": [
-      -0.04594754990852498,
-      4.551541012209845e-06
+      -0.046053435749786376,
+      0.00024549950825698727
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1158,8 +1158,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.022707828472860125,
      "ci95": [
-      0.008132438236564597,
-      0.048087952858490456
+      0.007661452860209831,
+      0.04771101471653463
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1168,8 +1168,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.009887310706982344,
      "ci95": [
-      -0.027323224948550644,
-      0.006425251004030709
+      -0.026421476401732907,
+      0.007106331886307505
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -1178,8 +1178,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.3178035231574615,
      "ci95": [
-      -0.43380756441864765,
-      -0.2336136767822517
+      -0.43032604358047566,
+      -0.2379614042073715
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1188,8 +1188,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.016893824169377403,
      "ci95": [
-      -0.04408585137997366,
-      0.0017889695710547463
+      -0.044137682542856126,
+      0.0025128814724730605
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1208,8 +1208,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.020603650265718976,
      "ci95": [
-      0.00711694257008865,
-      0.045058967476814295
+      0.0067066707912116245,
+      0.04475581902224182
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1218,8 +1218,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.004442527594705703,
      "ci95": [
-      -0.025671055595822643,
-      0.016090392153947825
+      -0.025428415966759103,
+      0.016700369302684457
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -1228,8 +1228,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.27045650322372256,
      "ci95": [
-      -0.41201102392451894,
-      -0.15909783814895387
+      -0.4087522801398424,
+      -0.15987545147490906
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1238,8 +1238,8 @@
     "dino: R2 - R1": {
      "estimate": 0.17465337544101756,
      "ci95": [
-      0.08174354344842223,
-      0.2851921170280847
+      0.08111308883148,
+      0.29083383477454683
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1258,18 +1258,18 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.025833609368502042,
      "ci95": [
-      0.010209898151272339,
-      0.04951572544013164
+      0.009536891733586841,
+      0.04996700999596078
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
-     "whole_interval_beyond_0.01": true
+     "whole_interval_beyond_0.01": false
     },
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.03530244434033114,
      "ci95": [
-      -0.10744658925760546,
-      0.024936418281451447
+      -0.1040728956046468,
+      0.025391057386237623
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1278,8 +1278,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.06696042678019262,
      "ci95": [
-      -0.2794537969718395,
-      0.13867769094978236
+      -0.2827115336171804,
+      0.1460845197199395
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1288,8 +1288,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.04382404789877209,
      "ci95": [
-      0.015025732254845613,
-      0.06765834732847571
+      0.012269766389430245,
+      0.06716444767022114
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1298,18 +1298,18 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.11583615050406015,
      "ci95": [
-      0.01323965655859462,
-      0.23449955415840493
+      0.008876823938389941,
+      0.24292185638841648
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
-     "whole_interval_beyond_0.01": true
+     "whole_interval_beyond_0.01": false
     },
     "ranking R1: gauss - dino": {
      "estimate": 0.07201210260528806,
      "ci95": [
-      -0.03927444328214774,
-      0.20335566465559188
+      -0.04204088662311896,
+      0.2130059413860675
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1318,18 +1318,18 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.04112161693627814,
      "ci95": [
-      0.010892944124360817,
-      0.06802805587006751
+      0.007796389303070692,
+      0.06741578962554583
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
-     "whole_interval_beyond_0.01": true
+     "whole_interval_beyond_0.01": false
     },
     "ranking R2: patchcore - dino": {
      "estimate": -0.07841348006882876,
      "ci95": [
-      -0.1535071150901293,
-      -0.0019152668178149368
+      -0.15748120675374291,
+      -0.008654585945716574
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1338,8 +1338,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.1195350970051069,
      "ci95": [
-      -0.21511393451153848,
-      -0.024896101240648463
+      -0.2135674527639634,
+      -0.028346261702400736
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1407,12 +1407,12 @@
     "patchcore: R2 - R1": {
      "estimate": -0.021897157629896302,
      "ci95": [
-      -0.04519002158940326,
-      -0.009840867979960793
+      -0.04312135290946673,
+      -0.010447421265924246
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
-     "whole_interval_beyond_0.01": false
+     "whole_interval_beyond_0.01": true
     },
     "patchcore: R2occ - R2 (occurrence vs unique)": {
      "estimate": 0.0,
@@ -1427,8 +1427,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.028249755691798273,
      "ci95": [
-      0.006335367602406835,
-      0.05066251304406958
+      0.007144373090063392,
+      0.05225768503317743
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1437,8 +1437,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.010743782090111231,
      "ci95": [
-      -0.03955605365667186,
-      0.03607476674372353
+      -0.04138559095122287,
+      0.03430313553391448
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1447,8 +1447,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.30669881405336963,
      "ci95": [
-      -0.45881204738856285,
-      -0.2090642430047249
+      -0.4574788611892047,
+      -0.21006664504657965
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1457,8 +1457,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.02573501566509817,
      "ci95": [
-      -0.05358012273358234,
-      -0.007213664426990912
+      -0.051472067785820565,
+      -0.007560958972382422
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1477,8 +1477,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.027385218553574175,
      "ci95": [
-      0.005955803992314195,
-      0.050431890409102245
+      0.006492353897704063,
+      0.05239411898621146
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1487,8 +1487,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.0053579305192124616,
      "ci95": [
-      -0.03550473091810796,
-      0.044427106478668925
+      -0.03701068587905292,
+      0.041166816845334506
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -1497,8 +1497,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2916600338728471,
      "ci95": [
-      -0.4461161396833848,
-      -0.1776092525673301
+      -0.4446464946482531,
+      -0.17870924232923066
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1507,8 +1507,8 @@
     "dino: R2 - R1": {
      "estimate": 0.3096113405562588,
      "ci95": [
-      0.05495271799067625,
-      0.4448919032153202
+      0.05395631300747883,
+      0.44703724403985284
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1527,8 +1527,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.02947862696673853,
      "ci95": [
-      0.00559440391403917,
-      0.05233925325965914
+      0.006032302683970312,
+      0.052594078367698444
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1537,8 +1537,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.05756224853264519,
      "ci95": [
-      -0.13426272184448093,
-      -0.007579811288457053
+      -0.13200334087350415,
+      -0.00939100294046815
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1547,8 +1547,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": -0.028180015510021916,
      "ci95": [
-      -0.2767206084003739,
-      0.05094398780686198
+      -0.2629908537195126,
+      0.048432680362887254
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1557,8 +1557,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.01380506155591299,
      "ci95": [
-      -0.008161192007074968,
-      0.03786849721350376
+      -0.007580424334764775,
+      0.038194809565560414
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1567,8 +1567,8 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.267267577416243,
      "ci95": [
-      -0.10919704555435683,
-      0.5122463724694398
+      -0.09511041162682149,
+      0.5007744892836731
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1577,8 +1577,8 @@
     "ranking R1: gauss - dino": {
      "estimate": 0.25346251586033003,
      "ci95": [
-      -0.13924266530223323,
-      0.5079944242940378
+      -0.13575003508120131,
+      0.5013968015630169
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1587,8 +1587,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": 0.01764291959111486,
      "ci95": [
-      -0.0004211661566159304,
-      0.0358426451534922
+      -0.0007153932553574654,
+      0.03634004840134588
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1597,8 +1597,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": -0.06424092076991206,
      "ci95": [
-      -0.1944333954962104,
-      0.08709712104348213
+      -0.19744991972856826,
+      0.09433303687272804
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1607,8 +1607,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.08188384036102692,
      "ci95": [
-      -0.22382908343801955,
-      0.07067518857928001
+      -0.22803589704912097,
+      0.07675879467984167
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1676,8 +1676,8 @@
     "patchcore: R2 - R1": {
      "estimate": -0.06835064324423379,
      "ci95": [
-      -0.10005006401712573,
-      -0.044377557119179616
+      -0.09986249479578867,
+      -0.04492607832114772
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1696,8 +1696,8 @@
     "patchcore: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.015792943830893746,
      "ci95": [
-      0.004051614481403468,
-      0.028425446813793488
+      0.004098007494470601,
+      0.029173213926993027
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1706,8 +1706,8 @@
     "patchcore: A_all - R2 (practice A vs grid)": {
      "estimate": -0.010567739266884008,
      "ci95": [
-      -0.03390999820541137,
-      0.008603594927888989
+      -0.03298442036801515,
+      0.010057783015524187
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1716,8 +1716,8 @@
     "patchcore: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2112929827172908,
      "ci95": [
-      -0.35669301201368153,
-      -0.10049739624841972
+      -0.35302510962842404,
+      -0.098909538385398
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1726,8 +1726,8 @@
     "gauss: R2 - R1": {
      "estimate": -0.04662761168163737,
      "ci95": [
-      -0.06917870828939653,
-      -0.027757603100185615
+      -0.06952129590088062,
+      -0.02690901593933484
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1746,8 +1746,8 @@
     "gauss: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.01718326494832076,
      "ci95": [
-      0.0046701138198416295,
-      0.03038939590802461
+      0.004662215574036694,
+      0.03140074583586516
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1756,8 +1756,8 @@
     "gauss: A_all - R2 (practice A vs grid)": {
      "estimate": -0.012087983610708536,
      "ci95": [
-      -0.03548516574394858,
-      0.007753008637288758
+      -0.03556257080137644,
+      0.010512104756193021
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1766,8 +1766,8 @@
     "gauss: C4 - R1 (downscaled vs native)": {
      "estimate": -0.2000602131808943,
      "ci95": [
-      -0.36236233386273903,
-      -0.08459872408400529
+      -0.35785598570699984,
+      -0.07285602395885804
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1776,8 +1776,8 @@
     "dino: R2 - R1": {
      "estimate": 0.47529342532225827,
      "ci95": [
-      0.2982309300262995,
-      0.5956603753808727
+      0.29991594781215924,
+      0.5928106033051411
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1796,8 +1796,8 @@
     "dino: A_obs - A_all (observed vs whole frame)": {
      "estimate": 0.04427512806203149,
      "ci95": [
-      0.01629262091375285,
-      0.06369910795783996
+      0.014842902509205037,
+      0.06383965877579145
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1806,8 +1806,8 @@
     "dino: A_all - R2 (practice A vs grid)": {
      "estimate": -0.08427782306200171,
      "ci95": [
-      -0.14121793565128843,
-      0.006986377067459844
+      -0.14177581803839068,
+      0.01141763427969115
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1816,8 +1816,8 @@
     "dino: C4 - R1 (downscaled vs native)": {
      "estimate": 0.10092222395556699,
      "ci95": [
-      -0.002001889659146217,
-      0.16886465106016108
+      -0.0028513643784857825,
+      0.16874939833918995
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1826,8 +1826,8 @@
     "ranking R1: patchcore - gauss": {
      "estimate": 0.0042728778414921065,
      "ci95": [
-      -0.04265499425928293,
-      0.03842487807094685
+      -0.04267520435541734,
+      0.03595174146715314
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": false,
@@ -1836,8 +1836,8 @@
     "ranking R1: patchcore - dino": {
      "estimate": 0.14359310712673598,
      "ci95": [
-      0.02111189325326293,
-      0.2686965918350428
+      0.016400430724522876,
+      0.27302682350973095
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1846,8 +1846,8 @@
     "ranking R1: gauss - dino": {
      "estimate": 0.13932022928524387,
      "ci95": [
-      0.007639971375564219,
-      0.28402791760240886
+      0.0008949366018858329,
+      0.2851933006854399
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1856,8 +1856,8 @@
     "ranking R2: patchcore - gauss": {
      "estimate": -0.01745015372110431,
      "ci95": [
-      -0.06139477998984686,
-      0.011499594336821729
+      -0.06114102199005905,
+      0.01104609028727911
      ],
      "excludes_zero": false,
      "meets_min_point_estimate": true,
@@ -1866,8 +1866,8 @@
     "ranking R2: patchcore - dino": {
      "estimate": -0.40005096143975605,
      "ci95": [
-      -0.5212137711964799,
-      -0.25530050101143154
+      -0.5187023802829124,
+      -0.25820048059464606
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1876,8 +1876,8 @@
     "ranking R2: gauss - dino": {
      "estimate": -0.38260080771865174,
      "ci95": [
-      -0.5153261423056826,
-      -0.21188223234319084
+      -0.515520764965505,
+      -0.2177880744445835
      ],
      "excludes_zero": true,
      "meets_min_point_estimate": true,
@@ -1892,8 +1892,8 @@
   "dino: A_all - R2 (practice A vs grid)": {
    "estimate": -0.04639528280278956,
    "ci95": [
-    -0.06495168841199125,
-    -0.024735217083123057
+    -0.06542231698738137,
+    -0.02478633117362496
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1902,8 +1902,8 @@
   "dino: A_obs - A_all (observed vs whole frame)": {
    "estimate": 0.02991967057656129,
    "ci95": [
-    0.02204213772003348,
-    0.03816136565756704
+    0.022124787845087028,
+    0.038018394139342326
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1912,8 +1912,8 @@
   "dino: C4 - R1 (downscaled vs native)": {
    "estimate": -0.07251647057799723,
    "ci95": [
-    -0.14313324423351112,
-    -0.023025046317019123
+    -0.13956947605545572,
+    -0.021054797675051917
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1922,8 +1922,8 @@
   "dino: R2 - R1": {
    "estimate": 0.20677078496319018,
    "ci95": [
-    0.1461660172573814,
-    0.25524235828473435
+    0.1462173104436427,
+    0.25848327899001056
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1942,8 +1942,8 @@
   "gauss: A_all - R2 (practice A vs grid)": {
    "estimate": -0.006449911676044077,
    "ci95": [
-    -0.01533729371971878,
-    0.004331404761719144
+    -0.015025138208582369,
+    0.003714556051162432
    ],
    "excludes_zero": false,
    "meets_min_point_estimate": false,
@@ -1952,8 +1952,8 @@
   "gauss: A_obs - A_all (observed vs whole frame)": {
    "estimate": 0.02020544409164447,
    "ci95": [
-    0.014776487958827715,
-    0.02706993049909751
+    0.01427039144933839,
+    0.027315151228024467
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1962,8 +1962,8 @@
   "gauss: C4 - R1 (downscaled vs native)": {
    "estimate": -0.22915789376882761,
    "ci95": [
-    -0.28579424291171446,
-    -0.19865887655664874
+    -0.28497808207137676,
+    -0.19715525615003163
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1972,8 +1972,8 @@
   "gauss: R2 - R1": {
    "estimate": -0.019475481789968465,
    "ci95": [
-    -0.027683902528500993,
-    -0.014162037648395631
+    -0.028181429176167696,
+    -0.014310333297419141
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -1992,18 +1992,18 @@
   "patchcore: A_all - R2 (practice A vs grid)": {
    "estimate": -0.010589459254049293,
    "ci95": [
-    -0.019221036012559072,
-    0.00034077279374235443
+    -0.019201906837563756,
+    -0.00045463283062865267
    ],
-   "excludes_zero": false,
+   "excludes_zero": true,
    "meets_min_point_estimate": true,
    "whole_interval_beyond_0.01": false
   },
   "patchcore: A_obs - A_all (observed vs whole frame)": {
    "estimate": 0.022833237625851353,
    "ci95": [
-    0.01686473531934781,
-    0.02976613728533438
+    0.01650024308857086,
+    0.030152590446142158
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2012,8 +2012,8 @@
   "patchcore: C4 - R1 (downscaled vs native)": {
    "estimate": -0.27942372748021926,
    "ci95": [
-    -0.33164548269940664,
-    -0.24885490948172598
+    -0.3322250696135758,
+    -0.24758149624781084
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2022,8 +2022,8 @@
   "patchcore: R2 - R1": {
    "estimate": -0.02817110472900217,
    "ci95": [
-    -0.037628252246304596,
-    -0.02213780739015812
+    -0.03739912844765158,
+    -0.02238956555054761
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2042,8 +2042,8 @@
   "ranking R1: gauss - dino": {
    "estimate": 0.06258575895385972,
    "ci95": [
-    -0.013433016524763615,
-    0.13642403303288728
+    -0.0167303589917294,
+    0.1427885513500404
    ],
    "excludes_zero": false,
    "meets_min_point_estimate": true,
@@ -2052,8 +2052,8 @@
   "ranking R1: patchcore - dino": {
    "estimate": 0.1096898736739784,
    "ci95": [
-    0.03635655182835029,
-    0.17759420701384127
+    0.03442089499707988,
+    0.18211495548454323
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2062,8 +2062,8 @@
   "ranking R1: patchcore - gauss": {
    "estimate": 0.04710411472011866,
    "ci95": [
-    0.032022514919875684,
-    0.05891459075752526
+    0.03256427354985008,
+    0.05872561962090509
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2072,8 +2072,8 @@
   "ranking R2: gauss - dino": {
    "estimate": -0.16366050779929892,
    "ci95": [
-    -0.21131772090845075,
-    -0.11030778284716077
+    -0.21420647907894955,
+    -0.11331498704823333
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2082,8 +2082,8 @@
   "ranking R2: patchcore - dino": {
    "estimate": -0.12525201601821395,
    "ci95": [
-    -0.16821065521709033,
-    -0.07823864884100946
+    -0.17240326709286793,
+    -0.08207920701089898
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
@@ -2092,8 +2092,8 @@
   "ranking R2: patchcore - gauss": {
    "estimate": 0.03840849178108496,
    "ci95": [
-    0.024912397945977775,
-    0.04851377001245489
+    0.025021541318565748,
+    0.04852923331442467
    ],
    "excludes_zero": true,
    "meets_min_point_estimate": true,
