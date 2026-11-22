@@ -54,3 +54,9 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
 - TSFabrics: running on Kaggle (versions 5 and 6, identical scoring code). The rule is met only if TSFabrics is negative with |est| >= 0.01 and a 95% interval excluding 0. Otherwise it fails. No interpretation is written until that result exists.
 - MVTec AD 2 Fabric (secondary, outside the rule): -0.0023, object-clustered interval degenerate; reported descriptively only.
 - No native full-frame (R1) run failed for memory on any dataset.
+
+## 2026-11-22 08:05 TSFabrics complete; decision rule applied
+- Version 5 (commit 4306933 state) and version 6 (pinned commit 80e05ea) both completed with 0 R1 failures. They agree to full printed precision on the primary block and to 6 decimals on every per-cluster AP checked.
+- The CSV header was ['FileName', 'Label']: the first failure was the byte-order mark only, and fix 2 changed nothing in behaviour.
+- TSFabrics primary: -0.0112 [-0.0199, -0.0011], 5/7 clusters negative, sign-flip p = 0.109.
+- Rule 1 (A6): met. Datasets meeting the criterion, all negative: RAW-FABRID, VisA, TSFabrics. AITEX does not meet it. The TSFabrics margin is narrow and is reported as such.

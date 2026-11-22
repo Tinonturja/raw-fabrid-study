@@ -405,5 +405,6 @@
   "signflip_p": 0.109375,
   "excludes_zero": true,
   "meets_min_point_estimate": true
- }
+ },
+ "replication": "Kaggle version 6 ('tsf run pinned 80e05ea', code downloaded at commit 80e05ea7f2d80239fca956540442fc9fba226ad0, run 10883.9 s) reproduced the primary block at full printed precision and every per-cluster patchcore/dino R1 and R2 AP to 6 decimals. CSV header confirmed as ['FileName','Label']; the original failure was the UTF-8 byte-order mark only."
 }
