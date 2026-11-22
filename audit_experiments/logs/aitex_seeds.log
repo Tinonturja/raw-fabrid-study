@@ -1,0 +1,32 @@
+08:15:30 aitex wrn50 candidates 0/960 tiles
+08:15:49 aitex wrn50 candidates 320/960 tiles
+08:16:07 aitex wrn50 candidates 640/960 tiles
+08:16:55 aitex wrn50 coreset 2000/10240
+08:17:30 aitex wrn50 coreset 4000/10240
+08:18:05 aitex wrn50 coreset 6000/10240
+08:18:37 aitex wrn50 coreset 8000/10240
+08:19:09 aitex wrn50 coreset 10000/10240
+08:19:29 aitex wrn50 bank built 243s {'tiles': 960, 'per_tile': 134, 'candidates': 128640, 'dim': 1024}
+08:21:41 seed 13027 20/134 375s
+08:23:13 seed 13027 40/134 466s
+08:24:43 seed 13027 60/134 556s
+08:26:10 seed 13027 80/134 643s
+08:27:55 seed 13027 100/134 748s
+08:29:34 seed 13027 120/134 848s
+08:30:40 seed 13027 done R1 failures 0
+08:30:46 aitex wrn50 candidates 0/960 tiles
+08:31:07 aitex wrn50 candidates 320/960 tiles
+08:31:29 aitex wrn50 candidates 640/960 tiles
+08:32:11 aitex wrn50 coreset 2000/10240
+08:32:33 aitex wrn50 coreset 4000/10240
+08:32:54 aitex wrn50 coreset 6000/10240
+08:33:15 aitex wrn50 coreset 8000/10240
+08:33:35 aitex wrn50 coreset 10000/10240
+08:33:56 aitex wrn50 bank built 191s {'tiles': 960, 'per_tile': 134, 'candidates': 128640, 'dim': 1024}
+08:35:46 seed 13037 20/134 302s
+08:37:10 seed 13037 40/134 386s
+08:38:39 seed 13037 60/134 475s
+08:40:09 seed 13037 80/134 564s
+08:41:36 seed 13037 100/134 651s
+08:43:37 seed 13037 120/134 772s
+08:44:55 seed 13037 done R1 failures 0

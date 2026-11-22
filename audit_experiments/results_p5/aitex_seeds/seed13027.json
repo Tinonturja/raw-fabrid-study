@@ -1,0 +1,21 @@
+{
+ "seed": 13027,
+ "banks": {
+  "wrn50": {
+   "tiles": 960,
+   "per_tile": 134,
+   "candidates": 128640,
+   "dim": 1024,
+   "bank_sha256": "7f20693e94949718380ca72dc84a3e29386d96a95b0fd037935ecafcc24383fd",
+   "coreset": 10240,
+   "gauss": {
+    "reg": 0.01,
+    "n": 128640,
+    "mu_sha256": "7373a2217690467631e1fe82723074efb869f03eaa0806cec87a413ed2f64632",
+    "prec_sha256": "e5df77dec355f6318b89b21c8d82304c227fd95fbd411c91837d25742b76e8e1"
+   }
+  }
+ },
+ "r1_failures": [],
+ "seconds": 913.3533220291138
+}
