@@ -90,8 +90,8 @@ def plot():
     cb.set_label('anomaly score, per detector and image', fontsize=6.5)
     fig.subplots_adjust(left=0.06, right=0.9, wspace=0.04, hspace=0.12)
     out = HERE / 'manuscript_v2' / 'figures'
-    fig.savefig(out / 'fig7_score_maps.png', dpi=300, bbox_inches='tight')
-    fig.savefig(out / 'fig7_score_maps.pdf', bbox_inches='tight')
+    fig.savefig(out / 'fig07_score_maps.png', dpi=300, bbox_inches='tight')
+    fig.savefig(out / 'fig07_score_maps.pdf', bbox_inches='tight')
     print('wrote fig7', meta)
 
 

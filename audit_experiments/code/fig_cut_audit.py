@@ -40,7 +40,7 @@ for ax, (j, title) in zip(axes, enumerate(titles)):
 h, l = axes[0].get_legend_handles_labels()
 fig.legend(h, l, frameon=False, fontsize=7, loc='upper center', ncol=2, bbox_to_anchor=(0.5, 1.0))
 fig.tight_layout(rect=(0, 0, 1, 0.92))
-out = HERE / 'manuscript_v2/figures/fig_cut_audit.png'
+out = HERE / 'manuscript_v2/figures/fig03_cut_audit.png'
 fig.savefig(out)
 fig.savefig(out.with_suffix('.pdf'))
 print('wrote', out)

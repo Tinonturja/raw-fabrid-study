@@ -44,7 +44,7 @@ axes[1].scatter([], [], s=14, color=MUTED, label='one held-out roll')
 axes[1].scatter([], [], s=60, marker='D', color=BLUE, label='mean of 7 rolls')
 axes[1].legend(frameon=False, fontsize=7, loc='lower right')
 fig.tight_layout()
-out = HERE / 'manuscript_v2/figures/fig_coverage_controls.png'
+out = HERE / 'manuscript_v2/figures/fig04_coverage_controls.png'
 fig.savefig(out)
 fig.savefig(out.with_suffix('.pdf'))
 print('wrote', out)

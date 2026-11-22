@@ -1,0 +1,24 @@
+{
+ "maxunseen": {
+  "id": "Rollo2A_0000019_D_07-05-2024_10-38-53.836.png",
+  "group": "Rollo2A",
+  "size": [
+   1792,
+   1024
+  ],
+  "scale": 0.5022321428571429,
+  "unseen_px": 11106,
+  "defect_px": 44085
+ },
+ "schematic": {
+  "id": "Rollo7A_0000001_D_08-07-2024_11-26-19.544.png",
+  "group": "Rollo7A",
+  "size": [
+   1792,
+   1024
+  ],
+  "scale": 0.5022321428571429,
+  "unseen_px": 356,
+  "defect_px": 32451
+ }
+}
