@@ -1,0 +1,409 @@
+{
+ "provenance": "Transcribed programmatically (browser JSON.parse of the printed analysis.json) from the Kaggle log of notebook441cee4749 version 5 ('tsf run v2 csv fix', scoring code = commit 4306933 state, run 2026-11-21 22:53-01:50 UTC, 10606 s). AP and AUROC rounded to 6 decimals; roll-level statistics copied at full precision. Patch-level metrics and frame-bootstrap dataset_level block omitted; the full file is in the Kaggle version output.",
+ "dataset": "tsfabrics",
+ "stage": "full",
+ "reps": 2000,
+ "seed": 13017,
+ "units": {
+  "C1": {
+   "n_images": 650,
+   "n_defective": 300,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.538128,
+    "patchcore|R2": 0.513397,
+    "patchcore|R2occ": 0.5052,
+    "patchcore|C4": 0.058755,
+    "gauss|R1": 0.499197,
+    "gauss|R2": 0.477613,
+    "gauss|R2occ": 0.467904,
+    "gauss|C4": 0.064725,
+    "dino|R1": 0.267755,
+    "dino|R2": 0.375889,
+    "dino|R2occ": 0.388034,
+    "dino|C4": 0.128249
+   },
+   "parent_auroc": {
+    "patchcore": [
+     0.993581,
+     0.992105,
+     0.919171
+    ],
+    "gauss": [
+     0.994105,
+     0.992,
+     0.916162
+    ],
+    "dino": [
+     0.959,
+     0.981781,
+     0.948181
+    ]
+   }
+  },
+  "C2": {
+   "n_images": 110,
+   "n_defective": 30,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.060439,
+    "patchcore|R2": 0.039182,
+    "patchcore|R2occ": 0.042693,
+    "patchcore|C4": 0.23176,
+    "gauss|R1": 0.067089,
+    "gauss|R2": 0.039599,
+    "gauss|R2occ": 0.041968,
+    "gauss|C4": 0.220396,
+    "dino|R1": 0.173296,
+    "dino|R2": 0.335261,
+    "dino|R2occ": 0.342745,
+    "dino|C4": 0.405547
+   },
+   "parent_auroc": {
+    "patchcore": [
+     0.364583,
+     0.3475,
+     0.875
+    ],
+    "gauss": [
+     0.363333,
+     0.342083,
+     0.89125
+    ],
+    "dino": [
+     0.66875,
+     0.701667,
+     0.89875
+    ]
+   }
+  },
+  "C4": {
+   "n_images": 356,
+   "n_defective": 153,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.440598,
+    "patchcore|R2": 0.44544,
+    "patchcore|R2occ": 0.456793,
+    "patchcore|C4": 0.062757,
+    "gauss|R1": 0.479676,
+    "gauss|R2": 0.488639,
+    "gauss|R2occ": 0.497038,
+    "gauss|C4": 0.075501,
+    "dino|R1": 0.428396,
+    "dino|R2": 0.501555,
+    "dino|R2occ": 0.509365,
+    "dino|C4": 0.239347
+   },
+   "parent_auroc": {
+    "patchcore": [
+     0.94987,
+     0.949354,
+     0.868991
+    ],
+    "gauss": [
+     0.960044,
+     0.965775,
+     0.894073
+    ],
+    "dino": [
+     0.9528,
+     0.965485,
+     0.934447
+    ]
+   }
+  },
+  "C5": {
+   "n_images": 62,
+   "n_defective": 6,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.916213,
+    "patchcore|R2": 0.921612,
+    "patchcore|R2occ": 0.912762,
+    "patchcore|C4": 0.164997,
+    "gauss|R1": 0.914443,
+    "gauss|R2": 0.913571,
+    "gauss|R2occ": 0.903184,
+    "gauss|C4": 0.107609,
+    "dino|R1": 0.001532,
+    "dino|R2": 0.527312,
+    "dino|R2occ": 0.475324,
+    "dino|C4": 0.000218
+   },
+   "parent_auroc": {
+    "patchcore": [
+     1,
+     1,
+     0.866071
+    ],
+    "gauss": [
+     1,
+     1,
+     0.782738
+    ],
+    "dino": [
+     0.244048,
+     0.988095,
+     0.119048
+    ]
+   }
+  },
+  "C6": {
+   "n_images": 650,
+   "n_defective": 300,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.640936,
+    "patchcore|R2": 0.616562,
+    "patchcore|R2occ": 0.615806,
+    "patchcore|C4": 0.108456,
+    "gauss|R1": 0.574063,
+    "gauss|R2": 0.563998,
+    "gauss|R2occ": 0.562454,
+    "gauss|C4": 0.132507,
+    "dino|R1": 0.328333,
+    "dino|R2": 0.428638,
+    "dino|R2occ": 0.434671,
+    "dino|C4": 0.084732
+   },
+   "parent_auroc": {
+    "patchcore": [
+     0.997629,
+     0.997438,
+     0.923238
+    ],
+    "gauss": [
+     0.998057,
+     0.997952,
+     0.93859
+    ],
+    "dino": [
+     0.991857,
+     0.987752,
+     0.969048
+    ]
+   }
+  },
+  "C7": {
+   "n_images": 650,
+   "n_defective": 300,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.699469,
+    "patchcore|R2": 0.683623,
+    "patchcore|R2occ": 0.665943,
+    "patchcore|C4": 0.164885,
+    "gauss|R1": 0.68904,
+    "gauss|R2": 0.670184,
+    "gauss|R2occ": 0.652948,
+    "gauss|C4": 0.198068,
+    "dino|R1": 0.311853,
+    "dino|R2": 0.511823,
+    "dino|R2occ": 0.502562,
+    "dino|C4": 0.165497
+   },
+   "parent_auroc": {
+    "patchcore": [
+     1,
+     1,
+     0.974829
+    ],
+    "gauss": [
+     1,
+     1,
+     0.980248
+    ],
+    "dino": [
+     0.991952,
+     0.997771,
+     0.991724
+    ]
+   }
+  },
+  "C9": {
+   "n_images": 200,
+   "n_defective": 75,
+   "r1_failures": 0,
+   "ap": {
+    "patchcore|R1": 0.021956,
+    "patchcore|R2": 0.019845,
+    "patchcore|R2occ": 0.018224,
+    "patchcore|C4": 0.211454,
+    "gauss|R1": 0.020202,
+    "gauss|R2": 0.018926,
+    "gauss|R2occ": 0.017322,
+    "gauss|C4": 0.189256,
+    "dino|R1": 0.392538,
+    "dino|R2": 0.530673,
+    "dino|R2occ": 0.464016,
+    "dino|C4": 0.639892
+   },
+   "parent_auroc": {
+    "patchcore": [
+     0.437547,
+     0.42752,
+     0.732267
+    ],
+    "gauss": [
+     0.429333,
+     0.42048,
+     0.72
+    ],
+    "dino": [
+     0.602987,
+     0.813333,
+     0.783893
+    ]
+   }
+  }
+ },
+ "roll_level": {
+  "patchcore: R2 - R1": {
+   "estimate": -0.011153830434839323,
+   "ci95": [
+    -0.019858292071044777,
+    -0.0010792363773637487
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.109375
+  },
+  "gauss: R2 - R1": {
+   "estimate": -0.010168684418819893,
+   "ci95": [
+    -0.019121425396131438,
+    -0.0007467739720114626
+   ],
+   "rolls_positive": 1,
+   "signflip_p": 0.078125
+  },
+  "dino: R2 - R1": {
+   "estimate": 0.18677807621697848,
+   "ci95": [
+    0.10899852261783713,
+    0.30681613975934213
+   ],
+   "rolls_positive": 7,
+   "signflip_p": 0.015625
+  },
+  "patchcore: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.0031772107901914012,
+   "ci95": [
+    -0.009618998527974567,
+    0.00303010454520387
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.453125
+  },
+  "gauss: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.004244669144451451,
+   "ci95": [
+    -0.01014006340457744,
+    0.0014065592422732227
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.21875
+  },
+  "dino: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.013490319369850623,
+   "ci95": [
+    -0.038474728021813155,
+    0.006471528919989595
+   ],
+   "rolls_positive": 4,
+   "signflip_p": 0.4375
+  },
+  "patchcore: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.33066779751832936,
+   "ci95": [
+    -0.5580193802570149,
+    -0.07058070049735658
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.0625
+  },
+  "gauss: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.3222355105168848,
+   "ci95": [
+    -0.5483733605278663,
+    -0.08319314892120246
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.0625
+  },
+  "dino: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.03431724431949117,
+   "ci95": [
+    -0.16078111836818484,
+    0.11361206353043647
+   ],
+   "rolls_positive": 2,
+   "signflip_p": 0.671875
+  },
+  "ranking R1: patchcore - gauss": {
+   "estimate": 0.010575383711962835,
+   "ci95": [
+    -0.011108529115260944,
+    0.03338205455116824
+   ],
+   "rolls_positive": 5,
+   "signflip_p": 0.40625
+  },
+  "ranking R1: patchcore - dino": {
+   "estimate": 0.20200511955483175,
+   "ci95": [
+    -0.059132694871013594,
+    0.4893129922591235
+   ],
+   "rolls_positive": 5,
+   "signflip_p": 0.265625
+  },
+  "ranking R1: gauss - dino": {
+   "estimate": 0.19142973584286893,
+   "ci95": [
+    -0.06445685311564178,
+    0.4752859108150661
+   ],
+   "rolls_positive": 5,
+   "signflip_p": 0.28125
+  },
+  "ranking R2: patchcore - gauss": {
+   "estimate": 0.009590237695943403,
+   "ci95": [
+    -0.011410157411414098,
+    0.028861230036557616
+   ],
+   "rolls_positive": 5,
+   "signflip_p": 0.34375
+  },
+  "ranking R2: patchcore - dino": {
+   "estimate": 0.004073212903013926,
+   "ci95": [
+    -0.22145256212331552,
+    0.20065974938086367
+   ],
+   "rolls_positive": 4,
+   "signflip_p": 0.96875
+  },
+  "ranking R2: gauss - dino": {
+   "estimate": -0.0055170247929294735,
+   "ci95": [
+    -0.2197149081983674,
+    0.1810607751380007
+   ],
+   "rolls_positive": 4,
+   "signflip_p": 0.9375
+  }
+ },
+ "primary": {
+  "estimate": -0.011153830434839323,
+  "ci95": [
+   -0.019858292071044777,
+   -0.0010792363773637487
+  ],
+  "rolls_positive": 2,
+  "signflip_p": 0.109375,
+  "excludes_zero": true,
+  "meets_min_point_estimate": true
+ }
+}
