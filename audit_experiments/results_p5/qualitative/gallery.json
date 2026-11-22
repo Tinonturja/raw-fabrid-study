@@ -1,0 +1,42 @@
+{
+ "aitex": {
+  "id": "0001_002_00.png",
+  "size": [
+   4096,
+   256
+  ],
+  "tiles": 16,
+  "exact": true,
+  "defect_px": 1315
+ },
+ "rawfabrid": {
+  "id": "Rollo7A_0000001_D_08-07-2024_11-26-19.544.png",
+  "size": [
+   1792,
+   1024
+  ],
+  "tiles": 28,
+  "exact": true,
+  "defect_px": 32451
+ },
+ "visa": {
+  "id": "cashew/Data/Images/Anomaly/000.JPG",
+  "size": [
+   1274,
+   1176
+  ],
+  "tiles": 25,
+  "exact": false,
+  "defect_px": 3679
+ },
+ "mvtec": {
+  "id": "test_public/bad/000_overexposed.png",
+  "size": [
+   2448,
+   2048
+  ],
+  "tiles": 80,
+  "exact": false,
+  "defect_px": 920977
+ }
+}

@@ -98,7 +98,7 @@ def fig1():
                Patch(fill=False, ec=S.COPPER, lw=1.1, label='released crop moved off the grid'), ONGRID]
     fig.legend(handles=handles, loc='upper center', ncol=2, bbox_to_anchor=(0.5, a[2].get_position().y0 - 0.005),
                columnspacing=2.5, handlelength=2.2, handleheight=1.1, handler_map=HMAP)
-    S.save(fig, OUT / 'fig01_layouts', keep_aspect=True); plt.close(fig)
+    S.save(fig, OUT / 'fig02_layouts', keep_aspect=True); plt.close(fig)
 
 
 def fig_cov():
@@ -129,7 +129,7 @@ def fig_cov():
                Patch(fill=False, ec=S.COPPER, lw=1.0, label='released crop moved off the grid'), ONGRID]
     fig.legend(handles=handles, loc='upper center', ncol=2, bbox_to_anchor=(0.5, axes[0].get_position().y0 - 0.01),
                columnspacing=2.5, handlelength=2.2, handleheight=1.1, handler_map=HMAP)
-    S.save(fig, OUT / 'fig02_coverage_gap', keep_aspect=True); plt.close(fig)
+    S.save(fig, OUT / 'fig03_coverage_gap', keep_aspect=True); plt.close(fig)
 
 
 if __name__ == '__main__':

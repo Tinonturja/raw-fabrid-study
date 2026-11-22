@@ -74,7 +74,7 @@ def fig3(data):
     handles += [Line2D([], [], color=S.MUTED, marker='o', ms=4.8, mfc='white', lw=0, label='no interval (secondary)'),
                 plt.Rectangle((0, 0), 1, 1, color=S.BAND, label='|effect| < 0.01')]
     fig.legend(handles=handles, loc='upper center', ncol=5, bbox_to_anchor=(0.5, 1.08), handlelength=1.6, columnspacing=1.2)
-    save(fig, 'fig05_layout_contrast')
+    save(fig, 'fig07_layout_contrast')
 
 
 def fig4(data):
@@ -104,7 +104,7 @@ def fig4(data):
         ax.set_title(f'({letter})  {title}')
         ax.set_ylabel('R2 − R1, pixel AP')
         ax.grid(axis='y')
-    save(fig, 'fig06_per_unit')
+    save(fig, 'fig08_per_unit')
 
 
 def fig5():
@@ -135,7 +135,7 @@ def fig5():
     ax.set_xlabel('Share of 8-connected defect regions (%)')
     ax.spines['left'].set_visible(False)
     ax.legend(loc='upper center', ncol=4, bbox_to_anchor=(0.42, 1.2), handlelength=1.2)
-    save(fig, 'fig08_fragmentation')
+    save(fig, 'fig10_fragmentation')
 
 
 def fig6(data):
@@ -159,7 +159,7 @@ def fig6(data):
     axes[0].set_ylabel('Mean pixel AP')
     handles = [Line2D([], [], color=S.DET[f], marker='o', ms=4.5, lw=1.4, label=S.DET_NAME[f]) for f in S.DET]
     fig.legend(handles=handles, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.1))
-    save(fig, 'fig09_rankings')
+    save(fig, 'fig11_rankings')
 
 
 if __name__ == '__main__':
