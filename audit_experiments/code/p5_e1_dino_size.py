@@ -113,26 +113,45 @@ def scorer(fam, bank, device):
 
 
 @torch.inference_mode()
-def field_for(fam, sc, image, inf):
+def feats_for(fam, image, inf):
+    """Features for one image under one inference configuration; reused for every bank."""
     w, h = image.size
     if inf == 'full':
-        return M.score_maps(fam, [sc], [image])[sc.name][0]
+        return ('full', [(fam.features(M.to_tensor([image])), None)], (h, w))
     if inf == 's518':
         small = resize518(image)
-        x = M.to_tensor([small])
-        f = fam.features(x)
+        return ('s518', [(fam.features(M.to_tensor([small])), small.size)], (h, w))
+    side = int(inf)
+    coords = C.grid_layout(h, w, side)
+    out = []
+    for s in range(0, len(coords), 8):
+        cs = coords[s:s + 8]
+        crops = [image.crop((x, y, x + side, y + side)) for y, x in cs]
+        out.append((fam.features(M.to_tensor(crops)), cs))
+    return (side, out, (h, w))
+
+
+@torch.inference_mode()
+def field_from(fam, sc, ft):
+    kind, parts, (h, w) = ft
+    if kind == 'full':
+        f = parts[0][0]
+        _, fh, fw, d = f.shape
+        return fam.restore(sc(f.reshape(-1, d)).reshape(1, fh, fw), h, w)[0].cpu().numpy()
+    if kind == 's518':
+        f, (sw, sh) = parts[0]
         _, fh, fw, d = f.shape
         s = sc(f.reshape(-1, d)).reshape(1, fh, fw)
         hp, wp = fh * M.PATCH, fw * M.PATCH
-        m = F.interpolate(s[:, None], size=(hp, wp), mode='bilinear', align_corners=False)[:, :, :small.size[1], :small.size[0]]
+        m = F.interpolate(s[:, None], size=(hp, wp), mode='bilinear', align_corners=False)[:, :, :sh, :sw]
         m = F.interpolate(m, size=(h, w), mode='bilinear', align_corners=False)[:, 0]
         return M.smooth(m)[0].cpu().numpy()
-    side = int(inf)
-    coords = C.grid_layout(h, w, side)
-    maps = []
-    for s in range(0, len(coords), 8):
-        crops = [image.crop((x, y, x + side, y + side)) for y, x in coords[s:s + 8]]
-        maps += list(M.score_maps(fam, [sc], crops)[sc.name])
+    side = kind
+    maps, coords = [], []
+    for f, cs in parts:
+        n, fh, fw, d = f.shape
+        maps += list(fam.restore(sc(f.reshape(-1, d)).reshape(n, fh, fw), side, side).cpu().numpy())
+        coords += cs
     return C.fuse_max(h, w, maps, coords, side)
 
 
@@ -159,7 +178,7 @@ def run(a):
     (OUT / stage).mkdir(parents=True, exist_ok=True)
     (OUT / 'banks').mkdir(parents=True, exist_ok=True)
     fams = {'dino': M.DINO(device), 'wrn50': M.WRN(device)}
-    for cat in sorted(man['per_category']):
+    for cat in sorted(man['per_category'])[::2]:            # E1 amendment 1: every other category
         if a.categories and cat not in a.categories:
             continue
         out_npz = OUT / stage / f'{cat}.npz'
@@ -194,11 +213,15 @@ def run(a):
             mask = C.decode_visa(data / r['mask']) if r['label'] == 'anomaly' else np.zeros((h, w), bool)
             hh = {}
             fmax = {}
+            cache = {}
             for name, fam_name, kind, inf in ARMS:
-                fld = field_for(fams[fam_name], scs[(fam_name, kind)], image, inf)
+                if (fam_name, inf) not in cache:
+                    cache[(fam_name, inf)] = feats_for(fams[fam_name], image, inf)
+                fld = field_from(fams[fam_name], scs[(fam_name, kind)], cache[(fam_name, inf)])
                 assert fld.shape == (h, w)
                 hh[name] = C.hist(C.to_bins(fld), mask)
                 fmax[name] = float(np.max(fld))
+            del cache
             hists.append(hh)
             recs.append({'id': k, 'defect': r['label'] == 'anomaly', 'defect_px': int(mask.sum()), 'frame_max': fmax})
             if (i + 1) % 10 == 0:
