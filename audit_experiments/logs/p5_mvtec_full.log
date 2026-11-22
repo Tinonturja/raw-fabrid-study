@@ -1,0 +1,27 @@
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+05:52:39 fabric wrn50 bank loaded from cache
+05:52:40 fabric dino bank loaded from cache
+05:57:06 fabric 10/156 images 267s
+06:01:22 fabric 20/156 images 523s
+06:05:37 fabric 30/156 images 778s
+06:09:53 fabric 40/156 images 1035s
+06:14:07 fabric 50/156 images 1289s
+06:18:22 fabric 60/156 images 1544s
+06:22:37 fabric 70/156 images 1799s
+06:26:53 fabric 80/156 images 2054s
+06:31:05 fabric 90/156 images 2306s
+06:35:17 fabric 100/156 images 2559s
+06:39:32 fabric 110/156 images 2813s
+06:43:44 fabric 120/156 images 3066s
+06:48:13 fabric 130/156 images 3334s
+06:52:32 fabric 140/156 images 3594s
+06:56:51 fabric 150/156 images 3853s
+06:59:27 fabric 156/156 images 4008s
+06:59:31 fabric unit done 4012s R1 failures: 0
+06:59:31 ALL UNITS DONE

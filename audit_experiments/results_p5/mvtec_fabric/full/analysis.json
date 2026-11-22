@@ -1,0 +1,373 @@
+{
+ "dataset": "mvtec_fabric",
+ "stage": "full",
+ "units": {
+  "fabric": {
+   "n_images": 156,
+   "n_defective": 90,
+   "ap": {
+    "patchcore|R1": 0.02597100597378959,
+    "patchcore|R2": 0.023673264360606034,
+    "patchcore|R2occ": 0.023177203848494903,
+    "patchcore|C4": 0.00535046120957095,
+    "gauss|R1": 0.029993520202605574,
+    "gauss|R2": 0.02693360661071976,
+    "gauss|R2occ": 0.02637480773624841,
+    "gauss|C4": 0.005814295679205039,
+    "dino|R1": 0.017895526553851876,
+    "dino|R2": 0.03906170874400211,
+    "dino|R2occ": 0.03870381471281018,
+    "dino|C4": 0.07544875171745839
+   },
+   "detection": {
+    "patchcore": {
+     "patch_auroc_1px": 0.765526112248259,
+     "patch_ap_1px": 0.1874009461159564,
+     "patch_auroc_1pct": 0.8135609690877924,
+     "n_tiles": 12480,
+     "n_positive_tiles_1px": 336,
+     "parent_auroc_R1": 0.7678451178451179,
+     "parent_auroc_R2": 0.7153198653198654,
+     "parent_auroc_C4": 0.4286195286195286
+    },
+    "gauss": {
+     "patch_auroc_1px": 0.7478897819420918,
+     "patch_ap_1px": 0.16263384694385893,
+     "patch_auroc_1pct": 0.7688134412143879,
+     "n_tiles": 12480,
+     "n_positive_tiles_1px": 336,
+     "parent_auroc_R1": 0.817003367003367,
+     "parent_auroc_R2": 0.7673400673400673,
+     "parent_auroc_C4": 0.47794612794612795
+    },
+    "dino": {
+     "patch_auroc_1px": 0.8699377313507748,
+     "patch_ap_1px": 0.3806076263919435,
+     "patch_auroc_1pct": 0.8631657564424045,
+     "n_tiles": 12480,
+     "n_positive_tiles_1px": 336,
+     "parent_auroc_R1": 0.30505050505050507,
+     "parent_auroc_R2": 0.6151515151515151,
+     "parent_auroc_C4": 0.4324915824915825
+    }
+   },
+   "r1_failures": 0,
+   "differences": {
+    "patchcore: R2 - R1": {
+     "estimate": -0.002297741613183555,
+     "ci95": [
+      -0.15417900783192717,
+      -0.0006830668600633634
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0004960605121111308,
+     "ci95": [
+      -0.001554869407061924,
+      -0.00012228826516959398
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "patchcore: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.020620544764218637,
+     "ci95": [
+      -0.6616131373175136,
+      -0.009934703318050844
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2 - R1": {
+     "estimate": -0.0030599135918858156,
+     "ci95": [
+      -0.1072631257153107,
+      -0.001944628082402561
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0005587988744713487,
+     "ci95": [
+      -0.001679976994000582,
+      -0.00010602985216691415
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "gauss: C4 - R1 (downscaled vs native)": {
+     "estimate": -0.024179224523400534,
+     "ci95": [
+      -0.6538423337490412,
+      -0.013455929385807603
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": true
+    },
+    "dino: R2 - R1": {
+     "estimate": 0.021166182190150234,
+     "ci95": [
+      0.008537437493778825,
+      0.12428872363858964
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: R2occ - R2 (occurrence vs unique)": {
+     "estimate": -0.0003578940311919285,
+     "ci95": [
+      -0.001042818369776139,
+      -1.2663584527836123e-05
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "dino: C4 - R1 (downscaled vs native)": {
+     "estimate": 0.05755322516360652,
+     "ci95": [
+      -0.36037933978743053,
+      0.13656871638488743
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - gauss": {
+     "estimate": -0.004022514228815985,
+     "ci95": [
+      -0.016345598743699105,
+      0.05884558399020057
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: patchcore - dino": {
+     "estimate": 0.008075479419937713,
+     "ci95": [
+      -0.0010977052674785474,
+      0.23018986880718578
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R1: gauss - dino": {
+     "estimate": 0.012097993648753698,
+     "ci95": [
+      0.0009762592756572198,
+      0.20698908417440706
+     ],
+     "excludes_zero": true,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - gauss": {
+     "estimate": -0.0032603422501137243,
+     "ci95": [
+      -0.033197503264382665,
+      0.02318835897022036
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": false,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: patchcore - dino": {
+     "estimate": -0.015388444383396076,
+     "ci95": [
+      -0.09839650669312291,
+      0.05088188005804101
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    },
+    "ranking R2: gauss - dino": {
+     "estimate": -0.012128102133282352,
+     "ci95": [
+      -0.09065440391990987,
+      0.061579642931401724
+     ],
+     "excludes_zero": false,
+     "meets_min_point_estimate": true,
+     "whole_interval_beyond_0.01": false
+    }
+   }
+  }
+ },
+ "reps": 2000,
+ "seed": 13017,
+ "dataset_level": {
+  "dino: C4 - R1 (downscaled vs native)": {
+   "estimate": 0.05755322516360652,
+   "ci95": [
+    -0.36037933978743053,
+    0.13656871638488743
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "dino: R2 - R1": {
+   "estimate": 0.021166182190150234,
+   "ci95": [
+    0.008537437493778825,
+    0.12428872363858964
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "dino: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.0003578940311919285,
+   "ci95": [
+    -0.001042818369776139,
+    -1.2663584527836123e-05
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "gauss: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.024179224523400534,
+   "ci95": [
+    -0.6538423337490412,
+    -0.013455929385807603
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": true
+  },
+  "gauss: R2 - R1": {
+   "estimate": -0.0030599135918858156,
+   "ci95": [
+    -0.1072631257153107,
+    -0.001944628082402561
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "gauss: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.0005587988744713487,
+   "ci95": [
+    -0.001679976994000582,
+    -0.00010602985216691415
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "patchcore: C4 - R1 (downscaled vs native)": {
+   "estimate": -0.020620544764218637,
+   "ci95": [
+    -0.6616131373175136,
+    -0.009934703318050844
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "patchcore: R2 - R1": {
+   "estimate": -0.002297741613183555,
+   "ci95": [
+    -0.15417900783192717,
+    -0.0006830668600633634
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "patchcore: R2occ - R2 (occurrence vs unique)": {
+   "estimate": -0.0004960605121111308,
+   "ci95": [
+    -0.001554869407061924,
+    -0.00012228826516959398
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R1: gauss - dino": {
+   "estimate": 0.012097993648753698,
+   "ci95": [
+    0.0009762592756572198,
+    0.20698908417440706
+   ],
+   "excludes_zero": true,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R1: patchcore - dino": {
+   "estimate": 0.008075479419937713,
+   "ci95": [
+    -0.0010977052674785474,
+    0.23018986880718578
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R1: patchcore - gauss": {
+   "estimate": -0.004022514228815985,
+   "ci95": [
+    -0.016345598743699105,
+    0.05884558399020057
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R2: gauss - dino": {
+   "estimate": -0.012128102133282352,
+   "ci95": [
+    -0.09065440391990987,
+    0.061579642931401724
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R2: patchcore - dino": {
+   "estimate": -0.015388444383396076,
+   "ci95": [
+    -0.09839650669312291,
+    0.05088188005804101
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": true,
+   "whole_interval_beyond_0.01": false
+  },
+  "ranking R2: patchcore - gauss": {
+   "estimate": -0.0032603422501137243,
+   "ci95": [
+    -0.033197503264382665,
+    0.02318835897022036
+   ],
+   "excludes_zero": false,
+   "meets_min_point_estimate": false,
+   "whole_interval_beyond_0.01": false
+  }
+ },
+ "primary": {
+  "estimate": -0.002297741613183555,
+  "ci95": [
+   -0.15417900783192717,
+   -0.0006830668600633634
+  ],
+  "excludes_zero": true,
+  "meets_min_point_estimate": false,
+  "whole_interval_beyond_0.01": false
+ }
+}

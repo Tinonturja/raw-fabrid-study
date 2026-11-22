@@ -1,0 +1,18 @@
+mvtec_fabric (full), 1 unit(s)
+  dino: C4 - R1 (downscaled vs native)                    +0.0576  [-0.3604, +0.1366]
+  dino: R2 - R1                                           +0.0212  [+0.0085, +0.1243]
+  dino: R2occ - R2 (occurrence vs unique)                 -0.0004  [-0.0010, -0.0000]
+  gauss: C4 - R1 (downscaled vs native)                   -0.0242  [-0.6538, -0.0135]
+  gauss: R2 - R1                                          -0.0031  [-0.1073, -0.0019]
+  gauss: R2occ - R2 (occurrence vs unique)                -0.0006  [-0.0017, -0.0001]
+  patchcore: C4 - R1 (downscaled vs native)               -0.0206  [-0.6616, -0.0099]
+  patchcore: R2 - R1                                      -0.0023  [-0.1542, -0.0007]
+  patchcore: R2occ - R2 (occurrence vs unique)            -0.0005  [-0.0016, -0.0001]
+  ranking R1: gauss - dino                                +0.0121  [+0.0010, +0.2070]
+  ranking R1: patchcore - dino                            +0.0081  [-0.0011, +0.2302]
+  ranking R1: patchcore - gauss                           -0.0040  [-0.0163, +0.0588]
+  ranking R2: gauss - dino                                -0.0121  [-0.0907, +0.0616]
+  ranking R2: patchcore - dino                            -0.0154  [-0.0984, +0.0509]
+  ranking R2: patchcore - gauss                           -0.0033  [-0.0332, +0.0232]
+  fabric: AP {'patchcore|R1': 0.026, 'patchcore|R2': 0.0237, 'patchcore|R2occ': 0.0232, 'patchcore|C4': 0.0054, 'gauss|R1': 0.03, 'gauss|R2': 0.0269, 'gauss|R2occ': 0.0264, 'gauss|C4': 0.0058, 'dino|R1': 0.0179, 'dino|R2': 0.0391, 'dino|R2occ': 0.0387, 'dino|C4': 0.0754}
+wrote <study>/results_p5/mvtec_fabric/full/analysis.json

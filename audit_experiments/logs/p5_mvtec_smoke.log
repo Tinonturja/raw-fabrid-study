@@ -1,0 +1,30 @@
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+05:44:01 fabric wrn50 candidates 0/1000 tiles
+05:44:43 fabric wrn50 candidates 320/1000 tiles
+05:45:26 fabric wrn50 candidates 640/1000 tiles
+05:46:09 fabric wrn50 candidates 960/1000 tiles
+05:46:26 fabric wrn50 coreset 2000/10240
+05:46:39 fabric wrn50 coreset 4000/10240
+05:46:51 fabric wrn50 coreset 6000/10240
+05:47:03 fabric wrn50 coreset 8000/10240
+05:47:15 fabric wrn50 coreset 10000/10240
+05:47:20 fabric wrn50 bank built 203s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 1024}
+05:47:27 fabric dino candidates 0/1000 tiles
+05:48:11 fabric dino candidates 320/1000 tiles
+05:48:54 fabric dino candidates 640/1000 tiles
+05:49:37 fabric dino candidates 960/1000 tiles
+05:49:53 fabric dino coreset 2000/10240
+05:50:05 fabric dino coreset 4000/10240
+05:50:17 fabric dino coreset 6000/10240
+05:50:30 fabric dino coreset 8000/10240
+05:50:42 fabric dino coreset 10000/10240
+05:50:43 fabric dino bank built 199s {'tiles': 1000, 'per_tile': 128, 'candidates': 128000, 'dim': 384}
+05:52:26 fabric 4/4 images 509s
+05:52:27 fabric unit done 509s R1 failures: 0
+05:52:27 ALL UNITS DONE
