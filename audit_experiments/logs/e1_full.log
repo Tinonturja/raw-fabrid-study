@@ -1,0 +1,80 @@
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+08:34:21 candle dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:34:21 candle dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:34:21 candle dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:34:22 candle dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:34:22 candle dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:34:23 candle wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:40:59 candle wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:45:01 candle 10/40 images 640s
+08:46:51 candle 20/40 images 749s
+08:48:46 candle 30/40 images 865s
+08:50:25 candle 40/40 images 964s
+08:50:26 candle unit done 964s
+08:50:41 cashew dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:51:23 cashew dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:52:07 cashew dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+08:54:02 cashew dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:02:18 cashew dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:02:31 cashew wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:06:06 cashew wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:07:44 cashew 10/40 images 1038s
+09:09:13 cashew 20/40 images 1127s
+09:10:48 cashew 30/40 images 1222s
+09:12:21 cashew 40/40 images 1315s
+09:12:21 cashew unit done 1315s
+09:12:35 fryum dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:13:16 fryum dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:13:47 fryum dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:15:38 fryum dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:24:34 fryum dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:24:46 fryum wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:28:05 fryum wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:29:50 fryum 10/40 images 1048s
+09:31:33 fryum 20/40 images 1151s
+09:33:18 fryum 30/40 images 1256s
+09:34:47 fryum 40/40 images 1345s
+09:34:48 fryum unit done 1346s
+09:35:02 macaroni2 dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:35:45 macaroni2 dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:36:16 macaroni2 dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:38:32 macaroni2 dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:49:03 macaroni2 dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:49:15 macaroni2 wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:52:57 macaroni2 wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+09:54:45 macaroni2 10/40 images 1197s
+09:56:37 macaroni2 20/40 images 1309s
+10:12:16 macaroni2 30/40 images 2248s
+10:30:46 macaroni2 40/40 images 3358s
+10:30:47 macaroni2 unit done 3359s
+10:31:09 pcb2 dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:32:55 pcb2 dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:33:56 pcb2 dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:37:24 pcb2 dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:52:54 pcb2 dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:53:15 pcb2 wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+10:59:45 pcb2 wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:01:26 pcb2 10/40 images 1837s
+11:03:10 pcb2 20/40 images 1942s
+11:05:06 pcb2 30/40 images 2058s
+11:07:17 pcb2 40/40 images 2189s
+11:07:20 pcb2 unit done 2192s
+11:07:41 pcb4 dino B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:08:44 pcb4 dino B512 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:09:34 pcb4 dino B518 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:12:11 pcb4 dino B768 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:22:52 pcb4 dino Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:23:05 pcb4 wrn50 B256 bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:26:44 pcb4 wrn50 Bfull bank ready {'windows': 300, 'per_window': 36, 'candidates': 10800}
+11:28:38 pcb4 10/40 images 1276s
+11:31:30 pcb4 20/40 images 1448s
+11:35:24 pcb4 30/40 images 1682s
+11:40:39 pcb4 40/40 images 1997s
+11:40:45 pcb4 unit done 2003s
+11:40:45 ALL UNITS DONE

@@ -60,3 +60,11 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
 - The CSV header was ['FileName', 'Label']: the first failure was the byte-order mark only, and fix 2 changed nothing in behaviour.
 - TSFabrics primary: -0.0112 [-0.0199, -0.0011], 5/7 clusters negative, sign-flip p = 0.109.
 - Rule 1 (A6): met. Datasets meeting the criterion, all negative: RAW-FABRID, VisA, TSFabrics. AITEX does not meet it. The TSFabrics margin is narrow and is reported as such.
+
+## 2026-11-22 11:41 E1 (post-hoc, exploratory) complete; reading rule applied
+- Run: six VisA categories per amendment 1 (candle, cashew, fryum, macaroni2, pcb2, pcb4), 40 test images each (25 anomalous, 15 normal), 240 in all. Design file hash unchanged (2a9c1a95...). Log: logs/e1_full.log; analysis: logs/e1_analysis.log, results_p5/e1_dino_size/full/analysis.json.
+- Contrast 1 (context, DINOv2 Bfull/full - B256/full): +0.3854 [+0.3381, +0.4383], 6/6 positive.
+- Contrast 2 (residual tiling, DINOv2 B256/256 - Bfull/full): -0.2214 [-0.2813, -0.1687], 0/6 positive.
+- Contrast 3 (matched sweep vs B256/256): +0.073 (512), +0.117 (768), +0.221 (full); rising, not falling.
+- Reading rule: H-context branch needs contrast 1 >= +0.05 AND contrast 2 within +/-0.03 -> not met (contrast 2 = -0.22). H-size branch needs contrast 1 < +0.05 OR matched sweep negative at every T and < -0.03 at full -> not met. Outcome by the rule: MIXED. Reported with the numbers; the data show a matched full-frame bank surpassing tiling, beyond what H-context predicted.
+- Manuscript: Section 5.7 and Figure 12 added; Section 4.3 corrected (the pre-registered 2 x 2 bank-origin control was not run in Protocol 5); abstract, contribution 3, Sections 5.4 and 5.6, discussion, limitations and conclusion updated to the bank-mismatch explanation.
