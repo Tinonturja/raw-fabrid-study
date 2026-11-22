@@ -100,6 +100,11 @@ def main():
     rng = np.random.default_rng(M.SEED)
     fams = [M.WRN(device), M.DINO(device)]
     tag = 'dino+wrn'
+    # One RNG stream draws the test subsets of all clusters in order, so a resumed run would draw different subsets
+    # for the remaining clusters. Refuse to resume; delete the partial outputs and run all clusters in one go.
+    done = [c for c in TEST if (out_dir / f'{c}__{tag}.json').exists()]
+    if done and len(done) < len(TEST):
+        sys.exit(f'partial outputs for {done}: resuming would change the test subsets of later clusters')
     for c in TEST:
         if (out_dir / f'{c}__{tag}.json').exists():
             log(c, 'done earlier'); continue
