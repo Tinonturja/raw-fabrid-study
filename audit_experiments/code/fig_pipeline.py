@@ -73,7 +73,7 @@ ws = [15.6, 20.8, 16.4, 14.2, 11.6, 14.2]
 box(xs[0], Y, ws[0], HB, '1', 'Test frame')
 img, mask = mz['rawfabrid|image'], mz['rawfabrid|mask'].astype(bool)
 _, th = thumb(img, xs[0] + 1.0, Y + HB - 5.0 - 9.0 * 0.8, ws[0] - 2.0, mask=mask)
-body(xs[0] + 1.0, Y + 8.6, 'native resolution;\npixel mask (copper)\nused only for grading')
+body(xs[0] + 1.0, Y + 8.6, 'native resolution;\nmask (copper) for\ngrading; Practice A\nalso uses it')
 
 # 2 cutting layouts
 box(xs[1], Y, ws[1], HB, '2', 'Cut into detector input')
@@ -119,7 +119,7 @@ body(xs[3] + 1.0, Y + 9.6, 'tiles fused by maximum;\nR1 and C4 maps resized\nto 
 
 # 5 grading
 box(xs[4], Y, ws[4], HB, '5', 'Grade')
-body(xs[4] + 1.0, Y + HB - 4.6, 'whole-frame\npixel AP on the\nfull native mask,\nper roll, cluster,\ncategory or strip set;\nequal weights', color=S.INK)
+body(xs[4] + 1.0, Y + HB - 4.6, 'whole-frame\npixel AP on the\nfull native mask,\nper roll, cluster\nor category;\nAITEX pooled', color=S.INK)
 
 # 6 contrast and decision
 box(xs[5], Y, ws[5], HB, '6', 'Decide')

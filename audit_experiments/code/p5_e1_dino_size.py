@@ -263,7 +263,7 @@ def analyze(a):
             if T.shape[1] < nb:
                 pad = ((0, 0), (0, nb - T.shape[1]))
                 dens[cat][name] = (np.pad(T, pad), np.pad(P, pad))
-        C_by[cat] = C.bootstrap_counts(n)
+        C_by[cat] = C.bootstrap_counts(n, seed=C.unit_seed(cat))   # independent per category, shared across arms
         per_cat[cat] = {name: float(C.ap_from_hist(T.sum(0), P.sum(0))) for name, (T, P) in dens[cat].items()}
     macro = {name: float(np.mean([per_cat[c][name] for c in cats])) for name, *_ in ARMS}
     res = {'stage': stage, 'categories': cats, 'macro_ap': macro, 'per_category_ap': per_cat, 'contrasts': {}}

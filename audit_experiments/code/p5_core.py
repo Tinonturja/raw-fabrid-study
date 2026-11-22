@@ -153,6 +153,13 @@ def auroc(scores, labels):
 
 # ---------- A5: resampling ----------
 
+def unit_seed(name):
+    """Independent, reproducible stream per unit (category, roll, cluster). Draws stay shared across the arms or
+    layouts compared inside a unit, but different units no longer reuse one index pattern (audit fix, 22 Nov 2026)."""
+    import hashlib
+    return SEED + int(hashlib.sha256(str(name).encode()).hexdigest()[:8], 16) % 1_000_000
+
+
 def bootstrap_counts(n, reps=2000, seed=SEED, strata=None):
     """Shared resampling weights (reps, n). strata: array of group labels resampled separately."""
     rng = np.random.default_rng(seed)

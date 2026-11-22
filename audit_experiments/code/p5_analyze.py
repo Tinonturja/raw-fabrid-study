@@ -35,13 +35,23 @@ def matrices(hists, keys):
     return {k: C.dense(hists[k], nb) for k in keys}
 
 
+ONE_PCT = 656   # ceil(0.01 * 256 * 256); patches with 1..655 defect pixels are excluded from this population
+
+
 def exact_ap(scores, labels):
+    """Average precision with tied scores grouped (step-wise PR at each distinct threshold), so the result does
+    not depend on row order (audit fix, 22 Nov 2026: the previous version ranked ties by input order)."""
     s, y = np.asarray(scores, float), np.asarray(labels, bool)
-    if y.sum() == 0:
+    P = y.sum()
+    if P == 0:
         return float('nan')
     o = np.argsort(-s, kind='mergesort')
-    y = y[o].astype(float)
-    return float((y * np.cumsum(y) / np.arange(1, len(y) + 1)).sum() / y.sum())
+    s, y = s[o], y[o]
+    last = np.r_[np.flatnonzero(np.diff(s) != 0), len(s) - 1]     # last index of each tie group
+    tp = np.cumsum(y)[last].astype(float)
+    n = (last + 1).astype(float)
+    dtp = np.diff(np.r_[0.0, tp])
+    return float((dtp * tp / n).sum() / P)
 
 
 def summarise(dist, point):
@@ -82,7 +92,7 @@ def unit_tables(meta, hists, W):
         tiles = [(t[s], t['defect_px']) for r in meta['images'] for t in r['tiles'] if s in t]
         sc = np.array([t[0] for t in tiles]); px = np.array([t[1] for t in tiles])
         det[s] = {'patch_auroc_1px': C.auroc(sc, px >= 1), 'patch_ap_1px': exact_ap(sc, px >= 1),
-                  'patch_auroc_1pct': C.auroc(sc[(px == 0) | (px >= 655)], px[(px == 0) | (px >= 655)] >= 655),
+                  'patch_auroc_1pct': C.auroc(sc[(px == 0) | (px >= ONE_PCT)], px[(px == 0) | (px >= ONE_PCT)] >= ONE_PCT),
                   'n_tiles': len(tiles), 'n_positive_tiles_1px': int((px >= 1).sum())}
         y = [r['defect'] for r in meta['images']]
         for lay in ('R1', 'R2', 'C4'):
@@ -125,9 +135,9 @@ def main(a):
     for u in units:
         meta, hists = merge([load_unit(p.with_suffix('.npz'), p) for p in groups[u]])
         if a.dataset == 'mvtec_fabric':   # variants of one physical sample are resampled together
-            W = C.cluster_counts([r['group'] for r in meta['images']], reps=REPS, seed=C.SEED)
+            W = C.cluster_counts([r['group'] for r in meta['images']], reps=REPS, seed=C.unit_seed(u))
         else:
-            W = C.bootstrap_counts(len(meta['images']), reps=REPS, seed=C.SEED)   # shared by every comparison
+            W = C.bootstrap_counts(len(meta['images']), reps=REPS, seed=C.unit_seed(u))   # shared by every comparison in the unit
         tab, diffs = unit_tables(meta, hists, W)
         tab['differences'] = {k: summarise(v[0], v[1]) for k, v in diffs.items()}
         report['units'][u] = tab
