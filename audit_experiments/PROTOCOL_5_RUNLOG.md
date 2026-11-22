@@ -46,3 +46,11 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
 - Fix 2 (commit 80e05ea): the filename column is no longer assumed. The runner selects the `Label` column and the first column whose name contains file/name/image/frame/id, and prints the detected columns to the log. The gate script never read the filename column, so this name was an unverified assumption.
 - From this run on, the Kaggle cell downloads `audit_experiments/code` at a pinned commit from the public GitHub repository instead of an embedded archive, so each Kaggle version maps to one commit.
 - Neither fix touches tiling, scoring, decoding, AP computation or resampling. No TSFabrics score had been computed before these fixes.
+
+## 2026-11-22 07:10 Interim status under the frozen decision rule (A6)
+- RAW-FABRID: primary R2 - R1 = -0.0282 [-0.0422, -0.0185], 7/7 rolls negative, sign-flip p = 0.016. Meets the per-dataset criterion (negative).
+- VisA: -0.0268 [-0.0311, -0.0230]. Meets the criterion (negative).
+- AITEX: -0.0003 [-0.0028, +0.0010]. Does not meet the criterion.
+- TSFabrics: running on Kaggle (versions 5 and 6, identical scoring code). The rule is met only if TSFabrics is negative with |est| >= 0.01 and a 95% interval excluding 0. Otherwise it fails. No interpretation is written until that result exists.
+- MVTec AD 2 Fabric (secondary, outside the rule): -0.0023, object-clustered interval degenerate; reported descriptively only.
+- No native full-frame (R1) run failed for memory on any dataset.
