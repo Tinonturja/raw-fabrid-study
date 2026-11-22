@@ -54,33 +54,41 @@ def plot():
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
+    import figstyle as S
+    S.apply()
     z = np.load(OUT / 'maps.npz')
     meta = json.loads((OUT / 'maps.json').read_text())
     cols = [('patchcore', 'R1', 'PatchCore-style, native'), ('patchcore', 'R2', 'PatchCore-style, tiled'),
             ('dino', 'R1', 'DINOv2 kNN, native'), ('dino', 'R2', 'DINOv2 kNN, tiled')]
-    fig, axes = plt.subplots(len(PICK), 5, figsize=(7.2, 3.4))
+    fig, axes = plt.subplots(len(PICK), 5, figsize=(S.DOUBLE, 3.2))
     for r, (ds, unit) in enumerate(PICK):
         img, mask = z[f'{ds}|image'], z[f'{ds}|mask']
         ax = axes[r, 0]
         ax.imshow(img)
-        ax.contour(mask, levels=[0.5], colors='#e34948', linewidths=0.8)
-        ax.set_ylabel(f"{'VisA' if ds == 'visa' else 'RAW-FABRID'}\n{unit}", fontsize=8)
+        ax.contour(mask, levels=[0.5], colors=S.COPPER, linewidths=0.9)
+        ax.set_ylabel(f"{'VisA' if ds == 'visa' else 'RAW-FABRID'}\n{unit}", fontsize=8, fontweight='bold')
         if r == 0:
-            ax.set_title('Image + mask', fontsize=8)
+            ax.set_title('Image and mask', fontsize=7.5, loc='center')
         for c, (sc, lay, title) in enumerate(cols, start=1):
             m = z[f'{ds}|{sc}|{lay}']
             pair = np.concatenate([z[f'{ds}|{sc}|R1'].ravel(), z[f'{ds}|{sc}|R2'].ravel()])
             lo, hi = np.percentile(pair, [1, 99.5])           # shared scale per detector and image
             ax = axes[r, c]
-            ax.imshow(np.clip((m - lo) / (hi - lo + 1e-12), 0, 1), cmap='magma')
-            ax.contour(mask, levels=[0.5], colors='#1baf7a', linewidths=0.6)
+            ax.imshow(np.clip((m - lo) / (hi - lo + 1e-12), 0, 1), cmap=S.CMAP)
+            ax.contour(mask, levels=[0.5], colors='white', linewidths=0.6, linestyles='--')
             if r == 0:
-                ax.set_title(title, fontsize=8)
+                ax.set_title(title, fontsize=7.5, loc='center')
         for ax in axes[r]:
             ax.set_xticks([]); ax.set_yticks([])
             for sp in ax.spines.values():
                 sp.set_visible(False)
-    fig.tight_layout(pad=0.4)
+    import matplotlib as mpl
+    cax = fig.add_axes([0.92, 0.18, 0.008, 0.6])
+    cb = fig.colorbar(mpl.cm.ScalarMappable(cmap=S.CMAP), cax=cax, ticks=[0, 1])
+    cb.ax.set_yticklabels(['low', 'high'], fontsize=6.5)
+    cb.outline.set_visible(False)
+    cb.set_label('anomaly score, per detector and image', fontsize=6.5)
+    fig.subplots_adjust(left=0.06, right=0.9, wspace=0.04, hspace=0.12)
     out = HERE / 'manuscript_v2' / 'figures'
     fig.savefig(out / 'fig7_score_maps.png', dpi=300, bbox_inches='tight')
     fig.savefig(out / 'fig7_score_maps.pdf', bbox_inches='tight')
