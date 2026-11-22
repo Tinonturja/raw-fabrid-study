@@ -40,8 +40,7 @@ def mean_ap(d, fam, lay):
 
 def save(fig, name):
     OUT.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT / f'{name}.png')
-    fig.savefig(OUT / f'{name}.pdf')
+    S.save(fig, OUT / name)
     plt.close(fig)
 
 
@@ -64,10 +63,9 @@ def fig3(data):
                 ax.plot(est, y, 'o', ms=4.8, mfc='white' if sec else S.DET[fam], mec=S.DET[fam], mew=1.1, zorder=3)
         ax.axhline(3.55, color=S.SAND, lw=0.6, ls=(0, (2, 2)))
         ax.set_xlim(*xlim)
-        ax.set_title(title)
+        ax.set_title(f'({letter})  {title}')
         ax.grid(axis='x')
         ax.tick_params(axis='y', length=0)
-        S.panel(ax, letter, x=-0.14 if letter == 'b' else -0.30)
     axes[0].set_yticks(range(len(names)))
     axes[0].set_yticklabels([n if not n.startswith('MVTec') else 'MVTec AD 2 Fabric\n(secondary)' for n in names])
     axes[0].invert_yaxis()
@@ -103,10 +101,9 @@ def fig4(data):
         ax.set_xticklabels(ticks)
         ax.tick_params(axis='x', length=0)
         ax.set_xlim(-0.5, 2.6)
-        ax.set_title(title)
+        ax.set_title(f'({letter})  {title}')
         ax.set_ylabel('R2 − R1, pixel AP')
         ax.grid(axis='y')
-        S.panel(ax, letter, x=-0.2)
     save(fig, 'fig06_per_unit')
 
 
@@ -117,7 +114,7 @@ def fig5():
     fig, ax = plt.subplots(figsize=(S.DOUBLE, 2.2))
     labels = []
     cats = [('Whole in one window', S.COBALT, 'white'), ('Split across windows', S.COPPER, 'white'),
-            ('Never seen', S.INK, 'white'), ('Larger than a tile', S.SAND, S.INK)]
+            ('Never seen', S.INK, 'white'), ('Larger than a window', S.SAND, S.INK)]
     for i, (ds, f, lay, nm) in enumerate(rows):
         s = json.loads((R / 'fragmentation' / f'{f}.json').read_text())['all'][lay]
         n = s['components']
@@ -143,7 +140,8 @@ def fig5():
 
 def fig6(data):
     names = [n for n in data if not n.startswith('MVTec')]
-    fig, axes = plt.subplots(1, len(names), figsize=(S.DOUBLE, 2.4), gridspec_kw={'wspace': 0.42})
+    # one shared y-axis from zero, so slopes are comparable across panels and low absolute AP stays visible
+    fig, axes = plt.subplots(1, len(names), figsize=(S.DOUBLE, 2.4), gridspec_kw={'wspace': 0.12}, sharey=True)
     for ax, ds, letter in zip(axes, names, 'abcd'):
         kind, d = data[ds]
         for fam in ('patchcore', 'gauss', 'dino'):
@@ -154,9 +152,10 @@ def fig6(data):
         ax.set_xticklabels(['Native', 'Tiled'])
         ax.tick_params(axis='x', length=0)
         ax.set_xlim(-0.35, 1.35)
-        ax.set_title(ds)
+        ax.set_title(f'({letter})  {ds}')
         ax.grid(axis='y')
-        S.panel(ax, letter, x=-0.42)
+    axes[0].set_ylim(0, 0.5)
+    axes[0].set_yticks(np.arange(0, 0.51, 0.1))
     axes[0].set_ylabel('Mean pixel AP')
     handles = [Line2D([], [], color=S.DET[f], marker='o', ms=4.5, lw=1.4, label=S.DET_NAME[f]) for f in S.DET]
     fig.legend(handles=handles, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.1))

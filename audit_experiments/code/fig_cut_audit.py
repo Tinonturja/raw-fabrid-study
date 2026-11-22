@@ -17,7 +17,8 @@ data = [  # dataset, regions cut with no whole view (B, A), defect patches < 1% 
     ('MVTec AD 2 Fabric', 28.1, 6.2, 44.6, 33.9),
 ]
 fig, axes = plt.subplots(1, 2, figsize=(S.DOUBLE, 2.5), sharey=True)
-titles = ['Regions no single patch shows whole (%)', 'Defect patches under 1% defect (%)']
+titles = ['Defect regions no single patch shows whole', '"Defect" patches with under 1% defect']
+xlabels = ['Share of defect regions (%)', 'Share of defect-labelled patches (%)']
 for ax, (j, title) in zip(axes, enumerate(titles)):
     for i, row in enumerate(data):
         y = len(data) - 1 - i
@@ -28,6 +29,7 @@ for ax, (j, title) in zip(axes, enumerate(titles)):
         ax.text(b, y + 0.22, f'{b:.0f}', ha='center', fontsize=7, color=INK)
         ax.text(a, y - 0.42, f'{a:.0f}', ha='center', fontsize=7, color=INK)
     ax.set_title(f"({'ab'[j]})  {title}")
+    ax.set_xlabel(xlabels[j], fontsize=8)
     ax.set_yticks(range(len(data)))
     ax.set_yticklabels([d[0] for d in data][::-1], fontsize=7.5)
     ax.set_xlim(0, 60)
@@ -39,8 +41,6 @@ for ax, (j, title) in zip(axes, enumerate(titles)):
     ax.set_ylim(-0.7, len(data) - 0.4)
 h, l = axes[0].get_legend_handles_labels()
 fig.legend(h, l, frameon=False, fontsize=7, loc='upper center', ncol=2, bbox_to_anchor=(0.5, 1.0))
-fig.tight_layout(rect=(0, 0, 1, 0.92))
-out = HERE / 'manuscript_v2/figures/fig03_cut_audit.png'
-fig.savefig(out)
-fig.savefig(out.with_suffix('.pdf'))
-print('wrote', out)
+lay = lambda: fig.tight_layout(rect=(0, 0, 1, 0.92))
+lay()
+S.save(fig, HERE / 'manuscript_v2/figures/fig03_cut_audit', relayout=lay)

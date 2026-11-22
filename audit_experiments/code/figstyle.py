@@ -31,3 +31,28 @@ def apply():
 def panel(ax, letter, x=-0.12, y=1.06):
     """Bold panel letter, journal style: (a), (b), ..."""
     ax.text(x, y, f'({letter})', transform=ax.transAxes, fontsize=9, fontweight='bold', va='bottom', ha='left')
+
+
+def save(fig, path, width=DOUBLE, keep_aspect=False, relayout=None, dpi=600):
+    """Save PNG + PDF so the cropped figure is exactly `width` inches wide at final print size, so every figure
+    is reproduced at the same scale and its 8 pt text prints at 8 pt. The canvas is resized until the tight
+    bounding box matches; `keep_aspect` scales height too (image panels), `relayout` re-runs a layout callback."""
+    from pathlib import Path
+    pad = 0.02
+    target = width - 2 * pad
+    for _ in range(8):
+        r = fig.canvas.get_renderer()
+        if relayout:
+            relayout()
+        bb = fig.get_tightbbox(r)
+        if abs(bb.width - target) < 0.005:
+            break
+        W, H = fig.get_size_inches()
+        f = target / bb.width
+        fig.set_size_inches(W * f, H * f if keep_aspect else H)
+    path = Path(path)
+    fig.savefig(path.with_suffix('.png'), dpi=dpi, bbox_inches='tight', pad_inches=pad)
+    fig.savefig(path.with_suffix('.pdf'), bbox_inches='tight', pad_inches=pad)
+    from PIL import Image
+    w = Image.open(path.with_suffix('.png')).size[0] / dpi
+    print(f'{path.name}: {w:.3f} in wide at {dpi} dpi')
