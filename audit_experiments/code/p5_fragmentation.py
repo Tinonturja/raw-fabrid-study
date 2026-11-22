@@ -2,7 +2,8 @@
 manifest checks and mask decoders are identical to the main run. For every 8-connected component of each native
 defect mask and each layout (R2 grid; released/guided practice A where it exists):
   - retained fraction: the largest share of the component inside any single window;
-  - cut: no single window holds the whole component (component touches a window border inside the frame);
+  - cut: some window sees part of the component but no single window holds all of it;
+  - unseen: no window sees any of it (only possible for practice A), counted separately;
   - oversize: bounding box larger than 256 pixels on either side (no tile can hold it), reported separately.
 Positive patches (>= 1 marked pixel) under 1% defect are split into slivers from cut components and natural
 small components that are whole inside the patch.
@@ -44,11 +45,12 @@ def audit(mask, windows):
 
 def summarise(comps, patches):
     fit = [c for c in comps if not c['oversize']]
-    cut = [c for c in fit if c['cut']]
+    unseen = [c for c in fit if c['retained'] == 0]
+    cut = [c for c in fit if c['cut'] and c['retained'] > 0]
     sl = [p for p in patches if p['frac'] < 0.01]
     q = lambda v: [round(float(x), 3) for x in np.quantile(v, [0.25, 0.5, 0.75])] if len(v) else None
     return {'components': len(comps), 'oversize': len(comps) - len(fit),
-            'fit_components': len(fit), 'fit_cut': len(cut),
+            'fit_components': len(fit), 'fit_unseen': len(unseen), 'fit_cut': len(cut),
             'fit_cut_pct': round(100 * len(cut) / max(len(fit), 1), 1),
             'fit_cut_pixel_share_pct': round(100 * sum(c['px'] for c in cut) / max(sum(c['px'] for c in fit), 1), 1),
             'retained_fraction_of_cut_q25_q50_q75': q([c['retained'] for c in cut]),

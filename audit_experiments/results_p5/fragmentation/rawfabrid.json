@@ -1,0 +1,293 @@
+{
+ "dataset": "rawfabrid",
+ "units": {
+  "Rollo1A": {
+   "R2": {
+    "components": 24,
+    "oversize": 5,
+    "fit_components": 19,
+    "fit_unseen": 0,
+    "fit_cut": 5,
+    "fit_cut_pct": 26.3,
+    "fit_cut_pixel_share_pct": 25.5,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.525,
+     0.914,
+     0.928
+    ],
+    "positive_patches": 57,
+    "slivers_lt1pct": 16,
+    "slivers_from_cut": 13,
+    "slivers_natural_small": 3
+   },
+   "A": {
+    "components": 24,
+    "oversize": 5,
+    "fit_components": 19,
+    "fit_unseen": 1,
+    "fit_cut": 0,
+    "fit_cut_pct": 0.0,
+    "fit_cut_pixel_share_pct": 0.0,
+    "retained_fraction_of_cut_q25_q50_q75": null,
+    "positive_patches": 57,
+    "slivers_lt1pct": 15,
+    "slivers_from_cut": 2,
+    "slivers_natural_small": 13
+   }
+  },
+  "Rollo2A": {
+   "R2": {
+    "components": 48,
+    "oversize": 15,
+    "fit_components": 33,
+    "fit_unseen": 0,
+    "fit_cut": 13,
+    "fit_cut_pct": 39.4,
+    "fit_cut_pixel_share_pct": 53.7,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.665,
+     0.742,
+     0.816
+    ],
+    "positive_patches": 127,
+    "slivers_lt1pct": 17,
+    "slivers_from_cut": 15,
+    "slivers_natural_small": 2
+   },
+   "A": {
+    "components": 48,
+    "oversize": 15,
+    "fit_components": 33,
+    "fit_unseen": 2,
+    "fit_cut": 2,
+    "fit_cut_pct": 6.1,
+    "fit_cut_pixel_share_pct": 6.3,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.602,
+     0.667,
+     0.733
+    ],
+    "positive_patches": 127,
+    "slivers_lt1pct": 15,
+    "slivers_from_cut": 4,
+    "slivers_natural_small": 11
+   }
+  },
+  "Rollo3A": {
+   "R2": {
+    "components": 17,
+    "oversize": 4,
+    "fit_components": 13,
+    "fit_unseen": 0,
+    "fit_cut": 5,
+    "fit_cut_pct": 38.5,
+    "fit_cut_pixel_share_pct": 44.0,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.716,
+     0.734,
+     0.882
+    ],
+    "positive_patches": 44,
+    "slivers_lt1pct": 10,
+    "slivers_from_cut": 6,
+    "slivers_natural_small": 4
+   },
+   "A": {
+    "components": 17,
+    "oversize": 4,
+    "fit_components": 13,
+    "fit_unseen": 1,
+    "fit_cut": 0,
+    "fit_cut_pct": 0.0,
+    "fit_cut_pixel_share_pct": 0.0,
+    "retained_fraction_of_cut_q25_q50_q75": null,
+    "positive_patches": 44,
+    "slivers_lt1pct": 9,
+    "slivers_from_cut": 1,
+    "slivers_natural_small": 8
+   }
+  },
+  "Rollo4A": {
+   "R2": {
+    "components": 163,
+    "oversize": 26,
+    "fit_components": 137,
+    "fit_unseen": 0,
+    "fit_cut": 36,
+    "fit_cut_pct": 26.3,
+    "fit_cut_pixel_share_pct": 50.4,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.53,
+     0.701,
+     0.811
+    ],
+    "positive_patches": 279,
+    "slivers_lt1pct": 79,
+    "slivers_from_cut": 43,
+    "slivers_natural_small": 36
+   },
+   "A": {
+    "components": 163,
+    "oversize": 26,
+    "fit_components": 137,
+    "fit_unseen": 2,
+    "fit_cut": 3,
+    "fit_cut_pct": 2.2,
+    "fit_cut_pixel_share_pct": 0.7,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.356,
+     0.463,
+     0.606
+    ],
+    "positive_patches": 279,
+    "slivers_lt1pct": 66,
+    "slivers_from_cut": 12,
+    "slivers_natural_small": 54
+   }
+  },
+  "Rollo5A": {
+   "R2": {
+    "components": 38,
+    "oversize": 7,
+    "fit_components": 31,
+    "fit_unseen": 0,
+    "fit_cut": 10,
+    "fit_cut_pct": 32.3,
+    "fit_cut_pixel_share_pct": 41.4,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.589,
+     0.782,
+     0.866
+    ],
+    "positive_patches": 57,
+    "slivers_lt1pct": 11,
+    "slivers_from_cut": 8,
+    "slivers_natural_small": 3
+   },
+   "A": {
+    "components": 38,
+    "oversize": 7,
+    "fit_components": 31,
+    "fit_unseen": 0,
+    "fit_cut": 3,
+    "fit_cut_pct": 9.7,
+    "fit_cut_pixel_share_pct": 15.9,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.266,
+     0.338,
+     0.468
+    ],
+    "positive_patches": 57,
+    "slivers_lt1pct": 11,
+    "slivers_from_cut": 3,
+    "slivers_natural_small": 8
+   }
+  },
+  "Rollo6A": {
+   "R2": {
+    "components": 35,
+    "oversize": 5,
+    "fit_components": 30,
+    "fit_unseen": 0,
+    "fit_cut": 6,
+    "fit_cut_pct": 20.0,
+    "fit_cut_pixel_share_pct": 29.4,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.713,
+     0.768,
+     0.827
+    ],
+    "positive_patches": 53,
+    "slivers_lt1pct": 20,
+    "slivers_from_cut": 8,
+    "slivers_natural_small": 12
+   },
+   "A": {
+    "components": 35,
+    "oversize": 5,
+    "fit_components": 30,
+    "fit_unseen": 0,
+    "fit_cut": 0,
+    "fit_cut_pct": 0.0,
+    "fit_cut_pixel_share_pct": 0.0,
+    "retained_fraction_of_cut_q25_q50_q75": null,
+    "positive_patches": 53,
+    "slivers_lt1pct": 19,
+    "slivers_from_cut": 2,
+    "slivers_natural_small": 17
+   }
+  },
+  "Rollo7A": {
+   "R2": {
+    "components": 46,
+    "oversize": 8,
+    "fit_components": 38,
+    "fit_unseen": 0,
+    "fit_cut": 7,
+    "fit_cut_pct": 18.4,
+    "fit_cut_pixel_share_pct": 24.3,
+    "retained_fraction_of_cut_q25_q50_q75": [
+     0.737,
+     0.948,
+     0.982
+    ],
+    "positive_patches": 94,
+    "slivers_lt1pct": 22,
+    "slivers_from_cut": 13,
+    "slivers_natural_small": 9
+   },
+   "A": {
+    "components": 46,
+    "oversize": 8,
+    "fit_components": 38,
+    "fit_unseen": 0,
+    "fit_cut": 0,
+    "fit_cut_pct": 0.0,
+    "fit_cut_pixel_share_pct": 0.0,
+    "retained_fraction_of_cut_q25_q50_q75": null,
+    "positive_patches": 94,
+    "slivers_lt1pct": 22,
+    "slivers_from_cut": 7,
+    "slivers_natural_small": 15
+   }
+  }
+ },
+ "all": {
+  "R2": {
+   "components": 371,
+   "oversize": 70,
+   "fit_components": 301,
+   "fit_unseen": 0,
+   "fit_cut": 82,
+   "fit_cut_pct": 27.2,
+   "fit_cut_pixel_share_pct": 43.9,
+   "retained_fraction_of_cut_q25_q50_q75": [
+    0.61,
+    0.738,
+    0.853
+   ],
+   "positive_patches": 711,
+   "slivers_lt1pct": 175,
+   "slivers_from_cut": 106,
+   "slivers_natural_small": 69
+  },
+  "A": {
+   "components": 371,
+   "oversize": 70,
+   "fit_components": 301,
+   "fit_unseen": 6,
+   "fit_cut": 8,
+   "fit_cut_pct": 2.7,
+   "fit_cut_pixel_share_pct": 2.8,
+   "retained_fraction_of_cut_q25_q50_q75": [
+    0.316,
+    0.499,
+    0.635
+   ],
+   "positive_patches": 711,
+   "slivers_lt1pct": 157,
+   "slivers_from_cut": 31,
+   "slivers_natural_small": 126
+  }
+ }
+}
