@@ -71,7 +71,7 @@ ax = fig.add_subplot(gs[2])
 for fam in ('patchcore', 'dino'):
     a1 = np.mean([u['ap'][f'{fam}|R1'] for u in rf['units'].values()])
     a2 = np.mean([u['ap'][f'{fam}|R2'] for u in rf['units'].values()])
-    ax.plot([0, 1], [a1, a2], '-o', color=S.DET[fam], lw=1.5, ms=4.5)
+    ax.plot([0, 1], [a1, a2], '-' + {'patchcore': 'o', 'dino': 's'}[fam], color=S.DET[fam], lw=1.5, ms=4.5)
     ax.text(1.08, a2, 'PatchCore-\nstyle' if fam == 'patchcore' else 'DINOv2', color=S.DET[fam], fontsize=6.5, va='center')
 ax.set_xticks([0, 1]); ax.set_xticklabels(['Native', 'Tiled'], fontsize=6.5)
 ax.set_xlim(-0.25, 1.6)

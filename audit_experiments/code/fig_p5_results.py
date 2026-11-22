@@ -44,6 +44,10 @@ def save(fig, name):
     plt.close(fig)
 
 
+MK = {'patchcore': 'o', 'gauss': '^', 'dino': 's'}   # shape as well as colour, so greyscale prints stay readable
+UNITS = {'RAW-FABRID': '7 rolls', 'TSFabrics': '7 clusters', 'VisA': '12 categories', 'AITEX': '134 strips'}
+
+
 def fig3(data):
     names = list(data)
     fig, axes = plt.subplots(1, 2, figsize=(S.DOUBLE, 3.0), gridspec_kw={'width_ratios': [1.4, 1], 'wspace': 0.16},
@@ -60,17 +64,17 @@ def fig3(data):
                 est, (lo, hi) = contrast(kind, d, f'{fam}: R2 - R1')
                 if not sec:
                     ax.plot([lo, hi], [y, y], color=S.DET[fam], lw=1.3, solid_capstyle='butt', zorder=2)
-                ax.plot(est, y, 'o', ms=4.8, mfc='white' if sec else S.DET[fam], mec=S.DET[fam], mew=1.1, zorder=3)
+                ax.plot(est, y, MK[fam], ms=4.8, mfc='white' if sec else S.DET[fam], mec=S.DET[fam], mew=1.1, zorder=3)
         ax.axhline(3.55, color=S.SAND, lw=0.6, ls=(0, (2, 2)))
         ax.set_xlim(*xlim)
         ax.set_title(f'({letter})  {title}')
         ax.grid(axis='x')
         ax.tick_params(axis='y', length=0)
     axes[0].set_yticks(range(len(names)))
-    axes[0].set_yticklabels([n if not n.startswith('MVTec') else 'MVTec AD 2 Fabric\n(secondary)' for n in names])
+    axes[0].set_yticklabels([f'{n}\n{UNITS[n]}' if n in UNITS else 'MVTec AD 2 Fabric\n(secondary)' for n in names])
     axes[0].invert_yaxis()
     fig.supxlabel('Tiled minus native full-frame prediction, whole-frame pixel AP  (R2 − R1)', fontsize=8, y=-0.04)
-    handles = [Line2D([], [], color=S.DET[f], marker='o', ms=4.8, lw=1.3, label=S.DET_NAME[f]) for f in S.DET]
+    handles = [Line2D([], [], color=S.DET[f], marker=MK[f], ms=4.8, lw=1.3, label=S.DET_NAME[f]) for f in S.DET]
     handles += [Line2D([], [], color=S.MUTED, marker='o', ms=4.8, mfc='white', lw=0, label='no interval (secondary)'),
                 plt.Rectangle((0, 0), 1, 1, color=S.BAND, label='|effect| < 0.01')]
     fig.legend(handles=handles, loc='upper center', ncol=5, bbox_to_anchor=(0.5, 1.08), handlelength=1.6, columnspacing=1.2)
@@ -92,7 +96,7 @@ def fig4(data):
             kind, d = data[ds]
             v = np.array([u['ap'][f'{fam}|R2'] - u['ap'][f'{fam}|R1'] for u in d['units'].values()])
             x = i + rng.uniform(-0.17, 0.17, len(v))
-            ax.scatter(x, v, s=16, color=S.DET[fam], alpha=0.85, edgecolor='white', linewidth=0.5, zorder=3)
+            ax.scatter(x, v, s=16, marker=MK[fam], color=S.DET[fam], alpha=0.85, edgecolor='white', linewidth=0.5, zorder=3)
             est, (lo, hi) = contrast(kind, d, f'{fam}: R2 - R1')
             ax.plot([i + 0.3, i + 0.3], [lo, hi], color=S.INK, lw=1.0, zorder=4)
             ax.plot([i + 0.3], [est], marker='D', ms=4, color=S.INK, zorder=5)
@@ -147,7 +151,7 @@ def fig6(data):
         for fam in ('patchcore', 'gauss', 'dino'):
             a1, a2 = mean_ap(d, fam, 'R1'), mean_ap(d, fam, 'R2')
             ax.plot([0, 1], [a1, a2], '-', color=S.DET[fam], lw=1.4, zorder=2)
-            ax.plot([0, 1], [a1, a2], 'o', color=S.DET[fam], ms=4.5, mec='white', mew=0.6, zorder=3)
+            ax.plot([0, 1], [a1, a2], MK[fam], color=S.DET[fam], ms=4.5, mec='white', mew=0.6, zorder=3)
         ax.set_xticks([0, 1])
         ax.set_xticklabels(['Native', 'Tiled'])
         ax.tick_params(axis='x', length=0)
@@ -157,7 +161,7 @@ def fig6(data):
     axes[0].set_ylim(0, 0.5)
     axes[0].set_yticks(np.arange(0, 0.51, 0.1))
     axes[0].set_ylabel('Mean pixel AP')
-    handles = [Line2D([], [], color=S.DET[f], marker='o', ms=4.5, lw=1.4, label=S.DET_NAME[f]) for f in S.DET]
+    handles = [Line2D([], [], color=S.DET[f], marker=MK[f], ms=4.5, lw=1.4, label=S.DET_NAME[f]) for f in S.DET]
     fig.legend(handles=handles, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.1))
     save(fig, 'fig11_rankings')
 

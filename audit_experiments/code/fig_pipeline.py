@@ -62,7 +62,7 @@ def body(x, y, text, size=6, color=None):
 ax.add_patch(FancyBboxPatch((0.6, 37.6), 98.8, 3.6, boxstyle='round,pad=0,rounding_size=1.0', fc='#eef1f8',
                             ec='none'))
 ax.text(1.8, 39.4, 'Fixed before any score was seen:', fontsize=6.5, fontweight='bold', va='center', color=S.COBALT)
-ax.text(22.5, 39.4, 'protocol, amendment and implementation hashed; dataset manifests verify every file by SHA-256; '
+ax.text(22.5, 39.4, 'protocol, amendment and implementation hashed; files checked by SHA-256 (TSFabrics: run outputs only); '
         'one seed (13017)', fontsize=6.3, va='center', color=S.INK)
 
 Y, HB = 11.5, 24.5            # main row: bottom and height of the stage boxes
@@ -106,7 +106,7 @@ box(xs[2], Y, ws[2], HB, '3', 'Frozen detector')
 for k, (fam, name) in enumerate([('patchcore', 'PatchCore-style,\nWRN-50 (primary)'), ('gauss', 'Shared Gaussian,\nWRN-50'),
                                  ('dino', 'DINOv2 ViT-S/14\ntoken kNN')]):
     yy = Y + HB - 5.0 - k * 4.3
-    ax.add_patch(Circle((xs[2] + 1.9, yy - 0.9), 0.75, fc=S.DET[fam], ec='none'))
+    ax.plot(xs[2] + 1.9, yy - 0.9, {'patchcore': 'o', 'gauss': '^', 'dino': 's'}[fam], ms=7, color=S.DET[fam], mec='none')  # same shapes as the result figures
     body(xs[2] + 3.4, yy, name, size=6, color=S.INK)
 body(xs[2] + 1.0, Y + 7.0, 'fitted on normal tiles\nonly, no defect image\nseen; R1 and R2 share\none bank')
 
@@ -123,7 +123,7 @@ body(xs[4] + 1.0, Y + HB - 4.6, 'whole-frame\npixel AP on the\nfull native mask,
 
 # 6 contrast and decision
 box(xs[5], Y, ws[5], HB, '6', 'Decide')
-body(xs[5] + 1.0, Y + HB - 4.6, 'R2 − R1 per unit;\nbootstrap of units\n(2,000 draws) and\nsign-flip test', color=S.INK)
+body(xs[5] + 1.0, Y + HB - 4.6, 'R2 − R1 per unit;\nbootstrap (2,000\ndraws) of each\ndataset\'s units;\nsign-flip test', color=S.INK)
 ax.add_patch(FancyBboxPatch((xs[5] + 0.8, Y + 0.9), ws[5] - 1.6, 8.2, boxstyle='round,pad=0,rounding_size=0.8',
                             fc='white', ec=S.COBALT, lw=0.6))
 body(xs[5] + 1.4, Y + 8.5, 'Rule: same sign on\n≥ 3 of 4 datasets,\neach |est| ≥ 0.01,\n95% CI excludes 0', size=5.7, color=S.COBALT)
