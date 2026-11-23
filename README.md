@@ -28,7 +28,7 @@ after the Protocol 5 results and are exploratory; each design was fingerprinted 
 | Path | What it holds |
 |---|---|
 | [`study/`](study) | **The study reported in the manuscript.** Protocols 1 to 5, the follow-up designs E1 and E2, code, manifests, logs and analysis files. Start here. |
-| [`study/PROTOCOL_5.md`](study/PROTOCOL_5.md), [`PROTOCOL_5_AMENDMENT_1.md`](study/PROTOCOL_5_AMENDMENT_1.md), [`PROTOCOL_5_IMPLEMENTATION.md`](study/PROTOCOL_5_IMPLEMENTATION.md) | The frozen four-dataset protocol, its amendment and implementation log, each with a `.sha256` fingerprint. |
+| [`study/PROTOCOL_5.md`](study/PROTOCOL_5.md), [`PROTOCOL_5_AMENDMENT_1.md`](study/PROTOCOL_5_AMENDMENT_1.md), [`PROTOCOL_5_IMPLEMENTATION.md`](study/PROTOCOL_5_IMPLEMENTATION.md) | The frozen four-dataset protocol, its amendment and implementation log, each with a `.sha256` fingerprint (see the run log for one administrative wording change in the public copy of the implementation log). |
 | [`study/PROTOCOL_5_RUNLOG.md`](study/PROTOCOL_5_RUNLOG.md) | Dated record of every run, deviation, correction and re-analysis after the protocol was frozen. |
 | [`study/P5_EXPLORATORY_DINO_INPUT_SIZE.md`](study/P5_EXPLORATORY_DINO_INPUT_SIZE.md), [`P5_EXPLORATORY_E2_BANK_LAYOUT.md`](study/P5_EXPLORATORY_E2_BANK_LAYOUT.md) | Designs and reading rules of E1 and E2, fingerprinted before scoring. |
 | [`study/code/`](study/code) | Runners, analysis, tests and figure scripts (listed below). |
@@ -133,9 +133,10 @@ $PY code/p5_e2_bank_layout.py --rawfabrid /path/to/RAW_FABRID.zip --visa /path/t
 `--limit 2` gives a quick smoke test on two defective and two clean images per unit. TSFabrics was run on a Kaggle
 T4 GPU by a one-cell notebook that downloaded the code folder (then `audit_experiments/code/`) at commit
 `80e05ea7f2d80239fca956540442fc9fba226ad0` and ran `p5_tsfabrics_run.py` then `p5_analyze.py --dataset tsfabrics`.
-The repository history was cleaned on 23 November 2026 and that commit ID no longer exists on GitHub. Its code
-folder (git tree `94d5156ef47cb045f7dba24079223571b37c3e44`) is unchanged in the cleaned history, at commit
-`16b00ea2000ae3f59eaee1dd082ad027c3987942`; `git rev-parse 16b00ea:audit_experiments/code` prints that tree hash.
+The repository history was cleaned on 23 November 2026 and that commit ID no longer exists on GitHub. It
+corresponds to commit `5262947c40ad62b96ba576c38df02a70e66daea2` of the cleaned history, in which the files the
+Kaggle run used (`p5_tsfabrics_run.py`, `p5_analyze.py`, `p5_core.py`, `p5_models.py`, `p5_run.py`) are
+byte-identical to the originals (same git blob hashes); only a comment in an unrelated Protocol 1 script differs.
 The shell scripts `run_*.sh` record the exact sequences used, with the author's local paths. E2 took about 6 hours
 on the reference laptop.
 
