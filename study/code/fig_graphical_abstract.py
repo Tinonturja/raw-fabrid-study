@@ -26,7 +26,7 @@ rf = j('rawfabrid/full/analysis.json')
 
 fig = plt.figure(figsize=(13 / 2.54 * 1.6, 5 / 2.54 * 1.6))
 gs = fig.add_gridspec(1, 3, width_ratios=[1.35, 1, 0.8], wspace=0.38, left=0.02, right=0.98, top=0.72, bottom=0.14)
-fig.text(0.02, 0.97, 'How a benchmark cuts images and builds its memory bank changes what it measures', fontsize=10.5, fontweight='bold')
+fig.text(0.02, 0.97, 'Hidden evaluation choices change what an anomaly-localization benchmark measures', fontsize=10.5, fontweight='bold')
 
 # 1. coverage gap
 ax = fig.add_subplot(gs[0])

@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24459807.svg)](https://doi.org/10.5281/zenodo.24459807)
 
-Code, frozen protocols, dataset manifests and numerical results for a study of how the way a benchmark cuts
+Code, frozen protocols, dataset manifests and numerical results for a study of how the way a benchmark crops and tiles
 high-resolution images, and what a detector's memory bank is fitted on, change anomaly-localization scores.
 Maintained by Tinon Turja Majumder (United International University, Bangladesh). The accompanying manuscript is
 in preparation; this repository holds everything needed to check its numbers, but not the manuscript text.
