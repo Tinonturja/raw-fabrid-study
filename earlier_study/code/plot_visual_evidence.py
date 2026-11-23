@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'manuscript/figures'
+OUT = ROOT / 'figures'
 population = json.loads((ROOT/'results/unseen_roll/summary.json').read_text())['roll_populations']
 records = {}
 for roll in ('Rollo1A', 'Rollo4A', 'Rollo7A'):

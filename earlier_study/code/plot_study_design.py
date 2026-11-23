@@ -10,7 +10,7 @@ from matplotlib.patches import FancyBboxPatch
 from matplotlib.ticker import MaxNLocator, PercentFormatter
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT/'manuscript'/'figures'
+OUT = ROOT/'figures'
 BLUE, ORANGE, INK, LINE = '#145884', '#a54b17', '#172b3b', '#657782'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.labelcolor':INK,
                      'text.color':INK,'axes.edgecolor':LINE,'xtick.color':INK,

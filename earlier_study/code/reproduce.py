@@ -1,4 +1,4 @@
-"""Run all manuscript analyses from the official RAW-FABRID v1 archive."""
+"""Run all analyses of the earlier study from the official RAW-FABRID v1 archive."""
 import argparse
 import os
 import subprocess
@@ -51,7 +51,7 @@ def main():
         run('localization_study.py', '--seed', seed)
     run('plot_paired_rolls.py')
     run('plot_missed_region.py')
-    run('plot_manuscript.py')
+    run('plot_crop_policy.py')
     run('verify_results.py')
 
 

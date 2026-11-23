@@ -34,6 +34,6 @@ for ax,groups,title,y in zip(axes,[('Global','Spatial'),('Observed area','Whole 
     ax.grid(axis='y',alpha=.22)
 fig.legend([Line2D([0],[0],color=c,marker='o') for c in colors],[str(s) for s in seeds],
            loc='outside lower center',ncols=3,frameon=False,title='Split seed')
-out=ROOT/'manuscript'/'crop_policy_comparison.png'
+out=ROOT/'figures'/'crop_policy_comparison.png'
 out.parent.mkdir(exist_ok=True)
 fig.savefig(out,dpi=170)

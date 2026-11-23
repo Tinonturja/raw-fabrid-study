@@ -9,7 +9,7 @@ from matplotlib.patches import Rectangle, FancyArrowPatch
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'manuscript/figures'
+OUT=ROOT/'figures'
 RESULTS=ROOT/'results/region_followup'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'pdf.fonttype':42,
                      'axes.spines.top':False,'axes.spines.right':False})
