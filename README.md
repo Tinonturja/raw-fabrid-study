@@ -8,7 +8,7 @@ Maintained by Tinon Turja Majumder (United International University, Bangladesh)
 in preparation; this repository holds everything needed to check its numbers, but not the manuscript text.
 
 **Data archive:** every per-image score histogram behind the reported intervals is in release
-[v1.0.0](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.0) (four zip files and a SHA-256 list).
+[v1.0.2](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.2) (four zip files and a SHA-256 list; the zip names keep their original v1.0.0 label).
 The code, protocols and analysis files are archived on Zenodo (the zip files above are attached to the GitHub release): version 1.0.1, [doi:10.5281/zenodo.24463027](https://doi.org/10.5281/zenodo.24463027);
 all versions, [doi:10.5281/zenodo.24459807](https://doi.org/10.5281/zenodo.24459807).
 See [Checking the numbers without images](#checking-the-numbers-without-images).
@@ -82,10 +82,10 @@ GPU.
 1. Clone the repository and check out the release tag:
    ```bash
    git clone https://github.com/Tinonturja/raw-fabrid-study.git
-   cd raw-fabrid-study && git checkout v1.0.0
+   cd raw-fabrid-study && git checkout v1.0.2
    ```
 2. Download the four zip files and `raw-fabrid-study_v1.0.0_SHA256SUMS.txt` from the
-   [v1.0.0 release](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.0), check them
+   [v1.0.2 release](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.2), check them
    (`shasum -a 256 -c` against the first block of the list) and unzip them inside `study/`:
    ```bash
    cd study
