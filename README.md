@@ -79,13 +79,13 @@ a mismatch. TSFabrics input images were not hashed; its run outputs are
 The intervals, contrasts and tables can be recomputed from the saved per-image histograms, without any dataset or
 GPU.
 
-1. Clone the repository and check out the release tag:
+1. Clone the repository (the main branch includes the TSFabrics fix that release v1.0.1 lacks):
    ```bash
    git clone https://github.com/Tinonturja/raw-fabrid-study.git
-   cd raw-fabrid-study && git checkout v1.0.2
+   cd raw-fabrid-study
    ```
 2. Download the four zip files and `raw-fabrid-study_v1.0.0_SHA256SUMS.txt` from the
-   [v1.0.2 release](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.2), check them
+   [v1.0.1 release](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.1), check them
    (`shasum -a 256 -c` against the first block of the list) and unzip them inside `study/`:
    ```bash
    cd study
