@@ -1,0 +1,26 @@
+<study>/code/p5_analyze.py:115: RuntimeWarning: Mean of empty slice
+  dist = np.nanmean(np.stack([unit_diffs[u][k][0] for u in units]), 0)
+aitex (smoke), 1 unit(s)
+  dino: A_all - R2 (practice A vs grid)                   +0.0115  [-0.1400, +0.1270]
+  dino: A_obs - A_all (observed vs whole frame)           +0.0000  [+0.0000, +0.0000]
+  dino: C4 - R1 (downscaled vs native)                    +0.1024  [+0.0942, +0.1931]
+  dino: R2 - R1                                           +0.3507  [+0.3480, +0.5124]
+  dino: R2occ - R2 (occurrence vs unique)                 +0.0000  [+0.0000, +0.0000]
+  gauss: A_all - R2 (practice A vs grid)                  +0.0126  [-0.0491, +0.0898]
+  gauss: A_obs - A_all (observed vs whole frame)          +0.0000  [+0.0000, +0.0000]
+  gauss: C4 - R1 (downscaled vs native)                   -0.2789  [-0.3929, -0.2665]
+  gauss: R2 - R1                                          -0.0063  [-0.0182, +0.0005]
+  gauss: R2occ - R2 (occurrence vs unique)                +0.0000  [+0.0000, +0.0000]
+  patchcore: A_all - R2 (practice A vs grid)              +0.0084  [-0.0154, +0.1341]
+  patchcore: A_obs - A_all (observed vs whole frame)      +0.0000  [+0.0000, +0.0000]
+  patchcore: C4 - R1 (downscaled vs native)               -0.1867  [-0.3269, -0.1320]
+  patchcore: R2 - R1                                      -0.0036  [-0.0061, +0.0048]
+  patchcore: R2occ - R2 (occurrence vs unique)            +0.0000  [+0.0000, +0.0000]
+  ranking R1: gauss - dino                                +0.2889  [+0.2762, +0.3982]
+  ranking R1: patchcore - dino                            +0.2510  [+0.2476, +0.3763]
+  ranking R1: patchcore - gauss                           -0.0379  [-0.0686, -0.0165]
+  ranking R2: gauss - dino                                -0.0681  [-0.2050, +0.0083]
+  ranking R2: patchcore - dino                            -0.1033  [-0.2504, -0.0061]
+  ranking R2: patchcore - gauss                           -0.0352  [-0.0654, -0.0066]
+  aitex: AP {'patchcore|R1': 0.2528, 'patchcore|R2': 0.2493, 'patchcore|R2occ': 0.2493, 'patchcore|A_all': 0.2577, 'patchcore|A_obs': 0.2577, 'patchcore|C4': 0.0662, 'gauss|R1': 0.2907, 'gauss|R2': 0.2844, 'gauss|R2occ': 0.2844, 'gauss|A_all': 0.2971, 'gauss|A_obs': 0.2971, 'gauss|C4': 0.0119, 'dino|R1': 0.0018, 'dino|R2': 0.3525, 'dino|R2occ': 0.3525, 'dino|A_all': 0.3641, 'dino|A_obs': 0.3641, 'dino|C4': 0.1042}
+wrote <study>/results_p5/aitex/smoke/analysis.json

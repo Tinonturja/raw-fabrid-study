@@ -1,0 +1,20 @@
+Using cache found in ~/.cache/torch/hub/facebookresearch_dinov2_main
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+~/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+23:51:43 aitex wrn50 bank loaded from cache
+23:51:47 aitex dino candidates 0/960 tiles
+23:52:12 aitex dino candidates 320/960 tiles
+23:52:34 aitex dino candidates 640/960 tiles
+23:53:52 aitex dino coreset 2000/10240
+23:54:40 aitex dino coreset 4000/10240
+23:55:30 aitex dino coreset 6000/10240
+23:56:30 aitex dino coreset 8000/10240
+23:57:33 aitex dino coreset 10000/10240
+23:57:41 aitex dino bank built 356s {'tiles': 960, 'per_tile': 134, 'candidates': 128640, 'dim': 384}
+23:58:26 aitex 6/6 images 404s
+23:58:26 aitex unit done 404s R1 failures: 0
+23:58:26 ALL UNITS DONE

@@ -1,97 +1,160 @@
-# Crop placement in fabric anomaly detection
+# Where you cut matters: image tiling, memory banks and anomaly-localization scores
 
-Tinon Turja Majumder, United International University, Bangladesh, maintains this project. The [software citation](CITATION.cff) records the preferred attribution.
+Code, frozen protocols, dataset manifests and numerical results for a study of how the way a benchmark cuts
+high-resolution images, and what a detector's memory bank is fitted on, change anomaly-localization scores.
+Maintained by Tinon Turja Majumder (United International University, Bangladesh). The accompanying manuscript is
+in preparation; this repository holds everything needed to check its numbers, but not the manuscript text.
 
-This research repository compares what a detector sees when defect annotations guide its test windows and when it scans the complete fabric frame. The source code, protocols, figures and scored results are included. Large image archives, pretrained weights, feature caches and the local Python environment are kept on the research machine.
+**Data archive:** every per-image score histogram behind the reported intervals is in release
+[v1.0.0](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.0) (four zip files and a SHA-256 list).
+See [Checking the numbers without images](#checking-the-numbers-without-images).
 
-On RAW-FABRID v1, guided crop placement improved a globally pooled detector's frame ranking. A spatial PatchCore variant favored a blind fixed grid on all three matched splits. In the original within-roll splits, the pixel-localization ranking changed when the evaluation included marked fabric outside the released windows. With entire rolls held out, both ResNet-18 and Swin-T retained an observed-area gain, while the mean whole-frame differences were each below 0.0005 on the matched cohort. The [publication assessment](reports/publication_scope.md) documents the literature search and the exploratory work preceding the spatial experiments.
+## Main findings
 
-**For a first reading, open the [25-page learning guide](output/pdf/fabric_inspection_research_guide.pdf).** The [editable learning notes](reports/learning_notes.md) cover the same lessons. Read pages 3–10 for the fabric and metrics, pages 11–17 for code and practical labs, and pages 19–24 for the full methodology diagram, grouped statistics, second-look experiment and questions with answers. Page 25 explains the unseen-roll test and how to reproduce it. The [Q1 submission assessment](reports/q1_submission_assessment.docx) explains venue fit and the limits of the evidence.
+| Question | Result |
+|---|---|
+| Do RAW-FABRID's released, defect-centred crops cover the marked defects? | No: 7.39% of marked defect pixels lie outside every released crop. |
+| Does that missing coverage matter? | Restoring it raised mean whole-frame pixel AP by 0.022 to 0.032 for three PatchCore-style detectors, with a gain on every held-out roll, more than a control that added equally many windows without new coverage. |
+| Does tiled prediction score differently from native full-frame prediction? (pre-registered, Protocol 5) | For the primary WRN-50 PatchCore-style detector, tiling lowered pixel AP on RAW-FABRID (−0.028, roll interval −0.042 to −0.019), VisA (−0.027, −0.031 to −0.023) and TSFabrics (−0.011, −0.020 to −0.001); AITEX showed no material difference (−0.0003). The pre-registered rule was met. |
+| Does it change which detector looks better? | A DINOv2 token kNN detector gained about 0.2 AP from tiling and overtook the primary detector on RAW-FABRID under the Protocol 5 banks. |
+| Why? (exploratory E1 and E2) | The memory bank. In a paired 2 × 2 (E2), fitting the DINOv2 bank on whole frames instead of 256-pixel tiles raised native-frame AP by 0.131 on RAW-FABRID (7/7 rolls) and 0.223 on VisA (10/12 categories); with banks matched to the layout, DINOv2 led on RAW-FABRID under both layouts. |
+| What does patch-level reporting do? | Under the widely reused AITEX blind-grid protocol, 53% of patches labelled "defect" contain less than 1% defect. |
 
-The [follow-up on targeted rescanning](reports/budgeted_rescan.md) tests how to spend 25% more inspection windows after the first pass. It includes the GPU and model details, paired results on both collections, and instructions to repeat the experiment.
+Every number above is reproduced by the code here from the files in the data archive. E1 and E2 were designed
+after the Protocol 5 results and are exploratory; each design was fingerprinted before its first score.
 
-## Check the results without image data
+## Repository layout
 
-From the project root, run the following command with Python 3. It uses the standard library and the committed scores.
+| Path | What it holds |
+|---|---|
+| [`audit_experiments/`](audit_experiments) | **The study reported in the manuscript.** Protocols 1 to 5, the follow-up designs E1 and E2, code, manifests, logs and analysis files. Start here. |
+| [`audit_experiments/PROTOCOL_5.md`](audit_experiments/PROTOCOL_5.md), [`PROTOCOL_5_AMENDMENT_1.md`](audit_experiments/PROTOCOL_5_AMENDMENT_1.md), [`PROTOCOL_5_IMPLEMENTATION.md`](audit_experiments/PROTOCOL_5_IMPLEMENTATION.md) | The frozen four-dataset protocol, its amendment and implementation log, each with a `.sha256` fingerprint. |
+| [`audit_experiments/PROTOCOL_5_RUNLOG.md`](audit_experiments/PROTOCOL_5_RUNLOG.md) | Dated record of every run, deviation, correction and re-analysis after the protocol was frozen. |
+| [`audit_experiments/P5_EXPLORATORY_DINO_INPUT_SIZE.md`](audit_experiments/P5_EXPLORATORY_DINO_INPUT_SIZE.md), [`P5_EXPLORATORY_E2_BANK_LAYOUT.md`](audit_experiments/P5_EXPLORATORY_E2_BANK_LAYOUT.md) | Designs and reading rules of E1 and E2, fingerprinted before scoring. |
+| [`audit_experiments/code/`](audit_experiments/code) | Runners, analysis, tests and figure scripts (listed below). |
+| [`audit_experiments/manifests/`](audit_experiments/manifests) | Cohort manifests with a SHA-256 for every image and mask (RAW-FABRID, AITEX, VisA, MVTec AD 2 Fabric) and the TSFabrics run-output hashes. |
+| [`audit_experiments/results*/`](audit_experiments) | Analysis files (`analysis.json`) for every protocol. Per-image histograms and records are in the data archive. |
+| [`audit_experiments/manuscript_v2/figures/`](audit_experiments/manuscript_v2/figures) | Manuscript figures (PNG at 600 dpi and vector PDF), all generated by the figure scripts. |
+| `code/`, `reports/`, `results/`, `notebooks/`, `manuscript/figures/` | The earlier RAW-FABRID crop-placement study (global and spatial baselines, unseen-roll holdout, AITEX and FabriD external tests) that motivated this work. See [Earlier study](#earlier-study). |
 
-```bash
-python3 code/verify_results.py
-```
-
-The check independently recalculates matched frame AUROCs, calibration thresholds, false alarms, region hits and pixel average precision, and compares native coverage records across files. A [clean RAW-FABRID rebuild](reports/clean_rebuild.json) reproduced the five primary evidence files exactly apart from elapsed times. It started from the original ZIP with empty feature and result directories. Public-ready outputs live in [results](results). The primary spatial analysis is [seed 13017](results/localization_study.json). The [protocol](reports/localization_protocol.md) and [secondary analysis decision](reports/localization_repeats.md) document the sequence of decisions.
-
-## Rebuild RAW-FABRID from its original images
-
-The reference runs used Python 3.13, the packages pinned in [requirements-audit.txt](requirements-audit.txt), an Apple M1 and PyTorch MPS. CPU execution is supported by the code. Numeric differences can occur across platforms. The raw ZIP is about 4.13 GB. The scripts read images directly from it. The package install and model weights require additional disk space.
-
-```bash
-python3.13 -m venv .venv
-.venv/bin/python -m pip install -r requirements-audit.txt
-.venv/bin/python code/reproduce.py --download
-```
-
-If the archive is already at `data/RAW_FABRID.zip`, omit `--download`. For a manual download, use the publisher's version 1 ZIP. Its expected SHA-256 is `f6b4f82cce2f0220bbab3968a74b5337ebf2bbfd5e33d0548d34e1ebf80f85b9`. The preparation step verifies the file and reads its four metadata files. The workflow checks member CRCs, audits image and mask pairs, extracts both feature sets, evaluates the three splits, runs all crop controls and spatial analyses, and regenerates the research figures. A previous completed global feature cache can accelerate reruns. Use a fresh checkout for a clean rebuild. [RAW-FABRID publisher record, CC BY 4.0](https://data.mendeley.com/datasets/db6g85xsyg/1)
-
-## Main files
+### Main code (`audit_experiments/code/`)
 
 | File | Purpose |
 |---|---|
-| [Full RAW-FABRID workflow](code/reproduce.py) | Original archive to audited metrics |
-| [Pixel coverage check](code/check_release_coverage.py) | Pixel equality of all 19,852 patches, native mask coverage and component losses |
-| [Crop reassignment experiment](code/check_crop_publication_scope.py) | Released, fixed, same-roll donor and overlapping controls |
-| [Spatial localization experiment](code/localization_study.py) | Coreset fit, matched inference, native map fusion, coverage-sensitive scoring |
-| [Score verification](code/verify_results.py) | Arithmetic checks from shareable result files |
-| [Initial audit](reports/research_update.md) | Dataset provenance and first global and texture baselines |
+| `p5_core.py` | Layouts, max fusion, histogram AP, bootstraps (roll, cluster, macro), sign-flip test, seeds |
+| `p5_models.py` | Frozen WRN-50 and DINOv2 ViT-S/14 feature extractors and the three scoring rules |
+| `p5_run.py` | Protocol 5 runner for AITEX, VisA, RAW-FABRID and MVTec AD 2 Fabric |
+| `p5_tsfabrics_run.py`, `p5_tsfabrics_gate.py` | TSFabrics runner and cluster gate (run on Kaggle from a pinned commit) |
+| `p5_analyze.py` | Protocol 5 analysis from saved histograms |
+| `p5_e1_dino_size.py`, `p5_e2_bank_layout.py`, `e2_rankings.py` | Follow-up analyses E1 and E2 (runner and `--analyze`) |
+| `p5_fragmentation.py`, `cut_audit.py`, `cut_audit_visa.py`, `p5_cut_audit_aitex.py` | Label-only audits: coverage, slivers, split regions |
+| `strong_patchcore.py`, `coverage_control*.py`, `labelfree_scan.py`, `analyze*.py` | Protocols 1 to 4 (RAW-FABRID coverage, controls, label-free second pass) |
+| `*_manifest.py` | Build the dataset manifests |
+| `tests_p5.py`, `test_audit_fixes.py` | Tests of layouts, fusion, metrics and the statistics |
+| `make_data_bundle.py`, `compare_analysis.py` | Build the release archive; compare analysis files field by field |
+| `fig_*.py`, `figstyle.py` | All figures |
 
-The machine-readable results include source filenames, model scores and aggregate pixel counts. The mask example in the manuscript is adapted from RAW-FABRID v1 and credited to Rubén Pérez-Llorens, Teresa Albero-Albero and Javier Silvestre-Blanes under CC BY 4.0. The `research_sha256.txt` report records the earlier exploratory snapshot, including historical code digests. Source code for the analyses is under `code/`.
+## Datasets
 
-## Reproduce the external AITEX test
+No images are redistributed. Obtain them from their custodians under their licences:
 
-The [external protocol](reports/aitex_protocol.md) specifies the constructed guided layout, fixed and donor controls, training split and evaluation denominators. The [result file](results/aitex_external.json) contains all eligible filenames, image hashes, actual guided coordinates and outcomes. The tested publisher archive fingerprints are listed in [aitex_archives.json](reports/aitex_archives.json).
+| Dataset | Role | Source and licence |
+|---|---|---|
+| RAW-FABRID v1 | Coverage case study; primary | [Mendeley Data](https://data.mendeley.com/datasets/db6g85xsyg/1), CC BY 4.0 |
+| AITEX Fabric Image Database | Primary | [AITEX](https://www.aitex.es/afid/) |
+| VisA | Primary (12 categories) | [amazon-science/spot-diff](https://github.com/amazon-science/spot-diff), CC BY-NC-SA 4.0 |
+| TSFabrics | Primary (7 clusters) | Kaggle; run in the author's Kaggle account |
+| MVTec AD 2, Fabric | Secondary | [MVTec](https://www.mvtec.com/company/research/datasets/mvtec-ad-2), CC BY-NC-SA 4.0 |
 
-With the same Python environment and the `bsdtar` program (included on macOS, provided by libarchive-tools on many Linux distributions), run:
+The manifests in `audit_experiments/manifests/` list every file used, with its SHA-256; the runners refuse to run on
+a mismatch. TSFabrics input images were not hashed; its run outputs are
+(`audit_experiments/manifests/tsfabrics_v6_outputs.sha256`).
+
+## Checking the numbers without images
+
+The intervals, contrasts and tables can be recomputed from the saved per-image histograms, without any dataset or
+GPU.
+
+1. Clone the repository and check out the release tag:
+   ```bash
+   git clone https://github.com/Tinonturja/raw-fabrid-study.git
+   cd raw-fabrid-study && git checkout v1.0.0
+   ```
+2. Download the four zip files and `raw-fabrid-study_v1.0.0_SHA256SUMS.txt` from the
+   [v1.0.0 release](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.0), check them
+   (`shasum -a 256 -c` against the first block of the list) and unzip them inside `audit_experiments/`:
+   ```bash
+   cd audit_experiments
+   for z in /path/to/raw-fabrid-study_v1.0.0_*.zip; do unzip -n "$z"; done
+   ```
+3. Install the pinned environment (Python 3.13):
+   ```bash
+   python3.13 -m venv .venv && .venv/bin/pip install -r ../requirements-audit.txt
+   ```
+4. Re-run the analyses:
+   ```bash
+   .venv/bin/python code/test_audit_fixes.py
+   for d in rawfabrid aitex visa tsfabrics mvtec_fabric; do .venv/bin/python code/p5_analyze.py --dataset $d; done
+   .venv/bin/python code/p5_e1_dino_size.py --analyze
+   .venv/bin/python code/p5_e2_bank_layout.py --analyze
+   .venv/bin/python code/e2_rankings.py
+   ```
+   Each command rewrites the corresponding `analysis.json`; `git diff` should show no change beyond the last digits
+   on a different platform.
+
+| Zip file | Contents |
+|---|---|
+| `numerical_p1_p4` | Protocols 1 to 4: per-roll outputs of the RAW-FABRID coverage, control and label-free experiments |
+| `numerical_p5_core` | Protocol 5 RAW-FABRID, AITEX (incl. three-seed check), TSFabrics, MVTec AD 2 Fabric; fragmentation; pre-correction analysis files |
+| `numerical_p5_visa` | Protocol 5 VisA, all 12 categories |
+| `numerical_followups_e1_e2` | Exploratory analyses E1 and E2 |
+
+Memory banks (`*.pt`) are not archived; they are rebuilt by the runners, and their SHA-256 values are recorded in
+the per-unit records and the run log.
+
+## Re-running the experiments from images
+
+The reference runs used Python 3.13 with [`requirements-audit.txt`](requirements-audit.txt) (PyTorch 2.15.0,
+torchvision 0.29.2) on an Apple-silicon laptop (MPS, 8 GB memory). CUDA and CPU also work; floating-point scores can
+differ slightly across hardware. Model weights: torchvision `wide_resnet50_2-95faca4d.pth` and DINOv2
+`dinov2_vits14_pretrain.pth` (SHA-256 values in the run log). Run from `audit_experiments/`, replacing the paths:
 
 ```bash
-.venv/bin/python code/external_aitex.py --download
-python3 code/verify_results.py --external
+PY=.venv/bin/python
+$PY code/tests_p5.py --aitex /path/to/aitex
+$PY code/p5_run.py --dataset rawfabrid --data /path/to/RAW_FABRID.zip --families wrn dino
+$PY code/p5_run.py --dataset aitex     --data /path/to/aitex          --families wrn dino
+$PY code/p5_run.py --dataset visa      --data /path/to/VisA           --families wrn dino
+$PY code/p5_run.py --dataset mvtec_fabric --data /path/to/mvtec_ad_2/fabric --families wrn dino
+$PY code/p5_e1_dino_size.py --data /path/to/VisA
+$PY code/p5_e2_bank_layout.py --rawfabrid /path/to/RAW_FABRID.zip --visa /path/to/VisA
 ```
 
-Alternatively, place the three original publisher archives in `data/aitex/` and omit the download flag. The analysis reads temporary extracted copies. The public repository contains derived measurements. Original AITEX files remain available from the [publisher](https://www.aitex.es/afid/).
+`--limit 2` gives a quick smoke test on two defective and two clean images per unit. TSFabrics was run on a Kaggle
+T4 GPU by a one-cell notebook that downloads `audit_experiments/code/` at commit
+`80e05ea7f2d80239fca956540442fc9fba226ad0` and runs `p5_tsfabrics_run.py` then `p5_analyze.py --dataset tsfabrics`.
+The shell scripts `run_*.sh` record the exact sequences used, with the author's local paths. E2 took about 6 hours
+on the reference laptop.
 
-## Grouped statistics and publication figures
+## Provenance
 
-The primary-split analysis resamples entire rolls or fabrics with paired predictions and a fixed reference bank. The [estimates, percentile intervals and group deletions](results/cluster_statistics.json) and [new figures in PNG and vector PDF](manuscript/figures) accompany the manuscript. From the project root, reproduce them from the committed counts and scores with the pinned environment.
+- Each protocol was written and fingerprinted before its outputs existed; fingerprints are stored in this
+  repository, not with an external timestamping service.
+- The run log records every change after the freeze, including two later analysis corrections (per-unit bootstrap
+  seeds, tie-aware AP; and the sliver classification for overlapping windows). Pre-correction analysis files are in
+  the data archive, and `audit_experiments/logs/compare_analysis.txt` lists every field that changed.
+- One analysis seed (13017) is used throughout; E2 adds three bank seeds.
 
-```bash
-.venv/bin/python code/cluster_statistics.py
-.venv/bin/python code/plot_study_design.py
-```
+## Earlier study
 
-To rebuild the guided counts from the original archives, run `.venv/bin/python code/rebuild_group_histograms.py` first. The program checks every pooled pixel-score bin against the original saved run. The GPU reconstruction and the grouped analysis use primary seed 13017.
+The top-level `code/`, `reports/` and `results/` folders hold the earlier RAW-FABRID crop-placement work: global
+and spatial baselines, an unseen-roll holdout with ResNet-18 and Swin-T, AITEX and FabriD external tests and a
+budgeted rescanning follow-up. `python3 code/verify_results.py` recomputes its committed metrics with the standard
+library. Its protocols and results are in `reports/` (for example
+[`reports/unseen_roll_results.md`](reports/unseen_roll_results.md)); RAW-FABRID can be rebuilt from the publisher
+ZIP with `code/reproduce.py --download`.
 
-## Spatial detectors on unseen rolls
+## Citation
 
-The [holdout protocol](reports/unseen_roll_protocol.md) fixes the two models, training references, crop policies and sign rule. The [results and interpretation](reports/unseen_roll_results.md) include both cohorts and all seven rolls. The overview and saved results can be read without downloading the image data.
-
-Using the pinned environment, recompute both AP denominators and frame AUROC from the [committed per-roll scores and counts](results/unseen_roll), then redraw the figure.
-
-```bash
-.venv/bin/python code/analyze_unseen_roll.py
-.venv/bin/python code/plot_unseen_roll.py
-```
-
-To rebuild both detectors on all seven rolls from the publisher archive, run the first command below. The next two commands demonstrate a separate rebuild of the smallest roll, including comparison of all scores and count bins. The first run requires the torchvision ImageNet-1K V1 checkpoints for ResNet-18 and Swin-T. PyTorch uses the Apple GPU, a CUDA GPU or the CPU according to availability. Different hardware or library versions can change floating-point scores.
-
-```bash
-.venv/bin/python code/unseen_roll.py
-.venv/bin/python code/unseen_roll.py --roll Rollo3A --output-dir data/unseen_roll_repeat
-.venv/bin/python code/check_unseen_roll.py --repeat-dir data/unseen_roll_repeat
-```
-
-## Replay Swin-T on Kaggle
-
-The [Kaggle notebook](notebooks/kaggle_swin_replay.ipynb) replays the existing frozen transformer detector, starting with roll 3A. Attach the project files and the original publisher ZIP as Kaggle inputs, enable a GPU, and update the two paths in the first code cell. Its output is a hardware reproduction check. The project stays private unless you choose to publish a Kaggle input or notebook.
-
-## Additional region and external analyses
-
-The [low-false-positive region analysis](reports/region_followup_results.md) replays both spatial models on the seven held-out RAW-FABRID rolls. The [FabriD v3 exploratory comparison](reports/fabrid_external_results.md) evaluates the same reference fits on a separate public collection, with a constructed mask-guided control. The protocols describe their scope and the results include the negative direct-transfer frame rankings.
+Please cite the software as described in [`CITATION.cff`](CITATION.cff). The mask examples are adapted from
+RAW-FABRID v1 (Pérez-Llorens, Albero-Albero and Silvestre-Blanes, CC BY 4.0).

@@ -1,0 +1,746 @@
+===== aitex
+52 changed fields
+  units/aitex/differences/patchcore: R2 - R1/ci95/0: -0.0027841437063762745 -> -0.0024518426184679653
+  units/aitex/differences/patchcore: R2 - R1/ci95/1: 0.0009814450503499174 -> 0.00104335568468501
+  units/aitex/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.007506366022635567 -> 0.007575625074913603
+  units/aitex/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.062229403232725904 -> -0.06092848434588844
+  units/aitex/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: 0.008001576285518452 -> 0.009125762208165454
+  units/aitex/differences/gauss: R2 - R1/ci95/0: -0.0030016570431098217 -> -0.0028996860633940824
+  units/aitex/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.003632158636134205 -> 0.0038142021783445132
+  units/aitex/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.01860796420781339 -> -0.01923747220774997
+  units/aitex/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: 0.06920730782699351 -> 0.07270802189314252
+  units/aitex/differences/dino: R2 - R1/ci95/0: -0.04615201210778671 -> -0.047412166193169895
+  units/aitex/differences/dino: R2 - R1/ci95/1: 0.07514376863228531 -> 0.07679500431856422
+  units/aitex/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.0471091635664706 -> -0.047654051747199125
+  units/aitex/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.34347467553713046 -> -0.343367702485249
+  units/aitex/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.005221129450718343 -> 0.005355313744888334
+  units/aitex/differences/ranking R1: patchcore - gauss/ci95/1: 0.042830865399099735 -> 0.04157539846967188
+  units/aitex/differences/ranking R1: patchcore - dino/ci95/0: -0.32488769192184125 -> -0.32464304546093886
+  units/aitex/differences/ranking R1: patchcore - dino/ci95/1: 0.03716093094560715 -> 0.03773615970564054
+  units/aitex/differences/ranking R1: gauss - dino/ci95/0: -0.34391973661163555 -> -0.3454239834607222
+  units/aitex/differences/ranking R1: gauss - dino/ci95/1: 0.01393921669259569 -> 0.013189848916967341
+  units/aitex/differences/ranking R2: patchcore - gauss/ci95/0: 0.0037556098685352685 -> 0.003877549032116502
+  units/aitex/differences/ranking R2: patchcore - gauss/ci95/1: 0.0431002636122662 -> 0.0422883984997749
+  units/aitex/differences/ranking R2: patchcore - dino/ci95/0: -0.32777839123746405 -> -0.33156448774416164
+  units/aitex/differences/ranking R2: patchcore - dino/ci95/1: 0.0068036363788026195 -> 0.006629882360441439
+  units/aitex/differences/ranking R2: gauss - dino/ci95/0: -0.3487158386835191 -> -0.3516913809668536
+  units/aitex/differences/ranking R2: gauss - dino/ci95/1: -0.0008729309206269826 -> -0.0013649153867992363
+  dataset_level/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.0471091635664706 -> -0.047654051747199125
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.34347467553713046 -> -0.343367702485249
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.005221129450718343 -> 0.005355313744888334
+  dataset_level/dino: R2 - R1/ci95/0: -0.04615201210778671 -> -0.047412166193169895
+  dataset_level/dino: R2 - R1/ci95/1: 0.07514376863228531 -> 0.07679500431856422
+  dataset_level/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.003632158636134205 -> 0.0038142021783445132
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.01860796420781339 -> -0.01923747220774997
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/1: 0.06920730782699351 -> 0.07270802189314252
+  dataset_level/gauss: R2 - R1/ci95/0: -0.0030016570431098217 -> -0.0028996860633940824
+  dataset_level/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.007506366022635567 -> 0.007575625074913603
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.062229403232725904 -> -0.06092848434588844
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/1: 0.008001576285518452 -> 0.009125762208165454
+  dataset_level/patchcore: R2 - R1/ci95/0: -0.0027841437063762745 -> -0.0024518426184679653
+  dataset_level/patchcore: R2 - R1/ci95/1: 0.0009814450503499174 -> 0.00104335568468501
+  dataset_level/ranking R1: gauss - dino/ci95/0: -0.34391973661163555 -> -0.3454239834607222
+  dataset_level/ranking R1: gauss - dino/ci95/1: 0.01393921669259569 -> 0.013189848916967341
+  dataset_level/ranking R1: patchcore - dino/ci95/0: -0.32488769192184125 -> -0.32464304546093886
+  dataset_level/ranking R1: patchcore - dino/ci95/1: 0.03716093094560715 -> 0.03773615970564054
+  dataset_level/ranking R1: patchcore - gauss/ci95/1: 0.042830865399099735 -> 0.04157539846967188
+  dataset_level/ranking R2: gauss - dino/ci95/0: -0.3487158386835191 -> -0.3516913809668536
+  dataset_level/ranking R2: gauss - dino/ci95/1: -0.0008729309206269826 -> -0.0013649153867992363
+  dataset_level/ranking R2: patchcore - dino/ci95/0: -0.32777839123746405 -> -0.33156448774416164
+  dataset_level/ranking R2: patchcore - dino/ci95/1: 0.0068036363788026195 -> 0.006629882360441439
+  dataset_level/ranking R2: patchcore - gauss/ci95/0: 0.0037556098685352685 -> 0.003877549032116502
+  dataset_level/ranking R2: patchcore - gauss/ci95/1: 0.0431002636122662 -> 0.0422883984997749
+  primary/ci95/0: -0.0027841437063762745 -> -0.0024518426184679653
+  primary/ci95/1: 0.0009814450503499174 -> 0.00104335568468501
+===== rawfabrid
+279 changed fields
+  units/Rollo1A/differences/patchcore: R2 - R1/ci95/0: -0.03523162886194117 -> -0.03441027705943785
+  units/Rollo1A/differences/patchcore: R2 - R1/ci95/1: -0.006795363780317337 -> -0.0070679763747047136
+  units/Rollo1A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.0024643194865854924 -> 0.0025766234994067058
+  units/Rollo1A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.022724733138563883 -> -0.022570183999233242
+  units/Rollo1A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.01787845568904885 -> 0.01765687392991453
+  units/Rollo1A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.40244395775042724 -> -0.406539884724984
+  units/Rollo1A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.16132509590297361 -> -0.15967964803343734
+  units/Rollo1A/differences/gauss: R2 - R1/ci95/0: -0.02071501314399566 -> -0.02006403337853764
+  units/Rollo1A/differences/gauss: R2 - R1/ci95/1: 0.0038193577288681323 -> 0.0032108149592968136
+  units/Rollo1A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.023585185190113937 -> 0.023483516993964518
+  units/Rollo1A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.02295542333937118 -> -0.022741211954552226
+  units/Rollo1A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.017303614014507283 -> 0.01587118281856593
+  units/Rollo1A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.33311978087630884 -> -0.33555077261274413
+  units/Rollo1A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.0796842311007088 -> -0.0784751645103243
+  units/Rollo1A/differences/dino: R2 - R1/ci95/0: 0.056758817009531885 -> 0.053783641807521744
+  units/Rollo1A/differences/dino: R2 - R1/ci95/1: 0.34197815104414014 -> 0.3451983901402477
+  units/Rollo1A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04263688015226292 -> 0.04335249980513875
+  units/Rollo1A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.09831418741356933 -> -0.0996138131297705
+  units/Rollo1A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: 0.0035410962483477244 -> 0.002255347055336894
+  units/Rollo1A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.20315564606567071 -> -0.20394416948867022
+  units/Rollo1A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.09903619887573631 -> 0.09255444688296595
+  units/Rollo1A/differences/ranking R1: patchcore - gauss/ci95/0: 0.04062127896119852 -> 0.04138732646481256
+  units/Rollo1A/differences/ranking R1: patchcore - gauss/ci95/1: 0.10089998348987944 -> 0.09910613911937946
+  units/Rollo1A/differences/ranking R1: patchcore - dino/ci95/0: -0.15705396173240013 -> -0.15730997760097795
+  units/Rollo1A/differences/ranking R1: patchcore - dino/ci95/1: 0.26432411498828196 -> 0.2522000502587918
+  units/Rollo1A/differences/ranking R1: gauss - dino/ci95/0: -0.2318309873013742 -> -0.22983452375490557
+  units/Rollo1A/differences/ranking R1: gauss - dino/ci95/1: 0.21279977327307978 -> 0.19531992706909584
+  units/Rollo1A/differences/ranking R2: patchcore - gauss/ci95/0: 0.034249751983167376 -> 0.03555701199059481
+  units/Rollo1A/differences/ranking R2: patchcore - gauss/ci95/1: 0.07907138373650904 -> 0.07771856166981843
+  units/Rollo1A/differences/ranking R2: patchcore - dino/ci95/0: -0.3252132535045878 -> -0.3405773306064839
+  units/Rollo1A/differences/ranking R2: patchcore - dino/ci95/1: -0.04566819014173872 -> -0.04459733671418858
+  units/Rollo1A/differences/ranking R2: gauss - dino/ci95/0: -0.38930084947435595 -> -0.40525594322501607
+  units/Rollo1A/differences/ranking R2: gauss - dino/ci95/1: -0.09027320272124048 -> -0.08829226323394751
+  units/Rollo2A/differences/patchcore: R2 - R1/ci95/0: -0.029488571636846046 -> -0.028529552355911654
+  units/Rollo2A/differences/patchcore: R2 - R1/ci95/1: -0.00504545530077693 -> -0.003943650759353188
+  units/Rollo2A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.014471539451665717 -> 0.014545097156866983
+  units/Rollo2A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.05081305287518199 -> 0.04811873951309377
+  units/Rollo2A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.06306951726753075 -> -0.060805376514680064
+  units/Rollo2A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: -0.007320116374332665 -> -0.006754884298582541
+  units/Rollo2A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.43884037242145 -> -0.4379574158823513
+  units/Rollo2A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.24345365485317033 -> -0.2397382367214092
+  units/Rollo2A/differences/gauss: R2 - R1/ci95/0: -0.02779060853596014 -> -0.02719541000976373
+  units/Rollo2A/differences/gauss: R2 - R1/ci95/1: -0.0005688949456560702 -> 0.0007763178837231792
+  units/Rollo2A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.012041347215593176 -> 0.011948327565061178
+  units/Rollo2A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04460651678159149 -> 0.04202127783819577
+  units/Rollo2A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.05339839916775901 -> -0.05041736411143719
+  units/Rollo2A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.002215869049913134 -> 0.0017693843791690231
+  units/Rollo2A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.3801722848638388 -> -0.37737608018859625
+  units/Rollo2A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.19119917772926792 -> -0.18994671796304125
+  units/Rollo2A/differences/dino: R2 - R1/ci95/0: -0.0682266109926192 -> -0.06674203459106916
+  units/Rollo2A/differences/dino: R2 - R1/ci95/1: 0.26010888672045945 -> 0.24821029963494484
+  units/Rollo2A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.011564917202130926 -> 0.011936836221090829
+  units/Rollo2A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.0449351177115949 -> 0.04447557302215744
+  units/Rollo2A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.07176764991640093 -> -0.07067570374029929
+  units/Rollo2A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: -0.005775506247110469 -> -0.004797681756087436
+  units/Rollo2A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.3006836381998576 -> -0.3003093816259231
+  units/Rollo2A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.019961582022231143 -> -0.025147509155774194
+  units/Rollo2A/differences/ranking R1: patchcore - gauss/ci95/0: 0.04154757021625275 -> 0.04115066918070315
+  units/Rollo2A/differences/ranking R1: patchcore - gauss/ci95/1: 0.07707895241628082 -> 0.07767975861284698
+  units/Rollo2A/differences/ranking R1: patchcore - dino/ci95/0: 0.012543038605702835 -> 0.012759129123211801
+  units/Rollo2A/differences/ranking R1: patchcore - dino/ci95/1: 0.31692148093430456 -> 0.3046742011425581
+  units/Rollo2A/differences/ranking R1: gauss - dino/ci95/0: -0.04680405385846732 -> -0.04720245086936263
+  units/Rollo2A/differences/ranking R1: gauss - dino/ci95/1: 0.26573978321891306 -> 0.25389737515602306
+  units/Rollo2A/differences/ranking R2: patchcore - gauss/ci95/0: 0.025746792022610036 -> 0.025378222771491026
+  units/Rollo2A/differences/ranking R2: patchcore - gauss/ci95/1: 0.08179398406409427 -> 0.08278702851424248
+  units/Rollo2A/differences/ranking R2: patchcore - dino/ci95/0: -0.11675639138283063 -> -0.10764060259550721
+  units/Rollo2A/differences/ranking R2: patchcore - dino/ci95/1: 0.16415030924443516 -> 0.15596154231225987
+  units/Rollo2A/differences/ranking R2: gauss - dino/ci95/0: -0.16775329605696185 -> -0.16452924491972545
+  units/Rollo2A/differences/ranking R2: gauss - dino/ci95/1: 0.11328653539464523 -> 0.10530568494872923
+  units/Rollo3A/differences/patchcore: R2 - R1/ci95/0: -0.07061065371256547 -> -0.07273869345791967
+  units/Rollo3A/differences/patchcore: R2 - R1/ci95/1: -0.014405935657706748 -> -0.013016706715451182
+  units/Rollo3A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.00017286591269253396 -> 0.005807231934189356
+  units/Rollo3A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04772020998470014 -> 0.04873198791864482
+  units/Rollo3A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.04422648479129126 -> 0.04252375963481611
+  units/Rollo3A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.401143214959148 -> -0.393821168738429
+  units/Rollo3A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.14219003018185392 -> -0.13274958931988579
+  units/Rollo3A/differences/gauss: R2 - R1/ci95/0: -0.03730195652543062 -> -0.036588781793856544
+  units/Rollo3A/differences/gauss: R2 - R1/ci95/1: -0.0007335718334300079 -> -0.000814532791708211
+  units/Rollo3A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.00011945780011527328 -> 0.0038334361220716223
+  units/Rollo3A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04216791466809902 -> 0.04230172098282242
+  units/Rollo3A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.011444485389008082 -> -0.011710603152942973
+  units/Rollo3A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.043692211004285074 -> 0.042152120770010224
+  units/Rollo3A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.2945854888405614 -> -0.2889581535594538
+  units/Rollo3A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.1023969085995981 -> -0.09673900403167328
+  units/Rollo3A/differences/dino: R2 - R1/ci95/0: -0.13861118725173474 -> -0.1477989429026118
+  units/Rollo3A/differences/dino: R2 - R1/ci95/1: 0.10689442820589916 -> 0.1131063501371199
+  units/Rollo3A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.0002734765746433196 -> 0.00712479744008729
+  units/Rollo3A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.060056219353605986 -> 0.061683680388761666
+  units/Rollo3A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.09110621518196899 -> -0.08786690944719379
+  units/Rollo3A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: 0.011668384835369958 -> 0.010493246669840419
+  units/Rollo3A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.4681126826647111 -> -0.4770349600356003
+  units/Rollo3A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.06220431577876834 -> -0.04871098261594044
+  units/Rollo3A/differences/ranking R1: patchcore - gauss/ci95/0: 0.014645368064901076 -> 0.009344731098966533
+  units/Rollo3A/differences/ranking R1: patchcore - gauss/ci95/1: 0.14021849372289485 -> 0.13874491645354256
+  units/Rollo3A/differences/ranking R1: patchcore - dino/ci95/0: -0.2901911934993362 -> -0.2840598394851381
+  units/Rollo3A/differences/ranking R1: patchcore - dino/ci95/1: 0.08330963183408588 -> 0.0890229652076706
+  units/Rollo3A/differences/ranking R1: gauss - dino/ci95/0: -0.4095255989832129 -> -0.407622925466805
+  units/Rollo3A/differences/ranking R1: gauss - dino/ci95/1: 0.04766580355665725 -> 0.0756306952217068
+  units/Rollo3A/differences/ranking R2: patchcore - gauss/ci95/0: 0.007496170293925516 -> 0.006742855315766057
+  units/Rollo3A/differences/ranking R2: patchcore - gauss/ci95/1: 0.11131012118441753 -> 0.10976753522299211
+  units/Rollo3A/differences/ranking R2: patchcore - dino/ci95/0: -0.2424950712259098 -> -0.24547556912024962
+  units/Rollo3A/differences/ranking R2: patchcore - dino/ci95/1: -0.008193010430496464 -> -0.009751255994794846
+  units/Rollo3A/differences/ranking R2: gauss - dino/ci95/0: -0.3403841232348242 -> -0.34566280447980524
+  units/Rollo3A/differences/ranking R2: gauss - dino/ci95/1: -0.04238939107309485 -> -0.04009557372882631
+  units/Rollo4A/differences/patchcore: R2 - R1/ci95/0: -0.03215490894617664 -> -0.03142194143235574
+  units/Rollo4A/differences/patchcore: R2 - R1/ci95/1: -0.012484480255456723 -> -0.012217724675764579
+  units/Rollo4A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.01481377392300795 -> 0.015211506213998015
+  units/Rollo4A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.03377900064068259 -> 0.03318049657523304
+  units/Rollo4A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.02729759190898565 -> -0.02782117339588546
+  units/Rollo4A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.00152207197566703 -> 0.0008968525695220686
+  units/Rollo4A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.335926684983562 -> -0.33559723671611785
+  units/Rollo4A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.21978199002604287 -> -0.219224551129863
+  units/Rollo4A/differences/gauss: R2 - R1/ci95/0: -0.028553335213756643 -> -0.02843066558218063
+  units/Rollo4A/differences/gauss: R2 - R1/ci95/1: -0.0083480299296683 -> -0.007952481832619346
+  units/Rollo4A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.012570243904097235 -> 0.012979775930324225
+  units/Rollo4A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.02923168442776602 -> 0.028771289898213072
+  units/Rollo4A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.017825538898599013 -> -0.018038328143758022
+  units/Rollo4A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.007733048451366163 -> 0.0067856134792840216
+  units/Rollo4A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.2750866855496676 -> -0.2745122084754012
+  units/Rollo4A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.16281419742462458 -> -0.16406302406933215
+  units/Rollo4A/differences/dino: R2 - R1/ci95/0: 0.12427566663064041 -> 0.12091087252187552
+  units/Rollo4A/differences/dino: R2 - R1/ci95/1: 0.3063356103605832 -> 0.3117116052220333
+  units/Rollo4A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.020104028176231324 -> 0.020764926396782363
+  units/Rollo4A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04127946159515282 -> 0.04084368973040456
+  units/Rollo4A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.05941625329518361 -> -0.05825880859454334
+  units/Rollo4A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: -0.0005028934968532894 -> -0.0011610395697200777
+  units/Rollo4A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.12804270285754535 -> -0.1334929786081824
+  units/Rollo4A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.027415721974100613 -> 0.02646393573240108
+  units/Rollo4A/differences/ranking R1: patchcore - gauss/ci95/0: 0.041841391245261074 -> 0.04169000910500551
+  units/Rollo4A/differences/ranking R1: patchcore - gauss/ci95/1: 0.07340275810271314 -> 0.07316296664328427
+  units/Rollo4A/differences/ranking R1: patchcore - dino/ci95/0: 0.02436592233962289 -> 0.014515039952635872
+  units/Rollo4A/differences/ranking R1: patchcore - dino/ci95/1: 0.23115900707465076 -> 0.2339858597050069
+  units/Rollo4A/differences/ranking R1: gauss - dino/ci95/0: -0.0370400937367375 -> -0.04504324103816473
+  units/Rollo4A/differences/ranking R1: gauss - dino/ci95/1: 0.18071785324662487 -> 0.18244608560359538
+  units/Rollo4A/differences/ranking R2: patchcore - gauss/ci95/0: 0.03616301597204816 -> 0.03665032262382875
+  units/Rollo4A/differences/ranking R2: patchcore - gauss/ci95/1: 0.06955275139140557 -> 0.07004036412183569
+  units/Rollo4A/differences/ranking R2: patchcore - dino/ci95/0: -0.16637063708489414 -> -0.1654473840045464
+  units/Rollo4A/differences/ranking R2: patchcore - dino/ci95/1: -0.054638629112321056 -> -0.0543024029099504
+  units/Rollo4A/differences/ranking R2: gauss - dino/ci95/0: -0.2222783431169665 -> -0.22115889742200098
+  units/Rollo4A/differences/ranking R2: gauss - dino/ci95/1: -0.10434603407981168 -> -0.10506361402949647
+  units/Rollo5A/differences/patchcore: R2 - R1/ci95/0: -0.04594754990852498 -> -0.046053435749786376
+  units/Rollo5A/differences/patchcore: R2 - R1/ci95/1: 4.551541012209845e-06 -> 0.00024549950825698727
+  units/Rollo5A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.008132438236564597 -> 0.007661452860209831
+  units/Rollo5A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.048087952858490456 -> 0.04771101471653463
+  units/Rollo5A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.027323224948550644 -> -0.026421476401732907
+  units/Rollo5A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.006425251004030709 -> 0.007106331886307505
+  units/Rollo5A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.43380756441864765 -> -0.43032604358047566
+  units/Rollo5A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.2336136767822517 -> -0.2379614042073715
+  units/Rollo5A/differences/gauss: R2 - R1/ci95/0: -0.04408585137997366 -> -0.044137682542856126
+  units/Rollo5A/differences/gauss: R2 - R1/ci95/1: 0.0017889695710547463 -> 0.0025128814724730605
+  units/Rollo5A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.00711694257008865 -> 0.0067066707912116245
+  units/Rollo5A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.045058967476814295 -> 0.04475581902224182
+  units/Rollo5A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.025671055595822643 -> -0.025428415966759103
+  units/Rollo5A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.016090392153947825 -> 0.016700369302684457
+  units/Rollo5A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.41201102392451894 -> -0.4087522801398424
+  units/Rollo5A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.15909783814895387 -> -0.15987545147490906
+  units/Rollo5A/differences/dino: R2 - R1/ci95/0: 0.08174354344842223 -> 0.08111308883148
+  units/Rollo5A/differences/dino: R2 - R1/ci95/1: 0.2851921170280847 -> 0.29083383477454683
+  units/Rollo5A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.010209898151272339 -> 0.009536891733586841
+  units/Rollo5A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.04951572544013164 -> 0.04996700999596078
+  units/Rollo5A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.10744658925760546 -> -0.1040728956046468
+  units/Rollo5A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: 0.024936418281451447 -> 0.025391057386237623
+  units/Rollo5A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.2794537969718395 -> -0.2827115336171804
+  units/Rollo5A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.13867769094978236 -> 0.1460845197199395
+  units/Rollo5A/differences/ranking R1: patchcore - gauss/ci95/0: 0.015025732254845613 -> 0.012269766389430245
+  units/Rollo5A/differences/ranking R1: patchcore - gauss/ci95/1: 0.06765834732847571 -> 0.06716444767022114
+  units/Rollo5A/differences/ranking R1: patchcore - dino/ci95/0: 0.01323965655859462 -> 0.008876823938389941
+  units/Rollo5A/differences/ranking R1: patchcore - dino/ci95/1: 0.23449955415840493 -> 0.24292185638841648
+  units/Rollo5A/differences/ranking R1: gauss - dino/ci95/0: -0.03927444328214774 -> -0.04204088662311896
+  units/Rollo5A/differences/ranking R1: gauss - dino/ci95/1: 0.20335566465559188 -> 0.2130059413860675
+  units/Rollo5A/differences/ranking R2: patchcore - gauss/ci95/0: 0.010892944124360817 -> 0.007796389303070692
+  units/Rollo5A/differences/ranking R2: patchcore - gauss/ci95/1: 0.06802805587006751 -> 0.06741578962554583
+  units/Rollo5A/differences/ranking R2: patchcore - dino/ci95/0: -0.1535071150901293 -> -0.15748120675374291
+  units/Rollo5A/differences/ranking R2: patchcore - dino/ci95/1: -0.0019152668178149368 -> -0.008654585945716574
+  units/Rollo5A/differences/ranking R2: gauss - dino/ci95/0: -0.21511393451153848 -> -0.2135674527639634
+  units/Rollo5A/differences/ranking R2: gauss - dino/ci95/1: -0.024896101240648463 -> -0.028346261702400736
+  units/Rollo6A/differences/patchcore: R2 - R1/ci95/0: -0.04519002158940326 -> -0.04312135290946673
+  units/Rollo6A/differences/patchcore: R2 - R1/ci95/1: -0.009840867979960793 -> -0.010447421265924246
+  units/Rollo6A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.006335367602406835 -> 0.007144373090063392
+  units/Rollo6A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.05066251304406958 -> 0.05225768503317743
+  units/Rollo6A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.03955605365667186 -> -0.04138559095122287
+  units/Rollo6A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.03607476674372353 -> 0.03430313553391448
+  units/Rollo6A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.45881204738856285 -> -0.4574788611892047
+  units/Rollo6A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.2090642430047249 -> -0.21006664504657965
+  units/Rollo6A/differences/gauss: R2 - R1/ci95/0: -0.05358012273358234 -> -0.051472067785820565
+  units/Rollo6A/differences/gauss: R2 - R1/ci95/1: -0.007213664426990912 -> -0.007560958972382422
+  units/Rollo6A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.005955803992314195 -> 0.006492353897704063
+  units/Rollo6A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.050431890409102245 -> 0.05239411898621146
+  units/Rollo6A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.03550473091810796 -> -0.03701068587905292
+  units/Rollo6A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.044427106478668925 -> 0.041166816845334506
+  units/Rollo6A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.4461161396833848 -> -0.4446464946482531
+  units/Rollo6A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.1776092525673301 -> -0.17870924232923066
+  units/Rollo6A/differences/dino: R2 - R1/ci95/0: 0.05495271799067625 -> 0.05395631300747883
+  units/Rollo6A/differences/dino: R2 - R1/ci95/1: 0.4448919032153202 -> 0.44703724403985284
+  units/Rollo6A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.00559440391403917 -> 0.006032302683970312
+  units/Rollo6A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.05233925325965914 -> 0.052594078367698444
+  units/Rollo6A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.13426272184448093 -> -0.13200334087350415
+  units/Rollo6A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: -0.007579811288457053 -> -0.00939100294046815
+  units/Rollo6A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.2767206084003739 -> -0.2629908537195126
+  units/Rollo6A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.05094398780686198 -> 0.048432680362887254
+  units/Rollo6A/differences/ranking R1: patchcore - gauss/ci95/0: -0.008161192007074968 -> -0.007580424334764775
+  units/Rollo6A/differences/ranking R1: patchcore - gauss/ci95/1: 0.03786849721350376 -> 0.038194809565560414
+  units/Rollo6A/differences/ranking R1: patchcore - dino/ci95/0: -0.10919704555435683 -> -0.09511041162682149
+  units/Rollo6A/differences/ranking R1: patchcore - dino/ci95/1: 0.5122463724694398 -> 0.5007744892836731
+  units/Rollo6A/differences/ranking R1: gauss - dino/ci95/0: -0.13924266530223323 -> -0.13575003508120131
+  units/Rollo6A/differences/ranking R1: gauss - dino/ci95/1: 0.5079944242940378 -> 0.5013968015630169
+  units/Rollo6A/differences/ranking R2: patchcore - gauss/ci95/0: -0.0004211661566159304 -> -0.0007153932553574654
+  units/Rollo6A/differences/ranking R2: patchcore - gauss/ci95/1: 0.0358426451534922 -> 0.03634004840134588
+  units/Rollo6A/differences/ranking R2: patchcore - dino/ci95/0: -0.1944333954962104 -> -0.19744991972856826
+  units/Rollo6A/differences/ranking R2: patchcore - dino/ci95/1: 0.08709712104348213 -> 0.09433303687272804
+  units/Rollo6A/differences/ranking R2: gauss - dino/ci95/0: -0.22382908343801955 -> -0.22803589704912097
+  units/Rollo6A/differences/ranking R2: gauss - dino/ci95/1: 0.07067518857928001 -> 0.07675879467984167
+  units/Rollo7A/differences/patchcore: R2 - R1/ci95/0: -0.10005006401712573 -> -0.09986249479578867
+  units/Rollo7A/differences/patchcore: R2 - R1/ci95/1: -0.044377557119179616 -> -0.04492607832114772
+  units/Rollo7A/differences/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.028425446813793488 -> 0.029173213926993027
+  units/Rollo7A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/0: -0.03390999820541137 -> -0.03298442036801515
+  units/Rollo7A/differences/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.008603594927888989 -> 0.010057783015524187
+  units/Rollo7A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.35669301201368153 -> -0.35302510962842404
+  units/Rollo7A/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.10049739624841972 -> -0.098909538385398
+  units/Rollo7A/differences/gauss: R2 - R1/ci95/0: -0.06917870828939653 -> -0.06952129590088062
+  units/Rollo7A/differences/gauss: R2 - R1/ci95/1: -0.027757603100185615 -> -0.02690901593933484
+  units/Rollo7A/differences/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.03038939590802461 -> 0.03140074583586516
+  units/Rollo7A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.03548516574394858 -> -0.03556257080137644
+  units/Rollo7A/differences/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.007753008637288758 -> 0.010512104756193021
+  units/Rollo7A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.36236233386273903 -> -0.35785598570699984
+  units/Rollo7A/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.08459872408400529 -> -0.07285602395885804
+  units/Rollo7A/differences/dino: R2 - R1/ci95/0: 0.2982309300262995 -> 0.29991594781215924
+  units/Rollo7A/differences/dino: R2 - R1/ci95/1: 0.5956603753808727 -> 0.5928106033051411
+  units/Rollo7A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.01629262091375285 -> 0.014842902509205037
+  units/Rollo7A/differences/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.06369910795783996 -> 0.06383965877579145
+  units/Rollo7A/differences/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.14121793565128843 -> -0.14177581803839068
+  units/Rollo7A/differences/dino: A_all - R2 (practice A vs grid)/ci95/1: 0.006986377067459844 -> 0.01141763427969115
+  units/Rollo7A/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.002001889659146217 -> -0.0028513643784857825
+  units/Rollo7A/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.16886465106016108 -> 0.16874939833918995
+  units/Rollo7A/differences/ranking R1: patchcore - gauss/ci95/1: 0.03842487807094685 -> 0.03595174146715314
+  units/Rollo7A/differences/ranking R1: patchcore - dino/ci95/0: 0.02111189325326293 -> 0.016400430724522876
+  units/Rollo7A/differences/ranking R1: patchcore - dino/ci95/1: 0.2686965918350428 -> 0.27302682350973095
+  units/Rollo7A/differences/ranking R1: gauss - dino/ci95/0: 0.007639971375564219 -> 0.0008949366018858329
+  units/Rollo7A/differences/ranking R1: gauss - dino/ci95/1: 0.28402791760240886 -> 0.2851933006854399
+  units/Rollo7A/differences/ranking R2: patchcore - gauss/ci95/0: -0.06139477998984686 -> -0.06114102199005905
+  units/Rollo7A/differences/ranking R2: patchcore - gauss/ci95/1: 0.011499594336821729 -> 0.01104609028727911
+  units/Rollo7A/differences/ranking R2: patchcore - dino/ci95/0: -0.5212137711964799 -> -0.5187023802829124
+  units/Rollo7A/differences/ranking R2: patchcore - dino/ci95/1: -0.25530050101143154 -> -0.25820048059464606
+  units/Rollo7A/differences/ranking R2: gauss - dino/ci95/0: -0.5153261423056826 -> -0.515520764965505
+  units/Rollo7A/differences/ranking R2: gauss - dino/ci95/1: -0.21188223234319084 -> -0.2177880744445835
+  dataset_level/dino: A_all - R2 (practice A vs grid)/ci95/0: -0.06495168841199125 -> -0.06542231698738137
+  dataset_level/dino: A_all - R2 (practice A vs grid)/ci95/1: -0.024735217083123057 -> -0.02478633117362496
+  dataset_level/dino: A_obs - A_all (observed vs whole frame)/ci95/0: 0.02204213772003348 -> 0.022124787845087028
+  dataset_level/dino: A_obs - A_all (observed vs whole frame)/ci95/1: 0.03816136565756704 -> 0.038018394139342326
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.14313324423351112 -> -0.13956947605545572
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.023025046317019123 -> -0.021054797675051917
+  dataset_level/dino: R2 - R1/ci95/0: 0.1461660172573814 -> 0.1462173104436427
+  dataset_level/dino: R2 - R1/ci95/1: 0.25524235828473435 -> 0.25848327899001056
+  dataset_level/gauss: A_all - R2 (practice A vs grid)/ci95/0: -0.01533729371971878 -> -0.015025138208582369
+  dataset_level/gauss: A_all - R2 (practice A vs grid)/ci95/1: 0.004331404761719144 -> 0.003714556051162432
+  dataset_level/gauss: A_obs - A_all (observed vs whole frame)/ci95/0: 0.014776487958827715 -> 0.01427039144933839
+  dataset_level/gauss: A_obs - A_all (observed vs whole frame)/ci95/1: 0.02706993049909751 -> 0.027315151228024467
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.28579424291171446 -> -0.28497808207137676
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.19865887655664874 -> -0.19715525615003163
+  dataset_level/gauss: R2 - R1/ci95/0: -0.027683902528500993 -> -0.028181429176167696
+  dataset_level/gauss: R2 - R1/ci95/1: -0.014162037648395631 -> -0.014310333297419141
+  dataset_level/patchcore: A_all - R2 (practice A vs grid)/ci95/1: 0.00034077279374235443 -> -0.00045463283062865267
+  dataset_level/patchcore: A_obs - A_all (observed vs whole frame)/ci95/0: 0.01686473531934781 -> 0.01650024308857086
+  dataset_level/patchcore: A_obs - A_all (observed vs whole frame)/ci95/1: 0.02976613728533438 -> 0.030152590446142158
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.33164548269940664 -> -0.3322250696135758
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.24885490948172598 -> -0.24758149624781084
+  dataset_level/patchcore: R2 - R1/ci95/0: -0.037628252246304596 -> -0.03739912844765158
+  dataset_level/patchcore: R2 - R1/ci95/1: -0.02213780739015812 -> -0.02238956555054761
+  dataset_level/ranking R1: gauss - dino/ci95/0: -0.013433016524763615 -> -0.0167303589917294
+  dataset_level/ranking R1: gauss - dino/ci95/1: 0.13642403303288728 -> 0.1427885513500404
+  dataset_level/ranking R1: patchcore - dino/ci95/0: 0.03635655182835029 -> 0.03442089499707988
+  dataset_level/ranking R1: patchcore - dino/ci95/1: 0.17759420701384127 -> 0.18211495548454323
+  dataset_level/ranking R1: patchcore - gauss/ci95/0: 0.032022514919875684 -> 0.03256427354985008
+  dataset_level/ranking R1: patchcore - gauss/ci95/1: 0.05891459075752526 -> 0.05872561962090509
+  dataset_level/ranking R2: gauss - dino/ci95/0: -0.21131772090845075 -> -0.21420647907894955
+  dataset_level/ranking R2: gauss - dino/ci95/1: -0.11030778284716077 -> -0.11331498704823333
+  dataset_level/ranking R2: patchcore - dino/ci95/0: -0.16821065521709033 -> -0.17240326709286793
+  dataset_level/ranking R2: patchcore - dino/ci95/1: -0.07823864884100946 -> -0.08207920701089898
+  dataset_level/ranking R2: patchcore - gauss/ci95/0: 0.024912397945977775 -> 0.025021541318565748
+===== mvtec_fabric
+45 changed fields
+  units/fabric/differences/patchcore: R2 - R1/ci95/0: -0.15417900783192717 -> -0.15989603752752515
+  units/fabric/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.6616131373175136 -> -0.6627657399201103
+  units/fabric/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.009934703318050844 -> -0.010061240210352077
+  units/fabric/differences/gauss: R2 - R1/ci95/0: -0.1072631257153107 -> -0.11160976468758473
+  units/fabric/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.6538423337490412 -> -0.657507220575823
+  units/fabric/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.013455929385807603 -> -0.01373643226426355
+  units/fabric/differences/dino: R2 - R1/ci95/0: 0.008537437493778825 -> 0.009711849284635565
+  units/fabric/differences/dino: R2 - R1/ci95/1: 0.12428872363858964 -> 0.12907218602049564
+  units/fabric/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.36037933978743053 -> -0.3720153742009879
+  units/fabric/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.13656871638488743 -> 0.13642364671788104
+  units/fabric/differences/ranking R1: patchcore - gauss/ci95/0: -0.016345598743699105 -> -0.014122903091472969
+  units/fabric/differences/ranking R1: patchcore - gauss/ci95/1: 0.05884558399020057 -> 0.05493831101887621
+  units/fabric/differences/ranking R1: patchcore - dino/ci95/0: -0.0010977052674785474 -> -0.0015103060809245395
+  units/fabric/differences/ranking R1: patchcore - dino/ci95/1: 0.23018986880718578 -> 0.2321454688272933
+  units/fabric/differences/ranking R1: gauss - dino/ci95/0: 0.0009762592756572198 -> -0.005541714134691464
+  units/fabric/differences/ranking R1: gauss - dino/ci95/1: 0.20698908417440706 -> 0.20644192887354176
+  units/fabric/differences/ranking R2: patchcore - gauss/ci95/0: -0.033197503264382665 -> -0.030398046419526977
+  units/fabric/differences/ranking R2: patchcore - gauss/ci95/1: 0.02318835897022036 -> 0.020886731418361414
+  units/fabric/differences/ranking R2: patchcore - dino/ci95/0: -0.09839650669312291 -> -0.09989734659131404
+  units/fabric/differences/ranking R2: patchcore - dino/ci95/1: 0.05088188005804101 -> 0.033257218086418766
+  units/fabric/differences/ranking R2: gauss - dino/ci95/0: -0.09065440391990987 -> -0.08520458282009251
+  units/fabric/differences/ranking R2: gauss - dino/ci95/1: 0.061579642931401724 -> 0.04491602349469556
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.36037933978743053 -> -0.3720153742009879
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.13656871638488743 -> 0.13642364671788104
+  dataset_level/dino: R2 - R1/ci95/0: 0.008537437493778825 -> 0.009711849284635565
+  dataset_level/dino: R2 - R1/ci95/1: 0.12428872363858964 -> 0.12907218602049564
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.6538423337490412 -> -0.657507220575823
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.013455929385807603 -> -0.01373643226426355
+  dataset_level/gauss: R2 - R1/ci95/0: -0.1072631257153107 -> -0.11160976468758473
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.6616131373175136 -> -0.6627657399201103
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.009934703318050844 -> -0.010061240210352077
+  dataset_level/patchcore: R2 - R1/ci95/0: -0.15417900783192717 -> -0.15989603752752515
+  dataset_level/ranking R1: gauss - dino/ci95/0: 0.0009762592756572198 -> -0.005541714134691464
+  dataset_level/ranking R1: gauss - dino/ci95/1: 0.20698908417440706 -> 0.20644192887354176
+  dataset_level/ranking R1: patchcore - dino/ci95/0: -0.0010977052674785474 -> -0.0015103060809245395
+  dataset_level/ranking R1: patchcore - dino/ci95/1: 0.23018986880718578 -> 0.2321454688272933
+  dataset_level/ranking R1: patchcore - gauss/ci95/0: -0.016345598743699105 -> -0.014122903091472969
+  dataset_level/ranking R1: patchcore - gauss/ci95/1: 0.05884558399020057 -> 0.05493831101887621
+  dataset_level/ranking R2: gauss - dino/ci95/0: -0.09065440391990987 -> -0.08520458282009251
+  dataset_level/ranking R2: gauss - dino/ci95/1: 0.061579642931401724 -> 0.04491602349469556
+  dataset_level/ranking R2: patchcore - dino/ci95/0: -0.09839650669312291 -> -0.09989734659131404
+  dataset_level/ranking R2: patchcore - dino/ci95/1: 0.05088188005804101 -> 0.033257218086418766
+  dataset_level/ranking R2: patchcore - gauss/ci95/0: -0.033197503264382665 -> -0.030398046419526977
+  dataset_level/ranking R2: patchcore - gauss/ci95/1: 0.02318835897022036 -> 0.020886731418361414
+  primary/ci95/0: -0.15417900783192717 -> -0.15989603752752515
+===== visa
+338 changed fields
+  units/candle/differences/patchcore: R2 - R1/ci95/0: -0.043744534161739415 -> -0.04452431221047627
+  units/candle/differences/patchcore: R2 - R1/ci95/1: -0.008404632115692524 -> -0.008956774912531149
+  units/candle/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.022913031486689082 -> -0.022711244524804757
+  units/candle/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: 0.009095613856734502 -> 0.008555147643446946
+  units/candle/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.3811708833947765 -> -0.38141242651287655
+  units/candle/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.28149277147719076 -> -0.28261805917826893
+  units/candle/differences/gauss: R2 - R1/ci95/0: -0.025442199386792604 -> -0.025539343881818746
+  units/candle/differences/gauss: R2 - R1/ci95/1: -0.013408386382295863 -> -0.014028557381675529
+  units/candle/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/0: -0.006306129465096541 -> -0.006142288764370341
+  units/candle/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/1: 0.0029198367634077466 -> 0.0027454665412425237
+  units/candle/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.07139774840690272 -> -0.07158982353837058
+  units/candle/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.024194272269080202 -> -0.026374395373861076
+  units/candle/differences/dino: R2 - R1/ci95/0: 0.18640060934961922 -> 0.1865113432448208
+  units/candle/differences/dino: R2 - R1/ci95/1: 0.3309560178716825 -> 0.32708033548021626
+  units/candle/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/1: 0.03552797487652966 -> 0.035181985756905364
+  units/candle/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.05082105553058063 -> -0.05269596405782387
+  units/candle/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.0653502397972767 -> 0.06825294703495653
+  units/candle/differences/ranking R1: patchcore - gauss/ci95/0: 0.23595387659989045 -> 0.23659016007282074
+  units/candle/differences/ranking R1: patchcore - gauss/ci95/1: 0.3088299716354388 -> 0.3094220603612929
+  units/candle/differences/ranking R1: patchcore - dino/ci95/0: 0.15846559550989697 -> 0.15592705057897616
+  units/candle/differences/ranking R1: patchcore - dino/ci95/1: 0.28686919231234037 -> 0.2921292972803155
+  units/candle/differences/ranking R1: gauss - dino/ci95/0: -0.10842400291134996 -> -0.1097939035598975
+  units/candle/differences/ranking R1: gauss - dino/ci95/1: 0.0033036816497791282 -> 0.007943187903954912
+  units/candle/differences/ranking R2: patchcore - gauss/ci95/0: 0.22766031512930007 -> 0.2261409150936448
+  units/candle/differences/ranking R2: patchcore - gauss/ci95/1: 0.30172097064609027 -> 0.30516323773837395
+  units/candle/differences/ranking R2: patchcore - dino/ci95/0: -0.14108586031054907 -> -0.13489190812869375
+  units/candle/differences/ranking R2: patchcore - dino/ci95/1: 0.022510420026815924 -> 0.02181201160878084
+  units/candle/differences/ranking R2: gauss - dino/ci95/0: -0.4046888166071161 -> -0.4021940082423189
+  units/candle/differences/ranking R2: gauss - dino/ci95/1: -0.24374614419384064 -> -0.24642685580714396
+  units/capsules/differences/patchcore: R2 - R1/ci95/0: -0.07949517484052772 -> -0.07978683027154859
+  units/capsules/differences/patchcore: R2 - R1/ci95/1: -0.05150364179975002 -> -0.05176070928391051
+  units/capsules/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: -0.0022499165177463434 -> -0.0021668854034058616
+  units/capsules/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.7438379301736086 -> -0.7443373310726784
+  units/capsules/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.6317443986512394 -> -0.6301423473249874
+  units/capsules/differences/gauss: R2 - R1/ci95/1: -0.0310828652089583 -> -0.030805999671808613
+  units/capsules/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.19398676219790348 -> -0.1951677494012177
+  units/capsules/differences/dino: R2 - R1/ci95/0: -0.004207658052002931 -> -0.005705789467744678
+  units/capsules/differences/dino: R2 - R1/ci95/1: 0.11154499718774444 -> 0.10950549390642766
+  units/capsules/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.004049897123630285 -> -0.003835508764771832
+  units/capsules/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.07300577344867545 -> -0.07152615469310392
+  units/capsules/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.009243897672988803 -> -0.00940235282120396
+  units/capsules/differences/ranking R1: patchcore - gauss/ci95/0: 0.4807889693950814 -> 0.4832407337233539
+  units/capsules/differences/ranking R1: patchcore - gauss/ci95/1: 0.5743036382294592 -> 0.5746319237796688
+  units/capsules/differences/ranking R1: patchcore - dino/ci95/0: 0.46912398814309286 -> 0.4671583589067117
+  units/capsules/differences/ranking R1: patchcore - dino/ci95/1: 0.6197008580299876 -> 0.6207138011119255
+  units/capsules/differences/ranking R1: gauss - dino/ci95/0: -0.044385287503290065 -> -0.04547366646060957
+  units/capsules/differences/ranking R1: gauss - dino/ci95/1: 0.06470466455796244 -> 0.06794163760641324
+  units/capsules/differences/ranking R2: patchcore - gauss/ci95/0: 0.45840168109647933 -> 0.4580905739946954
+  units/capsules/differences/ranking R2: patchcore - gauss/ci95/1: 0.5510548065963939 -> 0.5522604011512633
+  units/capsules/differences/ranking R2: patchcore - dino/ci95/0: 0.352875699635388 -> 0.350546871934872
+  units/capsules/differences/ranking R2: patchcore - dino/ci95/1: 0.4969674785150873 -> 0.49536279089225643
+  units/capsules/differences/ranking R2: gauss - dino/ci95/0: -0.14315698225402748 -> -0.14208914331112946
+  units/capsules/differences/ranking R2: gauss - dino/ci95/1: -0.022565883114734776 -> -0.024597418786493325
+  units/cashew/differences/patchcore: R2 - R1/ci95/0: -0.0375748373004581 -> -0.036536803653994344
+  units/cashew/differences/patchcore: R2 - R1/ci95/1: -0.015430533444905453 -> -0.015647043314991515
+  units/cashew/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.08902298989755121 -> -0.08523276165464401
+  units/cashew/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: 0.06075977836893698 -> 0.06070040393963468
+  units/cashew/differences/gauss: R2 - R1/ci95/1: -0.010573642513371194 -> -0.010427972672928098
+  units/cashew/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/0: -0.0010128999388016391 -> -0.0009386935186658669
+  units/cashew/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.06782715496582861 -> -0.06762018185948375
+  units/cashew/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.03591719009889579 -> -0.036535399887191455
+  units/cashew/differences/dino: R2 - R1/ci95/0: 0.2521261867997598 -> 0.25275824314127743
+  units/cashew/differences/dino: R2 - R1/ci95/1: 0.4185394525956851 -> 0.41587049190814784
+  units/cashew/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.002405320272478171 -> -0.002606248904591224
+  units/cashew/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: 0.010168922635371065 -> 0.013313023171852121
+  units/cashew/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.10950518747102714 -> 0.1065233660860652
+  units/cashew/differences/ranking R1: patchcore - gauss/ci95/0: 0.025841914811603015 -> 0.02630143990223815
+  units/cashew/differences/ranking R1: patchcore - gauss/ci95/1: 0.10149528772683764 -> 0.09824904252291496
+  units/cashew/differences/ranking R1: patchcore - dino/ci95/0: -0.030510556232045894 -> -0.032607957269611944
+  units/cashew/differences/ranking R1: patchcore - dino/ci95/1: 0.12650169811655546 -> 0.12147094369532474
+  units/cashew/differences/ranking R1: gauss - dino/ci95/0: -0.0794191947510649 -> -0.08085930786493897
+  units/cashew/differences/ranking R1: gauss - dino/ci95/1: 0.04261112517102131 -> 0.03802861770636971
+  units/cashew/differences/ranking R2: patchcore - gauss/ci95/0: 0.02072120591299861 -> 0.021120822299953476
+  units/cashew/differences/ranking R2: patchcore - gauss/ci95/1: 0.08583880682744227 -> 0.08347631677283464
+  units/cashew/differences/ranking R2: patchcore - dino/ci95/0: -0.44296838175713915 -> -0.4426950643060873
+  units/cashew/differences/ranking R2: patchcore - dino/ci95/1: -0.17697193884492168 -> -0.17983821931367355
+  units/cashew/differences/ranking R2: gauss - dino/ci95/0: -0.4767639740865745 -> -0.4825721423219046
+  units/cashew/differences/ranking R2: gauss - dino/ci95/1: -0.250089861450908 -> -0.24985551923056495
+  units/chewinggum/differences/patchcore: R2 - R1/ci95/0: -0.06148555976297323 -> -0.06227483808602257
+  units/chewinggum/differences/patchcore: R2 - R1/ci95/1: -0.03579708359176657 -> -0.03537460415786278
+  units/chewinggum/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: -0.014996011394760719 -> -0.014458485905272557
+  units/chewinggum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.24162018203740668 -> -0.24133682244179275
+  units/chewinggum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.1537454408663532 -> -0.14800803686659447
+  units/chewinggum/differences/gauss: R2 - R1/ci95/0: -0.009475607387077159 -> -0.00956162686851601
+  units/chewinggum/differences/gauss: R2 - R1/ci95/1: 0.002941052973416392 -> 0.0028400411332372144
+  units/chewinggum/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/0: -0.012225449446839615 -> -0.012363843271851478
+  units/chewinggum/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/1: -0.007346923487289164 -> -0.007451426749185761
+  units/chewinggum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.12137982737146999 -> -0.12001930963647477
+  units/chewinggum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.08565477808966321 -> -0.08600041224939599
+  units/chewinggum/differences/dino: R2 - R1/ci95/0: 0.2161378495297348 -> 0.21624460996312872
+  units/chewinggum/differences/dino: R2 - R1/ci95/1: 0.3276011895814885 -> 0.32837967390040074
+  units/chewinggum/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.010996243379346491 -> -0.011280164211180702
+  units/chewinggum/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.05162158363069051 -> -0.04904130996652175
+  units/chewinggum/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.10876420992710742 -> 0.10543356831499957
+  units/chewinggum/differences/ranking R1: patchcore - gauss/ci95/0: 0.2969182695447547 -> 0.2945548333274716
+  units/chewinggum/differences/ranking R1: patchcore - gauss/ci95/1: 0.4504599899096686 -> 0.45354598650796535
+  units/chewinggum/differences/ranking R1: patchcore - dino/ci95/0: 0.0292555663510169 -> 0.029654800200485616
+  units/chewinggum/differences/ranking R1: patchcore - dino/ci95/1: 0.1934466619908933 -> 0.19451763701954128
+  units/chewinggum/differences/ranking R1: gauss - dino/ci95/0: -0.31983840166359745 -> -0.31859111827851405
+  units/chewinggum/differences/ranking R1: gauss - dino/ci95/1: -0.20892880260758068 -> -0.2090979577652976
+  units/chewinggum/differences/ranking R2: patchcore - gauss/ci95/0: 0.25285389361293986 -> 0.25216116138649036
+  units/chewinggum/differences/ranking R2: patchcore - gauss/ci95/1: 0.4064772592472868 -> 0.40626826077250694
+  units/chewinggum/differences/ranking R2: patchcore - dino/ci95/0: -0.29550491182834293 -> -0.29472980616198896
+  units/chewinggum/differences/ranking R2: patchcore - dino/ci95/1: -0.12563873994228017 -> -0.1197147723766174
+  units/chewinggum/differences/ranking R2: gauss - dino/ci95/0: -0.5914313727080919 -> -0.5881132450010866
+  units/chewinggum/differences/ranking R2: gauss - dino/ci95/1: -0.48082360022970677 -> -0.47790487748297633
+  units/fryum/differences/patchcore: R2 - R1/ci95/0: -0.004756027467779403 -> -0.004955108031079457
+  units/fryum/differences/patchcore: R2 - R1/ci95/1: 0.009714734332297175 -> 0.010469781518362581
+  units/fryum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.271132785685503 -> -0.2710349999323519
+  units/fryum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.16620926601257668 -> -0.16908931642717118
+  units/fryum/differences/gauss: R2 - R1/ci95/0: -0.0091150299946202 -> -0.008901567977675568
+  units/fryum/differences/gauss: R2 - R1/ci95/1: -0.0027827151701496004 -> -0.002558501361792293
+  units/fryum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.15023261998431317 -> -0.15077119657152802
+  units/fryum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.08567500603140674 -> -0.0858133369804638
+  units/fryum/differences/dino: R2 - R1/ci95/0: 0.2030769814432747 -> 0.20654153361354521
+  units/fryum/differences/dino: R2 - R1/ci95/1: 0.3525473813527525 -> 0.3521491094770947
+  units/fryum/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.036175675783422664 -> -0.036832713701185335
+  units/fryum/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.005402406487344833 -> -0.0056827049935082394
+  units/fryum/differences/ranking R1: patchcore - gauss/ci95/0: 0.09348422815407825 -> 0.09598172773218425
+  units/fryum/differences/ranking R1: patchcore - gauss/ci95/1: 0.14952597240538487 -> 0.15064952377666288
+  units/fryum/differences/ranking R1: patchcore - dino/ci95/0: 0.17024367494477546 -> 0.17270623926678855
+  units/fryum/differences/ranking R1: patchcore - dino/ci95/1: 0.2708366889872936 -> 0.26872908284028496
+  units/fryum/differences/ranking R1: gauss - dino/ci95/1: 0.13674145127832266 -> 0.13714694410789252
+  units/fryum/differences/ranking R2: patchcore - gauss/ci95/0: 0.10157854116678462 -> 0.10293589564132667
+  units/fryum/differences/ranking R2: patchcore - gauss/ci95/1: 0.15875332633209194 -> 0.15955838588394514
+  units/fryum/differences/ranking R2: patchcore - dino/ci95/0: -0.09972364718742498 -> -0.10057733382228697
+  units/fryum/differences/ranking R2: patchcore - dino/ci95/1: -0.011913852796731234 -> -0.012367153264017362
+  units/fryum/differences/ranking R2: gauss - dino/ci95/0: -0.2457629661321208 -> -0.24695555957457396
+  units/fryum/differences/ranking R2: gauss - dino/ci95/1: -0.12866913439869287 -> -0.12878883391198198
+  units/macaroni1/differences/patchcore: R2 - R1/ci95/0: -0.038087155305892725 -> -0.03660170984292074
+  units/macaroni1/differences/patchcore: R2 - R1/ci95/1: -0.00491826731429683 -> -0.005270663018736272
+  units/macaroni1/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.007865008589919927 -> -0.007433766482480218
+  units/macaroni1/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: 0.003562084621836473 -> 0.00379930630183778
+  units/macaroni1/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.5415393312887754 -> -0.5399831704233439
+  units/macaroni1/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.43506740510044317 -> -0.43727811206986666
+  units/macaroni1/differences/gauss: R2 - R1/ci95/0: -0.07114246155294812 -> -0.0714639272920233
+  units/macaroni1/differences/gauss: R2 - R1/ci95/1: -0.03428811878423966 -> -0.034718389403470974
+  units/macaroni1/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/0: -0.006452138564347157 -> -0.006307439481493115
+  units/macaroni1/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.2769259843754023 -> -0.27778941194015505
+  units/macaroni1/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.1682134594685978 -> -0.17097694730611745
+  units/macaroni1/differences/dino: R2 - R1/ci95/0: 0.130000174652558 -> 0.13411911335377016
+  units/macaroni1/differences/dino: R2 - R1/ci95/1: 0.2571846997561135 -> 0.26031141774535693
+  units/macaroni1/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.0014853866580106807 -> -0.0014329109458233148
+  units/macaroni1/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/1: 0.013892151720724 -> 0.01426343563164026
+  units/macaroni1/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.022545761207000737 -> -0.022741440014519058
+  units/macaroni1/differences/ranking R1: patchcore - gauss/ci95/0: 0.2213814607115607 -> 0.22063649122911508
+  units/macaroni1/differences/ranking R1: patchcore - gauss/ci95/1: 0.317907523588365 -> 0.3196842540392245
+  units/macaroni1/differences/ranking R1: patchcore - dino/ci95/0: 0.42697161550775686 -> 0.42918108967218627
+  units/macaroni1/differences/ranking R1: patchcore - dino/ci95/1: 0.5339881700170899 -> 0.5323080898508363
+  units/macaroni1/differences/ranking R1: gauss - dino/ci95/0: 0.16007169863435727 -> 0.16345248742430335
+  units/macaroni1/differences/ranking R1: gauss - dino/ci95/1: 0.26982789514723576 -> 0.27191782296896055
+  units/macaroni1/differences/ranking R2: patchcore - gauss/ci95/0: 0.25533607623105603 -> 0.2541290428141798
+  units/macaroni1/differences/ranking R2: patchcore - gauss/ci95/1: 0.34772445344529396 -> 0.34746274146336537
+  units/macaroni1/differences/ranking R2: patchcore - dino/ci95/0: 0.20220482415114877 -> 0.19912730867404815
+  units/macaroni1/differences/ranking R2: patchcore - dino/ci95/1: 0.34477500299423386 -> 0.3419873654631752
+  units/macaroni1/differences/ranking R2: gauss - dino/ci95/0: -0.08675502760091663 -> -0.08584810102705452
+  units/macaroni1/differences/ranking R2: gauss - dino/ci95/1: 0.024320844749315465 -> 0.02264703984055365
+  units/macaroni2/differences/patchcore: R2 - R1/ci95/0: -0.0738818105850854 -> -0.07240509508486331
+  units/macaroni2/differences/patchcore: R2 - R1/ci95/1: -0.03678310114201645 -> -0.035636117283958164
+  units/macaroni2/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.019360528688664433 -> -0.020151857625141475
+  units/macaroni2/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: -0.001045158515049691 -> -0.0012165231848554907
+  units/macaroni2/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.5301845995711241 -> -0.5320495790344104
+  units/macaroni2/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.4108597653242867 -> -0.4078168918486258
+  units/macaroni2/differences/gauss: R2 - R1/ci95/0: -0.05660771229139014 -> -0.054132481715251334
+  units/macaroni2/differences/gauss: R2 - R1/ci95/1: -0.013924270747145837 -> -0.014000646899333051
+  units/macaroni2/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.14961195795769794 -> -0.14580893735278277
+  units/macaroni2/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.05715089669111036 -> -0.058146724201738824
+  units/macaroni2/differences/dino: R2 - R1/ci95/0: 0.018465958596807164 -> 0.01697633233134622
+  units/macaroni2/differences/dino: R2 - R1/ci95/1: 0.08521475916767102 -> 0.0831289714626601
+  units/macaroni2/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.001802003177933 -> -0.0018855421737415709
+  units/macaroni2/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/1: 0.007274938339865903 -> 0.007475686089205857
+  units/macaroni2/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.042198964850396814 -> -0.03996034150348408
+  units/macaroni2/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.0007461651240962321 -> -0.0008458816038838191
+  units/macaroni2/differences/ranking R1: patchcore - gauss/ci95/0: 0.31724976674597977 -> 0.3169214424689999
+  units/macaroni2/differences/ranking R1: patchcore - gauss/ci95/1: 0.42924980386958494 -> 0.42993351403004976
+  units/macaroni2/differences/ranking R1: patchcore - dino/ci95/0: 0.39364489404601727 -> 0.3929455809886231
+  units/macaroni2/differences/ranking R1: patchcore - dino/ci95/1: 0.5115299852353198 -> 0.5120625140182113
+  units/macaroni2/differences/ranking R1: gauss - dino/ci95/0: 0.036542862013426915 -> 0.03780524748650615
+  units/macaroni2/differences/ranking R1: gauss - dino/ci95/1: 0.13186337468057244 -> 0.12749003409422585
+  units/macaroni2/differences/ranking R2: patchcore - gauss/ci95/0: 0.29549022935055896 -> 0.294589197525502
+  units/macaroni2/differences/ranking R2: patchcore - gauss/ci95/1: 0.4096998393635006 -> 0.4092325187869908
+  units/macaroni2/differences/ranking R2: patchcore - dino/ci95/0: 0.2913298138597033 -> 0.28745831832317326
+  units/macaroni2/differences/ranking R2: patchcore - dino/ci95/1: 0.41438251296231854 -> 0.41046526824491575
+  units/macaroni2/differences/ranking R2: gauss - dino/ci95/0: -0.04238906574479801 -> -0.04106554476802499
+  units/macaroni2/differences/ranking R2: gauss - dino/ci95/1: 0.042523333986049905 -> 0.03972324486081199
+  units/pcb1/differences/patchcore: R2 - R1/ci95/0: -0.04769616464327115 -> -0.04726978662584938
+  units/pcb1/differences/patchcore: R2 - R1/ci95/1: -0.028311059374823686 -> -0.02910671977470387
+  units/pcb1/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.016944534401488336 -> -0.01681466348540539
+  units/pcb1/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.8181124623180731 -> -0.8177062885897525
+  units/pcb1/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.5965645413491669 -> -0.5915516062915095
+  units/pcb1/differences/gauss: R2 - R1/ci95/0: -0.02724033591146409 -> -0.0270730352724906
+  units/pcb1/differences/gauss: R2 - R1/ci95/1: -0.007016734649388515 -> -0.006683393296112222
+  units/pcb1/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/0: -0.01702248827973329 -> -0.016230658051971998
+  units/pcb1/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/1: -0.0014014350189311398 -> -0.0010826661979520128
+  units/pcb1/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.47390866494664297 -> -0.4725824434724874
+  units/pcb1/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.08703899184806828 -> -0.08201104275784164
+  units/pcb1/differences/dino: R2 - R1/ci95/0: 0.1699680797345567 -> 0.16790299957350316
+  units/pcb1/differences/dino: R2 - R1/ci95/1: 0.4116960499079387 -> 0.4202487117528496
+  units/pcb1/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.03391196868662424 -> -0.03401628476132888
+  units/pcb1/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/1: -0.009705172788397776 -> -0.010174065133133472
+  units/pcb1/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.32858073758178796 -> -0.3331128112767633
+  units/pcb1/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.09920345276859384 -> -0.08977981226494228
+  units/pcb1/differences/ranking R1: patchcore - gauss/ci95/0: 0.32504159779783975 -> 0.32542442990834214
+  units/pcb1/differences/ranking R1: patchcore - gauss/ci95/1: 0.5708256907793638 -> 0.5731775929816739
+  units/pcb1/differences/ranking R1: patchcore - dino/ci95/0: 0.2146848633608468 -> 0.21899553398015864
+  units/pcb1/differences/ranking R1: patchcore - dino/ci95/1: 0.45938430004033337 -> 0.47110935601196285
+  units/pcb1/differences/ranking R1: gauss - dino/ci95/0: -0.24446267662225765 -> -0.23460443979703058
+  units/pcb1/differences/ranking R1: gauss - dino/ci95/1: -0.004695108654213957 -> -0.005050104930473801
+  units/pcb1/differences/ranking R2: patchcore - gauss/ci95/0: 0.3100023207398759 -> 0.31029349382612653
+  units/pcb1/differences/ranking R2: patchcore - gauss/ci95/1: 0.542379315818398 -> 0.5437733578993629
+  units/pcb1/differences/ranking R2: patchcore - dino/ci95/0: -0.05426816361691542 -> -0.055552502656508046
+  units/pcb1/differences/ranking R2: patchcore - dino/ci95/1: 0.09590971885739652 -> 0.09534861942829845
+  units/pcb1/differences/ranking R2: gauss - dino/ci95/0: -0.5638138281573326 -> -0.5638961323222929
+  units/pcb1/differences/ranking R2: gauss - dino/ci95/1: -0.27023916002414977 -> -0.2681263295436096
+  units/pcb2/differences/patchcore: R2 - R1/ci95/0: -0.05889324024855128 -> -0.05977139953193928
+  units/pcb2/differences/patchcore: R2 - R1/ci95/1: -0.03109931249916013 -> -0.03257690831364422
+  units/pcb2/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.5630052552100068 -> -0.5608276985586946
+  units/pcb2/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.43651259688375194 -> -0.4348814904877314
+  units/pcb2/differences/gauss: R2 - R1/ci95/0: -0.024443204881916526 -> -0.02432217067211736
+  units/pcb2/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.10569774422543159 -> -0.10525562323471392
+  units/pcb2/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.04360763836719219 -> -0.04448446245940022
+  units/pcb2/differences/dino: R2 - R1/ci95/0: 0.12084044135418752 -> 0.12319748153890468
+  units/pcb2/differences/dino: R2 - R1/ci95/1: 0.20722048423875064 -> 0.21184587346758596
+  units/pcb2/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.0194323368750111 -> -0.019094251457519765
+  units/pcb2/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/1: -0.008467715470517516 -> -0.008392944441668283
+  units/pcb2/differences/ranking R1: patchcore - gauss/ci95/0: 0.3626382502699884 -> 0.36241614771779296
+  units/pcb2/differences/ranking R1: patchcore - gauss/ci95/1: 0.49586834363836957 -> 0.49274176551358984
+  units/pcb2/differences/ranking R1: patchcore - dino/ci95/0: 0.44003010823771405 -> 0.4374392658324746
+  units/pcb2/differences/ranking R1: patchcore - dino/ci95/1: 0.5653924806958454 -> 0.5632223301417519
+  units/pcb2/differences/ranking R1: gauss - dino/ci95/0: 0.04530647609501211 -> 0.0460088031150942
+  units/pcb2/differences/ranking R1: gauss - dino/ci95/1: 0.10902184317973769 -> 0.10830538160102968
+  units/pcb2/differences/ranking R2: patchcore - gauss/ci95/0: 0.3423600497914038 -> 0.33962241211895905
+  units/pcb2/differences/ranking R2: patchcore - gauss/ci95/1: 0.462224422172911 -> 0.4581524781163305
+  units/pcb2/differences/ranking R2: patchcore - dino/ci95/0: 0.2351715911227539 -> 0.23583661530956318
+  units/pcb2/differences/ranking R2: patchcore - dino/ci95/1: 0.3518109739252044 -> 0.3505397152470177
+  units/pcb2/differences/ranking R2: gauss - dino/ci95/0: -0.15003895556918936 -> -0.15462793794581456
+  units/pcb2/differences/ranking R2: gauss - dino/ci95/1: -0.0612238101056133 -> -0.06202084943640625
+  units/pcb3/differences/patchcore: R2 - R1/ci95/1: -0.012667289358273548 -> -0.012460941959355563
+  units/pcb3/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.0047333343495119294 -> -0.004892441985890682
+  units/pcb3/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.5812017863026573 -> -0.5799507851917194
+  units/pcb3/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.37957197496533873 -> -0.38082480195359697
+  units/pcb3/differences/gauss: R2 - R1/ci95/0: -0.0006786099478666128 -> -0.0005429293989173323
+  units/pcb3/differences/gauss: R2 - R1/ci95/1: 0.00862932836597711 -> 0.008556084357081632
+  units/pcb3/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.057535752182655366 -> -0.05988507200423948
+  units/pcb3/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.017263319825766607 -> -0.017396009631341157
+  units/pcb3/differences/dino: R2 - R1/ci95/0: 0.15460026623419645 -> 0.15543401803755647
+  units/pcb3/differences/dino: R2 - R1/ci95/1: 0.32435636893550696 -> 0.31933888746551564
+  units/pcb3/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.015884201350044994 -> -0.015404512633029048
+  units/pcb3/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.07343007715449576 -> -0.07532676737493327
+  units/pcb3/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: -0.011817173853819687 -> -0.012453343999580818
+  units/pcb3/differences/ranking R1: patchcore - gauss/ci95/0: 0.35417443377119956 -> 0.35113019816160546
+  units/pcb3/differences/ranking R1: patchcore - gauss/ci95/1: 0.5436730024057879 -> 0.5416282285666064
+  units/pcb3/differences/ranking R1: patchcore - dino/ci95/0: 0.35048589288948384 -> 0.34889912282878865
+  units/pcb3/differences/ranking R1: patchcore - dino/ci95/1: 0.5345978132100669 -> 0.533816882151556
+  units/pcb3/differences/ranking R1: gauss - dino/ci95/0: -0.045596845041752196 -> -0.045741246595287714
+  units/pcb3/differences/ranking R1: gauss - dino/ci95/1: 0.027024144808521076 -> 0.028404162610458614
+  units/pcb3/differences/ranking R2: patchcore - gauss/ci95/0: 0.32947471736803763 -> 0.33022261087026544
+  units/pcb3/differences/ranking R2: patchcore - gauss/ci95/1: 0.5150452154418617 -> 0.5124243183983245
+  units/pcb3/differences/ranking R2: patchcore - dino/ci95/0: 0.12168477045791228 -> 0.12103832104939506
+  units/pcb3/differences/ranking R2: patchcore - dino/ci95/1: 0.24943379922874157 -> 0.24960487087460545
+  units/pcb3/differences/ranking R2: gauss - dino/ci95/0: -0.33971411947362834 -> -0.33247600599574784
+  units/pcb3/differences/ranking R2: gauss - dino/ci95/1: -0.15068058891231037 -> -0.1492392054708546
+  units/pcb4/differences/patchcore: R2 - R1/ci95/0: -0.0161509763291503 -> -0.01745981015600129
+  units/pcb4/differences/patchcore: R2 - R1/ci95/1: 0.0026843595054766964 -> 0.0020374305690433153
+  units/pcb4/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.30285230020368153 -> -0.30375498424287395
+  units/pcb4/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.23562641859155536 -> -0.23636029783168144
+  units/pcb4/differences/gauss: R2 - R1/ci95/0: -0.003725905575877203 -> -0.0038673787583883425
+  units/pcb4/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.02562679085752278 -> -0.026005827347552565
+  units/pcb4/differences/dino: R2 - R1/ci95/0: 0.14660495027723605 -> 0.14555426433339433
+  units/pcb4/differences/dino: R2 - R1/ci95/1: 0.21948087303475636 -> 0.21664018731930546
+  units/pcb4/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.004620600501730244 -> -0.0046774861023717775
+  units/pcb4/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.00928886074932766 -> -0.009600494900896053
+  units/pcb4/differences/ranking R1: patchcore - gauss/ci95/0: 0.22067858437943638 -> 0.22002335871020431
+  units/pcb4/differences/ranking R1: patchcore - gauss/ci95/1: 0.2845289342370046 -> 0.2865381603576424
+  units/pcb4/differences/ranking R1: patchcore - dino/ci95/0: 0.23990576744438147 -> 0.24027971685026508
+  units/pcb4/differences/ranking R1: patchcore - dino/ci95/1: 0.30620303718171393 -> 0.3070558896096037
+  units/pcb4/differences/ranking R1: gauss - dino/ci95/0: 0.013047330736536791 -> 0.012903313671343996
+  units/pcb4/differences/ranking R1: gauss - dino/ci95/1: 0.02878229349577794 -> 0.02823874204862873
+  units/pcb4/differences/ranking R2: patchcore - gauss/ci95/0: 0.21732011110411426 -> 0.2177110972925743
+  units/pcb4/differences/ranking R2: patchcore - gauss/ci95/1: 0.2778957594595381 -> 0.27919132389924145
+  units/pcb4/differences/ranking R2: patchcore - dino/ci95/0: 0.05304840650553188 -> 0.052875063048564194
+  units/pcb4/differences/ranking R2: patchcore - dino/ci95/1: 0.12134747925006865 -> 0.11974479683820693
+  units/pcb4/differences/ranking R2: gauss - dino/ci95/0: -0.19936932138365274 -> -0.19693675370238733
+  units/pcb4/differences/ranking R2: gauss - dino/ci95/1: -0.12672227583443027 -> -0.1275194683863438
+  units/pipe_fryum/differences/patchcore: R2 - R1/ci95/0: 0.008709779818343366 -> 0.008635859310747061
+  units/pipe_fryum/differences/patchcore: R2 - R1/ci95/1: 0.046099288094956156 -> 0.04643774799509767
+  units/pipe_fryum/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/0: -0.004738525481936295 -> -0.004622933661165258
+  units/pipe_fryum/differences/patchcore: R2occ - R2 (occurrence vs unique)/ci95/1: -0.0008314602192636885 -> -0.000890393976243568
+  units/pipe_fryum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/0: 0.06821256964923603 -> 0.07325210660037211
+  units/pipe_fryum/differences/patchcore: C4 - R1 (downscaled vs native)/ci95/1: 0.19438354570035685 -> 0.19643571877616695
+  units/pipe_fryum/differences/gauss: R2 - R1/ci95/0: -0.023012294726661935 -> -0.023358414281921012
+  units/pipe_fryum/differences/gauss: R2 - R1/ci95/1: -0.011726630726681087 -> -0.011857938713992076
+  units/pipe_fryum/differences/gauss: R2occ - R2 (occurrence vs unique)/ci95/1: 0.0014713901215928245 -> 0.0015740128042928704
+  units/pipe_fryum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/0: 0.024858404240259552 -> 0.031754206048324365
+  units/pipe_fryum/differences/gauss: C4 - R1 (downscaled vs native)/ci95/1: 0.18630559839301034 -> 0.18749849979249805
+  units/pipe_fryum/differences/dino: R2 - R1/ci95/0: 0.06117562869626528 -> 0.058687112361223134
+  units/pipe_fryum/differences/dino: R2 - R1/ci95/1: 0.2525380438937263 -> 0.2515029768919406
+  units/pipe_fryum/differences/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.009814202244815658 -> -0.009197741436970495
+  units/pipe_fryum/differences/dino: C4 - R1 (downscaled vs native)/ci95/0: 0.014517798685247581 -> 0.01571617451265843
+  units/pipe_fryum/differences/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.14664415038106043 -> 0.14227136500081158
+  units/pipe_fryum/differences/ranking R1: patchcore - gauss/ci95/0: 0.12323892216028845 -> 0.12377426329295965
+  units/pipe_fryum/differences/ranking R1: patchcore - gauss/ci95/1: 0.21581676222332175 -> 0.21385854127923504
+  units/pipe_fryum/differences/ranking R1: patchcore - dino/ci95/0: -0.05436411499049085 -> -0.05290705784856027
+  units/pipe_fryum/differences/ranking R1: patchcore - dino/ci95/1: 0.06677384127404375 -> 0.06423593607529612
+  units/pipe_fryum/differences/ranking R1: gauss - dino/ci95/0: -0.2375487253771012 -> -0.2374051490819769
+  units/pipe_fryum/differences/ranking R1: gauss - dino/ci95/1: -0.08860461081424968 -> -0.09050010496244253
+  units/pipe_fryum/differences/ranking R2: patchcore - gauss/ci95/0: 0.1696250827070146 -> 0.16787853235144304
+  units/pipe_fryum/differences/ranking R2: patchcore - gauss/ci95/1: 0.2527080561123754 -> 0.2505075341947863
+  units/pipe_fryum/differences/ranking R2: patchcore - dino/ci95/0: -0.1929921449997192 -> -0.19149888919085634
+  units/pipe_fryum/differences/ranking R2: patchcore - dino/ci95/1: -0.04861969069875083 -> -0.050008028029174735
+  units/pipe_fryum/differences/ranking R2: gauss - dino/ci95/0: -0.42006057230496463 -> -0.4199279847589385
+  units/pipe_fryum/differences/ranking R2: gauss - dino/ci95/1: -0.23569220371218327 -> -0.23755980314961347
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/0: -0.029791891982619043 -> -0.029111145516850626
+  dataset_level/dino: C4 - R1 (downscaled vs native)/ci95/1: 0.0005920863458104152 -> 0.0004017014173242753
+  dataset_level/dino: R2 - R1/ci95/0: 0.1831123853002031 -> 0.1829972172104499
+  dataset_level/dino: R2 - R1/ci95/1: 0.22528325191127588 -> 0.22579566560643866
+  dataset_level/dino: R2occ - R2 (occurrence vs unique)/ci95/0: -0.0074722371284066 -> -0.007644788095110377
+  dataset_level/dino: R2occ - R2 (occurrence vs unique)/ci95/1: -0.0014836231736023015 -> -0.000979144652220435
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/0: -0.11219321039488461 -> -0.11118684377586407
+  dataset_level/gauss: C4 - R1 (downscaled vs native)/ci95/1: -0.0705446474560704 -> -0.0716320854430885
+  dataset_level/gauss: R2 - R1/ci95/0: -0.02169499072499824 -> -0.021278138503812535
+  dataset_level/gauss: R2 - R1/ci95/1: -0.015161914221762315 -> -0.015456932585360338
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/0: -0.37477798166086285 -> -0.3723344215512769
+  dataset_level/patchcore: C4 - R1 (downscaled vs native)/ci95/1: -0.3317744982420221 -> -0.3337328637076185
+  dataset_level/patchcore: R2 - R1/ci95/0: -0.031052684454046582 -> -0.030976970224606482
+  dataset_level/ranking R1: gauss - dino/ci95/0: -0.028277618542594925 -> -0.025844142633014298
+  dataset_level/ranking R1: gauss - dino/ci95/1: 0.009621302435925655 -> 0.007285802154980258
+  dataset_level/ranking R1: patchcore - dino/ci95/0: 0.27971459819061295 -> 0.28239218831693597
+  dataset_level/ranking R1: patchcore - dino/ci95/1: 0.3234649059796908 -> 0.32477816351451866
+  dataset_level/ranking R1: patchcore - gauss/ci95/0: 0.29178569559737866 -> 0.29315584564663416
+  dataset_level/ranking R1: patchcore - gauss/ci95/1: 0.33044641461090646 -> 0.3306349896060761
+  dataset_level/ranking R2: gauss - dino/ci95/0: -0.2563741030459417 -> -0.25490832277166664
+  dataset_level/ranking R2: gauss - dino/ci95/1: -0.2067237236038174 -> -0.20830904915462334
+  dataset_level/ranking R2: patchcore - dino/ci95/0: 0.049127777029777976 -> 0.05050903604838594
+  dataset_level/ranking R2: patchcore - dino/ci95/1: 0.09420572101516103 -> 0.092831479154949
+  dataset_level/ranking R2: patchcore - gauss/ci95/0: 0.2849909806985016 -> 0.2852033257599095
+  dataset_level/ranking R2: patchcore - gauss/ci95/1: 0.3206062734457384 -> 0.3213544002206232
+  primary/ci95/0: -0.031052684454046582 -> -0.030976970224606482
+===== e1_dino_size
+22 changed fields
+  contrasts/1 context: D Bfull/full - B256/full/ci95/0: 0.3381414307191424 -> 0.33738995449039444
+  contrasts/1 context: D Bfull/full - B256/full/ci95/1: 0.4383126689614851 -> 0.4376560849911713
+  contrasts/2 residual tiling: D B256/256 - Bfull/full/ci95/0: -0.2812625111789128 -> -0.2778414880366104
+  contrasts/3 matched size: D B512/512 - B256/256/ci95/0: 0.036720032808101905 -> 0.03784274067146407
+  contrasts/3 matched size: D B512/512 - B256/256/ci95/1: 0.11224439282271609 -> 0.11078680985547397
+  contrasts/3 matched size: D B768/768 - B256/256/ci95/0: 0.07345417409962894 -> 0.07176902891100308
+  contrasts/3 matched size: D B768/768 - B256/256/ci95/1: 0.16079810517296106 -> 0.16242751476866993
+  contrasts/3 matched size: D Bfull/full - B256/256/ci95/1: 0.28126251117891277 -> 0.2778414880366104
+  contrasts/4 mismatched size: D B256/512 - B256/256/ci95/0: -0.10140663127383573 -> -0.10252837449267604
+  contrasts/4 mismatched size: D B256/512 - B256/256/ci95/1: -0.03525999809721752 -> -0.03646827573097345
+  contrasts/4 mismatched size: D B256/768 - B256/256/ci95/0: -0.20067278044473905 -> -0.20538990632507875
+  contrasts/4 mismatched size: D B256/768 - B256/256/ci95/1: -0.12692529511264708 -> -0.12794585542068607
+  contrasts/4 mismatched size: D B256/full - B256/256/ci95/0: -0.20268080287265747 -> -0.2048384563264088
+  contrasts/4 mismatched size: D B256/full - B256/256/ci95/1: -0.1285627183425812 -> -0.12496392613418197
+  contrasts/5 train res: D B518/518 - B256/256/ci95/0: 0.02150728485168734 -> 0.019206758392813272
+  contrasts/5 train res: D B518/518 - B256/256/ci95/1: 0.11490702127194387 -> 0.11790099715263105
+  contrasts/5 train res: D B518/518 - Bfull/full/ci95/0: -0.20255836259751583 -> -0.2022428384615051
+  contrasts/5 train res: D B518/518 - Bfull/full/ci95/1: -0.10964079419545965 -> -0.11046580093986356
+  contrasts/6 CNN context: W Bfull/full - B256/full/ci95/0: 0.01950324409327625 -> 0.017381275665075302
+  contrasts/6 CNN context: W Bfull/full - B256/full/ci95/1: 0.03872921709144936 -> 0.04241242153946551
+  contrasts/6 CNN tiling: W B256/256 - B256/full/ci95/0: -0.067138760996324 -> -0.06623860850698084
+  contrasts/6 CNN tiling: W B256/256 - B256/full/ci95/1: -0.03187770527392915 -> -0.031101721208507918

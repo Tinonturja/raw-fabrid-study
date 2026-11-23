@@ -1,0 +1,30 @@
+rawfabrid (full), 7 unit(s)
+  dino: A_all - R2 (practice A vs grid)                   -0.0464  [-0.0654, -0.0248]
+  dino: A_obs - A_all (observed vs whole frame)           +0.0299  [+0.0221, +0.0380]
+  dino: C4 - R1 (downscaled vs native)                    -0.0725  [-0.1396, -0.0211]
+  dino: R2 - R1                                           +0.2068  [+0.1462, +0.2585]
+  dino: R2occ - R2 (occurrence vs unique)                 +0.0000  [+0.0000, +0.0000]
+  gauss: A_all - R2 (practice A vs grid)                  -0.0064  [-0.0150, +0.0037]
+  gauss: A_obs - A_all (observed vs whole frame)          +0.0202  [+0.0143, +0.0273]
+  gauss: C4 - R1 (downscaled vs native)                   -0.2292  [-0.2850, -0.1972]
+  gauss: R2 - R1                                          -0.0195  [-0.0282, -0.0143]
+  gauss: R2occ - R2 (occurrence vs unique)                +0.0000  [+0.0000, +0.0000]
+  patchcore: A_all - R2 (practice A vs grid)              -0.0106  [-0.0192, -0.0005]
+  patchcore: A_obs - A_all (observed vs whole frame)      +0.0228  [+0.0165, +0.0302]
+  patchcore: C4 - R1 (downscaled vs native)               -0.2794  [-0.3322, -0.2476]
+  patchcore: R2 - R1                                      -0.0282  [-0.0374, -0.0224]
+  patchcore: R2occ - R2 (occurrence vs unique)            +0.0000  [+0.0000, +0.0000]
+  ranking R1: gauss - dino                                +0.0626  [-0.0167, +0.1428]
+  ranking R1: patchcore - dino                            +0.1097  [+0.0344, +0.1821]
+  ranking R1: patchcore - gauss                           +0.0471  [+0.0326, +0.0587]
+  ranking R2: gauss - dino                                -0.1637  [-0.2142, -0.1133]
+  ranking R2: patchcore - dino                            -0.1253  [-0.1724, -0.0821]
+  ranking R2: patchcore - gauss                           +0.0384  [+0.0250, +0.0485]
+  Rollo1A: AP {'patchcore|R1': 0.2815, 'patchcore|R2': 0.2652, 'patchcore|R2occ': 0.2652, 'patchcore|A_all': 0.2542, 'patchcore|A_obs': 0.2722, 'patchcore|C4': 0.0424, 'gauss|R1': 0.2117, 'gauss|R2': 0.2076, 'gauss|R2occ': 0.2076, 'gauss|A_all': 0.1998, 'gauss|A_obs': 0.2139, 'gauss|C4': 0.0487, 'dino|R1': 0.2507, 'dino|R2': 0.4138, 'dino|R2occ': 0.4138, 'dino|A_all': 0.3772, 'dino|A_obs': 0.404, 'dino|C4': 0.2031}
+  Rollo2A: AP {'patchcore|R1': 0.3541, 'patchcore|R2': 0.3377, 'patchcore|R2occ': 0.3377, 'patchcore|A_all': 0.3056, 'patchcore|A_obs': 0.3325, 'patchcore|C4': 0.015, 'gauss|R1': 0.2967, 'gauss|R2': 0.284, 'gauss|R2occ': 0.284, 'gauss|A_all': 0.26, 'gauss|A_obs': 0.2828, 'gauss|C4': 0.0172, 'dino|R1': 0.2062, 'dino|R2': 0.2923, 'dino|R2occ': 0.2923, 'dino|A_all': 0.2598, 'dino|A_obs': 0.2826, 'dino|C4': 0.05}
+  Rollo3A: AP {'patchcore|R1': 0.3196, 'patchcore|R2': 0.2871, 'patchcore|R2occ': 0.2871, 'patchcore|A_all': 0.2992, 'patchcore|A_obs': 0.3244, 'patchcore|C4': 0.0484, 'gauss|R1': 0.2357, 'gauss|R2': 0.2232, 'gauss|R2occ': 0.2232, 'gauss|A_all': 0.2362, 'gauss|A_obs': 0.256, 'gauss|C4': 0.0463, 'dino|R1': 0.3954, 'dino|R2': 0.4079, 'dino|R2occ': 0.4079, 'dino|A_all': 0.3588, 'dino|A_obs': 0.3891, 'dino|C4': 0.118}
+  Rollo4A: AP {'patchcore|R1': 0.3431, 'patchcore|R2': 0.3209, 'patchcore|R2occ': 0.3209, 'patchcore|A_all': 0.309, 'patchcore|A_obs': 0.332, 'patchcore|C4': 0.0723, 'gauss|R1': 0.2864, 'gauss|R2': 0.2687, 'gauss|R2occ': 0.2687, 'gauss|A_all': 0.2641, 'gauss|A_obs': 0.2836, 'gauss|C4': 0.0763, 'dino|R1': 0.2048, 'dino|R2': 0.431, 'dino|R2occ': 0.431, 'dino|A_all': 0.4016, 'dino|A_obs': 0.4315, 'dino|C4': 0.1726}
+  Rollo5A: AP {'patchcore|R1': 0.4188, 'patchcore|R2': 0.3992, 'patchcore|R2occ': 0.3992, 'patchcore|A_all': 0.3893, 'patchcore|A_obs': 0.412, 'patchcore|C4': 0.101, 'gauss|R1': 0.3749, 'gauss|R2': 0.358, 'gauss|R2occ': 0.358, 'gauss|A_all': 0.3536, 'gauss|A_obs': 0.3742, 'gauss|C4': 0.1045, 'dino|R1': 0.3029, 'dino|R2': 0.4776, 'dino|R2occ': 0.4776, 'dino|A_all': 0.4423, 'dino|A_obs': 0.4681, 'dino|C4': 0.236}
+  Rollo6A: AP {'patchcore|R1': 0.4347, 'patchcore|R2': 0.4128, 'patchcore|R2occ': 0.4128, 'patchcore|A_all': 0.402, 'patchcore|A_obs': 0.4303, 'patchcore|C4': 0.128, 'gauss|R1': 0.4209, 'gauss|R2': 0.3951, 'gauss|R2occ': 0.3951, 'gauss|A_all': 0.3898, 'gauss|A_obs': 0.4172, 'gauss|C4': 0.1292, 'dino|R1': 0.1674, 'dino|R2': 0.477, 'dino|R2occ': 0.477, 'dino|A_all': 0.4195, 'dino|A_obs': 0.4489, 'dino|C4': 0.1392}
+  Rollo7A: AP {'patchcore|R1': 0.2639, 'patchcore|R2': 0.1955, 'patchcore|R2occ': 0.1955, 'patchcore|A_all': 0.1849, 'patchcore|A_obs': 0.2007, 'patchcore|C4': 0.0526, 'gauss|R1': 0.2596, 'gauss|R2': 0.213, 'gauss|R2occ': 0.213, 'gauss|A_all': 0.2009, 'gauss|A_obs': 0.2181, 'gauss|C4': 0.0595, 'dino|R1': 0.1203, 'dino|R2': 0.5956, 'dino|R2occ': 0.5956, 'dino|A_all': 0.5113, 'dino|A_obs': 0.5556, 'dino|C4': 0.2212}
+wrote <study>/results_p5/rawfabrid/full/analysis.json

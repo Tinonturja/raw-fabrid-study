@@ -1,0 +1,25 @@
+E1 (full), 6 categories
+  D_b256_t256    macro AP 0.2558
+  D_b256_t512    macro AP 0.1861
+  D_b256_t768    macro AP 0.0929
+  D_b256_full    macro AP 0.0918
+  D_b512_t512    macro AP 0.3286
+  D_b768_t768    macro AP 0.3730
+  D_bfull_full   macro AP 0.4772
+  D_b518_s518    macro AP 0.3222
+  W_b256_t256    macro AP 0.4013
+  W_b256_full    macro AP 0.4483
+  W_bfull_full   macro AP 0.4763
+  1 context: D Bfull/full - B256/full           +0.3854  [+0.3374, +0.4377]  6/6 positive
+  2 residual tiling: D B256/256 - Bfull/full    -0.2214  [-0.2778, -0.1687]  0/6 positive
+  3 matched size: D B512/512 - B256/256         +0.0727  [+0.0378, +0.1108]  5/6 positive
+  3 matched size: D B768/768 - B256/256         +0.1171  [+0.0718, +0.1624]  6/6 positive
+  3 matched size: D Bfull/full - B256/256       +0.2214  [+0.1687, +0.2778]  6/6 positive
+  4 mismatched size: D B256/512 - B256/256      -0.0697  [-0.1025, -0.0365]  0/6 positive
+  4 mismatched size: D B256/768 - B256/256      -0.1629  [-0.2054, -0.1279]  0/6 positive
+  4 mismatched size: D B256/full - B256/256     -0.1640  [-0.2048, -0.1250]  0/6 positive
+  5 train res: D B518/518 - B256/256            +0.0664  [+0.0192, +0.1179]  5/6 positive
+  5 train res: D B518/518 - Bfull/full          -0.1550  [-0.2022, -0.1105]  0/6 positive
+  6 CNN context: W Bfull/full - B256/full       +0.0279  [+0.0174, +0.0424]  6/6 positive
+  6 CNN tiling: W B256/256 - B256/full          -0.0470  [-0.0662, -0.0311]  0/6 positive
+wrote <study>/results_p5/e1_dino_size/full/analysis.json

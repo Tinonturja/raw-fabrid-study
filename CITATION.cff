@@ -1,9 +1,11 @@
 cff-version: 1.2.0
 message: "Please cite the research software using the project citation below."
-title: "Crop placement in fabric anomaly detection"
+title: "Where you cut matters: image tiling, memory banks and anomaly-localization scores (code and data)"
 type: software
 authors:
   - family-names: Majumder
     given-names: Tinon Turja
     affiliation: United International University
 repository-code: "https://github.com/Tinonturja/raw-fabrid-study"
+version: "1.0.0"
+date-released: "2026-11-23"

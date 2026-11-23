@@ -1,0 +1,39 @@
+aitex {"R2": {"components": 175, "oversize": 11, "fit_components": 164, "fit_unseen": 0, "fit_cut": 10, "fit_cut_pct": 6.1, "fit_cut_pixel_share_pct": 23.1, "retained_fraction_of_cut_q25_q50_q75": [0.685, 0.697, 0.908], "positive_patches": 183, "slivers_lt1pct": 97, "slivers_from_cut": 28, "slivers_natural_small": 69}, "A": {"components": 175, "oversize": 11, "fit_components": 164, "fit_unseen": 0, "fit_cut": 2, "fit_cut_pct": 1.2, "fit_cut_pixel_share_pct": 15.1, "retained_fraction_of_cut_q25_q50_q75": [0.786, 0.808, 0.83], "positive_patches": 183, "slivers_lt1pct": 90, "slivers_from_cut": 7, "slivers_natural_small": 83}}
+ALL {
+ "R2": {
+  "components": 175,
+  "oversize": 11,
+  "fit_components": 164,
+  "fit_unseen": 0,
+  "fit_cut": 10,
+  "fit_cut_pct": 6.1,
+  "fit_cut_pixel_share_pct": 23.1,
+  "retained_fraction_of_cut_q25_q50_q75": [
+   0.685,
+   0.697,
+   0.908
+  ],
+  "positive_patches": 183,
+  "slivers_lt1pct": 97,
+  "slivers_from_cut": 28,
+  "slivers_natural_small": 69
+ },
+ "A": {
+  "components": 175,
+  "oversize": 11,
+  "fit_components": 164,
+  "fit_unseen": 0,
+  "fit_cut": 2,
+  "fit_cut_pct": 1.2,
+  "fit_cut_pixel_share_pct": 15.1,
+  "retained_fraction_of_cut_q25_q50_q75": [
+   0.786,
+   0.808,
+   0.83
+  ],
+  "positive_patches": 183,
+  "slivers_lt1pct": 90,
+  "slivers_from_cut": 7,
+  "slivers_natural_small": 83
+ }
+}

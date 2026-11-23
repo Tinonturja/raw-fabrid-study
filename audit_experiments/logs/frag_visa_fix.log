@@ -1,0 +1,32 @@
+candle {"R2": {"components": 714, "oversize": 1, "fit_components": 713, "fit_unseen": 0, "fit_cut": 62, "fit_cut_pct": 8.7, "fit_cut_pixel_share_pct": 68.3, "retained_fraction_of_cut_q25_q50_q75": [0.631, 0.759, 0.941], "positive_patches": 277, "slivers_lt1pct": 132, "slivers_from_cut": 72, "slivers_natural_small": 60}}
+capsules {"R2": {"components": 156, "oversize": 0, "fit_components": 156, "fit_unseen": 0, "fit_cut": 63, "fit_cut_pct": 40.4, "fit_cut_pixel_share_pct": 88.1, "retained_fraction_of_cut_q25_q50_q75": [0.617, 0.78, 0.894], "positive_patches": 196, "slivers_lt1pct": 60, "slivers_from_cut": 37, "slivers_natural_small": 23}}
+cashew {"R2": {"components": 152, "oversize": 8, "fit_components": 144, "fit_unseen": 0, "fit_cut": 37, "fit_cut_pct": 25.7, "fit_cut_pixel_share_pct": 48.7, "retained_fraction_of_cut_q25_q50_q75": [0.713, 0.798, 0.936], "positive_patches": 246, "slivers_lt1pct": 73, "slivers_from_cut": 36, "slivers_natural_small": 37}}
+chewinggum {"R2": {"components": 217, "oversize": 26, "fit_components": 191, "fit_unseen": 0, "fit_cut": 79, "fit_cut_pct": 41.4, "fit_cut_pixel_share_pct": 72.7, "retained_fraction_of_cut_q25_q50_q75": [0.595, 0.791, 0.953], "positive_patches": 315, "slivers_lt1pct": 119, "slivers_from_cut": 102, "slivers_natural_small": 17}}
+fryum {"R2": {"components": 550, "oversize": 22, "fit_components": 528, "fit_unseen": 0, "fit_cut": 58, "fit_cut_pct": 11.0, "fit_cut_pixel_share_pct": 62.8, "retained_fraction_of_cut_q25_q50_q75": [0.632, 0.779, 0.934], "positive_patches": 428, "slivers_lt1pct": 133, "slivers_from_cut": 84, "slivers_natural_small": 49}}
+macaroni1 {"R2": {"components": 404, "oversize": 0, "fit_components": 404, "fit_unseen": 0, "fit_cut": 48, "fit_cut_pct": 11.9, "fit_cut_pixel_share_pct": 28.6, "retained_fraction_of_cut_q25_q50_q75": [0.719, 0.833, 0.933], "positive_patches": 171, "slivers_lt1pct": 115, "slivers_from_cut": 76, "slivers_natural_small": 39}}
+macaroni2 {"R2": {"components": 378, "oversize": 0, "fit_components": 378, "fit_unseen": 0, "fit_cut": 42, "fit_cut_pct": 11.1, "fit_cut_pixel_share_pct": 35.2, "retained_fraction_of_cut_q25_q50_q75": [0.735, 0.85, 0.941], "positive_patches": 158, "slivers_lt1pct": 104, "slivers_from_cut": 68, "slivers_natural_small": 36}}
+pcb1 {"R2": {"components": 304, "oversize": 16, "fit_components": 288, "fit_unseen": 0, "fit_cut": 74, "fit_cut_pct": 25.7, "fit_cut_pixel_share_pct": 65.3, "retained_fraction_of_cut_q25_q50_q75": [0.707, 0.817, 0.893], "positive_patches": 286, "slivers_lt1pct": 72, "slivers_from_cut": 65, "slivers_natural_small": 7}}
+pcb2 {"R2": {"components": 324, "oversize": 3, "fit_components": 321, "fit_unseen": 0, "fit_cut": 123, "fit_cut_pct": 38.3, "fit_cut_pixel_share_pct": 74.4, "retained_fraction_of_cut_q25_q50_q75": [0.58, 0.742, 0.866], "positive_patches": 246, "slivers_lt1pct": 65, "slivers_from_cut": 53, "slivers_natural_small": 12}}
+pcb3 {"R2": {"components": 280, "oversize": 4, "fit_components": 276, "fit_unseen": 0, "fit_cut": 83, "fit_cut_pct": 30.1, "fit_cut_pixel_share_pct": 73.6, "retained_fraction_of_cut_q25_q50_q75": [0.59, 0.746, 0.886], "positive_patches": 235, "slivers_lt1pct": 62, "slivers_from_cut": 50, "slivers_natural_small": 12}}
+pcb4 {"R2": {"components": 503, "oversize": 2, "fit_components": 501, "fit_unseen": 0, "fit_cut": 153, "fit_cut_pct": 30.5, "fit_cut_pixel_share_pct": 82.9, "retained_fraction_of_cut_q25_q50_q75": [0.582, 0.667, 0.799], "positive_patches": 325, "slivers_lt1pct": 48, "slivers_from_cut": 40, "slivers_natural_small": 8}}
+pipe_fryum {"R2": {"components": 289, "oversize": 16, "fit_components": 273, "fit_unseen": 0, "fit_cut": 61, "fit_cut_pct": 22.3, "fit_cut_pixel_share_pct": 55.7, "retained_fraction_of_cut_q25_q50_q75": [0.625, 0.714, 0.871], "positive_patches": 280, "slivers_lt1pct": 93, "slivers_from_cut": 65, "slivers_natural_small": 28}}
+ALL {
+ "R2": {
+  "components": 4271,
+  "oversize": 98,
+  "fit_components": 4173,
+  "fit_unseen": 0,
+  "fit_cut": 883,
+  "fit_cut_pct": 21.2,
+  "fit_cut_pixel_share_pct": 74.2,
+  "retained_fraction_of_cut_q25_q50_q75": [
+   0.608,
+   0.765,
+   0.897
+  ],
+  "positive_patches": 3163,
+  "slivers_lt1pct": 1076,
+  "slivers_from_cut": 748,
+  "slivers_natural_small": 328
+ }
+}
