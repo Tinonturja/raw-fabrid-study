@@ -31,8 +31,8 @@
     "retained_fraction_of_cut_q25_q50_q75": null,
     "positive_patches": 57,
     "slivers_lt1pct": 15,
-    "slivers_from_cut": 2,
-    "slivers_natural_small": 13
+    "slivers_from_cut": 11,
+    "slivers_natural_small": 4
    }
   },
   "Rollo2A": {
@@ -69,8 +69,8 @@
     ],
     "positive_patches": 127,
     "slivers_lt1pct": 15,
-    "slivers_from_cut": 4,
-    "slivers_natural_small": 11
+    "slivers_from_cut": 14,
+    "slivers_natural_small": 1
    }
   },
   "Rollo3A": {
@@ -103,8 +103,8 @@
     "retained_fraction_of_cut_q25_q50_q75": null,
     "positive_patches": 44,
     "slivers_lt1pct": 9,
-    "slivers_from_cut": 1,
-    "slivers_natural_small": 8
+    "slivers_from_cut": 5,
+    "slivers_natural_small": 4
    }
   },
   "Rollo4A": {
@@ -141,8 +141,8 @@
     ],
     "positive_patches": 279,
     "slivers_lt1pct": 66,
-    "slivers_from_cut": 12,
-    "slivers_natural_small": 54
+    "slivers_from_cut": 33,
+    "slivers_natural_small": 33
    }
   },
   "Rollo5A": {
@@ -179,8 +179,8 @@
     ],
     "positive_patches": 57,
     "slivers_lt1pct": 11,
-    "slivers_from_cut": 3,
-    "slivers_natural_small": 8
+    "slivers_from_cut": 8,
+    "slivers_natural_small": 3
    }
   },
   "Rollo6A": {
@@ -213,8 +213,8 @@
     "retained_fraction_of_cut_q25_q50_q75": null,
     "positive_patches": 53,
     "slivers_lt1pct": 19,
-    "slivers_from_cut": 2,
-    "slivers_natural_small": 17
+    "slivers_from_cut": 6,
+    "slivers_natural_small": 13
    }
   },
   "Rollo7A": {
@@ -247,8 +247,8 @@
     "retained_fraction_of_cut_q25_q50_q75": null,
     "positive_patches": 94,
     "slivers_lt1pct": 22,
-    "slivers_from_cut": 7,
-    "slivers_natural_small": 15
+    "slivers_from_cut": 12,
+    "slivers_natural_small": 10
    }
   }
  },
@@ -286,8 +286,8 @@
    ],
    "positive_patches": 711,
    "slivers_lt1pct": 157,
-   "slivers_from_cut": 31,
-   "slivers_natural_small": 126
+   "slivers_from_cut": 89,
+   "slivers_natural_small": 68
   }
  }
 }

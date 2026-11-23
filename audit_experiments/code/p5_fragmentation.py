@@ -5,8 +5,8 @@ defect mask and each layout (R2 grid; released/guided practice A where it exists
   - cut: some window sees part of the component but no single window holds all of it;
   - unseen: no window sees any of it (only possible for practice A), counted separately;
   - oversize: bounding box larger than 256 pixels on either side (no tile can hold it), reported separately.
-Positive patches (>= 1 marked pixel) under 1% defect are split into slivers from cut components and natural
-small components that are whole inside the patch.
+Positive patches (>= 1 marked pixel) under 1% defect are split into clipped slivers (the patch holds only part of
+some region) and whole small regions (every region in the patch lies wholly inside it).
 Usage: python p5_fragmentation.py --dataset aitex|visa|rawfabrid --data <path> --out <json>"""
 import argparse, json, sys
 from pathlib import Path
@@ -38,7 +38,9 @@ def audit(mask, windows):
     for wc in win_counts:
         a = sum(wc.values())
         if a:
-            from_cut = any(comps[c - 1]['cut'] and v < comps[c - 1]['px'] for c, v in wc.items())
+            # a patch is clipped if it holds only part of some region, even when another (overlapping) window holds
+            # that region whole; the earlier rule also required the region to be split in every window
+            from_cut = any(v < comps[c - 1]['px'] for c, v in wc.items())
             patches.append({'frac': a / (S * S), 'from_cut': bool(from_cut)})
     return comps, patches
 

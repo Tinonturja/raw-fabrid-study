@@ -26,7 +26,7 @@ rf = j('rawfabrid/full/analysis.json')
 
 fig = plt.figure(figsize=(13 / 2.54 * 1.6, 5 / 2.54 * 1.6))
 gs = fig.add_gridspec(1, 3, width_ratios=[1.35, 1, 0.8], wspace=0.38, left=0.02, right=0.98, top=0.72, bottom=0.14)
-fig.text(0.02, 0.97, 'How a benchmark cuts high-resolution images changes what it measures', fontsize=10.5, fontweight='bold')
+fig.text(0.02, 0.97, 'How a benchmark cuts images and builds its memory bank changes what it measures', fontsize=10.5, fontweight='bold')
 
 # 1. coverage gap
 ax = fig.add_subplot(gs[0])
@@ -78,9 +78,9 @@ ax.set_xlim(-0.25, 1.6)
 ax.set_ylim(0, 0.5)   # axis from zero so the crossing is not exaggerated
 ax.set_yticks([0, 0.1, 0.2, 0.3, 0.4, 0.5])
 ax.tick_params(axis='y', labelsize=6)
-ax.set_ylabel('Pixel AP', fontsize=6.5)
+ax.set_ylabel('Pixel AP, RAW-FABRID', fontsize=6.5)
 ax.grid(axis='y')
-TITLES.append((ax, '3  ...and can reverse which\n    detector looks better (RAW-FABRID)'))
+TITLES.append((ax, '3  ...and, with a tile-fitted bank, can\n    reverse which detector looks better'))
 fig.canvas.draw()
 for a, t in TITLES:
     x0 = a.get_tightbbox(fig.canvas.get_renderer()).transformed(fig.transFigure.inverted()).x0 if a is not TITLES[0][0] else a.get_position().x0

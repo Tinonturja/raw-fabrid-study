@@ -17,8 +17,8 @@
     ],
     "positive_patches": 277,
     "slivers_lt1pct": 132,
-    "slivers_from_cut": 65,
-    "slivers_natural_small": 67
+    "slivers_from_cut": 72,
+    "slivers_natural_small": 60
    }
   },
   "capsules": {
@@ -37,8 +37,8 @@
     ],
     "positive_patches": 196,
     "slivers_lt1pct": 60,
-    "slivers_from_cut": 35,
-    "slivers_natural_small": 25
+    "slivers_from_cut": 37,
+    "slivers_natural_small": 23
    }
   },
   "cashew": {
@@ -77,8 +77,8 @@
     ],
     "positive_patches": 315,
     "slivers_lt1pct": 119,
-    "slivers_from_cut": 97,
-    "slivers_natural_small": 22
+    "slivers_from_cut": 102,
+    "slivers_natural_small": 17
    }
   },
   "fryum": {
@@ -97,8 +97,8 @@
     ],
     "positive_patches": 428,
     "slivers_lt1pct": 133,
-    "slivers_from_cut": 82,
-    "slivers_natural_small": 51
+    "slivers_from_cut": 84,
+    "slivers_natural_small": 49
    }
   },
   "macaroni1": {
@@ -117,8 +117,8 @@
     ],
     "positive_patches": 171,
     "slivers_lt1pct": 115,
-    "slivers_from_cut": 72,
-    "slivers_natural_small": 43
+    "slivers_from_cut": 76,
+    "slivers_natural_small": 39
    }
   },
   "macaroni2": {
@@ -137,8 +137,8 @@
     ],
     "positive_patches": 158,
     "slivers_lt1pct": 104,
-    "slivers_from_cut": 56,
-    "slivers_natural_small": 48
+    "slivers_from_cut": 68,
+    "slivers_natural_small": 36
    }
   },
   "pcb1": {
@@ -157,8 +157,8 @@
     ],
     "positive_patches": 286,
     "slivers_lt1pct": 72,
-    "slivers_from_cut": 62,
-    "slivers_natural_small": 10
+    "slivers_from_cut": 65,
+    "slivers_natural_small": 7
    }
   },
   "pcb2": {
@@ -177,8 +177,8 @@
     ],
     "positive_patches": 246,
     "slivers_lt1pct": 65,
-    "slivers_from_cut": 52,
-    "slivers_natural_small": 13
+    "slivers_from_cut": 53,
+    "slivers_natural_small": 12
    }
   },
   "pcb3": {
@@ -258,8 +258,8 @@
    ],
    "positive_patches": 3163,
    "slivers_lt1pct": 1076,
-   "slivers_from_cut": 712,
-   "slivers_natural_small": 364
+   "slivers_from_cut": 748,
+   "slivers_natural_small": 328
   }
  }
 }
