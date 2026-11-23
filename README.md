@@ -133,9 +133,9 @@ $PY code/p5_e2_bank_layout.py --rawfabrid /path/to/RAW_FABRID.zip --visa /path/t
 `--limit 2` gives a quick smoke test on two defective and two clean images per unit. TSFabrics was run on a Kaggle
 T4 GPU by a one-cell notebook that downloaded the code folder (then `audit_experiments/code/`) at commit
 `80e05ea7f2d80239fca956540442fc9fba226ad0` and ran `p5_tsfabrics_run.py` then `p5_analyze.py --dataset tsfabrics`.
-The repository history was cleaned on 23 November 2026, so that commit ID no longer exists on GitHub; the code
-folder it contained has git tree hash `94d5156ef47cb045f7dba24079223571b37c3e44`, which the cleaned history keeps
-unchanged, and the Kaggle output archived in the data release includes the code exactly as run.
+The repository history was cleaned on 23 November 2026 and that commit ID no longer exists on GitHub. Its code
+folder (git tree `94d5156ef47cb045f7dba24079223571b37c3e44`) is unchanged in the cleaned history, at commit
+`16b00ea2000ae3f59eaee1dd082ad027c3987942`; `git rev-parse 16b00ea:audit_experiments/code` prints that tree hash.
 The shell scripts `run_*.sh` record the exact sequences used, with the author's local paths. E2 took about 6 hours
 on the reference laptop.
 

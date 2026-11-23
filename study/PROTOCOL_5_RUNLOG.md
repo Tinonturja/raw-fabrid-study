@@ -113,3 +113,9 @@ Dated record of what ran and of every change made after `PROTOCOL_5_IMPLEMENTATI
 - Reference 7 verified directly by cloning the repository: commit 37dc53b exists, title and author (H. Zhu) match, it studies point position within tiles on RAW-FABRID and contains no audit of released-crop coverage.
 - Graphical abstract: title and panel 3 now state that the reversal arises with a tile-fitted bank.
 - Not done (author decisions): a token-aligned sensitivity run, full-VisA evaluation instead of the sorted 40-image subset, and an archived artifact bundle (e.g. Zenodo) with raw-input hashes.
+
+## 2026-11-23 14:00 Repository cleanup and history rewrite
+- At the author's request, manuscript text and builds, protocol drafts, planning and literature notes, written result summaries (RESULTS*.md) and earlier-study working notes were removed from the public repository, and its history was rewritten (git filter-repo) so they are absent from every commit. All commit authors were unified to the author's identity. A private mirror of the pre-rewrite repository is kept by the author.
+- The folder `audit_experiments/` was renamed `study/` and figures moved to `study/figures/`, in a commit before the rewrite; older commits keep the old names.
+- Commit IDs changed. The TSFabrics Kaggle run fetched the code at former commit 80e05ea7f2d80239fca956540442fc9fba226ad0; its code folder (git tree 94d5156ef47cb045f7dba24079223571b37c3e44) is unchanged in the rewritten history at commit 16b00ea2000ae3f59eaee1dd082ad027c3987942. Frozen protocol files are unchanged, so their SHA-256 fingerprints still match.
+- Release v1.0.0 was deleted and re-created on the cleaned history with the same data zips.
