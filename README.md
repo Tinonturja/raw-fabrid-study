@@ -1,4 +1,4 @@
-# Where you cut matters: image tiling, memory banks and anomaly-localization scores
+# Hidden evaluation choices in high-resolution anomaly localization: crop coverage, tiling and memory banks
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24459807.svg)](https://doi.org/10.5281/zenodo.24459807)
 

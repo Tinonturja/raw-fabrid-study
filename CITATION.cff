@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite the research software using the project citation below."
-title: "Where you cut matters: image tiling, memory banks and anomaly-localization scores (code and data)"
+title: "Hidden evaluation choices in high-resolution anomaly localization: crop coverage, tiling and memory banks (code and data)"
 type: software
 authors:
   - family-names: Majumder
