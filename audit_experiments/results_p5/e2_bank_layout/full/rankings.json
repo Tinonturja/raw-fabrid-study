@@ -1,0 +1,62 @@
+{
+ "rawfabrid native, matched bank (Bfull/R1)": {
+  "estimate": 0.11691130409485047,
+  "ci95_unit_bootstrap": [
+   0.056873406092367816,
+   0.18414893624295775
+  ],
+  "units_positive": 7,
+  "n_units": 7,
+  "signflip_p": 0.015625
+ },
+ "rawfabrid tiled, matched bank (Btile/R2)": {
+  "estimate": 0.18710560166828386,
+  "ci95_unit_bootstrap": [
+   0.1031845680781964,
+   0.263565312582572
+  ],
+  "units_positive": 6,
+  "n_units": 7,
+  "signflip_p": 0.03125
+ },
+ "rawfabrid native, tile bank (Btile/R1, P5 pairing)": {
+  "estimate": -0.02032228522440349,
+  "ci95_unit_bootstrap": [
+   -0.08632458511807596,
+   0.05143538130364596
+  ],
+  "units_positive": 3,
+  "n_units": 7,
+  "signflip_p": 0.59375
+ },
+ "visa native, matched bank (Bfull/R1)": {
+  "estimate": -0.11861927495156545,
+  "ci95_unit_bootstrap": [
+   -0.23910380735401973,
+   -0.014097613547110045
+  ],
+  "units_positive": 4,
+  "n_units": 12,
+  "signflip_p": 0.0634765625
+ },
+ "visa tiled, matched bank (Btile/R2)": {
+  "estimate": -0.12669259373927047,
+  "ci95_unit_bootstrap": [
+   -0.25029183700777125,
+   -0.0070603550423988595
+  ],
+  "units_positive": 4,
+  "n_units": 12,
+  "signflip_p": 0.0634765625
+ },
+ "visa native, tile bank (Btile/R1, P5 pairing)": {
+  "estimate": -0.31751624214181323,
+  "ci95_unit_bootstrap": [
+   -0.4198570664948783,
+   -0.21743893424081617
+  ],
+  "units_positive": 0,
+  "n_units": 12,
+  "signflip_p": 0.00048828125
+ }
+}

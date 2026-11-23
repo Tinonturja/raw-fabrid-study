@@ -1,0 +1,51 @@
+
+== rawfabrid (full), 7 units ==
+  D Btile R2: AP 0.4750 (seeds 0.4724, 0.4780, 0.4744)  recall@1%FPR 0.7838
+  D Btile R1: AP 0.2981 (seeds 0.2956, 0.2928, 0.3058)  recall@1%FPR 0.5634
+  D Bfull R2: AP 0.5099 (seeds 0.5108, 0.5090, 0.5099)  recall@1%FPR 0.7843
+  D Bfull R1: AP 0.4291 (seeds 0.4297, 0.4297, 0.4278)  recall@1%FPR 0.6842
+  D E_bank,full = Bfull/R1 - Btile/R1          +0.1310 [+0.1059, +0.1599] seeds +0.1341, +0.1369, +0.1219  7/7 units +  p=0.0156
+  D E_bank,tile = Bfull/R2 - Btile/R2          +0.0349 [-0.0023, +0.0705] seeds +0.0384, +0.0310, +0.0355  6/7 units +  p=0.1094
+  D E_layout,matched = Bfull/R1 - Btile/R2     -0.0459 [-0.1220, +0.0158] seeds -0.0427, -0.0483, -0.0467  3/7 units +  p=0.3750
+  D E_layout,tilebank = Btile/R2 - Btile/R1    +0.1769 [+0.1057, +0.2627] seeds +0.1769, +0.1852, +0.1686  7/7 units +  p=0.0156
+  D interaction (E_bank,full - E_bank,tile) +0.0960
+  W Btile R2: AP 0.2878 (seeds 0.2896, 0.2852, 0.2887)  recall@1%FPR 0.5170
+  W Btile R1: AP 0.3184 (seeds 0.3232, 0.3136, 0.3184)  recall@1%FPR 0.5621
+  W Bfull R2: AP 0.2434 (seeds 0.2412, 0.2433, 0.2456)  recall@1%FPR 0.4273
+  W Bfull R1: AP 0.3122 (seeds 0.3092, 0.3126, 0.3146)  recall@1%FPR 0.5488
+  W E_bank,full = Bfull/R1 - Btile/R1          -0.0062 [-0.0128, -0.0005] seeds -0.0140, -0.0010, -0.0037  1/7 units +  p=0.0781
+  W E_bank,tile = Bfull/R2 - Btile/R2          -0.0445 [-0.0627, -0.0290] seeds -0.0484, -0.0419, -0.0431  0/7 units +  p=0.0156
+  W E_layout,matched = Bfull/R1 - Btile/R2     +0.0243 [+0.0166, +0.0346] seeds +0.0196, +0.0274, +0.0259  7/7 units +  p=0.0156
+  W E_layout,tilebank = Btile/R2 - Btile/R1    -0.0305 [-0.0414, -0.0220] seeds -0.0336, -0.0283, -0.0297  0/7 units +  p=0.0156
+  W interaction (E_bank,full - E_bank,tile) +0.0383
+  timing D_R2: features 1.29s, scoring 0.15s/bank, sampled peak tensor memory above baseline 0.01 GiB
+  timing D_R1: features 3.84s, scoring 0.12s/bank, sampled peak tensor memory above baseline 0.01 GiB
+  timing W_R2: features 1.15s, scoring 1.30s/bank, sampled peak tensor memory above baseline 0.11 GiB
+  timing W_R1: features 1.19s, scoring 1.25s/bank, sampled peak tensor memory above baseline 0.11 GiB
+
+== visa (full), 12 units ==
+  D Btile R2: AP 0.3063 (seeds 0.3026, 0.2965, 0.3197)  recall@1%FPR 0.7124
+  D Btile R1: AP 0.1749 (seeds 0.1690, 0.1683, 0.1875)  recall@1%FPR 0.4057
+  D Bfull R2: AP 0.0136 (seeds 0.0123, 0.0132, 0.0153)  recall@1%FPR 0.0948
+  D Bfull R1: AP 0.3977 (seeds 0.3845, 0.3904, 0.4183)  recall@1%FPR 0.8413
+  D E_bank,full = Bfull/R1 - Btile/R1          +0.2228 [+0.1979, +0.2559] seeds +0.2154, +0.2221, +0.2309  10/12 units +
+  D E_bank,tile = Bfull/R2 - Btile/R2          -0.2927 [-0.3230, -0.2691] seeds -0.2904, -0.2833, -0.3044  0/12 units +
+  D E_layout,matched = Bfull/R1 - Btile/R2     +0.0914 [+0.0644, +0.1302] seeds +0.0818, +0.0939, +0.0986  9/12 units +
+  D E_layout,tilebank = Btile/R2 - Btile/R1    +0.1314 [+0.1055, +0.1567] seeds +0.1336, +0.1282, +0.1323  11/12 units +
+  D interaction (E_bank,full - E_bank,tile) +0.5155
+  W Btile R2: AP 0.4330 (seeds 0.4335, 0.4307, 0.4348)  recall@1%FPR 0.7964
+  W Btile R1: AP 0.4925 (seeds 0.4917, 0.4910, 0.4946)  recall@1%FPR 0.8431
+  W Bfull R2: AP 0.3784 (seeds 0.3729, 0.3722, 0.3900)  recall@1%FPR 0.7725
+  W Bfull R1: AP 0.5164 (seeds 0.5114, 0.5089, 0.5288)  recall@1%FPR 0.8594
+  W E_bank,full = Bfull/R1 - Btile/R1          +0.0239 [+0.0183, +0.0286] seeds +0.0197, +0.0179, +0.0341  11/12 units +
+  W E_bank,tile = Bfull/R2 - Btile/R2          -0.0546 [-0.0728, -0.0437] seeds -0.0605, -0.0585, -0.0448  2/12 units +
+  W E_layout,matched = Bfull/R1 - Btile/R2     +0.0834 [+0.0711, +0.0956] seeds +0.0779, +0.0783, +0.0939  12/12 units +
+  W E_layout,tilebank = Btile/R2 - Btile/R1    -0.0595 [-0.0716, -0.0482] seeds -0.0582, -0.0603, -0.0598  0/12 units +
+  W interaction (E_bank,full - E_bank,tile) +0.0785
+  timing D_R2: features 1.03s, scoring 0.10s/bank, sampled peak tensor memory above baseline 0.02 GiB
+  timing D_R1: features 2.03s, scoring 0.06s/bank, sampled peak tensor memory above baseline 0.01 GiB
+  timing W_R2: features 0.74s, scoring 0.74s/bank, sampled peak tensor memory above baseline 0.12 GiB
+  timing W_R1: features 0.64s, scoring 0.62s/bank, sampled peak tensor memory above baseline 0.09 GiB
+
+reading rule: {'per_dataset': {'rawfabrid': {'a': True, 'b': True}, 'visa': {'a': True, 'b': True}}, 'outcome': 'supported'}
+wrote <study>/results_p5/e2_bank_layout/full/analysis.json

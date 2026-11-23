@@ -61,7 +61,7 @@ arms = [('W_b256_t256', '256 tiles,\nbank 256'), ('W_b256_full', 'full frame,\nb
 for i, (k, _) in enumerate(arms):
     v = [P[c][k] for c in cats]
     ax.scatter(np.full(len(v), i) + rng.uniform(-0.05, 0.05, len(v)), v, s=8, color='#a9b8de', zorder=2, lw=0)
-    ax.plot(i, M[k], 's', color=S.COBALT, ms=5, mec='white', mew=0.6, zorder=4)
+    ax.plot(i, M[k], 'o', color=S.COBALT, ms=5, mec='white', mew=0.6, zorder=4)
 ax.plot(range(3), [M[k] for k, _ in arms], color=S.COBALT, lw=1.2, zorder=3)
 ax.set_xticks(range(3))
 ax.set_xticklabels([l for _, l in arms])
