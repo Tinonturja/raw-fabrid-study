@@ -1,4 +1,5 @@
 #!/bin/bash
+# Set the dataset paths below (<data_root>, <datasets>) and PY to your environment before running.
 # Protocol 5 smoke test: 3+3 AITEX strips, 2+2 VisA candle images, smoke analysis. Not used in results.
 set -e
 cd "$(dirname "$0")"

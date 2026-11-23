@@ -1,4 +1,5 @@
 #!/bin/bash
+# Set the dataset paths below (<data_root>, <datasets>) and PY to your environment before running.
 # Protocol 5 fallback dataset, MVTec AD 2 Fabric: runs after RAW-FABRID finishes. Stops at the first error.
 set -e
 cd "$(dirname "$0")"

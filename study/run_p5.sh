@@ -1,4 +1,5 @@
 #!/bin/bash
+# Set the dataset paths below (<data_root>, <datasets>) and PY to your environment before running.
 # Protocol 5 overnight run on the Mac. Stops at the first error; finished units are skipped on restart.
 set -e
 cd "$(dirname "$0")"

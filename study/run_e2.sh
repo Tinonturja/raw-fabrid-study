@@ -1,4 +1,5 @@
 #!/bin/sh
+# Set the dataset paths below (<data_root>, <datasets>) and PY to your environment before running.
 # E2 full run, then analysis. Started 22 Nov 2026.
 cd "$(dirname "$0")"
 PY="../Project files/.venv/bin/python"

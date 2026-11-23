@@ -1,4 +1,5 @@
 #!/bin/bash
+# Set the dataset paths below (<data_root>, <datasets>) and PY to your environment before running.
 # Protocol 5, RAW-FABRID: waits for the AITEX/VisA run to finish, then smoke test, full run and analysis.
 set -e
 cd "$(dirname "$0")"
