@@ -6,7 +6,7 @@ Excluded: memory banks and model caches (*.pt; rebuilt by the code, their hashes
 outputs, temporary files, and anything holding source images (results_p5/qualitative), which stay with their
 dataset custodians under their licences.
 
-Usage (from audit_experiments/): python code/make_data_bundle.py --version v1.0.0 --out <dir>
+Usage (from study/): python code/make_data_bundle.py --version v1.0.0 --out <dir>
 """
 import argparse, hashlib, zipfile
 from pathlib import Path

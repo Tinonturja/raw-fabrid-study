@@ -1,7 +1,7 @@
 """Protocol 5 result figures, drawn only from the saved analysis files, in the shared manuscript style.
 Fig 3: R2 - R1 forest plot per dataset and detector.  Fig 4: per-unit R2 - R1 (primary and DINOv2).
 Fig 5: fragmentation of defect regions by layout.  Fig 6: detector AP under R1 and R2 per dataset (ranking).
-Usage: python3 fig_p5_results.py   (writes manuscript_v2/figures/fig3..fig6 .png and .pdf)"""
+Usage: python3 fig_p5_results.py   (writes figures/fig3..fig6 .png and .pdf)"""
 import json
 import sys
 from pathlib import Path
@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figstyle as S
 
 HERE = Path(__file__).resolve().parents[1]
-OUT = HERE / 'manuscript_v2' / 'figures'
+OUT = HERE / 'figures'
 R = HERE / 'results_p5'
 S.apply()
 

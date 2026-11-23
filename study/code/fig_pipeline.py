@@ -137,4 +137,4 @@ body(18.6, 5.0, 'coverage of marked pixels; regions that no window shows whole; 
      'fate of each 8-connected defect region (whole, split, never seen)', size=6)
 arrow(xs[1] + ws[1] / 2, Y - 0.05, xs[1] + ws[1] / 2, 8.85, ls='--')
 
-S.save(fig, HERE / 'manuscript_v2' / 'figures' / 'fig05_pipeline', keep_aspect=True)
+S.save(fig, HERE / 'figures' / 'fig05_pipeline', keep_aspect=True)

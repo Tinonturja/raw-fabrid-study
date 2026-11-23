@@ -86,7 +86,7 @@ for a, t in TITLES:
     x0 = a.get_tightbbox(fig.canvas.get_renderer()).transformed(fig.transFigure.inverted()).x0 if a is not TITLES[0][0] else a.get_position().x0
     fig.text(x0, 0.86, t, fontsize=7.5, fontweight='bold', va='top', ha='left')
 
-out = HERE / 'manuscript_v2' / 'figures'
+out = HERE / 'figures'
 fig.savefig(out / 'graphical_abstract.png', dpi=600)
 fig.savefig(out / 'graphical_abstract.pdf')
 print('ok')

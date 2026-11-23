@@ -16,7 +16,7 @@ import figstyle as S
 S.apply()
 HERE = Path(__file__).resolve().parents[1]
 Q = HERE / 'results_p5' / 'qualitative'
-OUT = HERE / 'manuscript_v2' / 'figures'
+OUT = HERE / 'figures'
 z = np.load(Q / 'coverage_examples.npz')
 meta = json.loads((Q / 'coverage_examples.json').read_text())
 T = 256

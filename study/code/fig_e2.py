@@ -47,4 +47,4 @@ handles = [Line2D([], [], color=S.INK2, ls=(0, (3, 2)), marker='o', mfc='white',
            Line2D([], [], color=S.COBALT, ls='none', marker='o', ms=4.5, label='WRN-50 PatchCore-style')]
 fig.legend(handles=handles, loc='upper center', ncol=4, bbox_to_anchor=(0.5, 1.02), handlelength=2.2, columnspacing=1.0)
 fig.subplots_adjust(left=0.08, right=0.99, top=0.8, bottom=0.17)
-S.save(fig, HERE / 'manuscript_v2' / 'figures' / 'fig13_e2_bank_layout')
+S.save(fig, HERE / 'figures' / 'fig13_e2_bank_layout')

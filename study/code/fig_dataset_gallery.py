@@ -129,7 +129,7 @@ def plot():
                Patch(fc=S.COPPER, alpha=0.35, label='overlap of the edge-aligned last row or column'),
                Patch(fc='#8c8a84', ec='white', label='256-pixel tile grid')]
     fig.legend(handles=handles, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 0.0), handlelength=1.4)
-    S.save(fig, HERE / 'manuscript_v2' / 'figures' / 'fig01_datasets', keep_aspect=True)
+    S.save(fig, HERE / 'figures' / 'fig01_datasets', keep_aspect=True)
 
 
 if __name__ == '__main__':

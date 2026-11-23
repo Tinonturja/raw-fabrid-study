@@ -33,3 +33,11 @@ __pycache__/
 /results/region_followup/*.npz
 !/results/region_followup/*.json
 !/results/fabrid_external.json
+
+# Manuscript text and builds are private and never committed
+**/manuscript_v2/
+**/MANUSCRIPT*.md
+**/SUPPLEMENTARY.md
+**/*.docx
+**/main_*.tex
+**/main_*.pdf

@@ -95,7 +95,7 @@ def plot():
     cb.ax.set_yticklabels(['low', 'high'], fontsize=6.5)
     cb.outline.set_visible(False)
     cb.set_label('anomaly score (scale shared by native\nand tiled maps of one detector)', fontsize=6.5)
-    out = HERE / 'manuscript_v2' / 'figures'
+    out = HERE / 'figures'
     S.save(fig, out / 'fig09_score_maps', keep_aspect=True)
     print('wrote fig7', meta)
 
