@@ -1,92 +1,100 @@
-"""Graphical abstract (Elsevier: landscape, at least 1328 x 531 px; drawn at 13 x 5 cm, 600 dpi), shared style,
-drawn only from saved results. Usage: python3 fig_graphical_abstract.py"""
-import json, sys
+"""Graphical abstract (Elsevier: landscape, at least 1328 x 531 px; drawn at 13 x 5.8 cm, 600 dpi), drawn only from
+saved results. Usage: python3 fig_graphical_abstract.py"""
+import json
 from pathlib import Path
+
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle
 from matplotlib.colors import ListedColormap
+from matplotlib.lines import Line2D
+from scipy.ndimage import binary_dilation
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import figstyle as S
-
-S.apply()
 HERE = Path(__file__).resolve().parents[1]
 R = HERE / 'results_p5'
+j = lambda p: json.loads(p.read_text())
+coverage = j(HERE / 'results_cut' / 'cut_audit.json')['RAW-FABRID']['A_released_defect_aware']
+raw = j(R / 'rawfabrid' / 'full' / 'analysis.json')['roll_level']
+e2 = j(R / 'e2_bank_layout' / 'full' / 'analysis.json')['datasets']
 z = np.load(R / 'qualitative' / 'coverage_examples.npz')
-meta = json.loads((R / 'qualitative' / 'coverage_examples.json').read_text())
-j = lambda p: json.loads((R / p).read_text())
-D = {'RAW-FABRID': j('rawfabrid/full/analysis.json')['roll_level'],
-     'TSFabrics': j('tsfabrics/full/analysis_from_kaggle_log.json')['roll_level'],
-     'VisA': j('visa/full/analysis.json')['dataset_level'],
-     'AITEX': j('aitex/full/analysis.json')['dataset_level']}
-rf = j('rawfabrid/full/analysis.json')
 
-fig = plt.figure(figsize=(13 / 2.54 * 1.6, 5 / 2.54 * 1.6))
-gs = fig.add_gridspec(1, 3, width_ratios=[1.35, 1, 0.8], wspace=0.38, left=0.02, right=0.98, top=0.72, bottom=0.14)
-fig.text(0.02, 0.97, 'Hidden evaluation choices change what an anomaly-localization benchmark measures', fontsize=10.5, fontweight='bold')
+contrasts = [raw[f'{m}: R2 - R1'] for m in ['patchcore', 'dino']]
+bank = {ds: (e2[ds]['cells']['D_Btile_R1']['ap'], e2[ds]['cells']['D_Bfull_R1']['ap'],
+             e2[ds]['estimands']['D E_bank,full = Bfull/R1 - Btile/R1']) for ds in ['rawfabrid', 'visa']}
+assert [round(c['estimate'], 3) for c in contrasts] == [-0.028, 0.207]
+assert [round(bank[d][2]['estimate'], 3) for d in ['rawfabrid', 'visa']] == [0.131, 0.223]
 
-# 1. coverage gap
-ax = fig.add_subplot(gs[0])
-k = 'maxunseen'
-img, mask, uns = z[f'{k}|image'], z[f'{k}|mask'], z[f'{k}|unseen']
-s = meta[k]['scale']
-ax.imshow(img)
-ax.imshow(np.ma.masked_where(~mask, mask), cmap=ListedColormap([S.JADE]), alpha=0.6, interpolation='nearest')
-ax.imshow(np.ma.masked_where(~uns, uns), cmap=ListedColormap([S.COPPER]), alpha=0.85, interpolation='nearest')
-grid = set(tuple(c) for c in z[f'{k}|grid'])
-for y, x in z[f'{k}|released']:
-    if (y, x) not in grid:
-        ax.add_patch(Rectangle((x * s, y * s), 256 * s, 256 * s, fill=False, ec=S.COPPER, lw=1.0))
-ax.set_xticks([]); ax.set_yticks([])
-for sp in ax.spines.values():
-    sp.set_visible(False)
-TITLES = []
-TITLES.append((ax, '1  Released defect-centred crops miss\n    7.4% of marked defect pixels (RAW-FABRID)'))
-ax.text(0.0, -0.06, f"example frame: {100 * meta[k]['unseen_px'] / meta[k]['defect_px']:.0f}% of its defect pixels (copper) unseen",
-        transform=ax.transAxes, fontsize=6, color=S.INK2, va='top')
+plt.rcParams.update({
+    'font.family': 'DejaVu Sans', 'font.size': 7, 'pdf.fonttype': 42, 'ps.fonttype': 42,
+    'axes.spines.top': False, 'axes.spines.right': False, 'axes.linewidth': .5,
+    'xtick.major.width': .5, 'ytick.major.width': .5})
+ink, grey, pale, copper, light = '#172126', '#596168', '#D7DCDF', '#BD571C', '#B5BDC2'
+fig = plt.figure(figsize=(13 / 2.54, 5.8 / 2.54), facecolor='white')
+text = lambda x, y, s, **kw: fig.text(x, y, s, color=kw.pop('color', ink), **kw)
 
-# 2. layout effect, primary detector
-ax = fig.add_subplot(gs[1])
-names = list(D)
-ax.axvspan(-0.01, 0.01, color=S.BAND, lw=0)
-ax.axvline(0, color=S.INK2, lw=0.6)
-for i, n in enumerate(names):
-    v = D[n]['patchcore: R2 - R1']
-    ax.plot(v['ci95'], [i, i], color=S.COBALT, lw=1.3)
-    ax.plot(v['estimate'], i, 'o', color=S.COBALT, ms=4.5)
-ax.set_yticks(range(len(names))); ax.set_yticklabels(names, fontsize=6.5)
-ax.invert_yaxis()
-ax.set_xlim(-0.05, 0.02)
-ax.set_xlabel('Tiled − native, pixel AP', fontsize=6.5)
-ax.tick_params(axis='x', labelsize=6)
-ax.tick_params(axis='y', length=0)
-ax.grid(axis='x')
-TITLES.append((ax, '2  Tiling costs a CNN detector about\n    0.01 to 0.03 AP on 3 of 4 datasets'))
+text(.025, .955, 'Hidden evaluation choices', fontsize=11.8, weight='bold', va='top')
+text(.025, .845, 'Crop coverage, inference layout and memory banks change anomaly-localization scores',
+     fontsize=6.9, va='top')
+for x in [.341, .667]:
+    fig.add_artist(Line2D([x, x], [.165, .765], transform=fig.transFigure, color=pale, lw=.7))
+for x, label in [(.025, '1  CROP COVERAGE'), (.367, '2  INFERENCE LAYOUT'), (.693, '3  MEMORY BANK')]:
+    text(x, .745, label, fontsize=7.1, weight='bold')
 
-# 3. detector order flips with the layout
-ax = fig.add_subplot(gs[2])
-for fam in ('patchcore', 'dino'):
-    a1 = np.mean([u['ap'][f'{fam}|R1'] for u in rf['units'].values()])
-    a2 = np.mean([u['ap'][f'{fam}|R2'] for u in rf['units'].values()])
-    ax.plot([0, 1], [a1, a2], '-' + {'patchcore': 'o', 'dino': 's'}[fam], color=S.DET[fam], lw=1.5, ms=4.5)
-    ax.text(1.08, a2, 'PatchCore-\nstyle' if fam == 'patchcore' else 'DINOv2', color=S.DET[fam], fontsize=6.5, va='center')
-ax.set_xticks([0, 1]); ax.set_xticklabels(['Native', 'Tiled'], fontsize=6.5)
-ax.set_xlim(-0.25, 1.6)
-ax.set_ylim(0, 0.5)   # axis from zero so the crossing is not exaggerated
-ax.set_yticks([0, 0.1, 0.2, 0.3, 0.4, 0.5])
-ax.tick_params(axis='y', labelsize=6)
-ax.set_ylabel('Pixel AP, RAW-FABRID', fontsize=6.5)
-ax.grid(axis='y')
-TITLES.append((ax, '3  ...and, with a tile-fitted bank, can\n    reverse which detector looks better'))
-fig.canvas.draw()
-for a, t in TITLES:
-    x0 = a.get_tightbbox(fig.canvas.get_renderer()).transformed(fig.transFigure.inverted()).x0 if a is not TITLES[0][0] else a.get_position().x0
-    fig.text(x0, 0.86, t, fontsize=7.5, fontweight='bold', va='top', ha='left')
+# 1. Coverage: the frame with the most uncovered defect pixels; unseen pixels dilated so they stay visible.
+text(.025, .618, f"{coverage['unseen_pct']:.2f}%", fontsize=20, weight='bold', color=copper)
+text(.025, .552, 'of marked defect pixels missed', fontsize=6.5)
+text(.025, .498, 'by released RAW-FABRID crops', fontsize=6.5)
+ax = fig.add_axes([.025, .218, .29, .247])
+ax.imshow(z['maxunseen|image'])
+unseen = binary_dilation(z['maxunseen|unseen'].astype(bool), iterations=4)
+ax.imshow(np.ma.masked_where(~unseen, unseen), cmap=ListedColormap([copper]), interpolation='nearest')
+ax.axis('off')
+text(.025, .171, 'Orange: defects outside every crop', fontsize=6.0)
+
+# 2. Layout: paired R2 - R1 contrasts on RAW-FABRID, same tile-built bank per detector.
+text(.367, .666, 'RAW-FABRID; 7 held-out rolls', fontsize=6.5)
+text(.367, .613, 'Same tile-built bank per detector', fontsize=6.0, color=grey)
+ax = fig.add_axes([.452, .285, .195, .246])
+ax.axvline(0, color=grey, lw=.6, ls=(0, (3, 3)))
+for i, (c, marker) in enumerate(zip(contrasts, ['o', 's'])):
+    y = 1 - i
+    (lo, hi), est = c['ci95'], c['estimate']
+    ax.plot([lo, hi], [y, y], color=ink, lw=1.1)
+    ax.scatter(est, y, marker=marker, s=15, color=ink, zorder=3)
+    ax.text(.345, y + .22, f'{est:+.3f}', ha='right', va='bottom', fontsize=7, weight='bold')
+ax.set_xlim(-.065, .345); ax.set_ylim(-.5, 1.65)
+ax.set_yticks([1, 0]); ax.set_yticklabels(['WRN-50', 'DINOv2'], fontsize=6.5)
+ax.spines['left'].set_visible(False); ax.tick_params(axis='y', length=0, pad=3)
+ax.set_xticks([0, .15, .30]); ax.set_xticklabels(['0', '.15', '.30'], fontsize=6)
+ax.tick_params(axis='x', length=2, pad=1.5)
+text(.367, .160, 'Tiled minus native pixel AP', fontsize=6.4)
+text(.367, .112, 'Points: means; lines: 95% intervals', fontsize=5.8)
+
+# 3. Bank: exploratory E2, DINOv2 native-frame AP with a tile-built or frame-built bank (3 seeds averaged).
+text(.693, .666, 'DINOv2; native-frame inference', fontsize=6.4)
+text(.693, .613, 'Exploratory; paired banks, 3 seeds', fontsize=6.0, color=grey)
+ax = fig.add_axes([.725, .285, .245, .27])
+for g, ds in enumerate(['rawfabrid', 'visa']):
+    tile, full, eff = bank[ds]
+    ax.bar([g - .19, g + .19], [tile, full], width=.34, color=[light, ink], zorder=3)
+    ax.text(g, max(tile, full) + .035, f"{eff['estimate']:+.2f}", ha='center', fontsize=7, weight='bold')
+ax.set_xlim(-.6, 1.6); ax.set_ylim(0, .55)
+ax.set_xticks([0, 1]); ax.set_xticklabels(['RAW-FABRID', 'VisA'], fontsize=6)
+ax.set_yticks([0, .5]); ax.set_yticklabels(['0', '.5'], fontsize=6)
+ax.tick_params(length=2, pad=1.5)
+ax.set_ylabel('Pixel AP', fontsize=6, labelpad=1)
+fig.text(.693, .160, '■', color=light, fontsize=7)
+text(.712, .160, 'Tile-built', fontsize=6.2)
+fig.text(.805, .160, '■', color=ink, fontsize=7)
+text(.824, .160, 'Frame-built bank', fontsize=6.2)
+text(.693, .112, 'Context not separated from position', fontsize=5.8)
+
+fig.add_artist(Line2D([.025, .975], [.085, .085], transform=fig.transFigure, color=pale, lw=.7))
+text(.025, .030, 'Report crop coverage, scoring unit, inference layout and memory-bank construction.',
+     fontsize=7.0, weight='bold')
 
 out = HERE / 'figures'
-fig.savefig(out / 'graphical_abstract.png', dpi=600)
-fig.savefig(out / 'graphical_abstract.pdf')
-print('ok')
+fig.savefig(out / 'graphical_abstract.png', dpi=600, facecolor='white')
+fig.savefig(out / 'graphical_abstract.pdf', facecolor='white', metadata={'Creator': None, 'Producer': None})
+print('graphical abstract written')

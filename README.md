@@ -9,8 +9,8 @@ in preparation; this repository holds everything needed to check its numbers, bu
 
 **Data archive:** every per-image score histogram behind the reported intervals is in release
 [v1.0.2](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.2) (four zip files and a SHA-256 list; the zip names keep their original v1.0.0 label).
-The code, protocols and analysis files are archived on Zenodo (the zip files above are attached to the GitHub release): version 1.0.1, [doi:10.5281/zenodo.24463027](https://doi.org/10.5281/zenodo.24463027);
-all versions, [doi:10.5281/zenodo.24459807](https://doi.org/10.5281/zenodo.24459807).
+The code, protocols and analysis files are archived on Zenodo (the zip files above are attached to the GitHub release only):
+[doi:10.5281/zenodo.24459807](https://doi.org/10.5281/zenodo.24459807) always resolves to the latest version, and the Zenodo page lists each version's own DOI.
 See [Checking the numbers without images](#checking-the-numbers-without-images).
 
 ## Main findings
@@ -21,7 +21,7 @@ See [Checking the numbers without images](#checking-the-numbers-without-images).
 | Does that missing coverage matter? | Restoring it raised mean whole-frame pixel AP by 0.022 to 0.032 for three PatchCore-style detectors, with a gain on every held-out roll, more than a control that added equally many windows without new coverage. |
 | Does tiled prediction score differently from native full-frame prediction? (pre-registered, Protocol 5) | For the primary WRN-50 PatchCore-style detector, tiling lowered pixel AP on RAW-FABRID (−0.028, roll interval −0.042 to −0.019), VisA (−0.027, −0.031 to −0.023) and TSFabrics (−0.011, −0.020 to −0.001); AITEX showed no material difference (−0.0003). The pre-registered rule was met. |
 | Does it change which detector looks better? | A DINOv2 token kNN detector gained about 0.2 AP from tiling and overtook the primary detector on RAW-FABRID under the Protocol 5 banks. |
-| Why? (exploratory E1 and E2) | The memory bank. In a paired 2 × 2 (E2), fitting the DINOv2 bank on whole frames instead of 256-pixel tiles raised native-frame AP by 0.131 on RAW-FABRID (7/7 rolls) and 0.223 on VisA (10/12 categories); with banks matched to the layout, DINOv2 led on RAW-FABRID under both layouts. |
+| What does the memory bank do? (exploratory E1 and E2) | In a paired 2 × 2 (E2), fitting the DINOv2 bank on whole frames instead of 256-pixel tiles raised native-frame AP by 0.131 on RAW-FABRID (7/7 rolls) and 0.223 on VisA (10/12 categories); with banks matched to the layout, DINOv2 led on RAW-FABRID under both layouts. E2 does not separate image context from token position or padding. |
 | What does patch-level reporting do? | Under the widely reused AITEX blind-grid protocol, 53% of patches labelled "defect" contain less than 1% defect. |
 
 Every number above is reproduced by the code here from the files in the data archive. E1 and E2 were designed
