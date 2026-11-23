@@ -154,6 +154,11 @@ library. Its protocols and results are in `reports/` (for example
 [`reports/unseen_roll_results.md`](reports/unseen_roll_results.md)); RAW-FABRID can be rebuilt from the publisher
 ZIP with `code/reproduce.py --download`.
 
+## Licence
+
+Code: MIT ([`LICENSE`](LICENSE)). Numerical results, manifests and figures: CC BY 4.0
+([`LICENSE-DATA.md`](LICENSE-DATA.md)). Source datasets keep their own licences.
+
 ## Citation
 
 Please cite the software as described in [`CITATION.cff`](CITATION.cff). The mask examples are adapted from
