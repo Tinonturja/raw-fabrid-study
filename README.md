@@ -9,7 +9,7 @@ in preparation; this repository holds everything needed to check its numbers, bu
 
 **Data archive:** every per-image score histogram behind the reported intervals is in release
 [v1.0.0](https://github.com/Tinonturja/raw-fabrid-study/releases/tag/v1.0.0) (four zip files and a SHA-256 list).
-The repository is archived on Zenodo: version 1.0.1, [doi:10.5281/zenodo.24463027](https://doi.org/10.5281/zenodo.24463027);
+The code, protocols and analysis files are archived on Zenodo (the zip files above are attached to the GitHub release): version 1.0.1, [doi:10.5281/zenodo.24463027](https://doi.org/10.5281/zenodo.24463027);
 all versions, [doi:10.5281/zenodo.24459807](https://doi.org/10.5281/zenodo.24459807).
 See [Checking the numbers without images](#checking-the-numbers-without-images).
 
